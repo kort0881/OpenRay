@@ -25,7 +25,17 @@ python src/converter/sub2clash_singbox.py ./output_iran/all_valid_proxies_for_ir
 if [ -n "$(git status --porcelain)" ]; then
     git add .
     git commit -m "Auto update for iran: $(date '+%Y-%m-%d %H:%M:%S')"
-    git push origin main
+
+    # Try to push, and if it fails due to remote changes, pull and push again
+    if ! git push origin main; then
+        echo "git push failed, pulling remote changes and retrying..."
+        if ! git pull origin main --no-edit; then
+            echo "git pull failed, trying merge strategy..."
+            git pull --no-edit origin main --no-rebase
+        fi
+        # Try push again after pulling
+        git push origin main
+    fi
 else
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] No changes to commit."
 fi
