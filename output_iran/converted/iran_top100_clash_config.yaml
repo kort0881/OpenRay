@@ -105,18 +105,6 @@ proxies:
   port: 8880
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
   network: grpc
-- name: OpenRay  US-17870
-  type: vless
-  server: 185.236.232.109
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
-- name: OpenRay  US-17901
-  type: vless
-  server: 185.236.232.148
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
 - name: OpenRay  US-18148
   type: vless
   server: 185.236.232.72
@@ -144,6 +132,18 @@ proxies:
 - name: OpenRay  US-18393
   type: vless
   server: 185.236.232.91
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  network: grpc
+- name: OpenRay  US-17870
+  type: vless
+  server: 185.236.232.109
+  port: 8880
+  uuid: e4824193-4f54-453b-d037-88368e85ef0e
+  network: grpc
+- name: OpenRay  US-17901
+  type: vless
+  server: 185.236.232.148
   port: 8880
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
   network: grpc
@@ -409,6 +409,17 @@ proxies:
       Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
     headers:
       Host: SomeNotificationsChangeYourLife.EiNetwork.News.
+- name: 'OpenRay Dynamic-831 #2'
+  type: vless
+  server: 0.0.0.einetwork.news
+  port: 8880
+  uuid: 2a2f8790-99ab-4788-985c-0fe5627af2a9
+  network: ws
+  ws-opts:
+    path: 
+      Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
+    headers:
+      Host: SomeNotificationsChangeYourLife.EiNetwork.News.
 - name: OpenRay Dynamic-47
   type: vless
   server: 0.0.0.einetwork.news
@@ -616,6 +627,70 @@ proxies:
       /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
     headers:
       Host: Fi.Parsashonam.CfD.
+- name: OpenRay Dynamic-18422
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v5.hiddendom.shop
+- name: OpenRay Dynamic-18423
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v2.hiddendom.shop
+- name: OpenRay Dynamic-18424
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-18425
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v1.hiddendom.shop
+- name: OpenRay Dynamic-18426
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v3.hiddendom.shop
+- name: OpenRay Dynamic-18427
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-18428
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-18429
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v3.hiddendom.shop
 
 proxy-groups:
 - name: AUTO
@@ -628,13 +703,13 @@ proxy-groups:
   - OpenRay  US-16940
   - OpenRay  US-17686
   - OpenRay  US-17849
-  - OpenRay  US-17870
-  - OpenRay  US-17901
   - OpenRay  US-18148
   - OpenRay  US-18358
   - OpenRay  US-18360
   - OpenRay  US-18363
   - OpenRay  US-18393
+  - OpenRay  US-17870
+  - OpenRay  US-17901
   - OpenRay  XX-1
   - OpenRay  XX-5
   - OpenRay  XX-6
@@ -658,6 +733,7 @@ proxy-groups:
   - OpenRay  XX-123
   - OpenRay  XX-150
   - OpenRay Dynamic-831
+  - 'OpenRay Dynamic-831 #2'
   - OpenRay Dynamic-47
   - OpenRay  US-18412
   - OpenRay  US-18413
@@ -681,6 +757,14 @@ proxy-groups:
   - OpenRay  CA-21
   - OpenRay  CA-22
   - OpenRay  CA-24
+  - OpenRay Dynamic-18422
+  - OpenRay Dynamic-18423
+  - OpenRay Dynamic-18424
+  - OpenRay Dynamic-18425
+  - OpenRay Dynamic-18426
+  - OpenRay Dynamic-18427
+  - OpenRay Dynamic-18428
+  - OpenRay Dynamic-18429
 - name: PROXY
   type: select
   proxies:
@@ -689,13 +773,13 @@ proxy-groups:
   - OpenRay  US-16940
   - OpenRay  US-17686
   - OpenRay  US-17849
-  - OpenRay  US-17870
-  - OpenRay  US-17901
   - OpenRay  US-18148
   - OpenRay  US-18358
   - OpenRay  US-18360
   - OpenRay  US-18363
   - OpenRay  US-18393
+  - OpenRay  US-17870
+  - OpenRay  US-17901
   - OpenRay  XX-1
   - OpenRay  XX-5
   - OpenRay  XX-6
@@ -719,6 +803,7 @@ proxy-groups:
   - OpenRay  XX-123
   - OpenRay  XX-150
   - OpenRay Dynamic-831
+  - 'OpenRay Dynamic-831 #2'
   - OpenRay Dynamic-47
   - OpenRay  US-18412
   - OpenRay  US-18413
@@ -742,6 +827,14 @@ proxy-groups:
   - OpenRay  CA-21
   - OpenRay  CA-22
   - OpenRay  CA-24
+  - OpenRay Dynamic-18422
+  - OpenRay Dynamic-18423
+  - OpenRay Dynamic-18424
+  - OpenRay Dynamic-18425
+  - OpenRay Dynamic-18426
+  - OpenRay Dynamic-18427
+  - OpenRay Dynamic-18428
+  - OpenRay Dynamic-18429
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
