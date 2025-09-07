@@ -153,7 +153,7 @@ def show_current_parameters():
 def main():
     """Main function to run all checks."""
     print("🔧 OpenRay Parameter Health Check")
-    print("==================================")
+    print("======")
 
     show_current_parameters()
     check_network_connectivity()
