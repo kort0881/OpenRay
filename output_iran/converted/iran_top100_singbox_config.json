@@ -51,26 +51,29 @@
       "tag": "proxy",
       "outbounds": [
         "auto",
-        "OpenRay  CA-175",
-        "OpenRay Dynamic-2275",
-        "OpenRay Dynamic-2310",
-        "OpenRay Dynamic-2336",
-        "OpenRay Dynamic-2251",
-        "OpenRay  CA-11",
-        "OpenRay  CA-104",
-        "OpenRay Dynamic-2729",
-        "OpenRay  CA-29",
-        "OpenRay  CA-156",
-        "OpenRay  CA-152",
-        "OpenRay  CA-172",
-        "OpenRay Dynamic-2267",
-        "OpenRay  CA-9",
         "OpenRay Dynamic-2285",
+        "OpenRay Dynamic-2336",
         "OpenRay Dynamic-2353",
-        "OpenRay  CA-151",
+        "OpenRay  CA-172",
+        "OpenRay Dynamic-2731",
+        "OpenRay Dynamic-2310",
+        "OpenRay Dynamic-2816",
+        "OpenRay Dynamic-2251",
+        "OpenRay Dynamic-2799",
+        "OpenRay  CA-152",
         "OpenRay Dynamic-2250",
+        "OpenRay  CA-11",
+        "OpenRay Dynamic-2729",
+        "OpenRay Dynamic-2792",
+        "OpenRay Dynamic-2790",
+        "OpenRay  CA-156",
+        "OpenRay  CA-29",
+        "OpenRay  CA-24",
+        "OpenRay  CA-151",
+        "OpenRay Dynamic-2275",
+        "OpenRay  CA-9",
         "OpenRay Dynamic-2311",
-        "OpenRay  CA-24"
+        "OpenRay Dynamic-2730"
       ],
       "default": "auto"
     },
@@ -78,26 +81,29 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "OpenRay  CA-175",
-        "OpenRay Dynamic-2275",
-        "OpenRay Dynamic-2310",
-        "OpenRay Dynamic-2336",
-        "OpenRay Dynamic-2251",
-        "OpenRay  CA-11",
-        "OpenRay  CA-104",
-        "OpenRay Dynamic-2729",
-        "OpenRay  CA-29",
-        "OpenRay  CA-156",
-        "OpenRay  CA-152",
-        "OpenRay  CA-172",
-        "OpenRay Dynamic-2267",
-        "OpenRay  CA-9",
         "OpenRay Dynamic-2285",
+        "OpenRay Dynamic-2336",
         "OpenRay Dynamic-2353",
-        "OpenRay  CA-151",
+        "OpenRay  CA-172",
+        "OpenRay Dynamic-2731",
+        "OpenRay Dynamic-2310",
+        "OpenRay Dynamic-2816",
+        "OpenRay Dynamic-2251",
+        "OpenRay Dynamic-2799",
+        "OpenRay  CA-152",
         "OpenRay Dynamic-2250",
+        "OpenRay  CA-11",
+        "OpenRay Dynamic-2729",
+        "OpenRay Dynamic-2792",
+        "OpenRay Dynamic-2790",
+        "OpenRay  CA-156",
+        "OpenRay  CA-29",
+        "OpenRay  CA-24",
+        "OpenRay  CA-151",
+        "OpenRay Dynamic-2275",
+        "OpenRay  CA-9",
         "OpenRay Dynamic-2311",
-        "OpenRay  CA-24"
+        "OpenRay Dynamic-2730"
       ],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "5m",
@@ -160,18 +166,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "OpenRay  CA-104",
-      "server": "172.67.188.18",
-      "server_port": 80,
-      "uuid": "2cf5523e-c4e2-4e97-be1f-b9b7d356c140",
-      "network": "tcp",
-      "transport": {
-        "type": "ws",
-        "path": "/aioproxybot/8.215.59.6-443"
-      }
-    },
-    {
       "type": "vmess",
       "tag": "OpenRay  CA-151",
       "server": "104.17.176.171",
@@ -223,18 +217,6 @@
     },
     {
       "type": "vless",
-      "tag": "OpenRay  CA-175",
-      "server": "172.67.188.18",
-      "server_port": 80,
-      "uuid": "2cf5523e-c4e2-4e97-be1f-b9b7d356c140",
-      "network": "tcp",
-      "transport": {
-        "type": "ws",
-        "path": "/aioproxybot/8.215.59.6-443"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "OpenRay Dynamic-2250",
       "server": "all.tellmethetrue.shop",
       "server_port": 443,
@@ -253,17 +235,6 @@
       "network": "tcp",
       "tls": {
         "server_name": "pqh23v4.hiddendom.shop"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "OpenRay Dynamic-2267",
-      "server": "all.tellmethetrue.shop",
-      "server_port": 443,
-      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
-      "network": "tcp",
-      "tls": {
-        "server_name": "pqh30v3.hiddendom.shop"
       }
     },
     {
@@ -341,6 +312,72 @@
       "network": "tcp",
       "tls": {
         "server_name": "pqh23v5.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2730",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh24v7.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2731",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh28v8.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2790",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh23v3.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2792",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh24v6.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2799",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh28v3.hiddendom.shop"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "OpenRay Dynamic-2816",
+      "server": "all.tellmethetrue.shop",
+      "server_port": 443,
+      "uuid": "401374e6-df77-41fb-f638-dad8184f175b",
+      "network": "tcp",
+      "tls": {
+        "server_name": "pqh30v3.hiddendom.shop"
       }
     }
   ],

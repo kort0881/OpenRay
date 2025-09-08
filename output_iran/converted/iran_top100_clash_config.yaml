@@ -124,16 +124,6 @@ proxies:
     path: /vless/
     headers:
       Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay  CA-104
-  type: vless
-  server: 172.67.188.18
-  port: 80
-  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
-  network: ws
-  ws-opts:
-    path: /aioproxybot/8.215.59.6-443
-    headers:
-      Host: aio.loophole.Biz.iD
 - name: OpenRay  CA-151
   type: vmess
   server: 104.17.176.171
@@ -178,16 +168,6 @@ proxies:
     path: /download/cdn
     headers:
       Host: vw6hjp6qlg-525340125.zamam.co
-- name: OpenRay  CA-175
-  type: vless
-  server: 172.67.188.18
-  port: 80
-  uuid: 2cf5523e-c4e2-4e97-be1f-b9b7d356c140
-  network: ws
-  ws-opts:
-    path: /aioproxybot/8.215.59.6-443
-    headers:
-      Host: aio.loophole.Biz.iD
 - name: OpenRay Dynamic-2250
   type: vless
   server: all.tellmethetrue.shop
@@ -204,14 +184,6 @@ proxies:
   network: grpc
   tls: true
   servername: pqh23v4.hiddendom.shop
-- name: OpenRay Dynamic-2267
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh30v3.hiddendom.shop
 - name: OpenRay Dynamic-2275
   type: vless
   server: all.tellmethetrue.shop
@@ -268,6 +240,54 @@ proxies:
   network: grpc
   tls: true
   servername: pqh23v5.hiddendom.shop
+- name: OpenRay Dynamic-2730
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v7.hiddendom.shop
+- name: OpenRay Dynamic-2731
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v8.hiddendom.shop
+- name: OpenRay Dynamic-2790
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v3.hiddendom.shop
+- name: OpenRay Dynamic-2792
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v6.hiddendom.shop
+- name: OpenRay Dynamic-2799
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v3.hiddendom.shop
+- name: OpenRay Dynamic-2816
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v3.hiddendom.shop
 
 proxy-groups:
 - name: AUTO
@@ -280,15 +300,12 @@ proxy-groups:
   - OpenRay  CA-11
   - OpenRay  CA-24
   - OpenRay  CA-29
-  - OpenRay  CA-104
   - OpenRay  CA-151
   - OpenRay  CA-152
   - OpenRay  CA-156
   - OpenRay  CA-172
-  - OpenRay  CA-175
   - OpenRay Dynamic-2250
   - OpenRay Dynamic-2251
-  - OpenRay Dynamic-2267
   - OpenRay Dynamic-2275
   - OpenRay Dynamic-2285
   - OpenRay Dynamic-2310
@@ -296,6 +313,12 @@ proxy-groups:
   - OpenRay Dynamic-2336
   - OpenRay Dynamic-2353
   - OpenRay Dynamic-2729
+  - OpenRay Dynamic-2730
+  - OpenRay Dynamic-2731
+  - OpenRay Dynamic-2790
+  - OpenRay Dynamic-2792
+  - OpenRay Dynamic-2799
+  - OpenRay Dynamic-2816
 - name: PROXY
   type: select
   proxies:
@@ -304,15 +327,12 @@ proxy-groups:
   - OpenRay  CA-11
   - OpenRay  CA-24
   - OpenRay  CA-29
-  - OpenRay  CA-104
   - OpenRay  CA-151
   - OpenRay  CA-152
   - OpenRay  CA-156
   - OpenRay  CA-172
-  - OpenRay  CA-175
   - OpenRay Dynamic-2250
   - OpenRay Dynamic-2251
-  - OpenRay Dynamic-2267
   - OpenRay Dynamic-2275
   - OpenRay Dynamic-2285
   - OpenRay Dynamic-2310
@@ -320,6 +340,12 @@ proxy-groups:
   - OpenRay Dynamic-2336
   - OpenRay Dynamic-2353
   - OpenRay Dynamic-2729
+  - OpenRay Dynamic-2730
+  - OpenRay Dynamic-2731
+  - OpenRay Dynamic-2790
+  - OpenRay Dynamic-2792
+  - OpenRay Dynamic-2799
+  - OpenRay Dynamic-2816
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
