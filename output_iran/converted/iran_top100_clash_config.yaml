@@ -169,14 +169,6 @@ proxies:
       Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray
     headers:
       Host: SomeNotificationsChangeYourLife.EiNetwork.News.
-- name: OpenRay Dynamic-9117
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh25v3.hiddendom.shop
 - name: OpenRay Dynamic-9266
   type: vless
   server: 0.0.0.einetwork.news
@@ -307,36 +299,6 @@ proxies:
     path: /vless/
     headers:
       Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay  CA-5523
-  type: vless
-  server: 51.222.158.206
-  port: 80
-  uuid: cef1e956-e92b-4dbb-999a-6524679f8a40
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay  CA-5547
-  type: vless
-  server: 51.222.158.206
-  port: 80
-  uuid: cef1e956-e92b-4dbb-999a-6524679f8a40
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay  CA-5608
-  type: vless
-  server: 51.222.158.206
-  port: 80
-  uuid: cef1e956-e92b-4dbb-999a-6524679f8a40
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
 - name: OpenRay  CA-5645
   type: vless
   server: 51.222.158.206
@@ -347,28 +309,6 @@ proxies:
     path: /vless/
     headers:
       Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay  CA-6204
-  type: vless
-  server: 104.17.147.22
-  port: 8880
-  uuid: '%50%61%72%73%61%73%68%6F%6E%61%6D-Bot-20'
-  network: ws
-  ws-opts:
-    path: 
-      /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
-    headers:
-      Host: Fi.Parsashonam.CfD.
-- name: OpenRay  CA-6206
-  type: vless
-  server: 104.17.147.22
-  port: 8880
-  uuid: '%50%61%72%73%61%73%68%6F%6E%61%6D-Bot-20'
-  network: ws
-  ws-opts:
-    path: 
-      /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
-    headers:
-      Host: Fi.Parsashonam.CfD.
 
 proxy-groups:
 - name: AUTO
@@ -385,7 +325,6 @@ proxy-groups:
   - OpenRay Dynamic-8092
   - OpenRay Dynamic-24384
   - OpenRay Dynamic-8730
-  - OpenRay Dynamic-9117
   - OpenRay Dynamic-9266
   - OpenRay Dynamic-24398
   - OpenRay Dynamic-9801
@@ -398,12 +337,7 @@ proxy-groups:
   - OpenRay Dynamic-24407
   - OpenRay  CA-5463
   - OpenRay  CA-5491
-  - OpenRay  CA-5523
-  - OpenRay  CA-5547
-  - OpenRay  CA-5608
   - OpenRay  CA-5645
-  - OpenRay  CA-6204
-  - OpenRay  CA-6206
 - name: PROXY
   type: select
   proxies:
@@ -416,7 +350,6 @@ proxy-groups:
   - OpenRay Dynamic-8092
   - OpenRay Dynamic-24384
   - OpenRay Dynamic-8730
-  - OpenRay Dynamic-9117
   - OpenRay Dynamic-9266
   - OpenRay Dynamic-24398
   - OpenRay Dynamic-9801
@@ -429,12 +362,7 @@ proxy-groups:
   - OpenRay Dynamic-24407
   - OpenRay  CA-5463
   - OpenRay  CA-5491
-  - OpenRay  CA-5523
-  - OpenRay  CA-5547
-  - OpenRay  CA-5608
   - OpenRay  CA-5645
-  - OpenRay  CA-6204
-  - OpenRay  CA-6206
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
