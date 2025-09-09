@@ -395,10 +395,22 @@ def get_all_tested_files() -> List[str]:
     state_dir = os.path.dirname(TESTED_FILE)
     tested_files = []
 
-    if os.path.exists(state_dir):
-        for file in os.listdir(state_dir):
-            if file.startswith("tested") and file.endswith(".txt"):
-                tested_files.append(os.path.join(state_dir, file))
+    # Always check the main .state directory for tested files
+    main_state_dir = os.path.join(os.path.dirname(state_dir), '.state')
+    dirs_to_check = [state_dir]
+
+    # If we're in a different state directory (like .state_iran), also check the main .state directory
+    if state_dir != main_state_dir and os.path.exists(main_state_dir):
+        dirs_to_check.append(main_state_dir)
+
+    for check_dir in dirs_to_check:
+        if os.path.exists(check_dir):
+            for file in os.listdir(check_dir):
+                if file.startswith("tested") and file.endswith(".txt"):
+                    file_path = os.path.join(check_dir, file)
+                    # Avoid duplicates
+                    if file_path not in tested_files:
+                        tested_files.append(file_path)
 
     # Sort files by number (tested.txt first, then tested_1.txt, tested_2.txt, etc.)
     tested_files.sort(key=lambda x: int(os.path.basename(x).split('_')[1].split('.')[0]) if '_' in os.path.basename(x) else 0)
