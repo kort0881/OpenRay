@@ -7,28 +7,90 @@ import struct
 import time
 from typing import Iterable, List, Set, Dict
 
+# Dynamic constants handling for runtime overrides
+import os
+import sys
+
+# Get repository root
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Default values for standalone usage
+DEFAULT_STATE_DIR = os.path.join(REPO_ROOT, '.state')
+DEFAULT_OUTPUT_DIR = os.path.join(REPO_ROOT, 'output')
+DEFAULT_TESTED_FILE = os.path.join(DEFAULT_STATE_DIR, 'tested.txt')
+DEFAULT_AVAILABLE_FILE = os.path.join(DEFAULT_OUTPUT_DIR, 'all_valid_proxies.txt')
+DEFAULT_STREAKS_FILE = os.path.join(DEFAULT_STATE_DIR, 'streaks.json')
+
+def get_state_dir():
+    """Get current STATE_DIR, checking for runtime overrides"""
+    try:
+        # Try to get from constants module if it's loaded
+        if 'constants' in sys.modules:
+            return sys.modules['constants'].STATE_DIR
+        # Try relative import
+        from . import constants as C
+        return C.STATE_DIR
+    except (ImportError, AttributeError):
+        return DEFAULT_STATE_DIR
+
+def get_output_dir():
+    """Get current OUTPUT_DIR, checking for runtime overrides"""
+    try:
+        if 'constants' in sys.modules:
+            return sys.modules['constants'].OUTPUT_DIR
+        from . import constants as C
+        return C.OUTPUT_DIR
+    except (ImportError, AttributeError):
+        return DEFAULT_OUTPUT_DIR
+
+def get_available_file():
+    """Get current AVAILABLE_FILE, checking for runtime overrides"""
+    try:
+        if 'constants' in sys.modules:
+            return sys.modules['constants'].AVAILABLE_FILE
+        from . import constants as C
+        return C.AVAILABLE_FILE
+    except (ImportError, AttributeError):
+        return DEFAULT_AVAILABLE_FILE
+
+def get_streaks_file():
+    """Get current STREAKS_FILE, checking for runtime overrides"""
+    try:
+        if 'constants' in sys.modules:
+            return sys.modules['constants'].STREAKS_FILE
+        from . import constants as C
+        return C.STREAKS_FILE
+    except (ImportError, AttributeError):
+        return DEFAULT_STREAKS_FILE
+
+def get_tested_file():
+    """Get current TESTED_FILE, checking for runtime overrides"""
+    try:
+        # Always check sys.modules first for runtime modifications
+        if 'constants' in sys.modules:
+            return sys.modules['constants'].TESTED_FILE
+        # Fallback to relative import
+        from . import constants as C
+        return C.TESTED_FILE
+    except (ImportError, AttributeError):
+        return DEFAULT_TESTED_FILE
+
+# For backward compatibility, set some globals
 try:
-    from .constants import STATE_DIR, OUTPUT_DIR, AVAILABLE_FILE, STREAKS_FILE
-    # Import TESTED_FILE dynamically to allow runtime overrides
-    def get_tested_file():
-        from . import constants
-        return constants.TESTED_FILE
-except ImportError:
-    # Fallback for standalone usage
-    import os
-    REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    STATE_DIR = os.path.join(REPO_ROOT, '.state')
-    OUTPUT_DIR = os.path.join(REPO_ROOT, 'output')
-    TESTED_FILE = os.path.join(STATE_DIR, 'tested.txt')
-    AVAILABLE_FILE = os.path.join(OUTPUT_DIR, 'all_valid_proxies.txt')
-    STREAKS_FILE = os.path.join(STATE_DIR, 'streaks.json')
-    def get_tested_file():
-        return TESTED_FILE
+    STATE_DIR = get_state_dir()
+    OUTPUT_DIR = get_output_dir()
+    AVAILABLE_FILE = get_available_file()
+    STREAKS_FILE = get_streaks_file()
+except:
+    STATE_DIR = DEFAULT_STATE_DIR
+    OUTPUT_DIR = DEFAULT_OUTPUT_DIR
+    AVAILABLE_FILE = DEFAULT_AVAILABLE_FILE
+    STREAKS_FILE = DEFAULT_STREAKS_FILE
 
 
 def ensure_dirs() -> None:
-    os.makedirs(STATE_DIR, exist_ok=True)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(get_state_dir(), exist_ok=True)
+    os.makedirs(get_output_dir(), exist_ok=True)
 
 
 def read_lines(path: str) -> List[str]:
@@ -74,7 +136,7 @@ def load_tested_hashes() -> Set[str]:
 
 def load_existing_available() -> Set[str]:
     existing: Set[str] = set()
-    for line in read_lines(AVAILABLE_FILE):
+    for line in read_lines(get_available_file()):
         s = line.strip()
         if s:
             existing.add(s)
@@ -83,9 +145,9 @@ def load_existing_available() -> Set[str]:
 
 def load_streaks() -> Dict[str, Dict[str, int]]:
     try:
-        if not os.path.exists(STREAKS_FILE):
+        if not os.path.exists(get_streaks_file()):
             return {}
-        with open(STREAKS_FILE, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(get_streaks_file(), 'r', encoding='utf-8', errors='ignore') as f:
             data = json.load(f)
             if isinstance(data, dict):
                 # Ensure numeric fields are ints
@@ -105,11 +167,12 @@ def load_streaks() -> Dict[str, Dict[str, int]]:
 
 def save_streaks(streaks: Dict[str, Dict[str, int]]) -> None:
     try:
-        os.makedirs(STATE_DIR, exist_ok=True)
-        tmp = STREAKS_FILE + '.tmp'
+        os.makedirs(get_state_dir(), exist_ok=True)
+        streaks_file = get_streaks_file()
+        tmp = streaks_file + '.tmp'
         with open(tmp, 'w', encoding='utf-8', errors='ignore') as f:
             json.dump(streaks, f, ensure_ascii=False)
-        os.replace(tmp, STREAKS_FILE)
+        os.replace(tmp, streaks_file)
     except Exception:
         # best-effort; ignore
         pass
@@ -174,8 +237,17 @@ def load_tested_hashes_optimized() -> Set[str]:
             except Exception:
                 pass  # Skip corrupted files
 
-    # Migrate to optimized format in background if we have data
-    if tested:
+    # Only migrate to optimized format if we're loading from a single file
+    # and the binary file doesn't already exist or is smaller than expected
+    tested_bin_file = get_tested_bin_file()
+    should_migrate = (
+        tested and
+        len(get_all_tested_files()) == 1 and  # Only migrate if loading from single file
+        (not os.path.exists(tested_bin_file) or
+         os.path.getsize(tested_bin_file) < len(tested) * 28 * 0.9)  # Allow 10% size variance
+    )
+
+    if should_migrate:
         try:
             migrate_to_optimized_format(tested)
         except Exception:
@@ -420,8 +492,12 @@ def get_all_tested_files() -> List[str]:
     for check_dir in dirs_to_check:
         if os.path.exists(check_dir):
             for file in os.listdir(check_dir):
-                if file.startswith("tested") and file.endswith(".txt"):
-                    file_path = os.path.join(check_dir, file)
+                if file.startswith("tested") and (file.endswith(".txt") or file.endswith(".txt.bin")):
+                    # For binary files, remove the .bin extension to get the base name
+                    base_file = file
+                    if file.endswith(".bin"):
+                        base_file = file[:-4]  # Remove .bin extension
+                    file_path = os.path.join(check_dir, base_file)
                     # Avoid duplicates
                     if file_path not in tested_files:
                         tested_files.append(file_path)
