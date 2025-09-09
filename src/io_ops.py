@@ -8,7 +8,11 @@ import time
 from typing import Iterable, List, Set, Dict
 
 try:
-    from .constants import STATE_DIR, OUTPUT_DIR, TESTED_FILE, AVAILABLE_FILE, STREAKS_FILE
+    from .constants import STATE_DIR, OUTPUT_DIR, AVAILABLE_FILE, STREAKS_FILE
+    # Import TESTED_FILE dynamically to allow runtime overrides
+    def get_tested_file():
+        from . import constants
+        return constants.TESTED_FILE
 except ImportError:
     # Fallback for standalone usage
     import os
@@ -18,6 +22,8 @@ except ImportError:
     TESTED_FILE = os.path.join(STATE_DIR, 'tested.txt')
     AVAILABLE_FILE = os.path.join(OUTPUT_DIR, 'all_valid_proxies.txt')
     STREAKS_FILE = os.path.join(STATE_DIR, 'streaks.json')
+    def get_tested_file():
+        return TESTED_FILE
 
 
 def ensure_dirs() -> None:
@@ -59,7 +65,7 @@ def write_text_file_atomic(path: str, lines: List[str]) -> None:
 
 def load_tested_hashes() -> Set[str]:
     tested: Set[str] = set()
-    for line in read_lines(TESTED_FILE):
+    for line in read_lines(get_tested_file()):
         h = line.strip()
         if h:
             tested.add(h)
@@ -110,7 +116,8 @@ def save_streaks(streaks: Dict[str, Dict[str, int]]) -> None:
 
 
 # Optimized tested hashes storage using binary format
-TESTED_BIN_FILE = TESTED_FILE + '.bin'
+def get_tested_bin_file():
+    return get_tested_file() + '.bin'
 
 def hash_to_bytes(hash_str: str) -> bytes:
     """Convert hex hash string to 20 bytes."""
@@ -199,9 +206,10 @@ def migrate_to_optimized_format(hashes: Set[str]) -> None:
     if entries:
         try:
             # Write all entries at once for better performance
-            with open(TESTED_BIN_FILE + '.tmp', 'wb') as f:
+            tested_bin_file = get_tested_bin_file()
+            with open(tested_bin_file + '.tmp', 'wb') as f:
                 f.write(b''.join(entries))
-            os.replace(TESTED_BIN_FILE + '.tmp', TESTED_BIN_FILE)
+            os.replace(tested_bin_file + '.tmp', tested_bin_file)
             print(f"Successfully migrated {len(entries)} hashes to binary format")
         except Exception as e:
             print(f"Migration failed: {e}")
@@ -276,7 +284,7 @@ def append_tested_hashes_optimized(new_hashes: Iterable[str]) -> None:
 
 def cleanup_old_hashes(days_to_keep: int = 30) -> int:
     """Remove hashes older than specified days. Returns number of removed entries."""
-    if not os.path.exists(TESTED_BIN_FILE):
+    if not os.path.exists(get_tested_bin_file()):
         return 0
 
     cutoff_time = int(time.time()) - (days_to_keep * 24 * 60 * 60)
@@ -284,7 +292,8 @@ def cleanup_old_hashes(days_to_keep: int = 30) -> int:
     removed_count = 0
 
     try:
-        with open(TESTED_BIN_FILE, 'rb') as f:
+        tested_bin_file = get_tested_bin_file()
+        with open(tested_bin_file, 'rb') as f:
             while True:
                 entry = f.read(28)
                 if not entry:
@@ -299,10 +308,10 @@ def cleanup_old_hashes(days_to_keep: int = 30) -> int:
 
         if removed_count > 0:
             # Rewrite file with only kept entries
-            with open(TESTED_BIN_FILE + '.tmp', 'wb') as f:
+            with open(tested_bin_file + '.tmp', 'wb') as f:
                 for entry in kept_entries:
                     f.write(entry)
-            os.replace(TESTED_BIN_FILE + '.tmp', TESTED_BIN_FILE)
+            os.replace(tested_bin_file + '.tmp', tested_bin_file)
 
     except Exception:
         pass  # Cleanup failure is non-critical
@@ -320,10 +329,11 @@ def get_storage_stats() -> Dict[str, int]:
     }
 
     # Text file stats
-    if os.path.exists(TESTED_FILE):
-        stats['text_file_size'] = os.path.getsize(TESTED_FILE)
+    tested_file = get_tested_file()
+    if os.path.exists(tested_file):
+        stats['text_file_size'] = os.path.getsize(tested_file)
         try:
-            with open(TESTED_FILE, 'r', encoding='utf-8', errors='ignore') as f:
+            with open(tested_file, 'r', encoding='utf-8', errors='ignore') as f:
                 lines = [line.strip() for line in f if line.strip()]
                 stats['text_entries'] = len(lines)
                 stats['unique_hashes'] = len(set(lines))
@@ -331,8 +341,9 @@ def get_storage_stats() -> Dict[str, int]:
             pass
 
     # Binary file stats
-    if os.path.exists(TESTED_BIN_FILE):
-        stats['binary_file_size'] = os.path.getsize(TESTED_BIN_FILE)
+    tested_bin_file = get_tested_bin_file()
+    if os.path.exists(tested_bin_file):
+        stats['binary_file_size'] = os.path.getsize(tested_bin_file)
         stats['binary_entries'] = stats['binary_file_size'] // 28  # 28 bytes per entry
 
     return stats
@@ -340,8 +351,9 @@ def get_storage_stats() -> Dict[str, int]:
 
 def get_current_tested_file() -> str:
     """Get the current active tested file (tested.txt, tested_1.txt, tested_2.txt, etc.)."""
-    state_dir = os.path.dirname(TESTED_FILE)
-    base_name = os.path.basename(TESTED_FILE)  # "tested.txt"
+    tested_file = get_tested_file()
+    state_dir = os.path.dirname(tested_file)
+    base_name = os.path.basename(tested_file)  # "tested.txt"
 
     # Find all tested files
     tested_files = []
@@ -352,7 +364,7 @@ def get_current_tested_file() -> str:
 
     if not tested_files:
         # No files exist, return the base file
-        return TESTED_FILE
+        return tested_file
 
     # Sort files to find the highest numbered one
     tested_files.sort(key=lambda x: int(x.split('_')[1].split('.')[0]) if '_' in x else 0)
@@ -375,10 +387,11 @@ def rotate_tested_file() -> str:
     """Rotate to next numbered tested file. Returns the new file path."""
     current_file = get_current_tested_file()
     state_dir = os.path.dirname(current_file)
-    base_name = os.path.basename(TESTED_FILE)  # "tested.txt"
+    tested_file = get_tested_file()
+    base_name = os.path.basename(tested_file)  # "tested.txt"
 
     # Determine next file number
-    if current_file == TESTED_FILE:
+    if current_file == tested_file:
         next_file = os.path.join(state_dir, "tested_1.txt")
     else:
         # Extract number from current file (e.g., "tested_2.txt" -> 2)
@@ -392,7 +405,8 @@ def rotate_tested_file() -> str:
 
 def get_all_tested_files() -> List[str]:
     """Get all tested files in order (tested.txt, tested_1.txt, tested_2.txt, etc.)."""
-    state_dir = os.path.dirname(TESTED_FILE)
+    tested_file = get_tested_file()
+    state_dir = os.path.dirname(tested_file)
     tested_files = []
 
     # Always check the main .state directory for tested files
