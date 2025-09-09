@@ -30,10 +30,10 @@ C.SOURCES_FILE = EMPTY_SOURCES
 
 # Override Iran-specific settings
 # Disable rechecking existing proxies for Iran (set to '0' to disable)
-os.environ['OPENRAY_RECHECK_EXISTING'] = '0'
+os.environ['OPENRAY_RECHECK_EXISTING'] = '1'
 
 # Set NEW_URIS_LIMIT to a lower value for Iran-specific processing
-C.NEW_URIS_LIMIT = 100  # Reduced from default 25000 for Iran-specific processing
+C.NEW_URIS_LIMIT = 10000  # Reduced from default 25000 for Iran-specific processing
 
 # Iran-specific check count tracking files
 CHECK_COUNTS_FILE = os.path.join(C.STATE_DIR, 'check_counts.json')
