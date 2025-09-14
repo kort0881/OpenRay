@@ -5,7 +5,7 @@ import os
 import time
 from typing import Dict, List, Optional, Set, Tuple
 
-from .common import log, progress, sha1_hex
+from .common import log, progress, sha1_hex, get_proxy_connection_hash
 from .constants import (
     AVAILABLE_FILE,
     CONSECUTIVE_REQUIRED,
@@ -244,7 +244,7 @@ def main() -> int:
             if u in seen_uri:
                 continue
             seen_uri.add(u)
-            h = sha1_hex(u)
+            h = get_proxy_connection_hash(u)  # Use connection-based uniqueness
             if h not in tested_hashes:
                 new_uris.append(u)
                 new_hashes.append(h)
@@ -362,12 +362,13 @@ def main() -> int:
             # Merge: replace subset portion with validated ones
             available_to_add = kept_subset + available_to_add[len(subset):]
 
-    # Deduplicate against existing available file and write
+    # Deduplicate against existing available file and write (connection-based)
     new_available_unique: List[str] = []
-    exists_set = set(existing_available)
+    existing_connection_hashes = {get_proxy_connection_hash(u) for u in existing_available}
     for u in available_to_add:
-        if u not in exists_set:
-            exists_set.add(u)
+        conn_hash = get_proxy_connection_hash(u)
+        if conn_hash not in existing_connection_hashes:
+            existing_connection_hashes.add(conn_hash)
             new_available_unique.append(u)
 
     if new_available_unique:

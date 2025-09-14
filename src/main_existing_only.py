@@ -5,7 +5,7 @@ import os
 import time
 from typing import Dict, List, Optional, Set, Tuple
 
-from .common import log, progress, sha1_hex
+from .common import log, progress, sha1_hex, get_proxy_connection_hash
 from .constants import (
     AVAILABLE_FILE,
     PING_WORKERS,
