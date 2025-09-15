@@ -114,16 +114,6 @@ proxies:
     path: /vless/
     headers:
       Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
-- name: OpenRay Dynamic-7455
-  type: vless
-  server: fierce-data.seotoolsforyou.co.uk
-  port: 80
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
 - name: OpenRay  US-149
   type: vless
   server: 185.236.232.199
@@ -165,20 +155,6 @@ proxies:
   port: 8880
   uuid: e4824193-4f54-453b-d037-88368e85ef0e
   network: grpc
-- name: OpenRay Dynamic-1
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
 - name: OpenRay Dynamic-7470
   type: vless
   server: creativecommons.org
@@ -205,125 +181,6 @@ proxies:
       /?ed?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
     headers:
       Host: azadnet-2f7.pages.dev
-- name: 'OpenRay Dynamic-1 #2'
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: OpenRay Dynamic-2
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-7486
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7487
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7488
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7489
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7490
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7491
-  type: vless
-  server: sweet-combination.seotoolsforyou.co.uk
-  port: 80
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7507
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7508
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: 
-      /?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7509
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
 - name: OpenRay Dynamic-7510
   type: vless
   server: visa.com
@@ -350,176 +207,6 @@ proxies:
       /hzwrfa95ue5btfoy?---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---/dnbultvses5wywdlcy5kzxysz29vzhzwbi1jzgmucgfnzxmuzgv2lgvwzwl1czmxnc5wywdlcy5kzxysywphec5jbg91zgzsyxjllmnvbsxwbwxtewf6zc5wywdlcy5kzxysbmwuc3bpcmfrby5jb20snzbgcvkwdkg5bc5haudhmy5pckcsd3d3lnnwzwvkdgvzdc5uzxqszw4uanbnzm9ybwf0lmlylgzhbi5qcgdmb3jtyxquaxisymxlc3mubmv0d29yayxob2wuanbnzm9ybwf0lmlylhvzys52axnhlmnvbq==?ed=2560
     headers:
       Host: work-86a.pages.dev
-- name: OpenRay Dynamic-7519
-  type: vless
-  server: fierce-data.seotoolsforyou.co.uk
-  port: 80
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7520
-  type: vless
-  server: fierce-data.seotoolsforyou.co.uk
-  port: 80
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-- name: 'OpenRay Dynamic-2 #2'
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: OpenRay Dynamic-3
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: OpenRay Dynamic-4
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-3 #2'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-5
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-6
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-7
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-8
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-7554
-  type: vless
-  server: fierce-data.seotoolsforyou.co.uk
-  port: 80
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-9
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-10
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
 - name: OpenRay  CA-7446
   type: vless
   server: 99.199.60.164
@@ -573,80 +260,6 @@ proxies:
     path: /
     headers:
       Host: 159.65.29.233
-- name: OpenRay Dynamic-7484
-  type: vless
-  server: hopeful-appointment.seotoolsforyou.co.uk
-  port: 80
-  uuid: 491e4f76-42f0-43a7-a987-25072a68d5e4
-  network: ws
-  ws-opts:
-    path: 
-      /?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
-    headers:
-      Host: hopeful-appointment.seotoolsforyou.co.uk
-- name: 'OpenRay Dynamic-7488 #2'
-  type: vless
-  server: grounded-brother.seotoolsforyou.co.uk
-  port: 80
-  uuid: 52adc6ba-b1c7-4541-a594-08fc698be640
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: grounded-brother.seotoolsforyou.co.uk
-- name: 'OpenRay Dynamic-7490 #2'
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: 
-      /?@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: 'OpenRay Dynamic-2 #3'
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-3 #3'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-4 #2'
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
 - name: OpenRay Dynamic-7495
   type: vless
   server: indeed.com
@@ -659,182 +272,6 @@ proxies:
     path: /cbde4058-6b81-432b-8689-dd7ce10e479c
     headers:
       Host: revcloud.migacpi.org
-- name: OpenRay Dynamic-7496
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
-  network: ws
-  tls: true
-  servername: revcloud.migacpi.org
-  ws-opts:
-    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
-    headers:
-      Host: revcloud.migacpi.org
-- name: OpenRay Dynamic-7497
-  type: vless
-  server: braze.com
-  port: 443
-  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
-  network: ws
-  tls: true
-  servername: revcloud.migacpi.org
-  ws-opts:
-    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
-    headers:
-      Host: revcloud.migacpi.org
-- name: OpenRay Dynamic-147
-  type: vmess
-  server: yichueng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: yichueng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: yichueng.org
-- name: 'OpenRay Dynamic-5 #2'
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
-- name: 'OpenRay Dynamic-6 #2'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-7 #2'
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-8 #2'
-  type: vless
-  server: deu106.worldunbound.org
-  port: 443
-  uuid: 0b23f113-6bd4-42a6-887c-a47381f06f5c
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-    short-id: ''
-  client-fingerprint: chrome
-- name: OpenRay Dynamic-7503
-  type: vless
-  server: hopeful-appointment.seotoolsforyou.co.uk
-  port: 80
-  uuid: 491e4f76-42f0-43a7-a987-25072a68d5e4
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hopeful-appointment.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7504
-  type: vless
-  server: hopeful-appointment.seotoolsforyou.co.uk
-  port: 80
-  uuid: 491e4f76-42f0-43a7-a987-25072a68d5e4
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hopeful-appointment.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7505
-  type: vless
-  server: grounded-brother.seotoolsforyou.co.uk
-  port: 80
-  uuid: 52adc6ba-b1c7-4541-a594-08fc698be640
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: grounded-brother.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7506
-  type: vless
-  server: grounded-brother.seotoolsforyou.co.uk
-  port: 80
-  uuid: 52adc6ba-b1c7-4541-a594-08fc698be640
-  network: ws
-  ws-opts:
-    path: 
-      /?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
-    headers:
-      Host: grounded-brother.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7513
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: /?@v2ray_configs_pools
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7514
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: 
-      /?serverrrVPN由零开始---_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7515
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: 
-      /?serverrrVPNTELEGRAM---_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr_@vpnserverrr
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
-- name: OpenRay Dynamic-7516
-  type: vless
-  server: jealous-competition.seotoolsforyou.co.uk
-  port: 80
-  uuid: 7094df26-af60-41c4-afac-857060d1bab0
-  network: ws
-  ws-opts:
-    path: /?v2ray_configs_pools
-    headers:
-      Host: jealous-competition.seotoolsforyou.co.uk
 - name: OpenRay Dynamic-7518
   type: vless
   server: www.visa.com.sg
@@ -848,146 +285,6 @@ proxies:
       /?ed?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
     headers:
       Host: azadnet-2f7.pages.dev
-- name: 'OpenRay Dynamic-9 #2'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-10 #2'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-11
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-12
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-13
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
-- name: OpenRay Dynamic-14
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-15
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-16
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-17
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
-- name: OpenRay Dynamic-267
-  type: vmess
-  server: seribus.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: seribus.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
 - name: OpenRay  CA-7467
   type: vless
   server: 172.67.161.104
@@ -1015,258 +312,534 @@ proxies:
   port: 80
   uuid: ac01977c-3d57-4e5c-a8d5-0b5ff0f4a97f
   network: grpc
-- name: 'OpenRay Dynamic-1 #3'
+- name: OpenRay  US-268
   type: vmess
-  server: lammaland.org
+  server: 209.126.84.189
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-2 #4'
-  type: vmess
-  server: fapeng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-1 #4'
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
-- name: 'OpenRay Dynamic-2 #5'
-  type: vmess
-  server: yichueng.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: yichueng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: yichueng.org
-- name: OpenRay Dynamic-266
-  type: vmess
-  server: seribus.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: seribus.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 'OpenRay Dynamic-3 #4'
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
-  servername: serkat.org
   ws-opts:
-    path: linkvws
+    path: /vmessws
     headers:
-      Host: serkat.org
-- name: 'OpenRay Dynamic-3 #5'
+      Host: 209.126.84.189
+- name: OpenRay  US-269
   type: vmess
-  server: lammaland.org
+  server: 209.126.84.189
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-4 #3'
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   alterId: 0
   cipher: auto
   network: ws
-  tls: true
-  servername: lammaland.org
   ws-opts:
-    path: linkvws
+    path: /vmessws
     headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-5 #3'
+      Host: 209.126.84.189
+- name: OpenRay  TW-1
   type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 83.147.12.99
+  port: 56018
+  uuid: ddb1f976-4239-4086-833f-f9b275f637a0
   alterId: 0
   cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-6 #3'
-  type: vmess
-  server: fapeng.org
+  network: tcp
+- name: OpenRay Dynamic-7469
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-7 #3'
-  type: vmess
-  server: fapeng.org
+  servername: pqh28v5.hiddendom.shop
+- name: 'OpenRay Dynamic-7470 #2'
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-8 #3'
-  type: vmess
-  server: fapeng.org
+  servername: pqh28v3.hiddendom.shop
+- name: OpenRay Dynamic-7471
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-9 #3'
-  type: vmess
-  server: fapeng.org
+  servername: pqh25v3.hiddendom.shop
+- name: OpenRay Dynamic-7472
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-10 #3'
-  type: vmess
-  server: fapeng.org
+  servername: pqh25v1.hiddendom.shop
+- name: OpenRay Dynamic-7473
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: fapeng.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: fapeng.org
-- name: 'OpenRay Dynamic-11 #2'
-  type: vmess
-  server: lammaland.org
+  servername: pqh28v8.hiddendom.shop
+- name: OpenRay Dynamic-7474
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-12 #2'
-  type: vmess
-  server: lammaland.org
+  servername: pqh29v5.hiddendom.shop
+- name: OpenRay Dynamic-7475
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-13 #2'
-  type: vmess
-  server: lammaland.org
+  servername: pqh29v7.hiddendom.shop
+- name: OpenRay Dynamic-7476
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: 'OpenRay Dynamic-4 #4'
-  type: vmess
-  server: serkat.org
+  servername: pqh23v8.hiddendom.shop
+- name: OpenRay Dynamic-7477
+  type: vless
+  server: all.tellmethetrue.shop
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
   tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
+  servername: pqh24v8.hiddendom.shop
+- name: OpenRay Dynamic-7478
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v3.hiddendom.shop
+- name: OpenRay Dynamic-7479
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-7480
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v1.hiddendom.shop
+- name: OpenRay Dynamic-7481
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v5.hiddendom.shop
+- name: 'OpenRay Dynamic-7482 #2'
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-7483
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v1.hiddendom.shop
+- name: OpenRay Dynamic-7484
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v3.hiddendom.shop
+- name: OpenRay Dynamic-7983
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v7.hiddendom.shop
+- name: OpenRay Dynamic-7984
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v7.hiddendom.shop
+- name: OpenRay Dynamic-7985
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-7986
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh25v1.hiddendom.shop
+- name: OpenRay Dynamic-7987
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v2.hiddendom.shop
+- name: OpenRay Dynamic-7988
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v3.hiddendom.shop
+- name: OpenRay Dynamic-7989
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v7.hiddendom.shop
+- name: OpenRay Dynamic-7990
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v1.hiddendom.shop
+- name: OpenRay Dynamic-7991
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v8.hiddendom.shop
+- name: OpenRay Dynamic-7992
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v5.hiddendom.shop
+- name: OpenRay Dynamic-7993
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v1.hiddendom.shop
+- name: OpenRay Dynamic-7994
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v3.hiddendom.shop
+- name: OpenRay Dynamic-7995
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-7996
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v8.hiddendom.shop
+- name: OpenRay Dynamic-7997
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh25v1.hiddendom.shop
+- name: OpenRay Dynamic-7998
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh25v3.hiddendom.shop
+- name: OpenRay Dynamic-7999
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v7.hiddendom.shop
+- name: OpenRay Dynamic-8000
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v2.hiddendom.shop
+- name: OpenRay Dynamic-8001
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v3.hiddendom.shop
+- name: OpenRay Dynamic-8002
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v1.hiddendom.shop
+- name: OpenRay Dynamic-8003
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v3.hiddendom.shop
+- name: OpenRay Dynamic-8004
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v1.hiddendom.shop
+- name: OpenRay Dynamic-8005
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v7.hiddendom.shop
+- name: OpenRay Dynamic-8006
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v7.hiddendom.shop
+- name: OpenRay Dynamic-8007
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v8.hiddendom.shop
+- name: OpenRay Dynamic-8008
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v2.hiddendom.shop
+- name: OpenRay Dynamic-8009
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v6.hiddendom.shop
+- name: OpenRay Dynamic-8010
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v5.hiddendom.shop
+- name: OpenRay Dynamic-8011
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh30v3.hiddendom.shop
+- name: OpenRay Dynamic-8012
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v2.hiddendom.shop
+- name: OpenRay Dynamic-8013
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v5.hiddendom.shop
+- name: OpenRay Dynamic-8014
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v3.hiddendom.shop
+- name: OpenRay Dynamic-8015
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v8.hiddendom.shop
+- name: OpenRay Dynamic-8016
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh31v6.hiddendom.shop
+- name: OpenRay Dynamic-8017
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-8018
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v2.hiddendom.shop
+- name: OpenRay Dynamic-8019
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v2.hiddendom.shop
+- name: OpenRay Dynamic-8020
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v1.hiddendom.shop
+- name: OpenRay Dynamic-8021
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh23v7.hiddendom.shop
+- name: OpenRay Dynamic-8022
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v1.hiddendom.shop
+- name: OpenRay Dynamic-8026
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v1.hiddendom.shop
+- name: OpenRay Dynamic-8027
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh24v2.hiddendom.shop
+- name: OpenRay Dynamic-8028
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh25v2.hiddendom.shop
+- name: OpenRay Dynamic-8029
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v3.hiddendom.shop
+- name: OpenRay Dynamic-8030
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh28v6.hiddendom.shop
+- name: OpenRay Dynamic-8031
+  type: vless
+  server: all.tellmethetrue.shop
+  port: 443
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+  tls: true
+  servername: pqh29v6.hiddendom.shop
 
 proxy-groups:
 - name: AUTO
@@ -1278,101 +851,91 @@ proxy-groups:
   - OpenRay Dynamic-3702
   - OpenRay Dynamic-7452
   - OpenRay  US-8
-  - OpenRay Dynamic-7455
   - OpenRay  US-149
   - OpenRay  US-150
   - OpenRay  US-238
   - OpenRay  US-246
   - OpenRay  US-259
   - OpenRay  US-265
-  - OpenRay Dynamic-1
   - OpenRay Dynamic-7470
   - OpenRay Dynamic-7482
-  - 'OpenRay Dynamic-1 #2'
-  - OpenRay Dynamic-2
-  - OpenRay Dynamic-7486
-  - OpenRay Dynamic-7487
-  - OpenRay Dynamic-7488
-  - OpenRay Dynamic-7489
-  - OpenRay Dynamic-7490
-  - OpenRay Dynamic-7491
-  - OpenRay Dynamic-7507
-  - OpenRay Dynamic-7508
-  - OpenRay Dynamic-7509
   - OpenRay Dynamic-7510
   - OpenRay Dynamic-7511
-  - OpenRay Dynamic-7519
-  - OpenRay Dynamic-7520
-  - 'OpenRay Dynamic-2 #2'
-  - OpenRay Dynamic-3
-  - OpenRay Dynamic-4
-  - 'OpenRay Dynamic-3 #2'
-  - OpenRay Dynamic-5
-  - OpenRay Dynamic-6
-  - OpenRay Dynamic-7
-  - OpenRay Dynamic-8
-  - OpenRay Dynamic-7554
-  - OpenRay Dynamic-9
-  - OpenRay Dynamic-10
   - OpenRay  CA-7446
   - OpenRay  GB-121
   - OpenRay  GB-125
   - OpenRay  GB-132
   - OpenRay  GB-137
-  - OpenRay Dynamic-7484
-  - 'OpenRay Dynamic-7488 #2'
-  - 'OpenRay Dynamic-7490 #2'
-  - 'OpenRay Dynamic-2 #3'
-  - 'OpenRay Dynamic-3 #3'
-  - 'OpenRay Dynamic-4 #2'
   - OpenRay Dynamic-7495
-  - OpenRay Dynamic-7496
-  - OpenRay Dynamic-7497
-  - OpenRay Dynamic-147
-  - 'OpenRay Dynamic-5 #2'
-  - 'OpenRay Dynamic-6 #2'
-  - 'OpenRay Dynamic-7 #2'
-  - 'OpenRay Dynamic-8 #2'
-  - OpenRay Dynamic-7503
-  - OpenRay Dynamic-7504
-  - OpenRay Dynamic-7505
-  - OpenRay Dynamic-7506
-  - OpenRay Dynamic-7513
-  - OpenRay Dynamic-7514
-  - OpenRay Dynamic-7515
-  - OpenRay Dynamic-7516
   - OpenRay Dynamic-7518
-  - 'OpenRay Dynamic-9 #2'
-  - 'OpenRay Dynamic-10 #2'
-  - OpenRay Dynamic-11
-  - OpenRay Dynamic-12
-  - OpenRay Dynamic-13
-  - OpenRay Dynamic-14
-  - OpenRay Dynamic-15
-  - OpenRay Dynamic-16
-  - OpenRay Dynamic-17
-  - OpenRay Dynamic-267
   - OpenRay  CA-7467
   - OpenRay  CA-7468
   - OpenRay  GB-150
-  - 'OpenRay Dynamic-1 #3'
-  - 'OpenRay Dynamic-2 #4'
-  - 'OpenRay Dynamic-1 #4'
-  - 'OpenRay Dynamic-2 #5'
-  - OpenRay Dynamic-266
-  - 'OpenRay Dynamic-3 #4'
-  - 'OpenRay Dynamic-3 #5'
-  - 'OpenRay Dynamic-4 #3'
-  - 'OpenRay Dynamic-5 #3'
-  - 'OpenRay Dynamic-6 #3'
-  - 'OpenRay Dynamic-7 #3'
-  - 'OpenRay Dynamic-8 #3'
-  - 'OpenRay Dynamic-9 #3'
-  - 'OpenRay Dynamic-10 #3'
-  - 'OpenRay Dynamic-11 #2'
-  - 'OpenRay Dynamic-12 #2'
-  - 'OpenRay Dynamic-13 #2'
-  - 'OpenRay Dynamic-4 #4'
+  - OpenRay  US-268
+  - OpenRay  US-269
+  - OpenRay  TW-1
+  - OpenRay Dynamic-7469
+  - 'OpenRay Dynamic-7470 #2'
+  - OpenRay Dynamic-7471
+  - OpenRay Dynamic-7472
+  - OpenRay Dynamic-7473
+  - OpenRay Dynamic-7474
+  - OpenRay Dynamic-7475
+  - OpenRay Dynamic-7476
+  - OpenRay Dynamic-7477
+  - OpenRay Dynamic-7478
+  - OpenRay Dynamic-7479
+  - OpenRay Dynamic-7480
+  - OpenRay Dynamic-7481
+  - 'OpenRay Dynamic-7482 #2'
+  - OpenRay Dynamic-7483
+  - OpenRay Dynamic-7484
+  - OpenRay Dynamic-7983
+  - OpenRay Dynamic-7984
+  - OpenRay Dynamic-7985
+  - OpenRay Dynamic-7986
+  - OpenRay Dynamic-7987
+  - OpenRay Dynamic-7988
+  - OpenRay Dynamic-7989
+  - OpenRay Dynamic-7990
+  - OpenRay Dynamic-7991
+  - OpenRay Dynamic-7992
+  - OpenRay Dynamic-7993
+  - OpenRay Dynamic-7994
+  - OpenRay Dynamic-7995
+  - OpenRay Dynamic-7996
+  - OpenRay Dynamic-7997
+  - OpenRay Dynamic-7998
+  - OpenRay Dynamic-7999
+  - OpenRay Dynamic-8000
+  - OpenRay Dynamic-8001
+  - OpenRay Dynamic-8002
+  - OpenRay Dynamic-8003
+  - OpenRay Dynamic-8004
+  - OpenRay Dynamic-8005
+  - OpenRay Dynamic-8006
+  - OpenRay Dynamic-8007
+  - OpenRay Dynamic-8008
+  - OpenRay Dynamic-8009
+  - OpenRay Dynamic-8010
+  - OpenRay Dynamic-8011
+  - OpenRay Dynamic-8012
+  - OpenRay Dynamic-8013
+  - OpenRay Dynamic-8014
+  - OpenRay Dynamic-8015
+  - OpenRay Dynamic-8016
+  - OpenRay Dynamic-8017
+  - OpenRay Dynamic-8018
+  - OpenRay Dynamic-8019
+  - OpenRay Dynamic-8020
+  - OpenRay Dynamic-8021
+  - OpenRay Dynamic-8022
+  - OpenRay Dynamic-8026
+  - OpenRay Dynamic-8027
+  - OpenRay Dynamic-8028
+  - OpenRay Dynamic-8029
+  - OpenRay Dynamic-8030
+  - OpenRay Dynamic-8031
 - name: PROXY
   type: select
   proxies:
@@ -1380,101 +943,91 @@ proxy-groups:
   - OpenRay Dynamic-3702
   - OpenRay Dynamic-7452
   - OpenRay  US-8
-  - OpenRay Dynamic-7455
   - OpenRay  US-149
   - OpenRay  US-150
   - OpenRay  US-238
   - OpenRay  US-246
   - OpenRay  US-259
   - OpenRay  US-265
-  - OpenRay Dynamic-1
   - OpenRay Dynamic-7470
   - OpenRay Dynamic-7482
-  - 'OpenRay Dynamic-1 #2'
-  - OpenRay Dynamic-2
-  - OpenRay Dynamic-7486
-  - OpenRay Dynamic-7487
-  - OpenRay Dynamic-7488
-  - OpenRay Dynamic-7489
-  - OpenRay Dynamic-7490
-  - OpenRay Dynamic-7491
-  - OpenRay Dynamic-7507
-  - OpenRay Dynamic-7508
-  - OpenRay Dynamic-7509
   - OpenRay Dynamic-7510
   - OpenRay Dynamic-7511
-  - OpenRay Dynamic-7519
-  - OpenRay Dynamic-7520
-  - 'OpenRay Dynamic-2 #2'
-  - OpenRay Dynamic-3
-  - OpenRay Dynamic-4
-  - 'OpenRay Dynamic-3 #2'
-  - OpenRay Dynamic-5
-  - OpenRay Dynamic-6
-  - OpenRay Dynamic-7
-  - OpenRay Dynamic-8
-  - OpenRay Dynamic-7554
-  - OpenRay Dynamic-9
-  - OpenRay Dynamic-10
   - OpenRay  CA-7446
   - OpenRay  GB-121
   - OpenRay  GB-125
   - OpenRay  GB-132
   - OpenRay  GB-137
-  - OpenRay Dynamic-7484
-  - 'OpenRay Dynamic-7488 #2'
-  - 'OpenRay Dynamic-7490 #2'
-  - 'OpenRay Dynamic-2 #3'
-  - 'OpenRay Dynamic-3 #3'
-  - 'OpenRay Dynamic-4 #2'
   - OpenRay Dynamic-7495
-  - OpenRay Dynamic-7496
-  - OpenRay Dynamic-7497
-  - OpenRay Dynamic-147
-  - 'OpenRay Dynamic-5 #2'
-  - 'OpenRay Dynamic-6 #2'
-  - 'OpenRay Dynamic-7 #2'
-  - 'OpenRay Dynamic-8 #2'
-  - OpenRay Dynamic-7503
-  - OpenRay Dynamic-7504
-  - OpenRay Dynamic-7505
-  - OpenRay Dynamic-7506
-  - OpenRay Dynamic-7513
-  - OpenRay Dynamic-7514
-  - OpenRay Dynamic-7515
-  - OpenRay Dynamic-7516
   - OpenRay Dynamic-7518
-  - 'OpenRay Dynamic-9 #2'
-  - 'OpenRay Dynamic-10 #2'
-  - OpenRay Dynamic-11
-  - OpenRay Dynamic-12
-  - OpenRay Dynamic-13
-  - OpenRay Dynamic-14
-  - OpenRay Dynamic-15
-  - OpenRay Dynamic-16
-  - OpenRay Dynamic-17
-  - OpenRay Dynamic-267
   - OpenRay  CA-7467
   - OpenRay  CA-7468
   - OpenRay  GB-150
-  - 'OpenRay Dynamic-1 #3'
-  - 'OpenRay Dynamic-2 #4'
-  - 'OpenRay Dynamic-1 #4'
-  - 'OpenRay Dynamic-2 #5'
-  - OpenRay Dynamic-266
-  - 'OpenRay Dynamic-3 #4'
-  - 'OpenRay Dynamic-3 #5'
-  - 'OpenRay Dynamic-4 #3'
-  - 'OpenRay Dynamic-5 #3'
-  - 'OpenRay Dynamic-6 #3'
-  - 'OpenRay Dynamic-7 #3'
-  - 'OpenRay Dynamic-8 #3'
-  - 'OpenRay Dynamic-9 #3'
-  - 'OpenRay Dynamic-10 #3'
-  - 'OpenRay Dynamic-11 #2'
-  - 'OpenRay Dynamic-12 #2'
-  - 'OpenRay Dynamic-13 #2'
-  - 'OpenRay Dynamic-4 #4'
+  - OpenRay  US-268
+  - OpenRay  US-269
+  - OpenRay  TW-1
+  - OpenRay Dynamic-7469
+  - 'OpenRay Dynamic-7470 #2'
+  - OpenRay Dynamic-7471
+  - OpenRay Dynamic-7472
+  - OpenRay Dynamic-7473
+  - OpenRay Dynamic-7474
+  - OpenRay Dynamic-7475
+  - OpenRay Dynamic-7476
+  - OpenRay Dynamic-7477
+  - OpenRay Dynamic-7478
+  - OpenRay Dynamic-7479
+  - OpenRay Dynamic-7480
+  - OpenRay Dynamic-7481
+  - 'OpenRay Dynamic-7482 #2'
+  - OpenRay Dynamic-7483
+  - OpenRay Dynamic-7484
+  - OpenRay Dynamic-7983
+  - OpenRay Dynamic-7984
+  - OpenRay Dynamic-7985
+  - OpenRay Dynamic-7986
+  - OpenRay Dynamic-7987
+  - OpenRay Dynamic-7988
+  - OpenRay Dynamic-7989
+  - OpenRay Dynamic-7990
+  - OpenRay Dynamic-7991
+  - OpenRay Dynamic-7992
+  - OpenRay Dynamic-7993
+  - OpenRay Dynamic-7994
+  - OpenRay Dynamic-7995
+  - OpenRay Dynamic-7996
+  - OpenRay Dynamic-7997
+  - OpenRay Dynamic-7998
+  - OpenRay Dynamic-7999
+  - OpenRay Dynamic-8000
+  - OpenRay Dynamic-8001
+  - OpenRay Dynamic-8002
+  - OpenRay Dynamic-8003
+  - OpenRay Dynamic-8004
+  - OpenRay Dynamic-8005
+  - OpenRay Dynamic-8006
+  - OpenRay Dynamic-8007
+  - OpenRay Dynamic-8008
+  - OpenRay Dynamic-8009
+  - OpenRay Dynamic-8010
+  - OpenRay Dynamic-8011
+  - OpenRay Dynamic-8012
+  - OpenRay Dynamic-8013
+  - OpenRay Dynamic-8014
+  - OpenRay Dynamic-8015
+  - OpenRay Dynamic-8016
+  - OpenRay Dynamic-8017
+  - OpenRay Dynamic-8018
+  - OpenRay Dynamic-8019
+  - OpenRay Dynamic-8020
+  - OpenRay Dynamic-8021
+  - OpenRay Dynamic-8022
+  - OpenRay Dynamic-8026
+  - OpenRay Dynamic-8027
+  - OpenRay Dynamic-8028
+  - OpenRay Dynamic-8029
+  - OpenRay Dynamic-8030
+  - OpenRay Dynamic-8031
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
