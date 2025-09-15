@@ -40,6 +40,15 @@ This is an **open-source project**, made for the community, to help those who si
 </details>
 
 <details>
+<summary>Converted Configs</summary>
+
+
+👉 [**All Valid Proxies - Clash Config**](https://github.com/sakha1370/OpenRay/blob/main/output/converted/all_valid_proxies_clash_config.yaml)  
+👉 [**All Valid Proxies - Singbox Config**](https://github.com/sakha1370/OpenRay/blob/main/output/converted/all_valid_proxies_singbox_config.json)
+
+</details>
+
+<details>
 <summary>Proxy List by Country</summary>
 
 
@@ -93,6 +102,17 @@ This is an **open-source project**, made for the community, to help those who si
 </details>
 
 <details>
+<summary>Converted Configs</summary>
+
+
+👉 [**All Valid Proxies - Clash Config**](https://github.com/sakha1370/OpenRay/blob/main/output_iran/converted/iran_all_valid_proxies_clash_config.yaml)  
+👉 [**All Valid Proxies - Singbox Config**](https://github.com/sakha1370/OpenRay/blob/main/output_iran/converted/iran_all_valid_proxies_singbox_config.json)  
+👉 [**Top 100 Proxies - Clash Config**](https://github.com/sakha1370/OpenRay/blob/main/output_iran/converted/iran_top100_clash_config.yaml)  
+👉 [**Top 100 Proxies - Singbox Config**](https://github.com/sakha1370/OpenRay/blob/main/output_iran/converted/iran_top100_singbox_config.json)
+
+</details>
+
+<details>
 <summary>Proxy List by Country</summary>
 
 
@@ -113,6 +133,17 @@ This is an **open-source project**, made for the community, to help those who si
 | 🇵🇭 [**Philippines**](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/country/PH.txt) | 🇵🇹 [**Portugal**](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/country/PT.txt) | 🇸🇦 [**Saudi Arabia**](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/country/SA.txt) | 🌐 [**Other Countries**](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/country/XX.txt) |
 
 </details>
+
+---
+
+## 🔗 Related Tools & Clients
+
+| Tool | Description | Latest Release |
+|------|-------------|----------------|
+| **v2rayN** | Cross-platform GUI client supporting V2Ray/Xray (Windows, macOS, Linux) | [v2rayN Latest](https://github.com/2dust/v2rayN/releases/latest) |
+| **v2rayNG** | A V2Ray client for Android supporting Xray core | [v2rayNG Latest](https://github.com/2dust/v2rayNG/releases/latest) |
+| **Clash Verge Rev** | A Clash GUI based on Tauri | [Clash Verge Rev Latest](https://github.com/clash-verge-rev/clash-verge-rev/releases/latest) |
+| **Hiddify App** | Multi-platform proxy client | [Hiddify App Latest](https://github.com/hiddify/hiddify-app/releases/latest) |
 
 ---
 
