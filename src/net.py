@@ -25,6 +25,21 @@ def _idna(host: str) -> str:
 
 def fetch_url(url: str, timeout: int = FETCH_TIMEOUT) -> Optional[str]:
     try:
+        # Handle local file paths
+        if url.startswith('file://'):
+            file_path = url[7:]  # Remove 'file://' prefix
+            if not os.path.isabs(file_path):
+                file_path = os.path.join(os.getcwd(), file_path)
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                return f.read()
+        elif url.startswith('./') or url.startswith('../') or (not url.startswith(('http://', 'https://')) and os.path.exists(url)):
+            # Handle relative file paths
+            if not os.path.isabs(url):
+                url = os.path.join(os.getcwd(), url)
+            with open(url, 'r', encoding='utf-8', errors='ignore') as f:
+                return f.read()
+
+        # Handle HTTP URLs
         req = Request(url, headers={'User-Agent': USER_AGENT, 'Accept': '*/*'})
         with urlopen(req, timeout=timeout) as resp:
             # limit size to 10 MB to avoid memory blowups
@@ -461,6 +476,16 @@ async def fetch_urls_async_batch(urls: List[str], concurrency: int = None, timeo
     import random  # local to avoid module import cost if not needed
 
     async def _fetch_one(session: "aiohttp.ClientSession", url: str) -> None:
+        # Handle local files first
+        if url.startswith('file://') or url.startswith('./') or url.startswith('../') or (not url.startswith(('http://', 'https://')) and os.path.exists(url)):
+            try:
+                results[url] = fetch_url(url, timeout=timeout)
+                return
+            except Exception as e:
+                log(f"Local file fetch failed: {url} -> {e}")
+                results[url] = None
+                return
+
         # retry with exponential backoff
         attempt = 0
         backoff = 0.4
