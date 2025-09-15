@@ -486,7 +486,9 @@ def get_all_tested_files() -> List[str]:
     dirs_to_check = [state_dir]
 
     # If we're in a different state directory (like .state_iran), also check the main .state directory
-    if state_dir != main_state_dir and os.path.exists(main_state_dir):
+    # UNLESS this is the Iran-specific context which should only use its own state
+    is_iran_context = 'iran' in state_dir
+    if state_dir != main_state_dir and os.path.exists(main_state_dir) and not is_iran_context:
         dirs_to_check.append(main_state_dir)
 
     for check_dir in dirs_to_check:
