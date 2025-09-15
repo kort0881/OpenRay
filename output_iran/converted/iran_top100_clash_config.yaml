@@ -260,18 +260,6 @@ proxies:
     path: /
     headers:
       Host: 159.65.29.233
-- name: OpenRay Dynamic-7495
-  type: vless
-  server: indeed.com
-  port: 443
-  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
-  network: ws
-  tls: true
-  servername: revcloud.migacpi.org
-  ws-opts:
-    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
-    headers:
-      Host: revcloud.migacpi.org
 - name: OpenRay Dynamic-7518
   type: vless
   server: www.visa.com.sg
@@ -312,30 +300,6 @@ proxies:
   port: 80
   uuid: ac01977c-3d57-4e5c-a8d5-0b5ff0f4a97f
   network: grpc
-- name: OpenRay  US-268
-  type: vmess
-  server: 209.126.84.189
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: 209.126.84.189
-- name: OpenRay  US-269
-  type: vmess
-  server: 209.126.84.189
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: 209.126.84.189
 - name: OpenRay  TW-1
   type: vmess
   server: 83.147.12.99
@@ -728,38 +692,6 @@ proxies:
   network: grpc
   tls: true
   servername: pqh29v3.hiddendom.shop
-- name: OpenRay Dynamic-8015
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh28v8.hiddendom.shop
-- name: OpenRay Dynamic-8016
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh31v6.hiddendom.shop
-- name: OpenRay Dynamic-8017
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh23v7.hiddendom.shop
-- name: OpenRay Dynamic-8018
-  type: vless
-  server: all.tellmethetrue.shop
-  port: 443
-  uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-  tls: true
-  servername: pqh23v2.hiddendom.shop
 - name: OpenRay Dynamic-8019
   type: vless
   server: all.tellmethetrue.shop
@@ -866,13 +798,10 @@ proxy-groups:
   - OpenRay  GB-125
   - OpenRay  GB-132
   - OpenRay  GB-137
-  - OpenRay Dynamic-7495
   - OpenRay Dynamic-7518
   - OpenRay  CA-7467
   - OpenRay  CA-7468
   - OpenRay  GB-150
-  - OpenRay  US-268
-  - OpenRay  US-269
   - OpenRay  TW-1
   - OpenRay Dynamic-7469
   - 'OpenRay Dynamic-7470 #2'
@@ -922,10 +851,6 @@ proxy-groups:
   - OpenRay Dynamic-8012
   - OpenRay Dynamic-8013
   - OpenRay Dynamic-8014
-  - OpenRay Dynamic-8015
-  - OpenRay Dynamic-8016
-  - OpenRay Dynamic-8017
-  - OpenRay Dynamic-8018
   - OpenRay Dynamic-8019
   - OpenRay Dynamic-8020
   - OpenRay Dynamic-8021
@@ -958,13 +883,10 @@ proxy-groups:
   - OpenRay  GB-125
   - OpenRay  GB-132
   - OpenRay  GB-137
-  - OpenRay Dynamic-7495
   - OpenRay Dynamic-7518
   - OpenRay  CA-7467
   - OpenRay  CA-7468
   - OpenRay  GB-150
-  - OpenRay  US-268
-  - OpenRay  US-269
   - OpenRay  TW-1
   - OpenRay Dynamic-7469
   - 'OpenRay Dynamic-7470 #2'
@@ -1014,10 +936,6 @@ proxy-groups:
   - OpenRay Dynamic-8012
   - OpenRay Dynamic-8013
   - OpenRay Dynamic-8014
-  - OpenRay Dynamic-8015
-  - OpenRay Dynamic-8016
-  - OpenRay Dynamic-8017
-  - OpenRay Dynamic-8018
   - OpenRay Dynamic-8019
   - OpenRay Dynamic-8020
   - OpenRay Dynamic-8021
