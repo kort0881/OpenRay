@@ -348,7 +348,7 @@ sources.txt         # Global sources
 </td>
 <td align="center">
 <strong>🔄 Auto Updates</strong><br>
-<img src="https://img.shields.io/badge/Every-6_Hours-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/Every-Hour-green?style=for-the-badge">
 </td>
 <td align="center">
 <strong>⚡ Protocols</strong><br>
