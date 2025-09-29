@@ -221,7 +221,6 @@ def main() -> int:
     existing_available = load_existing_available()
 
     # Fetch and process sources concurrently; deduplicate URIs and collect only new ones
-    seen_uri: Set[str] = set()
     seen_connection_keys: Set[str] = set()
     new_uris: List[str] = []
     new_hashes: List[str] = []
@@ -256,9 +255,6 @@ def main() -> int:
         decoded = maybe_decode_subscription(content, hinted_base64=flags.get('base64', False))
         for u in extract_uris(decoded):
             total_extracted += 1  # Count all URIs extracted from all sources
-            if u in seen_uri:
-                continue
-            seen_uri.add(u)
             # Use V2RayN-style connection key for deduplication
             conn_key = get_v2rayn_connection_key(u)
             if conn_key not in seen_connection_keys:
@@ -269,7 +265,7 @@ def main() -> int:
                     new_hashes.append(h)
 
     log(f"Fetched {fetched_count} contents")
-    log(f"Extracted: {total_extracted} proxy URIs; Unique: {len(seen_uri)} proxy URIs; New for testing: {len(new_uris)}")
+    log(f"Extracted: {total_extracted} proxy URIs; Unique: {len(seen_connection_keys)} proxy URIs; New for testing: {len(new_uris)}")
 
     # Optionally limit the number of new URIs processed per run
     try:
