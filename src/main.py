@@ -93,6 +93,18 @@ def main() -> int:
         if existing_lines:
             from .parsing import extract_host as _extract_host_for_existing
 
+            # Deduplicate existing proxies using V2RayN-style connection-based uniqueness
+            seen_connection_keys = set()
+            deduplicated_existing = []
+            for u in existing_lines:
+                conn_key = get_v2rayn_connection_key(u)
+                if conn_key not in seen_connection_keys:
+                    seen_connection_keys.add(conn_key)
+                    deduplicated_existing.append(u)
+            
+            log(f"Deduplicated existing proxies: {len(deduplicated_existing)} unique out of {len(existing_lines)} total")
+            existing_lines = deduplicated_existing
+
             host_map_existing = {u: _extract_host_for_existing(u) for u in existing_lines}
             items = [(u, h) for u, h in host_map_existing.items() if h]
             # initialize to False for tested hosts
