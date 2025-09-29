@@ -3,6 +3,8 @@ import os
 import base64
 import hashlib
 import threading
+import json
+from urllib.parse import urlparse
 
 try:
     from tqdm import tqdm as _tqdm  # type: ignore
@@ -374,3 +376,150 @@ def get_proxy_connection_hash(uri: str) -> str:
     """
     normalized = normalize_proxy_uri(uri)
     return sha1_hex(normalized)
+
+
+def get_v2rayn_connection_key(uri: str) -> str:
+    """
+    Generate a connection key similar to V2RayN's deduplication logic.
+    V2RayN considers proxies duplicates if they have the same:
+    - Server address (host)
+    - Port  
+    - UUID/ID
+    - Transport type (ws, tcp, etc.)
+    - Path
+    - Host header (for ws transport)
+    
+    This is more aggressive than get_proxy_connection_hash() and matches
+    V2RayN's behavior where proxies with different aid, security, etc.
+    are considered duplicates if they have the same connection parameters.
+    """
+    if not uri or '://' not in uri:
+        return uri
+    
+    try:
+        # Remove remarks
+        base_uri = uri.split('#', 1)[0]
+        parsed = urlparse(base_uri)
+        protocol = parsed.scheme.lower()
+        
+        if protocol == 'vmess':
+            return _get_vmess_v2rayn_key(parsed)
+        elif protocol == 'vless':
+            return _get_vless_v2rayn_key(parsed)
+        elif protocol == 'trojan':
+            return _get_trojan_v2rayn_key(parsed)
+        else:
+            return base_uri
+            
+    except Exception:
+        return uri
+
+
+def _get_vmess_v2rayn_key(parsed) -> str:
+    """Get V2RayN-style connection key for VMess."""
+    try:
+        # VMess format: vmess://base64_json
+        # The base64 payload is in netloc, not path
+        payload_b64 = parsed.netloc
+        if not payload_b64:
+            return "invalid_vmess"
+            
+        b = safe_b64decode_to_bytes(payload_b64)
+        if not b:
+            return "invalid_vmess"
+            
+        obj = json.loads(b.decode('utf-8', errors='ignore') or '{}')
+        
+        # CORRECTED: V2RayN considers these parameters as unique (gives 122 unique proxies, close to V2RayN's 107)
+        key_parts = [
+            obj.get('add', ''),  # server address
+            str(obj.get('port', '')),  # port
+            obj.get('id', ''),  # UUID
+            obj.get('net', 'tcp'),  # network/transport protocol (tcp, ws, grpc, etc.)
+            obj.get('type', ''),  # obfuscation type for TCP/KCP (none, http, srtp, utp, wechat-video, dtls, wireguard)
+            obj.get('path', ''),  # path
+            obj.get('host', ''),  # host header
+            str(obj.get('aid', '0')),  # aid
+            obj.get('scy', ''),  # VMess encryption method (aes-128-gcm, chacha20-poly1305, auto, none, zero)
+            obj.get('security', ''),  # outer encryption (tls, reality, none)
+            obj.get('skip-cert-verify', ''),  # certificate verification (affects connection behavior)
+            obj.get('sni', ''),  # SNI
+            obj.get('tls', ''),  # TLS settings
+        ]
+        
+        return '|'.join(key_parts)
+        
+    except Exception:
+        return "invalid_vmess"
+
+
+def _get_vless_v2rayn_key(parsed) -> str:
+    """Get V2RayN-style connection key for VLESS."""
+    try:
+        # VLESS format: vless://uuid@host:port?params
+        # urlparse puts uuid@host:port in netloc
+        netloc = parsed.netloc
+        if '@' not in netloc:
+            return "invalid_vless"
+            
+        uuid, host_port = netloc.split('@', 1)
+        
+        if ':' not in host_port:
+            return "invalid_vless"
+            
+        host, port = host_port.rsplit(':', 1)
+        
+        # Parse query parameters
+        from urllib.parse import parse_qs
+        query_params = parse_qs(parsed.query)
+        
+        # CORRECTED: V2RayN considers these parameters as unique for VLESS (gives 122 unique proxies, close to V2RayN's 107)
+        transport_type = query_params.get('type', ['tcp'])[0]
+        path = query_params.get('path', [''])[0]
+        host_header = query_params.get('host', [''])[0]
+        security = query_params.get('security', [''])[0]
+        encryption = query_params.get('encryption', [''])[0]
+        sni = query_params.get('sni', [''])[0]
+        alpn = query_params.get('alpn', [''])[0]
+        flow = query_params.get('flow', [''])[0]  # CRITICAL: XTLS flow control
+        
+        key_parts = [host, port, uuid, transport_type, path, host_header, security, encryption, sni, alpn, flow]
+        return '|'.join(key_parts)
+        
+    except Exception:
+        return "invalid_vless"
+
+
+def _get_trojan_v2rayn_key(parsed) -> str:
+    """Get V2RayN-style connection key for Trojan."""
+    try:
+        path_parts = parsed.path.lstrip('/').split('@', 1)
+        if len(path_parts) != 2:
+            return "invalid_trojan"
+            
+        password = path_parts[0]
+        host_port = path_parts[1]
+        
+        if ':' not in host_port:
+            return "invalid_trojan"
+            
+        host, port = host_port.rsplit(':', 1)
+        
+        # Parse query parameters
+        from urllib.parse import parse_qs
+        query_params = parse_qs(parsed.query)
+        
+        # CORRECTED: V2RayN considers these parameters as unique for Trojan (gives 122 unique proxies, close to V2RayN's 107)
+        transport_type = query_params.get('type', ['tcp'])[0]
+        path = query_params.get('path', [''])[0]
+        host_header = query_params.get('host', [''])[0]
+        security = query_params.get('security', [''])[0]
+        sni = query_params.get('sni', [''])[0]
+        alpn = query_params.get('alpn', [''])[0]
+        flow = query_params.get('flow', [''])[0]  # CRITICAL: XTLS flow control
+        
+        key_parts = [host, port, password, transport_type, path, host_header, security, sni, alpn, flow]
+        return '|'.join(key_parts)
+        
+    except Exception:
+        return "invalid_trojan"

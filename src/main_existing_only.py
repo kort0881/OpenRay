@@ -5,7 +5,7 @@ import os
 import time
 from typing import Dict, List, Optional, Set, Tuple
 
-from .common import log, progress, sha1_hex, get_proxy_connection_hash
+from .common import log, progress, sha1_hex, get_proxy_connection_hash, get_v2rayn_connection_key
 from .constants import (
     AVAILABLE_FILE,
     PING_WORKERS,
@@ -135,13 +135,13 @@ def main() -> int:
                     # Merge: replace subset portion with validated ones
                     alive = kept_subset + alive[len(subset):]
 
-            # Deduplicate alive proxies using connection-based uniqueness
-            seen_hashes: Set[str] = set()
+            # Deduplicate alive proxies using V2RayN-style connection-based uniqueness
+            seen_keys: Set[str] = set()
             deduplicated_alive: List[str] = []
             for u in alive:
-                conn_hash = get_proxy_connection_hash(u)
-                if conn_hash not in seen_hashes:
-                    seen_hashes.add(conn_hash)
+                conn_key = get_v2rayn_connection_key(u)
+                if conn_key not in seen_keys:
+                    seen_keys.add(conn_key)
                     deduplicated_alive.append(u)
             
             if len(deduplicated_alive) != len(existing_lines):

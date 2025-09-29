@@ -5,7 +5,7 @@ import os
 import time
 from typing import Dict, List, Optional, Set, Tuple
 
-from .common import log, progress, sha1_hex, get_proxy_connection_hash
+from .common import log, progress, sha1_hex, get_proxy_connection_hash, get_v2rayn_connection_key
 from .constants import (
     AVAILABLE_FILE,
     CONSECUTIVE_REQUIRED,
@@ -210,6 +210,7 @@ def main() -> int:
 
     # Fetch and process sources concurrently; deduplicate URIs and collect only new ones
     seen_uri: Set[str] = set()
+    seen_connection_keys: Set[str] = set()
     new_uris: List[str] = []
     new_hashes: List[str] = []
     fetched_count = 0
@@ -244,10 +245,14 @@ def main() -> int:
             if u in seen_uri:
                 continue
             seen_uri.add(u)
-            h = get_proxy_connection_hash(u)  # Use connection-based uniqueness
-            if h not in tested_hashes:
-                new_uris.append(u)
-                new_hashes.append(h)
+            # Use V2RayN-style connection key for deduplication
+            conn_key = get_v2rayn_connection_key(u)
+            if conn_key not in seen_connection_keys:
+                seen_connection_keys.add(conn_key)
+                h = get_proxy_connection_hash(u)  # Still use original hash for tested_hashes
+                if h not in tested_hashes:
+                    new_uris.append(u)
+                    new_hashes.append(h)
 
     log(f"Fetched {fetched_count} contents")
     log(f"Extracted {len(seen_uri)} unique proxy URIs; new to test: {len(new_uris)}")
@@ -362,13 +367,13 @@ def main() -> int:
             # Merge: replace subset portion with validated ones
             available_to_add = kept_subset + available_to_add[len(subset):]
 
-    # Deduplicate against existing available file and write (connection-based)
+    # Deduplicate against existing available file and write (V2RayN-style connection-based)
     new_available_unique: List[str] = []
-    existing_connection_hashes = {get_proxy_connection_hash(u) for u in existing_available}
+    existing_connection_keys = {get_v2rayn_connection_key(u) for u in existing_available}
     for u in available_to_add:
-        conn_hash = get_proxy_connection_hash(u)
-        if conn_hash not in existing_connection_hashes:
-            existing_connection_hashes.add(conn_hash)
+        conn_key = get_v2rayn_connection_key(u)
+        if conn_key not in existing_connection_keys:
+            existing_connection_keys.add(conn_key)
             new_available_unique.append(u)
 
     if new_available_unique:

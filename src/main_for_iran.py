@@ -313,9 +313,9 @@ def _update_check_counts_for_proxies(proxies: List[str], active_proxies: List[st
     # If active_proxies is provided, only update counts for active proxies
     active_set = set(active_proxies) if active_proxies else None
 
-    # Deduplicate proxies using connection-based uniqueness
-    from .common import get_proxy_connection_hash
-    seen_hashes: set = set()
+    # Deduplicate proxies using V2RayN-style connection-based uniqueness
+    from .common import get_v2rayn_connection_key
+    seen_keys: set = set()
     unique_proxies: List[str] = []
     
     for p in proxies:
@@ -325,10 +325,10 @@ def _update_check_counts_for_proxies(proxies: List[str], active_proxies: List[st
         if active_set is not None and p not in active_set:
             continue
         
-        # Deduplicate using connection hash
-        conn_hash = get_proxy_connection_hash(p)
-        if conn_hash not in seen_hashes:
-            seen_hashes.add(conn_hash)
+        # Deduplicate using V2RayN-style connection key
+        conn_key = get_v2rayn_connection_key(p)
+        if conn_key not in seen_keys:
+            seen_keys.add(conn_key)
             unique_proxies.append(p)
 
     for p in unique_proxies:
