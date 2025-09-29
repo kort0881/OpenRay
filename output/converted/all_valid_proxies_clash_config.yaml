@@ -12526,6 +12526,12 @@ proxies:
     path: /vless/
     headers:
       Host: 51.38.232.101
+- name: OpenRay  FR-37799
+  type: vless
+  server: 95.164.6.149
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -15475,6 +15481,34 @@ proxies:
     public-key: pS2RI8JETm4avuyyZl4qaZO0KrE4YX9xIOmHkqMmJH4
     short-id: fc
   client-fingerprint: chrome
+<<<<<<< Updated upstream
+=======
+- name: OpenRay  DE-51716
+  type: vless
+  server: services.dissertationhelpspecialist.com
+  port: 8443
+  uuid: 45d54d1b-2e96-481d-8ca0-4de73c8aa794
+  network: grpc
+  tls: true
+  servername: tgju.org
+  reality-opts:
+    public-key: 1uJxq_S0vz0bi1bBzy3i-r3vcvjMt9CRB6OpPCr0yFk
+    short-id: a739e76c
+  client-fingerprint: firefox
+- name: OpenRay  KZ-26
+  type: vless
+  server: 195.133.8.126
+  port: 8081
+  uuid: fa886719-16fa-4b10-88c5-3c00a6f5a5f1
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: oB-VCWWpUePBe_v3vAOLWw054ZbdUN_4X3t_FkkPNFc
+    short-id: '220463'
+  client-fingerprint: chrome
+>>>>>>> Stashed changes
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -15886,6 +15920,18 @@ proxies:
     public-key: nID_kfSoZPfWS1XZUT1dZnR2mwaoRtUROtBpmqCWEiQ
     short-id: d0a3f84aabd21574
   client-fingerprint: chrome
+- name: OpenRay  RU-6395
+  type: vless
+  server: russianoy.vtuix.online
+  port: 7033
+  uuid: 7005979f-6b25-43db-935c-4cfa27d44a27
+  network: grpc
+  tls: true
+  servername: telewebion.com
+  reality-opts:
+    public-key: iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE
+    short-id: 16b6cda7ab793526
+  client-fingerprint: firefox
 - name: OpenRay  SG-1828
   type: vless
   server: node1.nanonet.host
@@ -16765,6 +16811,18 @@ proxies:
     headers:
       Host: 
         0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+- name: OpenRay  JP-2660
+  type: vmess
+  server: 52.68.54.4
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -19665,6 +19723,7 @@ proxy-groups:
   - OpenRay  FR-37796
   - OpenRay  FR-37797
   - OpenRay  FR-37798
+  - OpenRay  FR-37799
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -19941,6 +20000,11 @@ proxy-groups:
   - OpenRay  DE-51712
   - OpenRay  DE-51713
   - OpenRay  DE-51715
+<<<<<<< Updated upstream
+=======
+  - OpenRay  DE-51716
+  - OpenRay  KZ-26
+>>>>>>> Stashed changes
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -19991,6 +20055,7 @@ proxy-groups:
   - OpenRay  RU-6392
   - OpenRay  RU-6393
   - OpenRay  RU-6394
+  - OpenRay  RU-6395
   - OpenRay  SG-1828
   - OpenRay  SG-1830
   - OpenRay  SG-1831
@@ -20071,6 +20136,7 @@ proxy-groups:
   - OpenRay  JP-2656
   - OpenRay  JP-2658
   - OpenRay  JP-2659
+  - OpenRay  JP-2660
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
@@ -21617,6 +21683,7 @@ proxy-groups:
   - OpenRay  FR-37796
   - OpenRay  FR-37797
   - OpenRay  FR-37798
+  - OpenRay  FR-37799
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -21893,6 +21960,11 @@ proxy-groups:
   - OpenRay  DE-51712
   - OpenRay  DE-51713
   - OpenRay  DE-51715
+<<<<<<< Updated upstream
+=======
+  - OpenRay  DE-51716
+  - OpenRay  KZ-26
+>>>>>>> Stashed changes
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21943,6 +22015,7 @@ proxy-groups:
   - OpenRay  RU-6392
   - OpenRay  RU-6393
   - OpenRay  RU-6394
+  - OpenRay  RU-6395
   - OpenRay  SG-1828
   - OpenRay  SG-1830
   - OpenRay  SG-1831
@@ -22023,6 +22096,7 @@ proxy-groups:
   - OpenRay  JP-2656
   - OpenRay  JP-2658
   - OpenRay  JP-2659
+  - OpenRay  JP-2660
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
