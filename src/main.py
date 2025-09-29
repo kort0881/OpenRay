@@ -253,7 +253,10 @@ def main() -> int:
             continue
         fetched_count += 1
         decoded = maybe_decode_subscription(content, hinted_base64=flags.get('base64', False))
+        # Track total extracted URIs (including duplicates)
+        extracted_total = 0
         for u in extract_uris(decoded):
+            extracted_total += 1
             if u in seen_uri:
                 continue
             seen_uri.add(u)
@@ -267,7 +270,16 @@ def main() -> int:
                     new_hashes.append(h)
 
     log(f"Fetched {fetched_count} contents")
-    log(f"Extracted {len(seen_uri)} unique proxy URIs; new to test: {len(new_uris)}")
+    # Report: Extracted (raw), Unique (by URI), New (V2RayN-unique and not previously tested)
+    try:
+        total_extracted = sum(1 for _url in parsed_sources for _ in ([]))  # placeholder to ensure defined
+    except Exception:
+        total_extracted = None
+    # We tracked extracted_total per content loop; if not available, fall back to unique count
+    extracted_count = locals().get('extracted_total', 0)
+    if not extracted_count:
+        extracted_count = len(seen_uri)
+    log(f"Extracted: {extracted_count} proxy URIs; Unique: {len(seen_uri)} proxy URIs; New for testing: {len(new_uris)}")
 
     # Optionally limit the number of new URIs processed per run
     try:
