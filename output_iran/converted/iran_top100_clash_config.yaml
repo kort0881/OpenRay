@@ -93,12 +93,6 @@ proxies:
     path: /?ed=2560
     headers:
       Host: azadnet-coo.pages.dev
-- name: OpenRay  US-910
-  type: vless
-  server: 45.82.251.125
-  port: 8880
-  uuid: e4824193-4f54-453b-d037-88368e85ef0e
-  network: grpc
 - name: OpenRay Dynamic-400
   type: vmess
   server: lammaland.org
@@ -477,20 +471,6 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
-- name: OpenRay Dynamic-396
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
 - name: 'OpenRay Dynamic-400 #2'
   type: vmess
   server: lammaland.org
@@ -506,20 +486,6 @@ proxies:
     headers:
       Host: lammaland.org
 - name: OpenRay Dynamic-402
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-403
   type: vmess
   server: lammaland.org
   port: 443
@@ -855,20 +821,6 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
-- name: OpenRay Dynamic-429
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
 - name: OpenRay Dynamic-986
   type: vmess
   server: serkat.org
@@ -995,20 +947,6 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
-- name: OpenRay Dynamic-992
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
 - name: OpenRay Dynamic-439
   type: vmess
   server: lammaland.org
@@ -1121,20 +1059,6 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
-- name: OpenRay Dynamic-446
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
 - name: OpenRay Dynamic-997
   type: vmess
   server: serkat.org
@@ -1155,20 +1079,6 @@ proxies:
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: lammaland.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: lammaland.org
-- name: OpenRay Dynamic-450
-  type: vmess
-  server: lammaland.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
   cipher: auto
   network: ws
   tls: true
@@ -1276,20 +1186,6 @@ proxies:
     headers:
       Host: serkat.org
 - name: OpenRay Dynamic-1008
-  type: vmess
-  server: serkat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  network: ws
-  tls: true
-  servername: serkat.org
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: serkat.org
-- name: OpenRay Dynamic-1009
   type: vmess
   server: serkat.org
   port: 443
@@ -1457,6 +1353,130 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
+- name: OpenRay Dynamic-463
+  type: vmess
+  server: lammaland.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: lammaland.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+- name: OpenRay Dynamic-1022
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay Dynamic-3
+  type: vmess
+  server: lammaland.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: lammaland.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+- name: OpenRay Dynamic-4
+  type: vless
+  server: join-raiv2mmr-telegram.koyeb.app
+  port: 443
+  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+  network: ws
+  tls: true
+  ws-opts:
+    path: 
+      /@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr-@Raiv2mmr
+    headers:
+      Host: join-raiv2mmr-telegram.koyeb.app
+- name: OpenRay Dynamic-5
+  type: vmess
+  server: lammaland.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: lammaland.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+- name: OpenRay Dynamic-1
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay Dynamic-2
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay Dynamic-7
+  type: vmess
+  server: lammaland.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: lammaland.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+- name: 'OpenRay Dynamic-3 #2'
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 
 proxy-groups:
 - name: AUTO
@@ -1466,7 +1486,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - OpenRay Dynamic-7452
-  - OpenRay  US-910
   - OpenRay Dynamic-400
   - OpenRay Dynamic-2164
   - OpenRay Dynamic-2165
@@ -1494,10 +1513,8 @@ proxy-groups:
   - OpenRay Dynamic-390
   - OpenRay Dynamic-391
   - OpenRay Dynamic-393
-  - OpenRay Dynamic-396
   - 'OpenRay Dynamic-400 #2'
   - OpenRay Dynamic-402
-  - OpenRay Dynamic-403
   - OpenRay Dynamic-404
   - OpenRay Dynamic-405
   - OpenRay Dynamic-409
@@ -1521,7 +1538,6 @@ proxy-groups:
   - OpenRay Dynamic-427
   - OpenRay Dynamic-984
   - OpenRay Dynamic-985
-  - OpenRay Dynamic-429
   - OpenRay Dynamic-986
   - OpenRay Dynamic-987
   - OpenRay Dynamic-989
@@ -1531,7 +1547,6 @@ proxy-groups:
   - OpenRay Dynamic-434
   - OpenRay Dynamic-991
   - OpenRay Dynamic-438
-  - OpenRay Dynamic-992
   - OpenRay Dynamic-439
   - OpenRay Dynamic-440
   - OpenRay Dynamic-993
@@ -1540,10 +1555,8 @@ proxy-groups:
   - OpenRay Dynamic-444
   - OpenRay Dynamic-995
   - OpenRay Dynamic-996
-  - OpenRay Dynamic-446
   - OpenRay Dynamic-997
   - OpenRay Dynamic-448
-  - OpenRay Dynamic-450
   - OpenRay Dynamic-999
   - OpenRay Dynamic-1000
   - OpenRay Dynamic-1001
@@ -1552,7 +1565,6 @@ proxy-groups:
   - OpenRay Dynamic-1006
   - OpenRay Dynamic-1007
   - OpenRay Dynamic-1008
-  - OpenRay Dynamic-1009
   - OpenRay Dynamic-1011
   - OpenRay Dynamic-1013
   - OpenRay Dynamic-1015
@@ -1564,12 +1576,20 @@ proxy-groups:
   - OpenRay Dynamic-1021
   - OpenRay Dynamic-461
   - OpenRay Dynamic-462
+  - OpenRay Dynamic-463
+  - OpenRay Dynamic-1022
+  - OpenRay Dynamic-3
+  - OpenRay Dynamic-4
+  - OpenRay Dynamic-5
+  - OpenRay Dynamic-1
+  - OpenRay Dynamic-2
+  - OpenRay Dynamic-7
+  - 'OpenRay Dynamic-3 #2'
 - name: PROXY
   type: select
   proxies:
   - AUTO
   - OpenRay Dynamic-7452
-  - OpenRay  US-910
   - OpenRay Dynamic-400
   - OpenRay Dynamic-2164
   - OpenRay Dynamic-2165
@@ -1597,10 +1617,8 @@ proxy-groups:
   - OpenRay Dynamic-390
   - OpenRay Dynamic-391
   - OpenRay Dynamic-393
-  - OpenRay Dynamic-396
   - 'OpenRay Dynamic-400 #2'
   - OpenRay Dynamic-402
-  - OpenRay Dynamic-403
   - OpenRay Dynamic-404
   - OpenRay Dynamic-405
   - OpenRay Dynamic-409
@@ -1624,7 +1642,6 @@ proxy-groups:
   - OpenRay Dynamic-427
   - OpenRay Dynamic-984
   - OpenRay Dynamic-985
-  - OpenRay Dynamic-429
   - OpenRay Dynamic-986
   - OpenRay Dynamic-987
   - OpenRay Dynamic-989
@@ -1634,7 +1651,6 @@ proxy-groups:
   - OpenRay Dynamic-434
   - OpenRay Dynamic-991
   - OpenRay Dynamic-438
-  - OpenRay Dynamic-992
   - OpenRay Dynamic-439
   - OpenRay Dynamic-440
   - OpenRay Dynamic-993
@@ -1643,10 +1659,8 @@ proxy-groups:
   - OpenRay Dynamic-444
   - OpenRay Dynamic-995
   - OpenRay Dynamic-996
-  - OpenRay Dynamic-446
   - OpenRay Dynamic-997
   - OpenRay Dynamic-448
-  - OpenRay Dynamic-450
   - OpenRay Dynamic-999
   - OpenRay Dynamic-1000
   - OpenRay Dynamic-1001
@@ -1655,7 +1669,6 @@ proxy-groups:
   - OpenRay Dynamic-1006
   - OpenRay Dynamic-1007
   - OpenRay Dynamic-1008
-  - OpenRay Dynamic-1009
   - OpenRay Dynamic-1011
   - OpenRay Dynamic-1013
   - OpenRay Dynamic-1015
@@ -1667,6 +1680,15 @@ proxy-groups:
   - OpenRay Dynamic-1021
   - OpenRay Dynamic-461
   - OpenRay Dynamic-462
+  - OpenRay Dynamic-463
+  - OpenRay Dynamic-1022
+  - OpenRay Dynamic-3
+  - OpenRay Dynamic-4
+  - OpenRay Dynamic-5
+  - OpenRay Dynamic-1
+  - OpenRay Dynamic-2
+  - OpenRay Dynamic-7
+  - 'OpenRay Dynamic-3 #2'
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
