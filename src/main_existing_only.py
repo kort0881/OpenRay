@@ -62,6 +62,7 @@ def main() -> int:
     # Re-validate current available proxies to drop broken ones
     host_success_run: Dict[str, bool] = {}
     alive: List[str] = []
+    deduplicated_alive: List[str] = []
     host_map_existing: Dict[str, Optional[str]] = {}
     
     if os.path.exists(AVAILABLE_FILE):
@@ -134,18 +135,27 @@ def main() -> int:
                     # Merge: replace subset portion with validated ones
                     alive = kept_subset + alive[len(subset):]
 
-            if len(alive) != len(existing_lines):
+            # Deduplicate alive proxies using connection-based uniqueness
+            seen_hashes: Set[str] = set()
+            deduplicated_alive: List[str] = []
+            for u in alive:
+                conn_hash = get_proxy_connection_hash(u)
+                if conn_hash not in seen_hashes:
+                    seen_hashes.add(conn_hash)
+                    deduplicated_alive.append(u)
+            
+            if len(deduplicated_alive) != len(existing_lines):
                 # Outage-safe guard: avoid purging available file if connectivity appears down
-                if len(existing_lines) > 0 and len(alive) == 0 and not _has_connectivity():
+                if len(existing_lines) > 0 and len(deduplicated_alive) == 0 and not _has_connectivity():
                     log("Suspected Internet outage during revalidation; keeping existing available proxies file unchanged.")
                 else:
                     tmp_path = AVAILABLE_FILE + '.tmp'
                     with open(tmp_path, 'w', encoding='utf-8', errors='ignore') as f:
-                        for u in alive:
+                        for u in deduplicated_alive:
                             f.write(u)
                             f.write('\n')
                     os.replace(tmp_path, AVAILABLE_FILE)
-                    log(f"Revalidated existing available proxies: kept {len(alive)} of {len(existing_lines)}")
+                    log(f"Revalidated existing available proxies: kept {len(deduplicated_alive)} of {len(existing_lines)} (deduplicated from {len(alive)})")
             else:
                 log("Revalidated existing available proxies: all still reachable")
     else:
@@ -165,11 +175,11 @@ def main() -> int:
     save_streaks(streaks)
 
     # Group and write outputs
-    if alive:
+    if deduplicated_alive:
         # Write grouped outputs (this will read from AVAILABLE_FILE which we just updated)
         write_grouped_outputs()
         
-        log(f"Successfully processed {len(alive)} existing proxies")
+        log(f"Successfully processed {len(deduplicated_alive)} existing proxies")
     else:
         log("No existing proxies found to process")
 

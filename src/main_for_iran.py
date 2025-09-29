@@ -313,12 +313,25 @@ def _update_check_counts_for_proxies(proxies: List[str], active_proxies: List[st
     # If active_proxies is provided, only update counts for active proxies
     active_set = set(active_proxies) if active_proxies else None
 
+    # Deduplicate proxies using connection-based uniqueness
+    from .common import get_proxy_connection_hash
+    seen_hashes: set = set()
+    unique_proxies: List[str] = []
+    
     for p in proxies:
         if not p:
             continue
         # Skip if proxy is not in active list (when provided)
         if active_set is not None and p not in active_set:
             continue
+        
+        # Deduplicate using connection hash
+        conn_hash = get_proxy_connection_hash(p)
+        if conn_hash not in seen_hashes:
+            seen_hashes.add(conn_hash)
+            unique_proxies.append(p)
+
+    for p in unique_proxies:
         counts[p] = int(counts.get(p, 0)) + 1
     _save_check_counts(counts)
 

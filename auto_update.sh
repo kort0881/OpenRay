@@ -2,10 +2,10 @@
 set -e
 
 # Activate virtual environment
-source /mnt/d/projects/OpenRay/.venv/bin/activate
+source /mnt/c/d/Development/OpenRay/.venv/bin/activate
 
 # Go to repo
-cd /mnt/d/projects/OpenRay
+cd /mnt/c/d/Development/OpenRay
 
 # Try git pull, fallback to merge if it fails
 if ! git pull origin main; then
