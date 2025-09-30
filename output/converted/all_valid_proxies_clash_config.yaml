@@ -6207,6 +6207,18 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay Dynamic-138288
+  type: vmess
+  server: test2.flha.ru
+  port: 80
+  uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess
+    headers:
+      Host: test2.flha.ru
 - name: OpenRay  GB-4136
   type: vmess
   server: 46.250.243.56
@@ -6896,6 +6908,18 @@ proxies:
     path: /api/v1/graphql
     headers:
       Host: cg1c12.waimaojd.com
+- name: OpenRay  GB-13273
+  type: vless
+  server: 95.164.37.76
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  GB-13274
+  type: vless
+  server: 638947655359338436.birjand-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  US-3
   type: vless
   server: pqh25v7.waipdirect.shop
@@ -10323,6 +10347,34 @@ proxies:
     path: /vmessws
     headers:
       Host: 209.126.84.189
+- name: OpenRay  US-93379
+  type: vmess
+  server: cg1c05.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: cg1c05.waimaojd.com
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c05.waimaojd.com
+- name: OpenRay  US-93380
+  type: vmess
+  server: cg1c02.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: cg1c02.waimaojd.com
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c02.waimaojd.com
 - name: OpenRay  FR-117
   type: vless
   server: 51.38.237.113
@@ -12742,6 +12794,12 @@ proxies:
     path: linkvws
     headers:
       Host: yichueng.org
+- name: OpenRay  FR-37883
+  type: vless
+  server: 638938728943989934.esfahan-prx-dnraacl.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -15171,6 +15229,20 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay  DE-51857
+  type: vmess
+  server: 57.129.28.215
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -16135,6 +16207,18 @@ proxies:
     path: /snippets/ip=tw.tp81.netlib.re:81?ed=2560
     headers:
       Host: What.The.Fxxk.cloudns.org
+- name: OpenRay  PL-3782
+  type: vless
+  server: 141.101.121.32
+  port: 443
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  tls: true
+  servername: What.The.Fxxk.cloudns.org
+  ws-opts:
+    path: /snippets/ip=tw.tp81.netlib.re:81?ed=2560
+    headers:
+      Host: What.The.Fxxk.cloudns.org
 - name: OpenRay  CH-43
   type: vless
   server: 5.182.36.251
@@ -16775,6 +16859,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  KR-611
+  type: vmess
+  server: 3.38.98.1
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  TW-16
   type: vmess
   server: 165.154.195.38
@@ -16827,6 +16923,18 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 140.235.38.89
+- name: OpenRay  TW-1943
+  type: vmess
+  server: 103.61.139.137
+  port: 20521
+  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 103.61.139.137
 - name: OpenRay  LV-254
   type: vless
   server: 45.130.215.125
@@ -17504,6 +17612,18 @@ proxies:
     path: /snippets?ip=proxyip.oracle.cmliussss.net&nat64=6to4
     headers:
       Host: getsub.saas.classelivre.eu.org
+- name: OpenRay  HK-58
+  type: vmess
+  server: 45.116.78.39
+  port: 7343
+  uuid: 9e8cf0f5-98fa-41af-8bd1-ea1676813910
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: 45.116.78.39
 - name: OpenRay  TR-128
   type: vless
   server: 638941610438943596.copenhagen-prx-dnraacm.info
@@ -18265,6 +18385,7 @@ proxy-groups:
   - OpenRay Dynamic-138285
   - OpenRay Dynamic-51852
   - OpenRay Dynamic-93379
+  - OpenRay Dynamic-138288
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -18327,6 +18448,8 @@ proxy-groups:
   - OpenRay  GB-13270
   - OpenRay  GB-13271
   - OpenRay  GB-13272
+  - OpenRay  GB-13273
+  - OpenRay  GB-13274
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-40
@@ -18793,6 +18916,8 @@ proxy-groups:
   - OpenRay  US-93375
   - OpenRay  US-93376
   - OpenRay  US-93378
+  - OpenRay  US-93379
+  - OpenRay  US-93380
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -19122,6 +19247,7 @@ proxy-groups:
   - OpenRay  FR-37880
   - OpenRay  FR-37881
   - OpenRay  FR-37882
+  - OpenRay  FR-37883
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -19355,6 +19481,7 @@ proxy-groups:
   - OpenRay  DE-51854
   - OpenRay  DE-51855
   - OpenRay  DE-51856
+  - OpenRay  DE-51857
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -19451,6 +19578,7 @@ proxy-groups:
   - OpenRay  PL-3779
   - OpenRay  PL-3780
   - OpenRay  PL-3781
+  - OpenRay  PL-3782
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
@@ -19507,12 +19635,14 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
   - OpenRay  TW-36
   - OpenRay  TW-1939
   - OpenRay  TW-1942
+  - OpenRay  TW-1943
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
@@ -19591,6 +19721,7 @@ proxy-groups:
   - OpenRay  HK-53
   - OpenRay  HK-56
   - OpenRay  HK-57
+  - OpenRay  HK-58
   - OpenRay  TR-128
   - OpenRay  TR-136
   - OpenRay  TR-251
@@ -20174,6 +20305,7 @@ proxy-groups:
   - OpenRay Dynamic-138285
   - OpenRay Dynamic-51852
   - OpenRay Dynamic-93379
+  - OpenRay Dynamic-138288
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -20236,6 +20368,8 @@ proxy-groups:
   - OpenRay  GB-13270
   - OpenRay  GB-13271
   - OpenRay  GB-13272
+  - OpenRay  GB-13273
+  - OpenRay  GB-13274
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-40
@@ -20702,6 +20836,8 @@ proxy-groups:
   - OpenRay  US-93375
   - OpenRay  US-93376
   - OpenRay  US-93378
+  - OpenRay  US-93379
+  - OpenRay  US-93380
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -21031,6 +21167,7 @@ proxy-groups:
   - OpenRay  FR-37880
   - OpenRay  FR-37881
   - OpenRay  FR-37882
+  - OpenRay  FR-37883
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -21264,6 +21401,7 @@ proxy-groups:
   - OpenRay  DE-51854
   - OpenRay  DE-51855
   - OpenRay  DE-51856
+  - OpenRay  DE-51857
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21360,6 +21498,7 @@ proxy-groups:
   - OpenRay  PL-3779
   - OpenRay  PL-3780
   - OpenRay  PL-3781
+  - OpenRay  PL-3782
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
@@ -21416,12 +21555,14 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
   - OpenRay  TW-36
   - OpenRay  TW-1939
   - OpenRay  TW-1942
+  - OpenRay  TW-1943
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
@@ -21500,6 +21641,7 @@ proxy-groups:
   - OpenRay  HK-53
   - OpenRay  HK-56
   - OpenRay  HK-57
+  - OpenRay  HK-58
   - OpenRay  TR-128
   - OpenRay  TR-136
   - OpenRay  TR-251
