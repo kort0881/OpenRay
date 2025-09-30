@@ -6360,6 +6360,20 @@ proxies:
     path: /e7JS5ETJeA85VyjPCYXwETL
     headers:
       Host: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+- name: OpenRay Dynamic-51801
+  type: vmess
+  server: pelang.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: pelang.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
 - name: OpenRay  GB-4136
   type: vmess
   server: 46.250.243.56
@@ -17357,6 +17371,18 @@ proxies:
   port: 27775
   uuid: 48d022ad-f831-48e0-9730-df4dadbbc684
   network: raw
+- name: OpenRay  JP-2674
+  type: vmess
+  server: awsjp2.iamlazy.vip
+  port: 68
+  uuid: f1d9d662-7fc9-4995-b047-05c98ad05286
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: tms.dingtalk.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -17477,6 +17503,19 @@ proxies:
     path: /
     headers:
       Host: 46.62.206.155
+- name: OpenRay  FI-3377
+  type: vless
+  server: 185.75.135.224
+  port: 443
+  uuid: 8377aac9-f3b3-42df-a5ea-9254f37e7b34
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: -tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw
+    short-id: '50'
+  client-fingerprint: chrome
 - name: OpenRay  SE-1343
   type: vless
   server: 13.48.175.183
@@ -19408,6 +19447,7 @@ proxy-groups:
   - OpenRay Dynamic-138267
   - OpenRay Dynamic-138268
   - OpenRay Dynamic-138266
+  - OpenRay Dynamic-51801
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -20696,6 +20736,7 @@ proxy-groups:
   - OpenRay  JP-2668
   - OpenRay  JP-2671
   - OpenRay  JP-2673
+  - OpenRay  JP-2674
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
@@ -20707,6 +20748,7 @@ proxy-groups:
   - OpenRay  FI-3371
   - OpenRay  FI-3375
   - OpenRay  FI-3376
+  - OpenRay  FI-3377
   - OpenRay  SE-1343
   - OpenRay  SE-1366
   - OpenRay  SE-1373
@@ -21427,6 +21469,7 @@ proxy-groups:
   - OpenRay Dynamic-138267
   - OpenRay Dynamic-138268
   - OpenRay Dynamic-138266
+  - OpenRay Dynamic-51801
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -22715,6 +22758,7 @@ proxy-groups:
   - OpenRay  JP-2668
   - OpenRay  JP-2671
   - OpenRay  JP-2673
+  - OpenRay  JP-2674
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
@@ -22726,6 +22770,7 @@ proxy-groups:
   - OpenRay  FI-3371
   - OpenRay  FI-3375
   - OpenRay  FI-3376
+  - OpenRay  FI-3377
   - OpenRay  SE-1343
   - OpenRay  SE-1366
   - OpenRay  SE-1373
