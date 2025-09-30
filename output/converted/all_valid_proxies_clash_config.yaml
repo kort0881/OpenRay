@@ -17790,6 +17790,18 @@ proxies:
     path: /?ed=2048
     headers:
       Host: tms.dingtalk.com
+- name: OpenRay  JP-2677
+  type: vmess
+  server: awsjp1.iamlazy.vip
+  port: 80
+  uuid: f1d9d662-7fc9-4995-b047-05c98ad05286
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: tms.dingtalk.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -18237,6 +18249,18 @@ proxies:
 - name: OpenRay  KR-641
   type: vmess
   server: 43.201.37.248
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-642
+  type: vmess
+  server: 54.180.1.21
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -18742,6 +18766,12 @@ proxies:
 - name: OpenRay  ES-172
   type: vless
   server: 638947655441863516.malayer-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  ES-173
+  type: vless
+  server: 45.12.150.67
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -21374,6 +21404,7 @@ proxy-groups:
   - OpenRay  JP-2674
   - OpenRay  JP-2675
   - OpenRay  JP-2676
+  - OpenRay  JP-2677
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
@@ -21416,6 +21447,7 @@ proxy-groups:
   - OpenRay  KR-639
   - OpenRay  KR-640
   - OpenRay  KR-641
+  - OpenRay  KR-642
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -21470,6 +21502,7 @@ proxy-groups:
   - OpenRay  ES-167
   - OpenRay  ES-171
   - OpenRay  ES-172
+  - OpenRay  ES-173
   - OpenRay  MY-6
   - OpenRay  MY-8
   - OpenRay  MY-9
@@ -23450,6 +23483,7 @@ proxy-groups:
   - OpenRay  JP-2674
   - OpenRay  JP-2675
   - OpenRay  JP-2676
+  - OpenRay  JP-2677
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-428
@@ -23492,6 +23526,7 @@ proxy-groups:
   - OpenRay  KR-639
   - OpenRay  KR-640
   - OpenRay  KR-641
+  - OpenRay  KR-642
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -23546,6 +23581,7 @@ proxy-groups:
   - OpenRay  ES-167
   - OpenRay  ES-171
   - OpenRay  ES-172
+  - OpenRay  ES-173
   - OpenRay  MY-6
   - OpenRay  MY-8
   - OpenRay  MY-9
