@@ -12433,6 +12433,18 @@ proxies:
     path: /
     headers:
       Host: 5.196.29.123
+- name: OpenRay  FR-37902
+  type: vless
+  server: kiliyanmbappe10.vtuix.online
+  port: 7033
+  uuid: 6825b61d-e062-4725-bd63-ddb954f6a3b6
+  network: grpc
+  tls: true
+  servername: telewebion.com
+  reality-opts:
+    public-key: iLik9C9our-5dRYuvFtrYOzd1NedgTsqUKew2ogLdgE
+    short-id: 16b6cda7ab793526
+  client-fingerprint: firefox
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -15070,6 +15082,12 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay  DE-51883
+  type: vless
+  server: 159.69.107.16
+  port: 666
+  uuid: bfd5560e-d80c-456b-a14f-6d5b66de07f8
+  network: tcp
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -17284,6 +17302,14 @@ proxies:
   port: 3030
   uuid: 6d9a7312-5021-40b0-9e2b-d08b6ef0d917
   network: tcp
+- name: OpenRay  TR-352
+  type: vmess
+  server: 164.138.202.114
+  port: 21639
+  uuid: 6d3aba4a-2c2c-49ca-9515-de9d0b00d5a5
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  MX-2
   type: vless
   server: ul-mexico1.09vpn.com
@@ -18826,6 +18852,7 @@ proxy-groups:
   - OpenRay  FR-37899
   - OpenRay  FR-37900
   - OpenRay  FR-37901
+  - OpenRay  FR-37902
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -19074,6 +19101,7 @@ proxy-groups:
   - OpenRay  DE-51880
   - OpenRay  DE-51881
   - OpenRay  DE-51882
+  - OpenRay  DE-51883
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -19301,6 +19329,7 @@ proxy-groups:
   - OpenRay  TR-349
   - OpenRay  TR-350
   - OpenRay  TR-351
+  - OpenRay  TR-352
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
@@ -20709,6 +20738,7 @@ proxy-groups:
   - OpenRay  FR-37899
   - OpenRay  FR-37900
   - OpenRay  FR-37901
+  - OpenRay  FR-37902
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -20957,6 +20987,7 @@ proxy-groups:
   - OpenRay  DE-51880
   - OpenRay  DE-51881
   - OpenRay  DE-51882
+  - OpenRay  DE-51883
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21184,6 +21215,7 @@ proxy-groups:
   - OpenRay  TR-349
   - OpenRay  TR-350
   - OpenRay  TR-351
+  - OpenRay  TR-352
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
