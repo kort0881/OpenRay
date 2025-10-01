@@ -6206,6 +6206,20 @@ proxies:
     path: linkvws
     headers:
       Host: pelang.org
+- name: 'OpenRay Dynamic-138311 #2'
+  type: vmess
+  server: jamekk.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: jamekk.org
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: jamekk.org
 - name: OpenRay  GB-4136
   type: vmess
   server: 46.250.243.56
@@ -10119,6 +10133,18 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
+- name: OpenRay  US-93401
+  type: vless
+  server: 141.193.213.21
+  port: 2096
+  uuid: 76bfc324-e228-47e0-8871-f974fac80390
+  network: ws
+  tls: true
+  servername: ip.onhit.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ip.onhit.xyz
 - name: OpenRay  FR-117
   type: vless
   server: 51.38.237.113
@@ -15084,6 +15110,33 @@ proxies:
     path: /linkvws
     headers:
       Host: serkat.org
+- name: OpenRay  DE-51899
+  type: vless
+  server: githubde2.ip-venzo.com
+  port: 8443
+  uuid: 6b3a7034-39ec-f057-377d-cf6af57b4db4
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: WX0HU-Jo9hSj-4guNJ89TyiltK7zHJCKJQBlpsmKYWQ
+    short-id: 4b543e6a5373b815
+  client-fingerprint: firefox
+- name: OpenRay  DE-51900
+  type: vmess
+  server: 57.129.24.132
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -16693,6 +16746,18 @@ proxies:
 - name: OpenRay  KR-606
   type: vmess
   server: 15.165.18.170
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-607
+  type: vmess
+  server: 13.124.208.217
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -18324,6 +18389,7 @@ proxy-groups:
   - 'OpenRay Dynamic-138312 #2'
   - OpenRay Dynamic-138313
   - OpenRay Dynamic-51899
+  - 'OpenRay Dynamic-138311 #2'
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -18837,6 +18903,7 @@ proxy-groups:
   - OpenRay  US-93396
   - OpenRay  US-93398
   - OpenRay  US-93399
+  - OpenRay  US-93401
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -19403,6 +19470,8 @@ proxy-groups:
   - OpenRay  DE-51891
   - OpenRay  DE-51895
   - OpenRay  DE-51897
+  - OpenRay  DE-51899
+  - OpenRay  DE-51900
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -19552,6 +19621,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
+  - OpenRay  KR-607
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -20230,6 +20300,7 @@ proxy-groups:
   - 'OpenRay Dynamic-138312 #2'
   - OpenRay Dynamic-138313
   - OpenRay Dynamic-51899
+  - 'OpenRay Dynamic-138311 #2'
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-5937
@@ -20743,6 +20814,7 @@ proxy-groups:
   - OpenRay  US-93396
   - OpenRay  US-93398
   - OpenRay  US-93399
+  - OpenRay  US-93401
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -21309,6 +21381,8 @@ proxy-groups:
   - OpenRay  DE-51891
   - OpenRay  DE-51895
   - OpenRay  DE-51897
+  - OpenRay  DE-51899
+  - OpenRay  DE-51900
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21458,6 +21532,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
+  - OpenRay  KR-607
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
