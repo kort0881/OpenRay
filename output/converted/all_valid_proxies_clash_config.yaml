@@ -12735,6 +12735,12 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay  FR-37973
+  type: vless
+  server: 94.131.118.142
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -13438,6 +13444,19 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  NL-10890
+  type: vless
+  server: 88.210.9.149
+  port: 8080
+  uuid: 883d6f1f-a964-406c-96bd-46357d8d2dea
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.com
+  reality-opts:
+    public-key: jRReXVS85X0Qm7jovHgNSOyz7BuS7p3iMPE4EfUHRlk
+    short-id: 1ae2fd1e1ace9935
+  client-fingerprint: chrome
 - name: OpenRay  IN-118
   type: vless
   server: 178.212.35.210
@@ -17814,6 +17833,16 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  TR-366
+  type: vless
+  server: 188.132.141.58
+  port: 7035
+  uuid: 6825b61d-e062-4725-bd63-ddb954f6a3b6
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: filimo.com
 - name: OpenRay  MX-2
   type: vless
   server: ul-mexico1.09vpn.com
@@ -18054,6 +18083,18 @@ proxies:
   port: 3030
   uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
   network: tcp
+- name: OpenRay  AE-4
+  type: vless
+  server: 5.44.42.60
+  port: 8080
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+  network: tcp
+  tls: true
+  servername: yandex.com
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  client-fingerprint: chrome
 - name: OpenRay  AM-1
   type: vless
   server: 45.129.185.249
@@ -18113,6 +18154,16 @@ proxies:
     path: /
     headers:
       Host: hgold.youirme.com
+- name: OpenRay  IR-3
+  type: vless
+  server: hgold.youirme.com
+  port: 2052
+  uuid: 6ba449e7-b9bf-4dc8-8c89-614bbef5b9fe
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: speedtest.net
 
 proxy-groups:
 - name: AUTO
@@ -19590,6 +19641,7 @@ proxy-groups:
   - OpenRay  FR-37970
   - OpenRay  FR-37971
   - OpenRay  FR-37972
+  - OpenRay  FR-37973
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -19676,6 +19728,7 @@ proxy-groups:
   - OpenRay  NL-10887
   - OpenRay  NL-10888
   - OpenRay  NL-10889
+  - OpenRay  NL-10890
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -20093,6 +20146,7 @@ proxy-groups:
   - OpenRay  TR-363
   - OpenRay  TR-364
   - OpenRay  TR-365
+  - OpenRay  TR-366
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
@@ -20115,11 +20169,13 @@ proxy-groups:
   - OpenRay  PT-1
   - OpenRay  AE-2
   - OpenRay  AE-3
+  - OpenRay  AE-4
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
   - OpenRay  IR-1
   - OpenRay  IR-2
+  - OpenRay  IR-3
 - name: PROXY
   type: select
   proxies:
@@ -21593,6 +21649,7 @@ proxy-groups:
   - OpenRay  FR-37970
   - OpenRay  FR-37971
   - OpenRay  FR-37972
+  - OpenRay  FR-37973
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -21679,6 +21736,7 @@ proxy-groups:
   - OpenRay  NL-10887
   - OpenRay  NL-10888
   - OpenRay  NL-10889
+  - OpenRay  NL-10890
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -22096,6 +22154,7 @@ proxy-groups:
   - OpenRay  TR-363
   - OpenRay  TR-364
   - OpenRay  TR-365
+  - OpenRay  TR-366
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
@@ -22118,11 +22177,13 @@ proxy-groups:
   - OpenRay  PT-1
   - OpenRay  AE-2
   - OpenRay  AE-3
+  - OpenRay  AE-4
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
   - OpenRay  IR-1
   - OpenRay  IR-2
+  - OpenRay  IR-3
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
