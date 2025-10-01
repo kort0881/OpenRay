@@ -5740,6 +5740,20 @@ proxies:
     path: /57ba2ab1
     headers:
       Host: ovhwuxian.pai50288.uk
+- name: OpenRay Dynamic-138333
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  GB-4136
   type: vmess
   server: 46.250.243.56
@@ -15001,6 +15015,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  SG-2049
+  type: vmess
+  server: 47.130.156.96
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  PL-1861
   type: vmess
   server: 57.128.216.125
@@ -16992,6 +17018,12 @@ proxies:
   port: 123
   uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
   network: tcp
+- name: OpenRay  AE-6
+  type: vless
+  server: 93.127.180.102
+  port: 123
+  uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
+  network: tcp
 - name: OpenRay  AM-1
   type: vless
   server: 45.129.185.249
@@ -17588,6 +17620,7 @@ proxy-groups:
   - OpenRay Dynamic-138326
   - OpenRay Dynamic-138329
   - OpenRay Dynamic-138330
+  - OpenRay Dynamic-138333
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-7006
@@ -18765,6 +18798,7 @@ proxy-groups:
   - OpenRay  SG-2043
   - OpenRay  SG-2045
   - OpenRay  SG-2048
+  - OpenRay  SG-2049
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -18963,6 +18997,7 @@ proxy-groups:
   - OpenRay  AE-3
   - OpenRay  AE-4
   - OpenRay  AE-5
+  - OpenRay  AE-6
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
@@ -19493,6 +19528,7 @@ proxy-groups:
   - OpenRay Dynamic-138326
   - OpenRay Dynamic-138329
   - OpenRay Dynamic-138330
+  - OpenRay Dynamic-138333
   - OpenRay  GB-4136
   - OpenRay  GB-4441
   - OpenRay  GB-7006
@@ -20670,6 +20706,7 @@ proxy-groups:
   - OpenRay  SG-2043
   - OpenRay  SG-2045
   - OpenRay  SG-2048
+  - OpenRay  SG-2049
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -20868,6 +20905,7 @@ proxy-groups:
   - OpenRay  AE-3
   - OpenRay  AE-4
   - OpenRay  AE-5
+  - OpenRay  AE-6
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
