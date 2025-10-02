@@ -1542,6 +1542,18 @@ proxies:
     path: /?ed=2048
     headers:
       Host: frAgeU2.cpI2HIdd.eu.ORG
+- name: OpenRay  CA-138354
+  type: vless
+  server: 104.16.250.22
+  port: 443
+  uuid: a546c4de-2840-49b7-b914-98babd165bb1
+  network: ws
+  tls: true
+  servername: de.xiejiang.dpdns.org
+  ws-opts:
+    path: /XYXY0721
+    headers:
+      Host: de.xiejiang.dpdns.org
 - name: OpenRay  XX-169
   type: vless
   server: pqh27v4.waipdirect.shop
@@ -16910,6 +16922,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2666
+  type: vmess
+  server: 18.181.168.227
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -18357,6 +18381,7 @@ proxy-groups:
   - OpenRay  CA-138350
   - OpenRay  CA-138352
   - OpenRay  CA-138353
+  - OpenRay  CA-138354
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -20095,6 +20120,7 @@ proxy-groups:
   - OpenRay  JP-2663
   - OpenRay  JP-2664
   - OpenRay  JP-2665
+  - OpenRay  JP-2666
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
@@ -20362,6 +20388,7 @@ proxy-groups:
   - OpenRay  CA-138350
   - OpenRay  CA-138352
   - OpenRay  CA-138353
+  - OpenRay  CA-138354
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -22100,6 +22127,7 @@ proxy-groups:
   - OpenRay  JP-2663
   - OpenRay  JP-2664
   - OpenRay  JP-2665
+  - OpenRay  JP-2666
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
