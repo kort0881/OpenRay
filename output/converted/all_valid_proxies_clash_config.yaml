@@ -6273,6 +6273,33 @@ proxies:
     path: /
     headers:
       Host: snippets.pusytroller.cf
+- name: OpenRay Dynamic-38093
+  type: vmess
+  server: kampong.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: kampong.org
+- name: OpenRay Dynamic-6408
+  type: vless
+  server: wa.sfasti.ru
+  port: 443
+  uuid: d4e4c02a-d969-47a6-ba0f-3d433fdac206
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: wa.sfasti.ru
+  reality-opts:
+    public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+    short-id: 16895459a2c7768d
+  client-fingerprint: chrome
 - name: OpenRay  GB-4441
   type: vmess
   server: 46.250.243.56
@@ -17015,6 +17042,20 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
+- name: OpenRay  PL-3791
+  type: vmess
+  server: 57.128.216.125
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kampong.org
 - name: OpenRay  CH-43
   type: vless
   server: 5.182.36.251
@@ -18294,6 +18335,18 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 45.116.78.39
+- name: OpenRay  HK-78
+  type: vmess
+  server: 45.116.78.39
+  port: 31531
+  uuid: 35aefd27-623b-4879-9c2b-9138d64c7d83
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: 45.116.78.39
 - name: OpenRay  TR-136
   type: vless
   server: 638945271259127439.yasuj-prx-dnraacp.info
@@ -18458,6 +18511,18 @@ proxies:
     path: /vmess/
     headers:
       Host: 95.164.4.88
+- name: OpenRay  BR-39
+  type: vmess
+  server: 95.164.4.88
+  port: 80
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 95.164.4.88
 - name: OpenRay  CN-1
   type: vless
   server: 176.124.223.96
@@ -18588,6 +18653,18 @@ proxies:
     public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
     short-id: 27cfa05000c23cc4
   client-fingerprint: chrome
+- name: OpenRay  AT-2
+  type: vless
+  server: 77.73.131.77
+  port: 2053
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  network: ws
+  tls: true
+  servername: kejiland.freewarp.eu.org
+  ws-opts:
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+    headers:
+      Host: kejiland.freewarp.eu.org
 - name: OpenRay  AZ-1
   type: vless
   server: 180.149.44.224
@@ -19181,6 +19258,8 @@ proxy-groups:
   - 'OpenRay Dynamic-138405 #2'
   - 'OpenRay Dynamic-138402 #4'
   - 'OpenRay Dynamic-138404 #4'
+  - OpenRay Dynamic-38093
+  - OpenRay Dynamic-6408
   - OpenRay  GB-4441
   - OpenRay  GB-7006
   - OpenRay  GB-7044
@@ -20547,6 +20626,7 @@ proxy-groups:
   - OpenRay  PL-3788
   - OpenRay  PL-3789
   - OpenRay  PL-3790
+  - OpenRay  PL-3791
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
@@ -20689,6 +20769,7 @@ proxy-groups:
   - OpenRay  HK-75
   - OpenRay  HK-76
   - OpenRay  HK-77
+  - OpenRay  HK-78
   - OpenRay  TR-136
   - OpenRay  TR-328
   - OpenRay  TR-353
@@ -20708,6 +20789,7 @@ proxy-groups:
   - OpenRay  BR-36
   - OpenRay  BR-37
   - OpenRay  BR-38
+  - OpenRay  BR-39
   - OpenRay  CN-1
   - OpenRay  GR-1
   - OpenRay  PT-1
@@ -20719,6 +20801,7 @@ proxy-groups:
   - OpenRay  HR-2
   - OpenRay  HR-3
   - OpenRay  AT-1
+  - OpenRay  AT-2
   - OpenRay  AZ-1
   - OpenRay  IR-1
 - name: PROXY
@@ -21294,6 +21377,8 @@ proxy-groups:
   - 'OpenRay Dynamic-138405 #2'
   - 'OpenRay Dynamic-138402 #4'
   - 'OpenRay Dynamic-138404 #4'
+  - OpenRay Dynamic-38093
+  - OpenRay Dynamic-6408
   - OpenRay  GB-4441
   - OpenRay  GB-7006
   - OpenRay  GB-7044
@@ -22660,6 +22745,7 @@ proxy-groups:
   - OpenRay  PL-3788
   - OpenRay  PL-3789
   - OpenRay  PL-3790
+  - OpenRay  PL-3791
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
@@ -22802,6 +22888,7 @@ proxy-groups:
   - OpenRay  HK-75
   - OpenRay  HK-76
   - OpenRay  HK-77
+  - OpenRay  HK-78
   - OpenRay  TR-136
   - OpenRay  TR-328
   - OpenRay  TR-353
@@ -22821,6 +22908,7 @@ proxy-groups:
   - OpenRay  BR-36
   - OpenRay  BR-37
   - OpenRay  BR-38
+  - OpenRay  BR-39
   - OpenRay  CN-1
   - OpenRay  GR-1
   - OpenRay  PT-1
@@ -22832,6 +22920,7 @@ proxy-groups:
   - OpenRay  HR-2
   - OpenRay  HR-3
   - OpenRay  AT-1
+  - OpenRay  AT-2
   - OpenRay  AZ-1
   - OpenRay  IR-1
 rules:
