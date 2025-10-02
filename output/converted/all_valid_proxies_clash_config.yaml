@@ -1401,6 +1401,18 @@ proxies:
     path: /
     headers:
       Host: frAgteSt.JaHANGiRKh.eU.orG
+- name: OpenRay  CA-138410
+  type: vless
+  server: 188.114.96.3
+  port: 443
+  uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
+  network: ws
+  tls: true
+  servername: net2026cd.zanddynastyofpersia.org
+  ws-opts:
+    path: /eJsVXFVZ6iavNx1EFxOyH861WH
+    headers:
+      Host: net2026cd.zanddynastyofpersia.org
 - name: OpenRay  XX-169
   type: vless
   server: pqh27v4.waipdirect.shop
@@ -10756,6 +10768,28 @@ proxies:
     path: /admin
     headers:
       Host: gm195.io
+- name: OpenRay  US-93578
+  type: vmess
+  server: 198.23.148.39
+  port: 16082
+  uuid: f96e94b6-1d90-4984-9388-66295fcb27e1
+  alterId: 0
+  cipher: auto
+  network: none
+- name: OpenRay  US-93579
+  type: vmess
+  server: 15.204.64.211
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kampong.org
 - name: OpenRay  FR-117
   type: vless
   server: 51.38.237.113
@@ -15886,6 +15920,34 @@ proxies:
       /stream?/Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
     headers:
       Host: www.movieee.ir
+- name: OpenRay  DE-52030
+  type: vmess
+  server: 57.129.25.22
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: lammaland.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
+- name: OpenRay  DE-52031
+  type: vmess
+  server: 57.129.28.215
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -16276,6 +16338,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  LT-1039
+  type: vless
+  server: 638940560407097324.copenhagen-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  RU-6387
   type: vless
   server: 194.87.80.9
@@ -16446,6 +16514,18 @@ proxies:
 - name: OpenRay  SG-2060
   type: vmess
   server: 18.136.199.27
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  SG-2061
+  type: vmess
+  server: 13.250.107.249
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -18414,6 +18494,18 @@ proxies:
   port: 4655
   uuid: 136804c6-6f7c-4422-9c36-4d61f4e3f2ff
   network: tcp
+- name: OpenRay  TH-1
+  type: vmess
+  server: 185.84.161.150
+  port: 20086
+  uuid: ebba0676-e05a-49ec-8344-d96d749e01c0
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 185.84.161.150
 
 proxy-groups:
 - name: AUTO
@@ -18534,6 +18626,7 @@ proxy-groups:
   - OpenRay  CA-138403
   - OpenRay  CA-138407
   - OpenRay  CA-138409
+  - OpenRay  CA-138410
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -19616,6 +19709,8 @@ proxy-groups:
   - OpenRay  US-93573
   - OpenRay  US-93574
   - OpenRay  US-93575
+  - OpenRay  US-93578
+  - OpenRay  US-93579
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -20232,6 +20327,8 @@ proxy-groups:
   - OpenRay  DE-52026
   - OpenRay  DE-52027
   - OpenRay  DE-52029
+  - OpenRay  DE-52030
+  - OpenRay  DE-52031
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -20292,6 +20389,7 @@ proxy-groups:
   - OpenRay  LT-1036
   - OpenRay  LT-1037
   - OpenRay  LT-1038
+  - OpenRay  LT-1039
   - OpenRay  RU-6387
   - OpenRay  RU-6394
   - OpenRay  RU-6396
@@ -20307,6 +20405,7 @@ proxy-groups:
   - OpenRay  SG-2050
   - OpenRay  SG-2053
   - OpenRay  SG-2060
+  - OpenRay  SG-2061
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -20509,6 +20608,7 @@ proxy-groups:
   - OpenRay  AT-1
   - OpenRay  AT-2
   - OpenRay  AZ-1
+  - OpenRay  TH-1
 - name: PROXY
   type: select
   proxies:
@@ -20625,6 +20725,7 @@ proxy-groups:
   - OpenRay  CA-138403
   - OpenRay  CA-138407
   - OpenRay  CA-138409
+  - OpenRay  CA-138410
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -21707,6 +21808,8 @@ proxy-groups:
   - OpenRay  US-93573
   - OpenRay  US-93574
   - OpenRay  US-93575
+  - OpenRay  US-93578
+  - OpenRay  US-93579
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -22323,6 +22426,8 @@ proxy-groups:
   - OpenRay  DE-52026
   - OpenRay  DE-52027
   - OpenRay  DE-52029
+  - OpenRay  DE-52030
+  - OpenRay  DE-52031
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -22383,6 +22488,7 @@ proxy-groups:
   - OpenRay  LT-1036
   - OpenRay  LT-1037
   - OpenRay  LT-1038
+  - OpenRay  LT-1039
   - OpenRay  RU-6387
   - OpenRay  RU-6394
   - OpenRay  RU-6396
@@ -22398,6 +22504,7 @@ proxy-groups:
   - OpenRay  SG-2050
   - OpenRay  SG-2053
   - OpenRay  SG-2060
+  - OpenRay  SG-2061
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -22600,6 +22707,7 @@ proxy-groups:
   - OpenRay  AT-1
   - OpenRay  AT-2
   - OpenRay  AZ-1
+  - OpenRay  TH-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
