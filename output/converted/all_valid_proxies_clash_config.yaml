@@ -1550,6 +1550,16 @@ proxies:
     path: /Free-VPN-Geo-Project/181.214.208.46-8011
     headers:
       Host: gamang.gpj2.dpdns.org
+- name: OpenRay  CA-138382
+  type: vless
+  server: 104.24.87.230
+  port: 80
+  uuid: 590dfbde-f8c8-429b-b947-39bb767ddd9c
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: square-moon-bc81-ppal03.tivere6418.workers.dev
 - name: OpenRay  XX-169
   type: vless
   server: pqh27v4.waipdirect.shop
@@ -13495,6 +13505,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38070
+  type: vless
+  server: 45.95.233.8
+  port: 8080
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+  network: tcp
+  tls: true
+  servername: yandex.com
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  client-fingerprint: chrome
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -16240,6 +16262,12 @@ proxies:
     public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
     short-id: 82c8140feb118043
   client-fingerprint: chrome
+- name: OpenRay  DE-51997
+  type: vless
+  server: hetz-vl2.danims.sbs
+  port: 8081
+  uuid: 33800b9d-be13-4156-82c2-b985a8bad6dd
+  network: tcp
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -16854,6 +16882,18 @@ proxies:
 - name: OpenRay  SG-2055
   type: vmess
   server: 3.1.217.201
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  SG-2056
+  type: vmess
+  server: 18.140.58.70
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -18686,6 +18726,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  TR-375
+  type: vless
+  server: 103.231.75.74
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  MX-2
   type: vless
   server: ul-mexico1.09vpn.com
@@ -19029,6 +19075,7 @@ proxy-groups:
   - OpenRay  CA-138374
   - OpenRay  CA-138375
   - OpenRay  CA-138379
+  - OpenRay  CA-138382
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -20481,6 +20528,7 @@ proxy-groups:
   - OpenRay  FR-38067
   - OpenRay  FR-38068
   - OpenRay  FR-38069
+  - OpenRay  FR-38070
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -20740,6 +20788,7 @@ proxy-groups:
   - OpenRay  DE-51994
   - OpenRay  DE-51995
   - OpenRay  DE-51996
+  - OpenRay  DE-51997
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -20818,6 +20867,7 @@ proxy-groups:
   - OpenRay  SG-2053
   - OpenRay  SG-2054
   - OpenRay  SG-2055
+  - OpenRay  SG-2056
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -21004,6 +21054,7 @@ proxy-groups:
   - OpenRay  TR-372
   - OpenRay  TR-373
   - OpenRay  TR-374
+  - OpenRay  TR-375
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
@@ -21151,6 +21202,7 @@ proxy-groups:
   - OpenRay  CA-138374
   - OpenRay  CA-138375
   - OpenRay  CA-138379
+  - OpenRay  CA-138382
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -22603,6 +22655,7 @@ proxy-groups:
   - OpenRay  FR-38067
   - OpenRay  FR-38068
   - OpenRay  FR-38069
+  - OpenRay  FR-38070
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -22862,6 +22915,7 @@ proxy-groups:
   - OpenRay  DE-51994
   - OpenRay  DE-51995
   - OpenRay  DE-51996
+  - OpenRay  DE-51997
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -22940,6 +22994,7 @@ proxy-groups:
   - OpenRay  SG-2053
   - OpenRay  SG-2054
   - OpenRay  SG-2055
+  - OpenRay  SG-2056
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -23126,6 +23181,7 @@ proxy-groups:
   - OpenRay  TR-372
   - OpenRay  TR-373
   - OpenRay  TR-374
+  - OpenRay  TR-375
   - OpenRay  MX-2
   - OpenRay  DK-1
   - OpenRay  DK-2
