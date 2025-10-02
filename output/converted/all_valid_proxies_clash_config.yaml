@@ -1530,6 +1530,18 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: 51.79.103.76
+- name: OpenRay  CA-138353
+  type: vless
+  server: 104.16.53.11
+  port: 2053
+  uuid: 97fc44dd-c88c-4470-8d66-1752089c0183
+  network: ws
+  tls: true
+  servername: frAgeU2.cpI2HIdd.eu.ORG
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: frAgeU2.cpI2HIdd.eu.ORG
 - name: OpenRay  XX-169
   type: vless
   server: pqh27v4.waipdirect.shop
@@ -6106,6 +6118,30 @@ proxies:
     path: /
     headers:
       Host: CRazy-idENtity.onEEat.co
+- name: OpenRay Dynamic-93513
+  type: vless
+  server: mstr.fastly80.hosting-ip.com
+  port: 80
+  uuid: d46fbe10-7982-4229-b461-4afef5c690fa
+  network: ws
+  ws-opts:
+    path: /admin
+    headers:
+      Host: gm195.io
+- name: OpenRay Dynamic-138354
+  type: vmess
+  server: cf.877774.xyz
+  port: 443
+  uuid: 2c833c5d-cbcc-4afb-89ba-d17dc39db6f0
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: enlargement-decreased-directors-consensus.trycloudflare.com
+  ws-opts:
+    path: /vmess-argo?ed=2560
+    headers:
+      Host: enlargement-decreased-directors-consensus.trycloudflare.com
 - name: OpenRay  GB-4441
   type: vmess
   server: 46.250.243.56
@@ -18110,6 +18146,12 @@ proxies:
   port: 123
   uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
   network: tcp
+- name: OpenRay  AE-8
+  type: vless
+  server: 93.127.180.102
+  port: 123
+  uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
+  network: raw
 - name: OpenRay  AM-1
   type: vless
   server: 45.129.185.249
@@ -18171,6 +18213,19 @@ proxies:
     public-key: M_vyGgaMp6Unz28r-3jFP-VwRoY39Edhn_0bQPknqmc
     short-id: 08f6093b944bd385
   client-fingerprint: random
+- name: OpenRay  IR-1
+  type: vless
+  server: hybrid.arvancloud.online
+  port: 44443
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.speedtest.net
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+    short-id: ''
+  client-fingerprint: chrome
 
 proxy-groups:
 - name: AUTO
@@ -18301,6 +18356,7 @@ proxy-groups:
   - OpenRay  CA-138348
   - OpenRay  CA-138350
   - OpenRay  CA-138352
+  - OpenRay  CA-138353
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -18729,6 +18785,8 @@ proxy-groups:
   - OpenRay Dynamic-138349
   - OpenRay Dynamic-138351
   - OpenRay Dynamic-138353
+  - OpenRay Dynamic-93513
+  - OpenRay Dynamic-138354
   - OpenRay  GB-4441
   - OpenRay  GB-7006
   - OpenRay  GB-7044
@@ -20170,11 +20228,13 @@ proxy-groups:
   - OpenRay  AE-5
   - OpenRay  AE-6
   - OpenRay  AE-7
+  - OpenRay  AE-8
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
   - OpenRay  HR-2
   - OpenRay  SI-1
+  - OpenRay  IR-1
 - name: PROXY
   type: select
   proxies:
@@ -20301,6 +20361,7 @@ proxy-groups:
   - OpenRay  CA-138348
   - OpenRay  CA-138350
   - OpenRay  CA-138352
+  - OpenRay  CA-138353
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -20729,6 +20790,8 @@ proxy-groups:
   - OpenRay Dynamic-138349
   - OpenRay Dynamic-138351
   - OpenRay Dynamic-138353
+  - OpenRay Dynamic-93513
+  - OpenRay Dynamic-138354
   - OpenRay  GB-4441
   - OpenRay  GB-7006
   - OpenRay  GB-7044
@@ -22170,11 +22233,13 @@ proxy-groups:
   - OpenRay  AE-5
   - OpenRay  AE-6
   - OpenRay  AE-7
+  - OpenRay  AE-8
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  HR-1
   - OpenRay  HR-2
   - OpenRay  SI-1
+  - OpenRay  IR-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
