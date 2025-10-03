@@ -7272,6 +7272,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  GB-13346
+  type: vless
+  server: 638950280342832628.esfahan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  US-3
   type: vless
   server: pqh25v7.waipdirect.shop
@@ -14199,6 +14205,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38121
+  type: vless
+  server: 638950330462896620.neyshabur-prx-dnraacr.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  FR-38122
+  type: vless
+  server: 638950280434432431.neyshabur-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -16798,6 +16816,19 @@ proxies:
     path: linkvws
     headers:
       Host: fapeng.org
+- name: OpenRay  DE-52048
+  type: vless
+  server: 94.141.123.233
+  port: 443
+  uuid: cab58dc1-1035-489c-9d26-d4d7bbf927f8
+  network: raw
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdnjs.com
+  reality-opts:
+    public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
+    short-id: fc7a526a7e61ba3b
+  client-fingerprint: chrome
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -18165,6 +18196,19 @@ proxies:
       /-ViV2ry@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL-@V2RIRAN-TEL--@V2RIRAN-JOIN-@V2RIRAN-TEL--@V2RIRAN?ed=2048
     headers:
       Host: dl.turkiye6.com.tr
+- name: OpenRay  FI-3242
+  type: vless
+  server: 178.20.215.2
+  port: 443
+  uuid: 192ea2c7-d7d0-6676-2929-b04a072b387d
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: speed.cloudflare.com
+  reality-opts:
+    public-key: GfTzhy59k9CXlAdF819OUVeBdrqIILaDIWa1bddjGnA
+    short-id: ''
+  client-fingerprint: chrome
 - name: OpenRay  SE-1343
   type: vless
   server: 13.48.175.183
@@ -18410,6 +18454,18 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  TW-1952
+  type: vmess
+  server: 140.235.38.89
+  port: 6474
+  uuid: 96a69037-7bf8-43f8-bd62-4beb8f1f36e2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: 140.235.38.89
 - name: OpenRay  LV-254
   type: vless
   server: 45.130.215.125
@@ -20182,6 +20238,7 @@ proxy-groups:
   - OpenRay  GB-13343
   - OpenRay  GB-13344
   - OpenRay  GB-13345
+  - OpenRay  GB-13346
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-40
@@ -21169,6 +21226,8 @@ proxy-groups:
   - OpenRay  FR-38118
   - OpenRay  FR-38119
   - OpenRay  FR-38120
+  - OpenRay  FR-38121
+  - OpenRay  FR-38122
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -21418,6 +21477,7 @@ proxy-groups:
   - OpenRay  DE-52045
   - OpenRay  DE-52046
   - OpenRay  DE-52047
+  - OpenRay  DE-52048
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21562,6 +21622,7 @@ proxy-groups:
   - OpenRay  FI-3239
   - OpenRay  FI-3240
   - OpenRay  FI-3241
+  - OpenRay  FI-3242
   - OpenRay  SE-1343
   - OpenRay  SE-1404
   - OpenRay  SE-1405
@@ -21586,6 +21647,7 @@ proxy-groups:
   - OpenRay  TW-1948
   - OpenRay  TW-1950
   - OpenRay  TW-1951
+  - OpenRay  TW-1952
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
@@ -22401,6 +22463,7 @@ proxy-groups:
   - OpenRay  GB-13343
   - OpenRay  GB-13344
   - OpenRay  GB-13345
+  - OpenRay  GB-13346
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-40
@@ -23388,6 +23451,8 @@ proxy-groups:
   - OpenRay  FR-38118
   - OpenRay  FR-38119
   - OpenRay  FR-38120
+  - OpenRay  FR-38121
+  - OpenRay  FR-38122
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -23637,6 +23702,7 @@ proxy-groups:
   - OpenRay  DE-52045
   - OpenRay  DE-52046
   - OpenRay  DE-52047
+  - OpenRay  DE-52048
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -23781,6 +23847,7 @@ proxy-groups:
   - OpenRay  FI-3239
   - OpenRay  FI-3240
   - OpenRay  FI-3241
+  - OpenRay  FI-3242
   - OpenRay  SE-1343
   - OpenRay  SE-1404
   - OpenRay  SE-1405
@@ -23805,6 +23872,7 @@ proxy-groups:
   - OpenRay  TW-1948
   - OpenRay  TW-1950
   - OpenRay  TW-1951
+  - OpenRay  TW-1952
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
