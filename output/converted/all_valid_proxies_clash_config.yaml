@@ -5499,6 +5499,18 @@ proxies:
     public-key: mfS1cJVYQV4GyjguwcG3KMxucq6JHWIjbzQ7U0Xaz0k
     short-id: 84248f
   client-fingerprint: firefox
+- name: OpenRay Dynamic-2064
+  type: vless
+  server: hk3.kaipi.link
+  port: 443
+  uuid: d8665d45-8103-46e9-9cb7-8902bb7559b4
+  network: ws
+  tls: true
+  servername: hk3.kaipi.link
+  ws-opts:
+    path: /texaws
+    headers:
+      Host: hk3.kaipi.link
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -6334,6 +6346,12 @@ proxies:
 - name: OpenRay  GB-13358
   type: vless
   server: 638950280342843836.esfahan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  GB-13359
+  type: vless
+  server: 638948510129819106.dezful-drc-tusaas.info
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -11115,6 +11133,12 @@ proxies:
     public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
     short-id: ''
   client-fingerprint: firefox
+- name: OpenRay  FR-38161
+  type: vless
+  server: 195.42.233.107
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -13990,6 +14014,38 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-52110
+  type: vless
+  server: hetz-vl2.danims.sbs
+  port: 8081
+  uuid: c18333e5-cf62-4859-83bc-0f008be36cbb
+  network: tcp
+- name: OpenRay  DE-52111
+  type: vless
+  server: 5.75.195.163
+  port: 38084
+  uuid: 0ebec2d6-e1e5-4df0-849e-319db45aca87
+  network: tcp
+  tls: true
+  servername: www.tgju.org
+  reality-opts:
+    public-key: WlxZnYRXM2HwBUhfpmIbmxIwNAnQ-9lQUmJS5Ep9JEo
+    short-id: ca16ca35
+  client-fingerprint: firefox
+- name: OpenRay  DE-52112
+  type: vmess
+  server: 57.129.64.199
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: pelang.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pelang.org
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -14396,6 +14452,12 @@ proxies:
 - name: OpenRay  LT-1048
   type: vless
   server: 638930359207602168.dublin-drc-dcrabj.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  LT-1049
+  type: vless
+  server: 94.131.13.207
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -15266,6 +15328,18 @@ proxies:
   port: 27775
   uuid: 48d022ad-f831-48e0-9730-df4dadbbc684
   network: tcp
+- name: OpenRay  JP-2676
+  type: vmess
+  server: 52.69.136.136
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -15543,6 +15617,18 @@ proxies:
     path: /aa
     headers:
       Host: 121.147.229.1
+- name: OpenRay  KR-611
+  type: vmess
+  server: 13.125.228.171
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  TW-16
   type: vmess
   server: 165.154.195.38
@@ -17299,6 +17385,7 @@ proxy-groups:
   - OpenRay Dynamic-138463
   - OpenRay Dynamic-138464
   - OpenRay Dynamic-52110
+  - OpenRay Dynamic-2064
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -17398,6 +17485,7 @@ proxy-groups:
   - OpenRay  GB-13356
   - OpenRay  GB-13357
   - OpenRay  GB-13358
+  - OpenRay  GB-13359
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-107
@@ -18031,6 +18119,7 @@ proxy-groups:
   - OpenRay  FR-38158
   - OpenRay  FR-38159
   - OpenRay  FR-38160
+  - OpenRay  FR-38161
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -18314,6 +18403,9 @@ proxy-groups:
   - OpenRay  DE-52107
   - OpenRay  DE-52108
   - OpenRay  DE-52109
+  - OpenRay  DE-52110
+  - OpenRay  DE-52111
+  - OpenRay  DE-52112
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -18376,6 +18468,7 @@ proxy-groups:
   - OpenRay  LT-1046
   - OpenRay  LT-1047
   - OpenRay  LT-1048
+  - OpenRay  LT-1049
   - OpenRay  RU-6396
   - OpenRay  RU-6398
   - OpenRay  RU-6405
@@ -18451,6 +18544,7 @@ proxy-groups:
   - OpenRay  JP-2673
   - OpenRay  JP-2674
   - OpenRay  JP-2675
+  - OpenRay  JP-2676
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
@@ -18476,6 +18570,7 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -19085,6 +19180,7 @@ proxy-groups:
   - OpenRay Dynamic-138463
   - OpenRay Dynamic-138464
   - OpenRay Dynamic-52110
+  - OpenRay Dynamic-2064
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -19184,6 +19280,7 @@ proxy-groups:
   - OpenRay  GB-13356
   - OpenRay  GB-13357
   - OpenRay  GB-13358
+  - OpenRay  GB-13359
   - OpenRay  US-3
   - OpenRay  US-34
   - OpenRay  US-107
@@ -19817,6 +19914,7 @@ proxy-groups:
   - OpenRay  FR-38158
   - OpenRay  FR-38159
   - OpenRay  FR-38160
+  - OpenRay  FR-38161
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -20100,6 +20198,9 @@ proxy-groups:
   - OpenRay  DE-52107
   - OpenRay  DE-52108
   - OpenRay  DE-52109
+  - OpenRay  DE-52110
+  - OpenRay  DE-52111
+  - OpenRay  DE-52112
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -20162,6 +20263,7 @@ proxy-groups:
   - OpenRay  LT-1046
   - OpenRay  LT-1047
   - OpenRay  LT-1048
+  - OpenRay  LT-1049
   - OpenRay  RU-6396
   - OpenRay  RU-6398
   - OpenRay  RU-6405
@@ -20237,6 +20339,7 @@ proxy-groups:
   - OpenRay  JP-2673
   - OpenRay  JP-2674
   - OpenRay  JP-2675
+  - OpenRay  JP-2676
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
@@ -20262,6 +20365,7 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
