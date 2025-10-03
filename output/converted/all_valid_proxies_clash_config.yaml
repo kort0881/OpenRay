@@ -14048,6 +14048,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2678
+  type: vmess
+  server: 54.238.4.55
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -14268,6 +14280,18 @@ proxies:
 - name: OpenRay  KR-611
   type: vmess
   server: 13.125.228.171
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-612
+  type: vmess
+  server: 43.203.170.233
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -15410,6 +15434,18 @@ proxies:
     public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
     short-id: f79448a30d
   client-fingerprint: chrome
+- name: OpenRay  IR-1
+  type: vless
+  server: 217.60.241.139
+  port: 1080
+  uuid: dcf1630c-f0bd-4d81-a128-4865df35e757
+  network: tcp
+- name: OpenRay  IR-2
+  type: vless
+  server: 217.60.241.139
+  port: 1080
+  uuid: dcf1630c-f0bd-4d81-a128-4865df35e757
+  network: tcp
 
 proxy-groups:
 - name: AUTO
@@ -16876,6 +16912,7 @@ proxy-groups:
   - OpenRay  JP-2675
   - OpenRay  JP-2676
   - OpenRay  JP-2677
+  - OpenRay  JP-2678
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3237
@@ -16897,6 +16934,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-610
   - OpenRay  KR-611
+  - OpenRay  KR-612
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -17033,6 +17071,8 @@ proxy-groups:
   - OpenRay  CZ-2
   - OpenRay  CZ-3
   - OpenRay  CZ-4
+  - OpenRay  IR-1
+  - OpenRay  IR-2
 - name: PROXY
   type: select
   proxies:
@@ -18495,6 +18535,7 @@ proxy-groups:
   - OpenRay  JP-2675
   - OpenRay  JP-2676
   - OpenRay  JP-2677
+  - OpenRay  JP-2678
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3237
@@ -18516,6 +18557,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-610
   - OpenRay  KR-611
+  - OpenRay  KR-612
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -18652,6 +18694,8 @@ proxy-groups:
   - OpenRay  CZ-2
   - OpenRay  CZ-3
   - OpenRay  CZ-4
+  - OpenRay  IR-1
+  - OpenRay  IR-2
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
