@@ -1538,6 +1538,18 @@ proxies:
     headers:
       Host: 
         wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: OpenRay  CA-138426
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
+  network: ws
+  tls: true
+  servername: angor.rtxiran.info
+  ws-opts:
+    path: /
+    headers:
+      Host: angor.rtxiran.info
 - name: OpenRay  XX-169
   type: vless
   server: pqh27v4.waipdirect.shop
@@ -16829,6 +16841,20 @@ proxies:
     public-key: vfmqSXTEjdIOgz43eZTNzBRztAvd1U1dDkSz_mnaSk4
     short-id: fc7a526a7e61ba3b
   client-fingerprint: chrome
+- name: OpenRay  DE-52049
+  type: vmess
+  server: 57.129.24.124
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: jamekk.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: jamekk.org
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -18097,6 +18123,18 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
+- name: OpenRay  JP-2668
+  type: vmess
+  server: 54.199.1.3
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-29
   type: vless
   server: 5.181.20.219
@@ -18361,6 +18399,18 @@ proxies:
 - name: OpenRay  KR-607
   type: vmess
   server: 13.125.17.208
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-608
+  type: vmess
+  server: 3.34.145.161
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -19550,6 +19600,16 @@ proxies:
     path: /
     headers:
       Host: 185.84.161.150
+- name: OpenRay  IR-1
+  type: vless
+  server: 62.60.192.209
+  port: 80
+  uuid: f5f2458c-5fcb-4820-82c2-2997492c54d5
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: /?BIA_TELEGRAM@MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
 
 proxy-groups:
 - name: AUTO
@@ -19681,6 +19741,7 @@ proxy-groups:
   - OpenRay  CA-138423
   - OpenRay  CA-138424
   - OpenRay  CA-138425
+  - OpenRay  CA-138426
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -21478,6 +21539,7 @@ proxy-groups:
   - OpenRay  DE-52046
   - OpenRay  DE-52047
   - OpenRay  DE-52048
+  - OpenRay  DE-52049
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -21614,6 +21676,7 @@ proxy-groups:
   - OpenRay  JP-2665
   - OpenRay  JP-2666
   - OpenRay  JP-2667
+  - OpenRay  JP-2668
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
@@ -21638,6 +21701,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-607
+  - OpenRay  KR-608
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -21779,6 +21843,7 @@ proxy-groups:
   - OpenRay  AT-2
   - OpenRay  TH-1
   - OpenRay  TH-2
+  - OpenRay  IR-1
 - name: PROXY
   type: select
   proxies:
@@ -21906,6 +21971,7 @@ proxy-groups:
   - OpenRay  CA-138423
   - OpenRay  CA-138424
   - OpenRay  CA-138425
+  - OpenRay  CA-138426
   - OpenRay  XX-169
   - OpenRay  XX-172
   - OpenRay  XX-346
@@ -23703,6 +23769,7 @@ proxy-groups:
   - OpenRay  DE-52046
   - OpenRay  DE-52047
   - OpenRay  DE-52048
+  - OpenRay  DE-52049
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -23839,6 +23906,7 @@ proxy-groups:
   - OpenRay  JP-2665
   - OpenRay  JP-2666
   - OpenRay  JP-2667
+  - OpenRay  JP-2668
   - OpenRay  FI-29
   - OpenRay  FI-84
   - OpenRay  FI-3236
@@ -23863,6 +23931,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-607
+  - OpenRay  KR-608
   - OpenRay  TW-16
   - OpenRay  TW-25
   - OpenRay  TW-34
@@ -24004,6 +24073,7 @@ proxy-groups:
   - OpenRay  AT-2
   - OpenRay  TH-1
   - OpenRay  TH-2
+  - OpenRay  IR-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
