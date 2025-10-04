@@ -5063,6 +5063,30 @@ proxies:
     path: linkvws
     headers:
       Host: fapeng.org
+- name: 'OpenRay Dynamic-138470 #2'
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: 171dc855-7334-4b30-b171-061eb8662838
+  network: ws
+  tls: true
+  servername: sapsg.lamkan.eu.org
+  ws-opts:
+    path: /vless-argo?ed=2560
+    headers:
+      Host: sapsg.lamkan.eu.org
+- name: OpenRay Dynamic-52137
+  type: vless
+  server: pq706rio.qdr8-tvg9u8bc98b6m2kk52agfme.portalofleg-ends.fun
+  port: 2057
+  uuid: 8bebc39d-2744-4af4-8ffa-fdfdd442cd97
+  network: tcp
+  tls: true
+  servername: pcmag.com
+  reality-opts:
+    public-key: mfS1cJVYQV4GyjguwcG3KMxucq6JHWIjbzQ7U0Xaz0k
+    short-id: 84248f
+  client-fingerprint: chrome
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -7416,6 +7440,38 @@ proxies:
     path: /
     headers:
       Host: 192.3.233.216
+- name: OpenRay  US-93644
+  type: vless
+  server: 8.34.70.53
+  port: 2096
+  uuid: 12345678-1234-1234-1234-123456789123
+  network: ws
+  tls: true
+  servername: abcd.freewarp.eu.org
+  ws-opts:
+    path: /snippets&freecodes@节点狂魔/?ed=2560
+    headers:
+      Host: abcd.freewarp.eu.org
+- name: OpenRay  US-93645
+  type: vless
+  server: 8.6.112.53
+  port: 2096
+  uuid: 12345678-1234-1234-1234-123456789123
+  network: ws
+  tls: true
+  servername: abcd.freewarp.eu.org
+  ws-opts:
+    path: /snippets
+    headers:
+      Host: abcd.freewarp.eu.org
+- name: OpenRay  US-93646
+  type: vmess
+  server: 38.12.83.217
+  port: 30002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  FR-117
   type: vless
   server: 51.38.237.113
@@ -10753,6 +10809,12 @@ proxies:
     public-key: sOjlAEcrubT3nuRzox3bAkQSptuLhelt7CykvSZXW3I
     short-id: ''
   client-fingerprint: chrome
+- name: OpenRay  NL-10962
+  type: vless
+  server: 638950280434441818.neyshabur-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  IN-118
   type: vless
   server: 178.212.35.210
@@ -14121,6 +14183,14 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 140.235.38.89
+- name: OpenRay  TW-1953
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  LV-254
   type: vless
   server: 45.130.215.125
@@ -14938,6 +15008,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  TR-407
+  type: vless
+  server: 45.136.5.109
+  port: 2081
+  uuid: 6d9a7312-5021-40b0-9e2b-d08b6ef0d917
+  network: raw
 - name: OpenRay  DK-1
   type: vless
   server: 95.164.85.109
@@ -15167,6 +15243,44 @@ proxies:
     public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
     short-id: 8453e5fd9af927
   client-fingerprint: chrome
+- name: OpenRay  BG-2
+  type: vless
+  server: bgr01-vlr01.tcp-reset-club.net
+  port: 443
+  uuid: 80074d6b-23c5-465e-a348-dcf0378fd1f2
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 8453e5fd9af927
+  client-fingerprint: chrome
+- name: OpenRay  BG-3
+  type: vless
+  server: bgr01-vlr01.tcp-reset-club.net
+  port: 443
+  uuid: 80074d6b-23c5-465e-a348-dcf0378fd1f2
+  network: raw
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 8453e5fd9af927
+  client-fingerprint: chrome
+- name: OpenRay  TH-1
+  type: vmess
+  server: 185.84.161.150
+  port: 20086
+  uuid: ebba0676-e05a-49ec-8344-d96d749e01c0
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 185.84.161.150
 
 proxy-groups:
 - name: AUTO
@@ -15589,6 +15703,8 @@ proxy-groups:
   - OpenRay Dynamic-138470
   - OpenRay Dynamic-138471
   - OpenRay Dynamic-3795
+  - 'OpenRay Dynamic-138470 #2'
+  - OpenRay Dynamic-52137
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -15855,6 +15971,9 @@ proxy-groups:
   - OpenRay  US-93641
   - OpenRay  US-93642
   - OpenRay  US-93643
+  - OpenRay  US-93644
+  - OpenRay  US-93645
+  - OpenRay  US-93646
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -16317,6 +16436,7 @@ proxy-groups:
   - OpenRay  NL-10959
   - OpenRay  NL-10960
   - OpenRay  NL-10961
+  - OpenRay  NL-10962
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -16637,6 +16757,7 @@ proxy-groups:
   - OpenRay  TW-1950
   - OpenRay  TW-1951
   - OpenRay  TW-1952
+  - OpenRay  TW-1953
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
@@ -16744,6 +16865,7 @@ proxy-groups:
   - OpenRay  TR-404
   - OpenRay  TR-405
   - OpenRay  TR-406
+  - OpenRay  TR-407
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  BR-36
@@ -16763,6 +16885,9 @@ proxy-groups:
   - OpenRay  CZ-3
   - OpenRay  CZ-4
   - OpenRay  BG-1
+  - OpenRay  BG-2
+  - OpenRay  BG-3
+  - OpenRay  TH-1
 - name: PROXY
   type: select
   proxies:
@@ -17181,6 +17306,8 @@ proxy-groups:
   - OpenRay Dynamic-138470
   - OpenRay Dynamic-138471
   - OpenRay Dynamic-3795
+  - 'OpenRay Dynamic-138470 #2'
+  - OpenRay Dynamic-52137
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -17447,6 +17574,9 @@ proxy-groups:
   - OpenRay  US-93641
   - OpenRay  US-93642
   - OpenRay  US-93643
+  - OpenRay  US-93644
+  - OpenRay  US-93645
+  - OpenRay  US-93646
   - OpenRay  FR-117
   - OpenRay  FR-401
   - OpenRay  FR-2003
@@ -17909,6 +18039,7 @@ proxy-groups:
   - OpenRay  NL-10959
   - OpenRay  NL-10960
   - OpenRay  NL-10961
+  - OpenRay  NL-10962
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -18229,6 +18360,7 @@ proxy-groups:
   - OpenRay  TW-1950
   - OpenRay  TW-1951
   - OpenRay  TW-1952
+  - OpenRay  TW-1953
   - OpenRay  LV-254
   - OpenRay  LV-395
   - OpenRay  LV-396
@@ -18336,6 +18468,7 @@ proxy-groups:
   - OpenRay  TR-404
   - OpenRay  TR-405
   - OpenRay  TR-406
+  - OpenRay  TR-407
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  BR-36
@@ -18355,6 +18488,9 @@ proxy-groups:
   - OpenRay  CZ-3
   - OpenRay  CZ-4
   - OpenRay  BG-1
+  - OpenRay  BG-2
+  - OpenRay  BG-3
+  - OpenRay  TH-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
