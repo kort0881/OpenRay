@@ -9557,6 +9557,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38240
+  type: vless
+  server: 194.4.49.219
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -10203,6 +10209,12 @@ proxies:
 - name: OpenRay  NL-10986
   type: vless
   server: 638950280434434929.neyshabur-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  NL-10987
+  type: vless
+  server: 638951859202353992.amsterdam-prx-dnraacs.info
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -12926,6 +12938,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  SG-2066
+  type: vmess
+  server: 18.141.176.31
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  PL-1861
   type: vmess
   server: 57.128.216.125
@@ -14213,6 +14237,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  ES-191
+  type: vless
+  server: 45.12.150.97
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  MY-8
   type: vless
   server: 638936058851012708.oslo-drc-tusabz.info
@@ -14898,6 +14928,19 @@ proxies:
   port: 8880
   uuid: 6889a1d2-fb40-4fe6-ba30-8ff731799394
   network: raw
+- name: OpenRay  AE-10
+  type: vless
+  server: ae01-vlr01.tcp-reset-club.net
+  port: 443
+  uuid: 80074d6b-23c5-465e-a348-dcf0378fd1f2
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  client-fingerprint: chrome
 - name: OpenRay  HR-2
   type: vless
   server: 5.181.2.51
@@ -16096,6 +16139,7 @@ proxy-groups:
   - OpenRay  FR-38237
   - OpenRay  FR-38238
   - OpenRay  FR-38239
+  - OpenRay  FR-38240
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -16182,6 +16226,7 @@ proxy-groups:
   - OpenRay  NL-10984
   - OpenRay  NL-10985
   - OpenRay  NL-10986
+  - OpenRay  NL-10987
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -16454,6 +16499,7 @@ proxy-groups:
   - OpenRay  SG-2063
   - OpenRay  SG-2064
   - OpenRay  SG-2065
+  - OpenRay  SG-2066
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -16579,6 +16625,7 @@ proxy-groups:
   - OpenRay  ES-188
   - OpenRay  ES-189
   - OpenRay  ES-190
+  - OpenRay  ES-191
   - OpenRay  MY-8
   - OpenRay  MY-9
   - OpenRay  MY-10
@@ -16671,6 +16718,7 @@ proxy-groups:
   - OpenRay  AE-7
   - OpenRay  AE-8
   - OpenRay  AE-9
+  - OpenRay  AE-10
   - OpenRay  HR-2
   - OpenRay  HR-3
   - OpenRay  AT-1
@@ -17712,6 +17760,7 @@ proxy-groups:
   - OpenRay  FR-38237
   - OpenRay  FR-38238
   - OpenRay  FR-38239
+  - OpenRay  FR-38240
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -17798,6 +17847,7 @@ proxy-groups:
   - OpenRay  NL-10984
   - OpenRay  NL-10985
   - OpenRay  NL-10986
+  - OpenRay  NL-10987
   - OpenRay  IN-118
   - OpenRay  IN-530
   - OpenRay  IN-559
@@ -18070,6 +18120,7 @@ proxy-groups:
   - OpenRay  SG-2063
   - OpenRay  SG-2064
   - OpenRay  SG-2065
+  - OpenRay  SG-2066
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -18195,6 +18246,7 @@ proxy-groups:
   - OpenRay  ES-188
   - OpenRay  ES-189
   - OpenRay  ES-190
+  - OpenRay  ES-191
   - OpenRay  MY-8
   - OpenRay  MY-9
   - OpenRay  MY-10
@@ -18287,6 +18339,7 @@ proxy-groups:
   - OpenRay  AE-7
   - OpenRay  AE-8
   - OpenRay  AE-9
+  - OpenRay  AE-10
   - OpenRay  HR-2
   - OpenRay  HR-3
   - OpenRay  AT-1
