@@ -4249,6 +4249,61 @@ proxies:
     path: /dabai.in?=400e16fa96eca85d55e637d3e3a83b46
     headers:
       Host: 400e16fa96eca85d55e637d3e3a83b46.s1.db-link03.top
+- name: OpenRay Dynamic-138510
+  type: vless
+  server: creativecommons.org
+  port: 443
+  uuid: 032dae6d-6f5f-4fba-ba18-ccdc43ee8e19
+  network: ws
+  tls: true
+  servername: nigan.pages.dev
+  ws-opts:
+    path: 
+      /socks5://51.210.111.216:33123?---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---
+    headers:
+      Host: nigan.pages.dev
+- name: OpenRay Dynamic-138512
+  type: vmess
+  server: a-v1.888988866.xyz
+  port: 443
+  uuid: 104556c9-797c-42e9-9bb7-7a6e9974b857
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: a-v1.888988866.xyz
+  ws-opts:
+    path: /104556c9-797c-42e9-9bb7-7a6e9974b857
+    headers:
+      Host: a-v1.888988866.xyz
+- name: OpenRay Dynamic-138513
+  type: vmess
+  server: b-v1.888988866.xyz
+  port: 443
+  uuid: ab007933-7981-4267-9f33-fbc9c2575756
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: b-v1.888988866.xyz
+  ws-opts:
+    path: /ab007933-7981-4267-9f33-fbc9c2575756
+    headers:
+      Host: b-v1.888988866.xyz
+- name: OpenRay Dynamic-138515
+  type: vmess
+  server: y-v1.888988866.xyz
+  port: 443
+  uuid: a397bd18-5a5f-4a5a-bf03-ed5bc1a990eb
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: y-v1.888988866.xyz
+  ws-opts:
+    path: /a397bd18-5a5f-4a5a-bf03-ed5bc1a990eb
+    headers:
+      Host: y-v1.888988866.xyz
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -5201,6 +5256,12 @@ proxies:
     path: linkvws
     headers:
       Host: lammaland.org
+- name: OpenRay  GB-13404
+  type: vless
+  server: 638950280342842933.esfahan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  US-107
   type: vless
   server: 45.82.251.184
@@ -6652,6 +6713,38 @@ proxies:
     headers:
       Host: 
         wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: OpenRay  US-93686
+  type: vmess
+  server: 15.204.64.214
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: yichueng.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: yichueng.org
+- name: OpenRay  US-93688
+  type: vless
+  server: 141.193.213.21
+  port: 2096
+  uuid: 76bfc324-e228-47e0-8871-f974fac80390
+  network: ws
+  tls: true
+  servername: ip.onhit.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ip.onhit.xyz
+- name: OpenRay  US-93689
+  type: vless
+  server: 5.78.52.105
+  port: 15253
+  uuid: 84566df5-a979-4194-94a2-720552440025
+  network: raw
 - name: OpenRay  FR-2003
   type: vless
   server: 185.153.183.211
@@ -12672,6 +12765,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  SG-2072
+  type: vmess
+  server: 54.169.242.16
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  PL-1861
   type: vmess
   server: 57.128.216.125
@@ -15065,6 +15170,10 @@ proxy-groups:
   - OpenRay Dynamic-11002
   - OpenRay Dynamic-93679
   - OpenRay Dynamic-138506
+  - OpenRay Dynamic-138510
+  - OpenRay Dynamic-138512
+  - OpenRay Dynamic-138513
+  - OpenRay Dynamic-138515
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -15184,6 +15293,7 @@ proxy-groups:
   - OpenRay  GB-13401
   - OpenRay  GB-13402
   - OpenRay  GB-13403
+  - OpenRay  GB-13404
   - OpenRay  US-107
   - OpenRay  US-476
   - OpenRay  US-2138
@@ -15338,6 +15448,9 @@ proxy-groups:
   - OpenRay  US-93682
   - OpenRay  US-93683
   - OpenRay  US-93684
+  - OpenRay  US-93686
+  - OpenRay  US-93688
+  - OpenRay  US-93689
   - OpenRay  FR-2003
   - OpenRay  FR-3265
   - OpenRay  FR-3266
@@ -16087,6 +16200,7 @@ proxy-groups:
   - OpenRay  SG-2068
   - OpenRay  SG-2070
   - OpenRay  SG-2071
+  - OpenRay  SG-2072
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -16645,6 +16759,10 @@ proxy-groups:
   - OpenRay Dynamic-11002
   - OpenRay Dynamic-93679
   - OpenRay Dynamic-138506
+  - OpenRay Dynamic-138510
+  - OpenRay Dynamic-138512
+  - OpenRay Dynamic-138513
+  - OpenRay Dynamic-138515
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -16764,6 +16882,7 @@ proxy-groups:
   - OpenRay  GB-13401
   - OpenRay  GB-13402
   - OpenRay  GB-13403
+  - OpenRay  GB-13404
   - OpenRay  US-107
   - OpenRay  US-476
   - OpenRay  US-2138
@@ -16918,6 +17037,9 @@ proxy-groups:
   - OpenRay  US-93682
   - OpenRay  US-93683
   - OpenRay  US-93684
+  - OpenRay  US-93686
+  - OpenRay  US-93688
+  - OpenRay  US-93689
   - OpenRay  FR-2003
   - OpenRay  FR-3265
   - OpenRay  FR-3266
@@ -17667,6 +17789,7 @@ proxy-groups:
   - OpenRay  SG-2068
   - OpenRay  SG-2070
   - OpenRay  SG-2071
+  - OpenRay  SG-2072
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
