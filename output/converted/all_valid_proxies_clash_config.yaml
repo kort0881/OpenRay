@@ -7121,6 +7121,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  US-93722
+  type: vmess
+  server: 38.12.83.217
+  port: 30002
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  network: tcp
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -13734,6 +13742,16 @@ proxies:
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
     headers:
       Host: kejiland.freewarp.eu.org
+- name: OpenRay  LV-403
+  type: vless
+  server: 90.156.254.164
+  port: 40432
+  uuid: 5ae45629-3db6-4c6b-9b9e-346c3e1a798d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 90.156.254.164
 - name: OpenRay  IS-1
   type: vless
   server: 45.83.21.107
@@ -15646,6 +15664,7 @@ proxy-groups:
   - OpenRay  US-93719
   - OpenRay  US-93720
   - OpenRay  US-93721
+  - OpenRay  US-93722
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -16429,6 +16448,7 @@ proxy-groups:
   - OpenRay  LV-254
   - OpenRay  LV-400
   - OpenRay  LV-402
+  - OpenRay  LV-403
   - OpenRay  IS-1
   - OpenRay  IS-106
   - OpenRay  IS-177
@@ -17224,6 +17244,7 @@ proxy-groups:
   - OpenRay  US-93719
   - OpenRay  US-93720
   - OpenRay  US-93721
+  - OpenRay  US-93722
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -18007,6 +18028,7 @@ proxy-groups:
   - OpenRay  LV-254
   - OpenRay  LV-400
   - OpenRay  LV-402
+  - OpenRay  LV-403
   - OpenRay  IS-1
   - OpenRay  IS-106
   - OpenRay  IS-177
