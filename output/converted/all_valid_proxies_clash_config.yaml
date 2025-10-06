@@ -6829,6 +6829,16 @@ proxies:
     path: /snippets&freecodes @节点狂魔 /?ed=2560
     headers:
       Host: saas.git.cloudns.org
+- name: OpenRay  US-93706
+  type: vless
+  server: 23.94.206.70
+  port: 8080
+  uuid: 9cf69f8e-893e-4a99-aa5f-a9d330f97b06
+  network: ws
+  ws-opts:
+    path: /FasSoortbhhPssnvfsgnq@ed=2560
+    headers:
+      Host: 23.94.206.70
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -9371,6 +9381,20 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay  FR-38309
+  type: vmess
+  server: 91.134.8.102
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -11723,6 +11747,26 @@ proxies:
     public-key: spnzKjwJoNRVgyj0JMHHNk395Ex0F15ETgV1JOc4wDA
     short-id: ''
   client-fingerprint: chrome
+- name: OpenRay  DE-52279
+  type: vmess
+  server: 57.129.28.64
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay  DE-52280
+  type: vless
+  server: 8lb9pb.academiemi-purya.click
+  port: 15341
+  uuid: 3d17237d-02bc-4304-a077-270b6ae135d9
+  network: grpc
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -12168,6 +12212,18 @@ proxies:
     path: /snippets&freecodes @节点狂魔 /?ed=2560
     headers:
       Host: saas.git.cloudns.org
+- name: OpenRay  RU-6411
+  type: vless
+  server: 185.174.136.244
+  port: 8080
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+  network: tcp
+  tls: true
+  servername: yandex.com
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  client-fingerprint: chrome
 - name: OpenRay  SG-2045
   type: vless
   server: 188.166.227.1
@@ -12939,6 +12995,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2666
+  type: vmess
+  server: 54.238.141.137
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -13199,6 +13267,18 @@ proxies:
     path: /c399917/
     headers:
       Host: seoul.lonxin.net
+- name: OpenRay  KR-607
+  type: vmess
+  server: 13.125.100.179
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  TW-1939
   type: vmess
   server: 83.147.12.99
@@ -14426,6 +14506,26 @@ proxies:
   port: 4657
   uuid: 7df43d38-6bac-4b61-8c90-a78bf82fa519
   network: raw
+- name: OpenRay  AM-3
+  type: vless
+  server: 92.223.2.119
+  port: 36136
+  uuid: 3a0d14e2-02be-49ef-829f-063fd273a89f
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 92.223.2.119
+- name: OpenRay  AM-4
+  type: vless
+  server: 92.223.2.119
+  port: 36136
+  uuid: 3a0d14e2-02be-49ef-829f-063fd273a89f
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 92.223.2.119
 - name: OpenRay  IR-3
   type: vless
   server: ipw.gfdv54cvghhgfhgj-njhgj64.info
@@ -15072,6 +15172,7 @@ proxy-groups:
   - OpenRay  US-93703
   - OpenRay  US-93704
   - OpenRay  US-93705
+  - OpenRay  US-93706
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -15439,6 +15540,7 @@ proxy-groups:
   - OpenRay  FR-38306
   - OpenRay  FR-38307
   - OpenRay  FR-38308
+  - OpenRay  FR-38309
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -15684,6 +15786,8 @@ proxy-groups:
   - OpenRay  DE-52276
   - OpenRay  DE-52277
   - OpenRay  DE-52278
+  - OpenRay  DE-52279
+  - OpenRay  DE-52280
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -15748,6 +15852,7 @@ proxy-groups:
   - OpenRay  RU-6406
   - OpenRay  RU-6409
   - OpenRay  RU-6410
+  - OpenRay  RU-6411
   - OpenRay  SG-2045
   - OpenRay  SG-2050
   - OpenRay  SG-2053
@@ -15812,6 +15917,7 @@ proxy-groups:
   - OpenRay  JP-2662
   - OpenRay  JP-2664
   - OpenRay  JP-2665
+  - OpenRay  JP-2666
   - OpenRay  FI-84
   - OpenRay  FI-3237
   - OpenRay  FI-3249
@@ -15834,6 +15940,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
+  - OpenRay  KR-607
   - OpenRay  TW-1939
   - OpenRay  TW-1944
   - OpenRay  TW-1953
@@ -15987,6 +16094,8 @@ proxy-groups:
   - OpenRay  IL-5
   - OpenRay  AM-1
   - OpenRay  AM-2
+  - OpenRay  AM-3
+  - OpenRay  AM-4
   - OpenRay  IR-3
   - OpenRay  IR-4
   - OpenRay  IE-1
@@ -16603,6 +16712,7 @@ proxy-groups:
   - OpenRay  US-93703
   - OpenRay  US-93704
   - OpenRay  US-93705
+  - OpenRay  US-93706
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -16970,6 +17080,7 @@ proxy-groups:
   - OpenRay  FR-38306
   - OpenRay  FR-38307
   - OpenRay  FR-38308
+  - OpenRay  FR-38309
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -17215,6 +17326,8 @@ proxy-groups:
   - OpenRay  DE-52276
   - OpenRay  DE-52277
   - OpenRay  DE-52278
+  - OpenRay  DE-52279
+  - OpenRay  DE-52280
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -17279,6 +17392,7 @@ proxy-groups:
   - OpenRay  RU-6406
   - OpenRay  RU-6409
   - OpenRay  RU-6410
+  - OpenRay  RU-6411
   - OpenRay  SG-2045
   - OpenRay  SG-2050
   - OpenRay  SG-2053
@@ -17343,6 +17457,7 @@ proxy-groups:
   - OpenRay  JP-2662
   - OpenRay  JP-2664
   - OpenRay  JP-2665
+  - OpenRay  JP-2666
   - OpenRay  FI-84
   - OpenRay  FI-3237
   - OpenRay  FI-3249
@@ -17365,6 +17480,7 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
+  - OpenRay  KR-607
   - OpenRay  TW-1939
   - OpenRay  TW-1944
   - OpenRay  TW-1953
@@ -17518,6 +17634,8 @@ proxy-groups:
   - OpenRay  IL-5
   - OpenRay  AM-1
   - OpenRay  AM-2
+  - OpenRay  AM-3
+  - OpenRay  AM-4
   - OpenRay  IR-3
   - OpenRay  IR-4
   - OpenRay  IE-1
