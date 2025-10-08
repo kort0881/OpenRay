@@ -5159,6 +5159,28 @@ proxies:
     path: /azumase.ren
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+- name: 'OpenRay Dynamic-138706 #4'
+  type: vless
+  server: sweet-combination.seotoolsforyou.co.uk
+  port: 80
+  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sweet-combination.seotoolsforyou.co.uk
+- name: 'OpenRay Dynamic-138707 #2'
+  type: vless
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  port: 443
+  uuid: 0d0782a3-2c62-4936-b893-5790188778ea
+  network: ws
+  tls: true
+  servername: smart.dark13.info
+  ws-opts:
+    path: /
+    headers:
+      Host: ipw.gfdv54cvghhgfhgj-njhgj64.info
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -13850,6 +13872,16 @@ proxies:
     path: /
     headers:
       Host: speedtest.net
+- name: OpenRay  SG-2111
+  type: vless
+  server: test.sachix.online
+  port: 80
+  uuid: 522d0d20-40a3-49d8-af63-37c347b184ed
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: speedtest.net
 - name: OpenRay  PL-1861
   type: vmess
   server: 57.128.216.125
@@ -14954,6 +14986,18 @@ proxies:
     path: /
     headers:
       Host: 103.61.139.137
+- name: OpenRay  TW-1958
+  type: vmess
+  server: 140.235.38.89
+  port: 6474
+  uuid: 96a69037-7bf8-43f8-bd62-4beb8f1f36e2
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: 140.235.38.89
 - name: OpenRay  LV-254
   type: vless
   server: 45.130.215.125
@@ -15756,6 +15800,18 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 45.116.78.39
+- name: OpenRay  HK-84
+  type: vmess
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  port: 80
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
 - name: OpenRay  TR-353
   type: vless
   server: 77.83.245.220
@@ -16590,6 +16646,8 @@ proxy-groups:
   - 'OpenRay Dynamic-138706 #2'
   - 'OpenRay Dynamic-138706 #3'
   - OpenRay Dynamic-138707
+  - 'OpenRay Dynamic-138706 #4'
+  - 'OpenRay Dynamic-138707 #2'
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -17638,6 +17696,7 @@ proxy-groups:
   - OpenRay  SG-2108
   - OpenRay  SG-2109
   - OpenRay  SG-2110
+  - OpenRay  SG-2111
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -17729,6 +17788,7 @@ proxy-groups:
   - OpenRay  TW-1955
   - OpenRay  TW-1956
   - OpenRay  TW-1957
+  - OpenRay  TW-1958
   - OpenRay  LV-254
   - OpenRay  LV-402
   - OpenRay  LV-404
@@ -17838,6 +17898,7 @@ proxy-groups:
   - OpenRay  HK-81
   - OpenRay  HK-82
   - OpenRay  HK-83
+  - OpenRay  HK-84
   - OpenRay  TR-353
   - OpenRay  TR-368
   - OpenRay  TR-372
@@ -18296,6 +18357,8 @@ proxy-groups:
   - 'OpenRay Dynamic-138706 #2'
   - 'OpenRay Dynamic-138706 #3'
   - OpenRay Dynamic-138707
+  - 'OpenRay Dynamic-138706 #4'
+  - 'OpenRay Dynamic-138707 #2'
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -19344,6 +19407,7 @@ proxy-groups:
   - OpenRay  SG-2108
   - OpenRay  SG-2109
   - OpenRay  SG-2110
+  - OpenRay  SG-2111
   - OpenRay  PL-1861
   - OpenRay  PL-1890
   - OpenRay  PL-1959
@@ -19435,6 +19499,7 @@ proxy-groups:
   - OpenRay  TW-1955
   - OpenRay  TW-1956
   - OpenRay  TW-1957
+  - OpenRay  TW-1958
   - OpenRay  LV-254
   - OpenRay  LV-402
   - OpenRay  LV-404
@@ -19544,6 +19609,7 @@ proxy-groups:
   - OpenRay  HK-81
   - OpenRay  HK-82
   - OpenRay  HK-83
+  - OpenRay  HK-84
   - OpenRay  TR-353
   - OpenRay  TR-368
   - OpenRay  TR-372
