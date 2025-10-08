@@ -5234,6 +5234,31 @@ proxies:
     path: linkvws
     headers:
       Host: yichueng.org
+- name: 'OpenRay Dynamic-138722 #3'
+  type: vless
+  server: gur.gov.ua
+  port: 443
+  uuid: 90cd4a77-141a-43c9-991b-08263cfe9c10
+  network: ws
+  tls: true
+  servername: azadnet3-9do.pages.dev
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: azadnet3-9do.pages.dev
+- name: OpenRay Dynamic-3302
+  type: vless
+  server: fin01-vlr01.tcp-reset-club.net
+  port: 443
+  uuid: e9847818-c872-4456-9a02-e2348adf0564
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  client-fingerprint: chrome
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -10397,6 +10422,20 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38587
+  type: vmess
+  server: 91.134.8.102
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -12770,6 +12809,28 @@ proxies:
     path: linkvws
     headers:
       Host: yichueng.org
+- name: OpenRay  DE-52464
+  type: vless
+  server: 91.99.166.94
+  port: 666
+  uuid: 812de504-f6a7-44a4-b322-2750954d4782
+  network: tcp
+- name: OpenRay  DE-52465
+  type: vless
+  server: 91.99.166.94
+  port: 666
+  uuid: 812de504-f6a7-44a4-b322-2750954d4782
+  network: tcp
+- name: OpenRay  DE-52466
+  type: vless
+  server: 162.19.228.119
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    path: /http#Telegram@FREEV2RNG/?ed=2560
+    headers:
+      Host: google.com
 - name: OpenRay  LT-320
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -13311,6 +13372,18 @@ proxies:
 - name: OpenRay  RU-6432
   type: vless
   server: 85.193.91.193
+  port: 8443
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  network: ws
+  tls: true
+  servername: kejiland.freewarp.eu.org
+  ws-opts:
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
+    headers:
+      Host: kejiland.freewarp.eu.org
+- name: OpenRay  RU-6433
+  type: vless
+  server: 81.200.158.206
   port: 8443
   uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
   network: ws
@@ -14471,6 +14544,18 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 01.91md.fun
+- name: OpenRay  SE-1353
+  type: vless
+  server: 77.221.142.186
+  port: 2053
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  network: ws
+  tls: true
+  servername: kejiland.freewarp.eu.org
+  ws-opts:
+    path: /snippets/ip=proxyip.fxxk.dedyn.io:443
+    headers:
+      Host: kejiland.freewarp.eu.org
 - name: OpenRay  KR-170
   type: vmess
   server: seoul.lonxin.net
@@ -15859,6 +15944,19 @@ proxies:
     path: /
     headers:
       Host: 92.223.2.119
+- name: OpenRay  KZ-1
+  type: vless
+  server: 91.147.92.153
+  port: 443
+  uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  client-fingerprint: chrome
 
 proxy-groups:
 - name: AUTO
@@ -16288,6 +16386,8 @@ proxy-groups:
   - OpenRay Dynamic-138723
   - OpenRay Dynamic-93797
   - 'OpenRay Dynamic-138724 #2'
+  - 'OpenRay Dynamic-138722 #3'
+  - OpenRay Dynamic-3302
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -16965,6 +17065,7 @@ proxy-groups:
   - OpenRay  FR-38584
   - OpenRay  FR-38585
   - OpenRay  FR-38586
+  - OpenRay  FR-38587
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -17206,6 +17307,9 @@ proxy-groups:
   - OpenRay  DE-52461
   - OpenRay  DE-52462
   - OpenRay  DE-52463
+  - OpenRay  DE-52464
+  - OpenRay  DE-52465
+  - OpenRay  DE-52466
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -17278,6 +17382,7 @@ proxy-groups:
   - OpenRay  RU-6430
   - OpenRay  RU-6431
   - OpenRay  RU-6432
+  - OpenRay  RU-6433
   - OpenRay  SG-2045
   - OpenRay  SG-2050
   - OpenRay  SG-2053
@@ -17376,6 +17481,7 @@ proxy-groups:
   - OpenRay  SE-1345
   - OpenRay  SE-1346
   - OpenRay  SE-1352
+  - OpenRay  SE-1353
   - OpenRay  KR-170
   - OpenRay  KR-218
   - OpenRay  KR-319
@@ -17542,6 +17648,7 @@ proxy-groups:
   - OpenRay  IR-3
   - OpenRay  AM-1
   - OpenRay  AM-2
+  - OpenRay  KZ-1
 - name: PROXY
   type: select
   proxies:
@@ -17967,6 +18074,8 @@ proxy-groups:
   - OpenRay Dynamic-138723
   - OpenRay Dynamic-93797
   - 'OpenRay Dynamic-138724 #2'
+  - 'OpenRay Dynamic-138722 #3'
+  - OpenRay Dynamic-3302
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -18644,6 +18753,7 @@ proxy-groups:
   - OpenRay  FR-38584
   - OpenRay  FR-38585
   - OpenRay  FR-38586
+  - OpenRay  FR-38587
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -18885,6 +18995,9 @@ proxy-groups:
   - OpenRay  DE-52461
   - OpenRay  DE-52462
   - OpenRay  DE-52463
+  - OpenRay  DE-52464
+  - OpenRay  DE-52465
+  - OpenRay  DE-52466
   - OpenRay  LT-320
   - OpenRay  LT-346
   - OpenRay  LT-839
@@ -18957,6 +19070,7 @@ proxy-groups:
   - OpenRay  RU-6430
   - OpenRay  RU-6431
   - OpenRay  RU-6432
+  - OpenRay  RU-6433
   - OpenRay  SG-2045
   - OpenRay  SG-2050
   - OpenRay  SG-2053
@@ -19055,6 +19169,7 @@ proxy-groups:
   - OpenRay  SE-1345
   - OpenRay  SE-1346
   - OpenRay  SE-1352
+  - OpenRay  SE-1353
   - OpenRay  KR-170
   - OpenRay  KR-218
   - OpenRay  KR-319
@@ -19221,6 +19336,7 @@ proxy-groups:
   - OpenRay  IR-3
   - OpenRay  AM-1
   - OpenRay  AM-2
+  - OpenRay  KZ-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
