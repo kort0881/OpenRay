@@ -1373,6 +1373,20 @@ proxies:
       /@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec----@MdVpnSec
     headers:
       Host: devops.iran.mmdof.md.sec.php.skyservermd.ir.
+- name: OpenRay  CA-138718
+  type: vmess
+  server: 15.235.83.228
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: 15.235.83.228
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: lammaland.org
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -10366,6 +10380,14 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38576
+  type: vmess
+  server: 45.92.218.31
+  port: 24374
+  uuid: 639710c0-effb-43c3-b97e-b55f2307b645
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -14342,6 +14364,18 @@ proxies:
     path: /?ed=2048
     headers:
       Host: 01.91md.fun
+- name: OpenRay  JP-2670
+  type: vmess
+  server: 52.195.2.7
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -15422,6 +15456,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  MY-102
+  type: vless
+  server: 638955005656284074.gorgan-prx-dnraact.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  HK-57
   type: vless
   server: 141.11.77.248
@@ -16149,6 +16189,7 @@ proxy-groups:
   - OpenRay  CA-138712
   - OpenRay  CA-138714
   - OpenRay  CA-138717
+  - OpenRay  CA-138718
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -17142,6 +17183,7 @@ proxy-groups:
   - OpenRay  FR-38573
   - OpenRay  FR-38574
   - OpenRay  FR-38575
+  - OpenRay  FR-38576
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -17542,6 +17584,7 @@ proxy-groups:
   - OpenRay  JP-2667
   - OpenRay  JP-2668
   - OpenRay  JP-2669
+  - OpenRay  JP-2670
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -17677,6 +17720,7 @@ proxy-groups:
   - OpenRay  MY-99
   - OpenRay  MY-100
   - OpenRay  MY-101
+  - OpenRay  MY-102
   - OpenRay  HK-57
   - OpenRay  HK-58
   - OpenRay  HK-69
@@ -17845,6 +17889,7 @@ proxy-groups:
   - OpenRay  CA-138712
   - OpenRay  CA-138714
   - OpenRay  CA-138717
+  - OpenRay  CA-138718
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -18838,6 +18883,7 @@ proxy-groups:
   - OpenRay  FR-38573
   - OpenRay  FR-38574
   - OpenRay  FR-38575
+  - OpenRay  FR-38576
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -19238,6 +19284,7 @@ proxy-groups:
   - OpenRay  JP-2667
   - OpenRay  JP-2668
   - OpenRay  JP-2669
+  - OpenRay  JP-2670
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -19373,6 +19420,7 @@ proxy-groups:
   - OpenRay  MY-99
   - OpenRay  MY-100
   - OpenRay  MY-101
+  - OpenRay  MY-102
   - OpenRay  HK-57
   - OpenRay  HK-58
   - OpenRay  HK-69
