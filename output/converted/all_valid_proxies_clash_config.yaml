@@ -11071,6 +11071,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  NL-11081
+  type: vless
+  server: 64.188.97.209
+  port: 443
+  uuid: b88a2e58-aebb-41c2-b1aa-509e6bbff335
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: d4nrz5jZn6OcMGmRr4H-2v6hKexlwe4hKaDMgMqSV3A
+    short-id: 305b25f707eb
+  client-fingerprint: chrome
 - name: OpenRay  IN-705
   type: vless
   server: 65.20.74.136
@@ -14578,6 +14590,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2671
+  type: vmess
+  server: 54.64.211.231
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -17392,6 +17416,7 @@ proxy-groups:
   - OpenRay  NL-11078
   - OpenRay  NL-11079
   - OpenRay  NL-11080
+  - OpenRay  NL-11081
   - OpenRay  IN-705
   - OpenRay  IN-741
   - OpenRay  IN-796
@@ -17722,6 +17747,7 @@ proxy-groups:
   - OpenRay  JP-2668
   - OpenRay  JP-2669
   - OpenRay  JP-2670
+  - OpenRay  JP-2671
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -19097,6 +19123,7 @@ proxy-groups:
   - OpenRay  NL-11078
   - OpenRay  NL-11079
   - OpenRay  NL-11080
+  - OpenRay  NL-11081
   - OpenRay  IN-705
   - OpenRay  IN-741
   - OpenRay  IN-796
@@ -19427,6 +19454,7 @@ proxy-groups:
   - OpenRay  JP-2668
   - OpenRay  JP-2669
   - OpenRay  JP-2670
+  - OpenRay  JP-2671
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
