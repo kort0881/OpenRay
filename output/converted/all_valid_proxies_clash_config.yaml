@@ -7060,6 +7060,32 @@ proxies:
     path: /
     headers:
       Host: google.com
+- name: OpenRay  US-93857
+  type: vless
+  server: pqh30v5.ipforvetra.shop
+  port: 80
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+- name: OpenRay  US-93858
+  type: vless
+  server: pqh30v5.ipforvetra.shop
+  port: 80
+  uuid: 401374e6-df77-41fb-f638-dad8184f175b
+  network: grpc
+- name: OpenRay  US-93859
+  type: vmess
+  server: 15.204.103.8
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: jamekk.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: jamekk.org
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -9027,6 +9053,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-38650
+  type: vless
+  server: 638956218809805203.bandar-prx-dnraacu.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -10768,6 +10800,12 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-52556
+  type: vless
+  server: 8lb9pb.academiemi-purya.click
+  port: 15341
+  uuid: 6c0d6976-55d8-4140-aea4-d2c0663852b1
+  network: grpc
 - name: OpenRay  LT-346
   type: vless
   server: 638930966405437992.birjand-drc-dcrabj.info
@@ -12181,6 +12219,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2673
+  type: vmess
+  server: 13.230.110.35
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -12601,6 +12651,18 @@ proxies:
 - name: OpenRay  KR-610
   type: vmess
   server: 43.203.224.19
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-611
+  type: vmess
+  server: 52.78.179.68
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -14494,6 +14556,9 @@ proxy-groups:
   - OpenRay  US-93853
   - OpenRay  US-93855
   - OpenRay  US-93856
+  - OpenRay  US-93857
+  - OpenRay  US-93858
+  - OpenRay  US-93859
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -14800,6 +14865,7 @@ proxy-groups:
   - OpenRay  FR-38647
   - OpenRay  FR-38648
   - OpenRay  FR-38649
+  - OpenRay  FR-38650
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -14983,6 +15049,7 @@ proxy-groups:
   - OpenRay  DE-52552
   - OpenRay  DE-52553
   - OpenRay  DE-52555
+  - OpenRay  DE-52556
   - OpenRay  LT-346
   - OpenRay  LT-839
   - OpenRay  LT-923
@@ -15121,6 +15188,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -15157,6 +15225,7 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-1944
   - OpenRay  TW-1955
   - OpenRay  TW-1958
@@ -15957,6 +16026,9 @@ proxy-groups:
   - OpenRay  US-93853
   - OpenRay  US-93855
   - OpenRay  US-93856
+  - OpenRay  US-93857
+  - OpenRay  US-93858
+  - OpenRay  US-93859
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -16263,6 +16335,7 @@ proxy-groups:
   - OpenRay  FR-38647
   - OpenRay  FR-38648
   - OpenRay  FR-38649
+  - OpenRay  FR-38650
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -16446,6 +16519,7 @@ proxy-groups:
   - OpenRay  DE-52552
   - OpenRay  DE-52553
   - OpenRay  DE-52555
+  - OpenRay  DE-52556
   - OpenRay  LT-346
   - OpenRay  LT-839
   - OpenRay  LT-923
@@ -16584,6 +16658,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -16620,6 +16695,7 @@ proxy-groups:
   - OpenRay  KR-608
   - OpenRay  KR-609
   - OpenRay  KR-610
+  - OpenRay  KR-611
   - OpenRay  TW-1944
   - OpenRay  TW-1955
   - OpenRay  TW-1958
