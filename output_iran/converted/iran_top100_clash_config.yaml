@@ -99,12 +99,6 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  ES-2
-  type: vless
-  server: 45.12.150.98
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
 - name: OpenRay  ES-3
   type: vless
   server: 45.12.150.67
@@ -224,12 +218,6 @@ proxies:
 - name: OpenRay  FR-367
   type: vless
   server: 185.153.183.211
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
-- name: OpenRay  FR-368
-  type: vless
-  server: 185.231.205.186
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -605,12 +593,6 @@ proxies:
   port: 25365
   uuid: 930989fd-61dd-4d18-a895-e48892acb32e
   network: grpc
-- name: OpenRay  DE-36
-  type: vless
-  server: 85.209.195.185
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
 - name: OpenRay  DE-37
   type: vless
   server: 176.97.210.2
@@ -705,6 +687,36 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  IN-4
+  type: vless
+  server: 154.198.173.96
+  port: 80
+  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: handsome-device.oneeat.co
+- name: OpenRay  PL-3
+  type: vless
+  server: 57.128.198.226
+  port: 80
+  uuid: 5402dc3b-206e-4ae8-a58d-4fd27a59e142
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.128.198.226
+- name: OpenRay  JP-1
+  type: vless
+  server: 5.253.41.223
+  port: 80
+  uuid: a0a866bd-8c0c-464c-9b96-c6dafa154419
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 5.253.41.223
 
 proxy-groups:
 - name: AUTO
@@ -716,7 +728,6 @@ proxy-groups:
   - OpenRay  NL-17
   - OpenRay  LT-1
   - OpenRay  ES-1
-  - OpenRay  ES-2
   - OpenRay  ES-3
   - OpenRay  US-1166
   - OpenRay  US-1313
@@ -737,7 +748,6 @@ proxy-groups:
   - OpenRay  FR-357
   - OpenRay  FR-365
   - OpenRay  FR-367
-  - OpenRay  FR-368
   - OpenRay  FR-371
   - OpenRay  FR-374
   - OpenRay  FR-379
@@ -797,7 +807,6 @@ proxy-groups:
   - OpenRay  DE-32
   - OpenRay  DE-33
   - OpenRay  DE-34
-  - OpenRay  DE-36
   - OpenRay  DE-37
   - OpenRay  DE-38
   - OpenRay  DE-41
@@ -813,6 +822,9 @@ proxy-groups:
   - OpenRay  GB-18
   - OpenRay  GB-26
   - OpenRay  GB-33
+  - OpenRay  IN-4
+  - OpenRay  PL-3
+  - OpenRay  JP-1
 - name: PROXY
   type: select
   proxies:
@@ -820,7 +832,6 @@ proxy-groups:
   - OpenRay  NL-17
   - OpenRay  LT-1
   - OpenRay  ES-1
-  - OpenRay  ES-2
   - OpenRay  ES-3
   - OpenRay  US-1166
   - OpenRay  US-1313
@@ -841,7 +852,6 @@ proxy-groups:
   - OpenRay  FR-357
   - OpenRay  FR-365
   - OpenRay  FR-367
-  - OpenRay  FR-368
   - OpenRay  FR-371
   - OpenRay  FR-374
   - OpenRay  FR-379
@@ -901,7 +911,6 @@ proxy-groups:
   - OpenRay  DE-32
   - OpenRay  DE-33
   - OpenRay  DE-34
-  - OpenRay  DE-36
   - OpenRay  DE-37
   - OpenRay  DE-38
   - OpenRay  DE-41
@@ -917,6 +926,9 @@ proxy-groups:
   - OpenRay  GB-18
   - OpenRay  GB-26
   - OpenRay  GB-33
+  - OpenRay  IN-4
+  - OpenRay  PL-3
+  - OpenRay  JP-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
