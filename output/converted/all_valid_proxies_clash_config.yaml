@@ -1084,6 +1084,18 @@ proxies:
     headers:
       Host: 
         websocket.network.www.speedtest.net.flutter.dev.russia.python.vegaskala.com.
+- name: OpenRay  CA-138813
+  type: vless
+  server: 188.114.97.202
+  port: 8443
+  uuid: c2e177d4-e610-4abd-85cd-1a869d158751
+  network: ws
+  tls: true
+  servername: teslakit1.pages.dev
+  ws-opts:
+    path: /security=tls
+    headers:
+      Host: teslakit1.pages.dev
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -4787,6 +4799,29 @@ proxies:
     public-key: AWyicEDYi7KB3qzo8OEvEd1HK0gZhCHAENBd_buyhQk
     short-id: fa2f
   client-fingerprint: chrome
+- name: OpenRay Dynamic-3314
+  type: vless
+  server: netcdn.parsgit.com
+  port: 4040
+  uuid: e0401812-e35f-4ab0-87d7-22ce1e617526
+  network: ws
+  ws-opts:
+    path: 
+      /admin?ed=1024--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--join--skypro_vpn--
+    headers:
+      Host: webde2.parsgit.com.
+- name: OpenRay Dynamic-93883
+  type: vless
+  server: cloudflare-dns.bpbtgds.dpdns.org
+  port: 443
+  uuid: 3c0eac6b-d2f1-4c3c-b39f-168c5d1a902a
+  network: ws
+  tls: true
+  servername: cloudflare-snippets.tgdaosheng.ggff.net
+  ws-opts:
+    path: /snippets/?mode=s5
+    headers:
+      Host: cloudflare-snippets.tgdaosheng.ggff.net
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -12709,6 +12744,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2673
+  type: vmess
+  server: 52.195.219.223
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -14296,6 +14343,19 @@ proxies:
     path: /snippets/ip=proxyip.fxxk.dedyn.io:443?ed=2560
     headers:
       Host: kejiland.freewarp.eu.org
+- name: OpenRay  RO-1
+  type: vless
+  server: 31.6.1.187
+  port: 27229
+  uuid: f4a1f4c3-321f-4351-97d4-ffd1a9a54027
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: 1_vS_JKpOvJnqPUDyaREbXWd5M59bIIKsNyV5Kt0uD8
+    short-id: cd1f804d
+  client-fingerprint: firefox
 
 proxy-groups:
 - name: AUTO
@@ -14383,6 +14443,7 @@ proxy-groups:
   - OpenRay  CA-138808
   - OpenRay  CA-138811
   - OpenRay  CA-138812
+  - OpenRay  CA-138813
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -14686,6 +14747,8 @@ proxy-groups:
   - OpenRay Dynamic-93880
   - 'OpenRay Dynamic-38668 #2'
   - OpenRay Dynamic-11123
+  - OpenRay Dynamic-3314
+  - OpenRay Dynamic-93883
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -15622,6 +15685,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -15799,6 +15863,7 @@ proxy-groups:
   - OpenRay  AU-1
   - OpenRay  IR-1
   - OpenRay  IN-1
+  - OpenRay  RO-1
 - name: PROXY
   type: select
   proxies:
@@ -15882,6 +15947,7 @@ proxy-groups:
   - OpenRay  CA-138808
   - OpenRay  CA-138811
   - OpenRay  CA-138812
+  - OpenRay  CA-138813
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -16185,6 +16251,8 @@ proxy-groups:
   - OpenRay Dynamic-93880
   - 'OpenRay Dynamic-38668 #2'
   - OpenRay Dynamic-11123
+  - OpenRay Dynamic-3314
+  - OpenRay Dynamic-93883
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -17121,6 +17189,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -17298,6 +17367,7 @@ proxy-groups:
   - OpenRay  AU-1
   - OpenRay  IR-1
   - OpenRay  IN-1
+  - OpenRay  RO-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
