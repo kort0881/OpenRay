@@ -12913,6 +12913,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2673
+  type: vmess
+  server: 43.207.88.12
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-84
   type: vless
   server: 5.181.20.219
@@ -15931,6 +15943,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
@@ -17459,6 +17472,7 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2671
   - OpenRay  JP-2672
+  - OpenRay  JP-2673
   - OpenRay  FI-84
   - OpenRay  FI-3264
   - OpenRay  FI-3278
