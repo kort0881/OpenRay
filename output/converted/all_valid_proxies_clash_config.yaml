@@ -906,6 +906,28 @@ proxies:
     path: linkvws
     headers:
       Host: fapeng.org
+- name: OpenRay  CA-138833
+  type: vless
+  server: 172.66.156.81
+  port: 80
+  uuid: 375e6eaa-d849-40e4-b4f7-102e6ee0fe87
+  network: ws
+  ws-opts:
+    path: 
+      /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
+    headers:
+      Host: 
+        websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
+- name: OpenRay  CA-138834
+  type: vless
+  server: 172.67.190.194
+  port: 80
+  uuid: ac197d20-201c-4c71-9430-09ddcf7881ab
+  network: ws
+  ws-opts:
+    path: /Free-VPN-Geo-Project/80.66.85.115-2053
+    headers:
+      Host: gamang.gpj1.dpdns.org
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -4227,6 +4249,30 @@ proxies:
     path: /?ed=2560
     headers:
       Host: azadnet-4nb.pages.dev
+- name: OpenRay Dynamic-93948
+  type: vless
+  server: cdnjs.com
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
+- name: OpenRay Dynamic-138835
+  type: vless
+  server: www.wto.org
+  port: 443
+  uuid: 032dae6d-6f5f-4fba-ba18-ccdc43ee8e19
+  network: ws
+  tls: true
+  servername: nigan.pages.dev
+  ws-opts:
+    path: /socks5://82.223.165.28:59602
+    headers:
+      Host: nigan.pages.dev
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -10016,6 +10062,26 @@ proxies:
     path: linkvws
     headers:
       Host: yichueng.org
+- name: OpenRay  DE-52617
+  type: vless
+  server: 91.99.166.94
+  port: 666
+  uuid: 812de504-f6a7-44a4-b322-2750954d4782
+  network: tcp
+- name: OpenRay  DE-52618
+  type: vmess
+  server: 57.129.28.213
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: fapeng.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: fapeng.org
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -12242,6 +12308,16 @@ proxies:
     headers:
       Host: 
         Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+- name: OpenRay  BR-40
+  type: vless
+  server: 45.82.245.173
+  port: 80
+  uuid: 1dbfb57c-164e-47c5-9355-8e0c429e7b99
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: '---NetifyVPN---NetifyVPN---NetifyVPN---NetifyVPN---NetifyVPN'
 - name: OpenRay  GR-1
   type: vless
   server: 185.39.207.16
@@ -12377,6 +12453,16 @@ proxies:
     public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
     short-id: 175d
   client-fingerprint: chrome
+- name: OpenRay  AE-23
+  type: vless
+  server: 38.180.26.251
+  port: 7035
+  uuid: 9b1b61ca-2b67-4091-a777-5baa7a8f741f
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: filimo.com
 - name: OpenRay  AM-1
   type: vless
   server: 92.223.2.119
@@ -12457,6 +12543,19 @@ proxies:
     path: /
     headers:
       Host: 103.137.185.22
+- name: OpenRay  IR-1
+  type: vless
+  server: 193.151.135.21
+  port: 44443
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.speedtest.net
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+    short-id: ''
+  client-fingerprint: chrome
 
 proxy-groups:
 - name: AUTO
@@ -12530,6 +12629,8 @@ proxy-groups:
   - OpenRay  CA-138826
   - OpenRay  CA-138827
   - OpenRay  CA-138830
+  - OpenRay  CA-138833
+  - OpenRay  CA-138834
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -12805,6 +12906,8 @@ proxy-groups:
   - OpenRay Dynamic-93942
   - OpenRay Dynamic-138829
   - OpenRay Dynamic-93945
+  - OpenRay Dynamic-93948
+  - OpenRay Dynamic-138835
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -13539,6 +13642,8 @@ proxy-groups:
   - OpenRay  DE-52614
   - OpenRay  DE-52615
   - OpenRay  DE-52616
+  - OpenRay  DE-52617
+  - OpenRay  DE-52618
   - OpenRay  LT-839
   - OpenRay  LT-923
   - OpenRay  LT-930
@@ -13780,6 +13885,7 @@ proxy-groups:
   - OpenRay  BR-36
   - OpenRay  BR-38
   - OpenRay  BR-39
+  - OpenRay  BR-40
   - OpenRay  GR-1
   - OpenRay  AE-2
   - OpenRay  AE-4
@@ -13791,6 +13897,7 @@ proxy-groups:
   - OpenRay  AE-20
   - OpenRay  AE-21
   - OpenRay  AE-22
+  - OpenRay  AE-23
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  AM-3
@@ -13798,6 +13905,7 @@ proxy-groups:
   - OpenRay  IL-1
   - OpenRay  IL-3
   - OpenRay  VN-1
+  - OpenRay  IR-1
 - name: PROXY
   type: select
   proxies:
@@ -13867,6 +13975,8 @@ proxy-groups:
   - OpenRay  CA-138826
   - OpenRay  CA-138827
   - OpenRay  CA-138830
+  - OpenRay  CA-138833
+  - OpenRay  CA-138834
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -14142,6 +14252,8 @@ proxy-groups:
   - OpenRay Dynamic-93942
   - OpenRay Dynamic-138829
   - OpenRay Dynamic-93945
+  - OpenRay Dynamic-93948
+  - OpenRay Dynamic-138835
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -14876,6 +14988,8 @@ proxy-groups:
   - OpenRay  DE-52614
   - OpenRay  DE-52615
   - OpenRay  DE-52616
+  - OpenRay  DE-52617
+  - OpenRay  DE-52618
   - OpenRay  LT-839
   - OpenRay  LT-923
   - OpenRay  LT-930
@@ -15117,6 +15231,7 @@ proxy-groups:
   - OpenRay  BR-36
   - OpenRay  BR-38
   - OpenRay  BR-39
+  - OpenRay  BR-40
   - OpenRay  GR-1
   - OpenRay  AE-2
   - OpenRay  AE-4
@@ -15128,6 +15243,7 @@ proxy-groups:
   - OpenRay  AE-20
   - OpenRay  AE-21
   - OpenRay  AE-22
+  - OpenRay  AE-23
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  AM-3
@@ -15135,6 +15251,7 @@ proxy-groups:
   - OpenRay  IL-1
   - OpenRay  IL-3
   - OpenRay  VN-1
+  - OpenRay  IR-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
