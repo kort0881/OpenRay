@@ -4503,6 +4503,34 @@ proxies:
       /eyJqdW5rIjoiQm5nNGZUVWwiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyIyMTMuMTcwLjE1Ny4xIl19?ed=2560
     headers:
       Host: 015.electrocellco-cf-015.workers.dev
+- name: 'OpenRay Dynamic-52671 #2'
+  type: vmess
+  server: serkat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay Dynamic-13552
+  type: vmess
+  server: jamekk.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: jamekk.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: jamekk.org
 - name: OpenRay  GB-7006
   type: vless
   server: 51.89.116.49
@@ -6883,6 +6911,34 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.0digimento.ir.
+- name: OpenRay  US-93971
+  type: vmess
+  server: 192.3.233.216
+  port: 33606
+  uuid: 19d74f4a-e9a8-4942-9061-53f53af0c024
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  US-93972
+  type: vmess
+  server: 43.162.114.137
+  port: 59674
+  uuid: 6a4ce5b9-0d60-4a21-a8fe-897798019500
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  US-93973
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 6ed9436b-3782-4a0f-98e2-5f7dbd49d823
+  network: ws
+  tls: true
+  servername: nig.nextseesion.ir
+  ws-opts:
+    path: /
+    headers:
+      Host: nig.nextseesion.ir
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -12002,6 +12058,18 @@ proxies:
     path: /
     headers:
       Host: 62.60.187.28
+- name: OpenRay  RU-6463
+  type: vmess
+  server: 62.60.187.28
+  port: 20086
+  uuid: 570b4cfc-80d5-4277-8c97-8444ba0689b9
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 62.60.187.28
 - name: OpenRay  SG-2063
   type: vless
   server: 206.189.83.23
@@ -14517,6 +14585,8 @@ proxy-groups:
   - OpenRay Dynamic-52673
   - 'OpenRay Dynamic-138835 #3'
   - OpenRay Dynamic-93973
+  - 'OpenRay Dynamic-52671 #2'
+  - OpenRay Dynamic-13552
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -14805,6 +14875,9 @@ proxy-groups:
   - OpenRay  US-93966
   - OpenRay  US-93967
   - OpenRay  US-93968
+  - OpenRay  US-93971
+  - OpenRay  US-93972
+  - OpenRay  US-93973
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -15412,6 +15485,7 @@ proxy-groups:
   - OpenRay  RU-6460
   - OpenRay  RU-6461
   - OpenRay  RU-6462
+  - OpenRay  RU-6463
   - OpenRay  SG-2063
   - OpenRay  SG-2068
   - OpenRay  SG-2070
@@ -15999,6 +16073,8 @@ proxy-groups:
   - OpenRay Dynamic-52673
   - 'OpenRay Dynamic-138835 #3'
   - OpenRay Dynamic-93973
+  - 'OpenRay Dynamic-52671 #2'
+  - OpenRay Dynamic-13552
   - OpenRay  GB-7006
   - OpenRay  GB-7044
   - OpenRay  GB-7974
@@ -16287,6 +16363,9 @@ proxy-groups:
   - OpenRay  US-93966
   - OpenRay  US-93967
   - OpenRay  US-93968
+  - OpenRay  US-93971
+  - OpenRay  US-93972
+  - OpenRay  US-93973
   - OpenRay  FR-3265
   - OpenRay  FR-3885
   - OpenRay  FR-4264
@@ -16894,6 +16973,7 @@ proxy-groups:
   - OpenRay  RU-6460
   - OpenRay  RU-6461
   - OpenRay  RU-6462
+  - OpenRay  RU-6463
   - OpenRay  SG-2063
   - OpenRay  SG-2068
   - OpenRay  SG-2070
