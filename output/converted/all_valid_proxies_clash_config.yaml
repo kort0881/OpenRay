@@ -4456,6 +4456,20 @@ proxies:
     path: /?ed=2560
     headers:
       Host: 0223.jq2ter91.workers.dev
+- name: OpenRay Dynamic-52816
+  type: vmess
+  server: putihb.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -12910,6 +12924,20 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-52814
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  DE-52815
+  type: vless
+  server: live.elvinshope.sbs
+  port: 7676
+  uuid: b631c63e-e296-4b1a-85d2-d825adf53294
+  network: tcp
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -14579,6 +14607,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  MY-106
+  type: vless
+  server: 638936603656983775.qazvin-drc-tusabz.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  HK-101
   type: vmess
   server: 47.244.120.197
@@ -14947,6 +14981,28 @@ proxies:
     public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
     short-id: 27cfa05000c23cc4
   client-fingerprint: chrome
+- name: OpenRay  AE-14
+  type: vless
+  server: 93.127.180.140
+  port: 2085
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+  network: tcp
+- name: OpenRay  AE-15
+  type: vless
+  server: 93.127.180.140
+  port: 2085
+  uuid: 944445aa-23ce-4994-ab71-9615340e88f5
+  network: tcp
+- name: OpenRay  AE-16
+  type: vless
+  server: 38.60.202.224
+  port: 35172
+  uuid: 43e952c7-8163-4e68-a443-74703c4c3d7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38.60.202.224
 - name: OpenRay  AM-1
   type: vless
   server: 92.223.2.119
@@ -15435,6 +15491,7 @@ proxy-groups:
   - 'OpenRay Dynamic-94061 #2'
   - OpenRay Dynamic-11154
   - OpenRay Dynamic-94062
+  - OpenRay Dynamic-52816
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -16390,6 +16447,8 @@ proxy-groups:
   - OpenRay  DE-52811
   - OpenRay  DE-52812
   - OpenRay  DE-52813
+  - OpenRay  DE-52814
+  - OpenRay  DE-52815
   - OpenRay  LT-839
   - OpenRay  LT-923
   - OpenRay  LT-930
@@ -16575,6 +16634,7 @@ proxy-groups:
   - OpenRay  MY-103
   - OpenRay  MY-104
   - OpenRay  MY-105
+  - OpenRay  MY-106
   - OpenRay  HK-101
   - OpenRay  HK-102
   - OpenRay  HK-107
@@ -16611,6 +16671,9 @@ proxy-groups:
   - OpenRay  AE-9
   - OpenRay  AE-10
   - OpenRay  AE-12
+  - OpenRay  AE-14
+  - OpenRay  AE-15
+  - OpenRay  AE-16
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  AM-3
@@ -16989,6 +17052,7 @@ proxy-groups:
   - 'OpenRay Dynamic-94061 #2'
   - OpenRay Dynamic-11154
   - OpenRay Dynamic-94062
+  - OpenRay Dynamic-52816
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -17944,6 +18008,8 @@ proxy-groups:
   - OpenRay  DE-52811
   - OpenRay  DE-52812
   - OpenRay  DE-52813
+  - OpenRay  DE-52814
+  - OpenRay  DE-52815
   - OpenRay  LT-839
   - OpenRay  LT-923
   - OpenRay  LT-930
@@ -18129,6 +18195,7 @@ proxy-groups:
   - OpenRay  MY-103
   - OpenRay  MY-104
   - OpenRay  MY-105
+  - OpenRay  MY-106
   - OpenRay  HK-101
   - OpenRay  HK-102
   - OpenRay  HK-107
@@ -18165,6 +18232,9 @@ proxy-groups:
   - OpenRay  AE-9
   - OpenRay  AE-10
   - OpenRay  AE-12
+  - OpenRay  AE-14
+  - OpenRay  AE-15
+  - OpenRay  AE-16
   - OpenRay  AM-1
   - OpenRay  AM-2
   - OpenRay  AM-3
