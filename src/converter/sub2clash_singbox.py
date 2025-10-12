@@ -19,6 +19,16 @@ from collections import OrderedDict
 import re
 
 
+def safe_int(value, default=0):
+    """Safely convert a value to integer, handling empty strings and invalid values."""
+    if value is None or value == '':
+        return default
+    try:
+        return int(value)
+    except (ValueError, TypeError):
+        return default
+
+
 def is_valid_ws_path(path):
     # All '%' must be followed by exactly two hex digits
     # Regex: '%' not followed by two hex digits is invalid
@@ -112,7 +122,7 @@ def parse_vmess(uri):
         proxy = {
             'type': 'vmess',
             'server': data.get('add'),
-            'port': int(data.get('port', 0)),
+            'port': safe_int(data.get('port', 0)),
             'uuid': data.get('id'),
             'alterId': data.get('aid', '0'),
             'cipher': cipher,
@@ -537,7 +547,7 @@ def proxy_to_clash(proxy):
             'server': proxy['server'],
             'port': proxy['port'],
             'uuid': proxy['uuid'],
-            'alterId': int(proxy.get('alterId', '0')),
+            'alterId': safe_int(proxy.get('alterId', '0')),
             'cipher': proxy.get('cipher', 'auto'),
             'network': proxy.get('network', 'tcp'),
         }
@@ -722,7 +732,7 @@ def proxy_to_singbox(proxy):
             ('server', proxy['server']),
             ('server_port', proxy['port']),
             ('uuid', proxy['uuid']),
-            ('alter_id', int(proxy.get('alterId', '0'))),
+            ('alter_id', safe_int(proxy.get('alterId', '0'))),
             ('network', 'tcp' if ws else net)
         ])
 
