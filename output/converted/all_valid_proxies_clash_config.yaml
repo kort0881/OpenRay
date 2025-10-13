@@ -5676,6 +5676,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  GB-13618
+  type: vless
+  server: 638953873686410316.lahijan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  US-10530
   type: vless
   server: pq-unitedstates3.09vpn.com
@@ -7274,6 +7280,12 @@ proxies:
     path: /snippets/?mode=s5
     headers:
       Host: cloudflare-snippets.tgdaosheng.ggff.net
+- name: OpenRay  US-94151
+  type: vless
+  server: 85.209.153.82
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -11029,6 +11041,31 @@ proxies:
     public-key: IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU
     short-id: 916a
   client-fingerprint: chrome
+- name: OpenRay  NL-11190
+  type: vless
+  server: 45.12.130.190
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  NL-11191
+  type: vless
+  server: 45.144.28.5
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  NL-11192
+  type: vless
+  server: 77.239.122.92
+  port: 443
+  uuid: 30dd2eea-fe78-4660-a04f-096a7dac41e3
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mirror.yandex.ru
+  reality-opts:
+    public-key: IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU
+    short-id: 916a
+  client-fingerprint: chrome
 - name: OpenRay  DE-5207
   type: vmess
   server: 91.99.185.216
@@ -13834,6 +13871,19 @@ proxies:
     path: /cdn-cgi/trace
     headers:
       Host: 161.35.207.27
+- name: OpenRay  DE-52908
+  type: vless
+  server: de.monkeyisland.life
+  port: 8443
+  uuid: fd71044e-127b-429c-9f4a-bd2432e473be
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.stackoverflow.com
+  reality-opts:
+    public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
+    short-id: 3be8ba17d00eb522
+  client-fingerprint: chrome
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -14641,6 +14691,18 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
+- name: OpenRay  JP-2681
+  type: vmess
+  server: 54.95.73.88
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3278
   type: vless
   server: 46.62.206.155
@@ -15113,6 +15175,18 @@ proxies:
 - name: OpenRay  KR-607
   type: vmess
   server: 3.34.145.72
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-608
+  type: vmess
+  server: 43.201.16.96
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -15845,6 +15919,18 @@ proxies:
 - name: OpenRay  TR-532
   type: vless
   server: 103.231.75.129
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-533
+  type: vless
+  server: 185.234.66.104
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-534
+  type: vless
+  server: 638945271259127875.yasuj-prx-dnraacp.info
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -16709,6 +16795,7 @@ proxy-groups:
   - OpenRay  GB-13615
   - OpenRay  GB-13616
   - OpenRay  GB-13617
+  - OpenRay  GB-13618
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -16884,6 +16971,7 @@ proxy-groups:
   - OpenRay  US-94148
   - OpenRay  US-94149
   - OpenRay  US-94150
+  - OpenRay  US-94151
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -17350,6 +17438,9 @@ proxy-groups:
   - OpenRay  NL-11187
   - OpenRay  NL-11188
   - OpenRay  NL-11189
+  - OpenRay  NL-11190
+  - OpenRay  NL-11191
+  - OpenRay  NL-11192
   - OpenRay  DE-5207
   - OpenRay  DE-7333
   - OpenRay  DE-7696
@@ -17596,6 +17687,7 @@ proxy-groups:
   - OpenRay  DE-52905
   - OpenRay  DE-52906
   - OpenRay  DE-52907
+  - OpenRay  DE-52908
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -17675,6 +17767,7 @@ proxy-groups:
   - OpenRay  JP-2678
   - OpenRay  JP-2679
   - OpenRay  JP-2680
+  - OpenRay  JP-2681
   - OpenRay  FI-3278
   - OpenRay  FI-3280
   - OpenRay  FI-3282
@@ -17714,6 +17807,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-607
+  - OpenRay  KR-608
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  TW-1959
@@ -17813,6 +17907,8 @@ proxy-groups:
   - OpenRay  TR-529
   - OpenRay  TR-531
   - OpenRay  TR-532
+  - OpenRay  TR-533
+  - OpenRay  TR-534
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
@@ -18366,6 +18462,7 @@ proxy-groups:
   - OpenRay  GB-13615
   - OpenRay  GB-13616
   - OpenRay  GB-13617
+  - OpenRay  GB-13618
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -18541,6 +18638,7 @@ proxy-groups:
   - OpenRay  US-94148
   - OpenRay  US-94149
   - OpenRay  US-94150
+  - OpenRay  US-94151
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -19007,6 +19105,9 @@ proxy-groups:
   - OpenRay  NL-11187
   - OpenRay  NL-11188
   - OpenRay  NL-11189
+  - OpenRay  NL-11190
+  - OpenRay  NL-11191
+  - OpenRay  NL-11192
   - OpenRay  DE-5207
   - OpenRay  DE-7333
   - OpenRay  DE-7696
@@ -19253,6 +19354,7 @@ proxy-groups:
   - OpenRay  DE-52905
   - OpenRay  DE-52906
   - OpenRay  DE-52907
+  - OpenRay  DE-52908
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -19332,6 +19434,7 @@ proxy-groups:
   - OpenRay  JP-2678
   - OpenRay  JP-2679
   - OpenRay  JP-2680
+  - OpenRay  JP-2681
   - OpenRay  FI-3278
   - OpenRay  FI-3280
   - OpenRay  FI-3282
@@ -19371,6 +19474,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-607
+  - OpenRay  KR-608
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  TW-1959
@@ -19470,6 +19574,8 @@ proxy-groups:
   - OpenRay  TR-529
   - OpenRay  TR-531
   - OpenRay  TR-532
+  - OpenRay  TR-533
+  - OpenRay  TR-534
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
