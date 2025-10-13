@@ -13688,6 +13688,14 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
   client-fingerprint: chrome
+- name: OpenRay  DE-52912
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: d2b794b2-3bdc-49e2-827a-1bf9fcba4b1c
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -15644,6 +15652,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  TR-535
+  type: vless
+  server: trborna.hlewx.com
+  port: 7005
+  uuid: bd75d06f-130c-4c28-9e94-d7e5f830b88b
+  network: tcp
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: UUqglkmGFicoalgiO94YaQxqJFJBbUQJ6DEIIvzR-k0
+    short-id: ''
+  client-fingerprint: firefox
 - name: OpenRay  DK-1
   type: vless
   server: 95.164.85.109
@@ -15974,6 +15994,19 @@ proxies:
   reality-opts:
     public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
     short-id: 27cfa05000c23cc4
+  client-fingerprint: chrome
+- name: OpenRay  AL-1
+  type: vless
+  server: 45.15.170.193
+  port: 443
+  uuid: 30dd2eea-fe78-4660-a04f-096a7dac41e3
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mirror.yandex.ru
+  reality-opts:
+    public-key: IarU4xicX8qiVO5nqzeHc6MK9A_Vw9YaAtnPHB4DswU
+    short-id: 916a
   client-fingerprint: chrome
 
 proxy-groups:
@@ -17380,6 +17413,7 @@ proxy-groups:
   - OpenRay  DE-52909
   - OpenRay  DE-52910
   - OpenRay  DE-52911
+  - OpenRay  DE-52912
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -17593,6 +17627,7 @@ proxy-groups:
   - OpenRay  TR-532
   - OpenRay  TR-533
   - OpenRay  TR-534
+  - OpenRay  TR-535
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
@@ -17621,6 +17656,7 @@ proxy-groups:
   - OpenRay  IR-4
   - OpenRay  AT-1
   - OpenRay  HR-1
+  - OpenRay  AL-1
 - name: PROXY
   type: select
   proxies:
@@ -19022,6 +19058,7 @@ proxy-groups:
   - OpenRay  DE-52909
   - OpenRay  DE-52910
   - OpenRay  DE-52911
+  - OpenRay  DE-52912
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -19235,6 +19272,7 @@ proxy-groups:
   - OpenRay  TR-532
   - OpenRay  TR-533
   - OpenRay  TR-534
+  - OpenRay  TR-535
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
@@ -19263,6 +19301,7 @@ proxy-groups:
   - OpenRay  IR-4
   - OpenRay  AT-1
   - OpenRay  HR-1
+  - OpenRay  AL-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
