@@ -4702,6 +4702,45 @@ proxies:
     path: /vmess
     headers:
       Host: discord.com
+- name: OpenRay Dynamic-13619
+  type: vmess
+  server: masjide.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: masjide.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: masjide.org
+- name: OpenRay Dynamic-94152
+  type: vless
+  server: gur.gov.ua
+  port: 443
+  uuid: 90cd4a77-141a-43c9-991b-08263cfe9c10
+  network: ws
+  tls: true
+  servername: azadnet3-9do.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: gur.gov.ua
+- name: OpenRay Dynamic-11193
+  type: vless
+  server: yofree.top
+  port: 443
+  uuid: da52c81c-a7f9-11f0-a6ec-52540015e6ea
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yofree.top
+  reality-opts:
+    public-key: AWyicEDYi7KB3qzo8OEvEd1HK0gZhCHAENBd_buyhQk
+    short-id: fa2f
+  client-fingerprint: chrome
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -7174,6 +7213,20 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  US-94153
+  type: vmess
+  server: cpp007-2.facai20250909.com
+  port: 443
+  uuid: e134b5e9-4b16-4d50-b3d9-eaef652660b0
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: cpp007-2.facai20250909.com
+  ws-opts:
+    path: /e134b5e9
+    headers:
+      Host: cpp007-2.facai20250909.com
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -13602,6 +13655,39 @@ proxies:
     public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
     short-id: 3be8ba17d00eb522
   client-fingerprint: chrome
+- name: OpenRay  DE-52909
+  type: vmess
+  server: www.infe.com.br.infe.com.br
+  port: 2096
+  uuid: 01TELEGRAM-ID-solavajavaab
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: www.infe.com.br.infe.com.br
+- name: OpenRay  DE-52910
+  type: vmess
+  server: www.infe.com.br.infe.com.br
+  port: 2096
+  uuid: 01TELEGRAM-ID-solavajavaab
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: www.infe.com.br.infe.com.br
+- name: OpenRay  DE-52911
+  type: vless
+  server: 185.144.70.14
+  port: 8443
+  uuid: a3185438-23cb-4fe3-95da-3e5f3fc43525
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ign.com
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  client-fingerprint: chrome
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -14816,6 +14902,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  KR-609
+  type: vmess
+  server: 52.78.236.81
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  TW-1955
   type: vmess
   server: 165.154.195.38
@@ -15785,6 +15883,18 @@ proxies:
     path: /
     headers:
       Host: 103.137.185.22
+- name: OpenRay  VN-2
+  type: vmess
+  server: 103.137.185.22
+  port: 80
+  uuid: 446b42d6-5f4d-4723-f0f1-69d948ac5fda
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 103.137.185.22
 - name: OpenRay  AU-1
   type: vless
   server: 134.199.157.12
@@ -15847,6 +15957,18 @@ proxies:
   port: 8080
   uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
   network: raw
+  tls: true
+  servername: yandex.com
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  client-fingerprint: chrome
+- name: OpenRay  HR-1
+  type: vless
+  server: 5.181.2.51
+  port: 8080
+  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
+  network: tcp
   tls: true
   servername: yandex.com
   reality-opts:
@@ -16245,6 +16367,9 @@ proxy-groups:
   - OpenRay Dynamic-94150
   - OpenRay Dynamic-13618
   - OpenRay Dynamic-2152
+  - OpenRay Dynamic-13619
+  - OpenRay Dynamic-94152
+  - OpenRay Dynamic-11193
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -16550,6 +16675,7 @@ proxy-groups:
   - OpenRay  US-94149
   - OpenRay  US-94150
   - OpenRay  US-94151
+  - OpenRay  US-94153
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -17251,6 +17377,9 @@ proxy-groups:
   - OpenRay  DE-52906
   - OpenRay  DE-52907
   - OpenRay  DE-52908
+  - OpenRay  DE-52909
+  - OpenRay  DE-52910
+  - OpenRay  DE-52911
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -17363,6 +17492,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-608
+  - OpenRay  KR-609
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -17483,12 +17613,14 @@ proxy-groups:
   - OpenRay  IL-3
   - OpenRay  IL-4
   - OpenRay  VN-1
+  - OpenRay  VN-2
   - OpenRay  AU-1
   - OpenRay  AU-2
   - OpenRay  IR-2
   - OpenRay  IR-3
   - OpenRay  IR-4
   - OpenRay  AT-1
+  - OpenRay  HR-1
 - name: PROXY
   type: select
   proxies:
@@ -17877,6 +18009,9 @@ proxy-groups:
   - OpenRay Dynamic-94150
   - OpenRay Dynamic-13618
   - OpenRay Dynamic-2152
+  - OpenRay Dynamic-13619
+  - OpenRay Dynamic-94152
+  - OpenRay Dynamic-11193
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -18182,6 +18317,7 @@ proxy-groups:
   - OpenRay  US-94149
   - OpenRay  US-94150
   - OpenRay  US-94151
+  - OpenRay  US-94153
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -18883,6 +19019,9 @@ proxy-groups:
   - OpenRay  DE-52906
   - OpenRay  DE-52907
   - OpenRay  DE-52908
+  - OpenRay  DE-52909
+  - OpenRay  DE-52910
+  - OpenRay  DE-52911
   - OpenRay  LT-839
   - OpenRay  LT-930
   - OpenRay  LT-959
@@ -18995,6 +19134,7 @@ proxy-groups:
   - OpenRay  KR-605
   - OpenRay  KR-606
   - OpenRay  KR-608
+  - OpenRay  KR-609
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -19115,12 +19255,14 @@ proxy-groups:
   - OpenRay  IL-3
   - OpenRay  IL-4
   - OpenRay  VN-1
+  - OpenRay  VN-2
   - OpenRay  AU-1
   - OpenRay  AU-2
   - OpenRay  IR-2
   - OpenRay  IR-3
   - OpenRay  IR-4
   - OpenRay  AT-1
+  - OpenRay  HR-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
