@@ -4899,7 +4899,6 @@ proxies:
     path: /由零开始
     headers:
       Host: ylka.dpdns.org
-<<<<<<< Updated upstream
 - name: OpenRay Dynamic-94226
   type: vless
   server: cc.lightnright.com
@@ -4924,8 +4923,34 @@ proxies:
     path: /cbde4058-6b81-432b-8689-dd7ce10e479c
     headers:
       Host: revcloud.migacpi.org
-=======
->>>>>>> Stashed changes
+- name: OpenRay Dynamic-138903
+  type: vmess
+  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  ws-opts:
+    path: /azumase.ren
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+- name: OpenRay Dynamic-138904
+  type: vmess
+  server: putihb.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -6002,6 +6027,32 @@ proxies:
     headers:
       Host: fei.634676.xyz
 - name: OpenRay  GB-13651
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: OpenRay  GB-13652
+  type: vmess
+  server: 142.202.51.119
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: 142.202.51.119
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: masjide.org
+- name: OpenRay  GB-13653
   type: vmess
   server: 57.129.132.223
   port: 80
@@ -7490,6 +7541,99 @@ proxies:
     path: /
     headers:
       Host: flat-bread-ddb6-ppal03.joriy39169.workers.dev
+- name: OpenRay  US-94231
+  type: vless
+  server: 148.135.106.200
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94232
+  type: vless
+  server: 74.48.89.211
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94233
+  type: vless
+  server: 77.110.125.85
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94234
+  type: vless
+  server: 95.85.93.180
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94235
+  type: vless
+  server: 104.207.148.215
+  port: 8080
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94236
+  type: vless
+  server: 194.87.17.3
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  US-94237
+  type: vmess
+  server: 15.204.234.200
+  port: 41100
+  uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  US-94238
+  type: vmess
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 
+        wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -10704,6 +10848,303 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39004
+  type: vless
+  server: 51.210.150.130
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39005
+  type: vless
+  server: 141.94.204.200
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39006
+  type: vless
+  server: 54.36.98.199
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39007
+  type: vless
+  server: 141.94.79.161
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39008
+  type: vless
+  server: 54.36.100.7
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39009
+  type: vless
+  server: 162.19.79.101
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39010
+  type: vless
+  server: 188.165.54.172
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39011
+  type: vless
+  server: 51.38.227.155
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39012
+  type: vless
+  server: 51.38.225.63
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39013
+  type: vless
+  server: 54.37.64.120
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39014
+  type: vless
+  server: 54.37.64.126
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39015
+  type: vless
+  server: 54.37.64.126
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39016
+  type: vless
+  server: 146.59.153.201
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39017
+  type: vless
+  server: 162.19.64.105
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39018
+  type: vless
+  server: 5.178.110.34
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39019
+  type: vless
+  server: 54.37.64.98
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39020
+  type: vless
+  server: 5.178.110.79
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39021
+  type: vless
+  server: 141.94.221.230
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39022
+  type: vless
+  server: 141.94.220.21
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39023
+  type: vless
+  server: 95.182.98.38
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FR-39024
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
+- name: OpenRay  FR-39025
+  type: vmess
+  server: 51.38.191.100
+  port: 550
+  uuid: 96db7e57-5314-4560-b708-2446670dfa29
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  FR-39026
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: None
+- name: OpenRay  FR-39027
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 
+        wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: OpenRay  FR-39028
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.196.29.123
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -11240,6 +11681,78 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  NL-11211
+  type: vless
+  server: 195.133.59.96
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  NL-11212
+  type: vless
+  server: 185.186.244.219
+  port: 81
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  NL-11213
+  type: vless
+  server: 188.227.86.148
+  port: 2086
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  NL-11214
+  type: vless
+  server: 195.133.59.174
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  NL-11215
+  type: vless
+  server: 146.190.236.144
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  NL-11216
+  type: vless
+  server: 147.45.174.205
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
 - name: OpenRay  DE-5207
   type: vmess
   server: 91.99.185.216
@@ -13824,6 +14337,634 @@ proxies:
     path: linkvws
     headers:
       Host: jamekk.org
+- name: OpenRay  DE-52973
+  type: vless
+  server: 91.107.136.49
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52974
+  type: vless
+  server: 89.19.44.75
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52975
+  type: vless
+  server: 89.19.44.237
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52976
+  type: vless
+  server: 51.195.43.174
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52977
+  type: vless
+  server: 172.104.157.243
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52978
+  type: vless
+  server: 143.42.29.60
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52979
+  type: vless
+  server: 91.107.139.137
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52980
+  type: vless
+  server: 51.195.44.192
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52981
+  type: vless
+  server: 37.120.187.246
+  port: 3001
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52982
+  type: vless
+  server: 51.195.116.164
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52983
+  type: vless
+  server: 91.107.177.35
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52984
+  type: vless
+  server: 91.107.173.151
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52985
+  type: vless
+  server: 91.107.182.239
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52986
+  type: vless
+  server: 91.107.242.69
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52987
+  type: vless
+  server: 91.107.151.39
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52988
+  type: vless
+  server: 5.178.106.223
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52989
+  type: vless
+  server: 91.107.173.170
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52990
+  type: vless
+  server: 91.107.190.167
+  port: 2087
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52991
+  type: vless
+  server: 91.107.191.125
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52992
+  type: vless
+  server: 51.195.119.76
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52993
+  type: vless
+  server: 162.19.253.47
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52994
+  type: vless
+  server: 138.199.193.196
+  port: 2083
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52995
+  type: vless
+  server: 194.195.241.67
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52996
+  type: vless
+  server: 46.4.60.21
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52997
+  type: vless
+  server: 91.107.188.156
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52998
+  type: vless
+  server: 91.107.174.61
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-52999
+  type: vless
+  server: 172.104.157.242
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53000
+  type: vless
+  server: 143.42.55.161
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53001
+  type: vless
+  server: 51.195.117.254
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53002
+  type: vless
+  server: 91.107.191.108
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53003
+  type: vless
+  server: 136.243.158.44
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53004
+  type: vless
+  server: 91.107.185.122
+  port: 2096
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53005
+  type: vless
+  server: 91.107.172.179
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53006
+  type: vless
+  server: 139.144.181.39
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53007
+  type: vless
+  server: 172.104.143.156
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53008
+  type: vless
+  server: 5.75.165.246
+  port: 8083
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53009
+  type: vless
+  server: 49.13.67.179
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53010
+  type: vless
+  server: 172.105.68.42
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53011
+  type: vless
+  server: 49.12.160.221
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53012
+  type: vless
+  server: 91.107.190.9
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53013
+  type: vless
+  server: 91.107.161.169
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53014
+  type: vless
+  server: 139.162.164.195
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53015
+  type: vless
+  server: 162.19.243.106
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53016
+  type: vless
+  server: 91.107.233.151
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53017
+  type: vless
+  server: 194.195.241.19
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53018
+  type: vless
+  server: 91.107.128.162
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53019
+  type: vless
+  server: 91.107.174.9
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53020
+  type: vless
+  server: 91.107.137.96
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53021
+  type: vless
+  server: 51.195.42.76
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53022
+  type: vless
+  server: 89.19.44.132
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53023
+  type: vless
+  server: 172.104.144.84
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  DE-53024
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  DE-53025
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -14002,6 +15143,19 @@ proxies:
   reality-opts:
     public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
     short-id: '31'
+  client-fingerprint: chrome
+- name: OpenRay  RU-6483
+  type: vless
+  server: 45.144.31.30
+  port: 443
+  uuid: c80bbc09-837d-495f-bebc-3e8ac5dede41
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 8453e5fd9af927
   client-fingerprint: chrome
 - name: OpenRay  SG-2063
   type: vless
@@ -14409,6 +15563,30 @@ proxies:
     public-key: Q7-sRiaAcmlJ_iwqiA46kDKso_r2kJ7X1mrVjL2illo
     short-id: 07308a1408185397
   client-fingerprint: chrome
+- name: OpenRay  PL-3840
+  type: vmess
+  server: 176.223.131.167
+  port: 12407
+  uuid: fc45ae37-17da-4da4-cf6e-9223cf95cb9b
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  PL-3841
+  type: vmess
+  server: 176.223.131.167
+  port: 15580
+  uuid: 11b1af02-9fcd-4681-b94e-eb330b1a2d5e
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  PL-3842
+  type: vmess
+  server: 176.223.131.167
+  port: 43990
+  uuid: 5fbaae09-f11e-4a7e-fc58-6c8dce1072a6
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  CH-43
   type: vless
   server: 5.182.36.251
@@ -14471,6 +15649,18 @@ proxies:
     public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
     short-id: 86e999a2cdc2
   client-fingerprint: chrome
+- name: OpenRay  CH-953
+  type: vless
+  server: 194.87.97.6
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
 - name: OpenRay  JP-237
   type: vless
   server: 5.253.41.223
@@ -14609,6 +15799,30 @@ proxies:
     path: /vless/
     headers:
       Host: pq-japan4.09vpn.com
+- name: OpenRay  JP-2679
+  type: vless
+  server: 160.16.203.210
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  JP-2680
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
 - name: OpenRay  FI-3280
   type: vless
   server: 139.28.220.16
@@ -14908,6 +16122,122 @@ proxies:
   port: 36000
   uuid: 49e03b39-4c27-4caf-8214-ccfe3d3d0295
   network: raw
+- name: OpenRay  FI-3407
+  type: vless
+  server: fin.monkeyisland.life
+  port: 8443
+  uuid: 818d7dcc-b367-470f-bf88-8d3037f98542
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: docscenter.su
+  reality-opts:
+    public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
+    short-id: 08aa0813199a4c38
+  client-fingerprint: chrome
+- name: OpenRay  FI-3408
+  type: vless
+  server: 95.182.99.60
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3409
+  type: vless
+  server: 31.56.196.64
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3410
+  type: vless
+  server: 65.109.12.58
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3411
+  type: vless
+  server: 31.57.105.242
+  port: 2053
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3412
+  type: vless
+  server: 37.27.19.225
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3413
+  type: vless
+  server: 188.130.206.216
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3414
+  type: vless
+  server: 65.21.63.226
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
+- name: OpenRay  FI-3415
+  type: vless
+  server: 45.156.22.171
+  port: 4040
+  uuid: 79475068-e7b7-495c-b67b-a20386dea7b1
+  network: ws
+  ws-opts:
+    path: 
+      /admin?ed=1024-Skypro_vpn-skypro_vpn-skypro_vpn-skypro_vpn-Skypro_vpn-skypro_vpn-skypro_vpn-skypro_vpn-Skypro_vpn-skypro_vpn-skypro_vpn-skypro_vpn-
+    headers:
+      Host: webde3.parsgit.com.
+- name: OpenRay  FI-3416
+  type: vmess
+  server: 65.109.8.76
+  port: 38000
+  uuid: 105b7158-2977-4b5c-93ea-1fcf33c72c56
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  SE-1344
   type: vless
   server: 172.234.96.64
@@ -15066,7 +16396,6 @@ proxies:
     path: /c399917/
     headers:
       Host: seoul.lonxin.net
-<<<<<<< Updated upstream
 - name: OpenRay  KR-607
   type: vmess
   server: 3.35.214.245
@@ -15091,8 +16420,6 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
-=======
->>>>>>> Stashed changes
 - name: OpenRay  TW-1955
   type: vmess
   server: 165.154.195.38
@@ -15338,6 +16665,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  ES-233
+  type: vless
+  server: 178.33.161.186
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
 - name: OpenRay  MY-8
   type: vless
   server: 638936058851012708.oslo-drc-tusabz.info
@@ -15662,6 +17001,18 @@ proxies:
     path: /arki?ed=2048
     headers:
       Host: 47.244.120.197
+- name: OpenRay  HK-109
+  type: vless
+  server: 103.142.87.118
+  port: 443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: fei.634676.xyz
 - name: OpenRay  TR-372
   type: vless
   server: 638946982460382726.dublin-prx-dnraacq.info
@@ -15805,7 +17156,6 @@ proxies:
     path: /
     headers:
       Host: fast.com
-<<<<<<< Updated upstream
 - name: OpenRay  TR-545
   type: vless
   server: 95.134.130.176
@@ -15826,8 +17176,6 @@ proxies:
     path: /
     headers:
       Host: fast.com
-=======
->>>>>>> Stashed changes
 - name: OpenRay  DK-1
   type: vless
   server: 95.164.85.109
@@ -16067,6 +17415,18 @@ proxies:
     public-key: EwoQCKDlHuB925c6rz8488SfSUYSMMZFcR1T6PILWWM
     short-id: 6bfe
   client-fingerprint: chrome
+- name: OpenRay  CZ-1
+  type: vless
+  server: 94.23.171.114
+  port: 8443
+  uuid: d2965257-0536-4811-a0d5-cdce54e90326
+  network: ws
+  tls: true
+  servername: fei.634676.xyz
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: fei.634676.xyz
 
 proxy-groups:
 - name: AUTO
@@ -16478,11 +17838,10 @@ proxy-groups:
   - OpenRay Dynamic-94220
   - 'OpenRay Dynamic-138899 #2'
   - OpenRay Dynamic-138900
-<<<<<<< Updated upstream
   - OpenRay Dynamic-94226
   - OpenRay Dynamic-94228
-=======
->>>>>>> Stashed changes
+  - OpenRay Dynamic-138903
+  - OpenRay Dynamic-138904
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -16639,6 +17998,8 @@ proxy-groups:
   - OpenRay  GB-13648
   - OpenRay  GB-13650
   - OpenRay  GB-13651
+  - OpenRay  GB-13652
+  - OpenRay  GB-13653
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -16798,6 +18159,14 @@ proxy-groups:
   - OpenRay  US-94222
   - OpenRay  US-94227
   - OpenRay  US-94230
+  - OpenRay  US-94231
+  - OpenRay  US-94232
+  - OpenRay  US-94233
+  - OpenRay  US-94234
+  - OpenRay  US-94235
+  - OpenRay  US-94236
+  - OpenRay  US-94237
+  - OpenRay  US-94238
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -17203,6 +18572,31 @@ proxy-groups:
   - OpenRay  FR-39001
   - OpenRay  FR-39002
   - OpenRay  FR-39003
+  - OpenRay  FR-39004
+  - OpenRay  FR-39005
+  - OpenRay  FR-39006
+  - OpenRay  FR-39007
+  - OpenRay  FR-39008
+  - OpenRay  FR-39009
+  - OpenRay  FR-39010
+  - OpenRay  FR-39011
+  - OpenRay  FR-39012
+  - OpenRay  FR-39013
+  - OpenRay  FR-39014
+  - OpenRay  FR-39015
+  - OpenRay  FR-39016
+  - OpenRay  FR-39017
+  - OpenRay  FR-39018
+  - OpenRay  FR-39019
+  - OpenRay  FR-39020
+  - OpenRay  FR-39021
+  - OpenRay  FR-39022
+  - OpenRay  FR-39023
+  - OpenRay  FR-39024
+  - OpenRay  FR-39025
+  - OpenRay  FR-39026
+  - OpenRay  FR-39027
+  - OpenRay  FR-39028
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -17273,6 +18667,12 @@ proxy-groups:
   - OpenRay  NL-11207
   - OpenRay  NL-11209
   - OpenRay  NL-11210
+  - OpenRay  NL-11211
+  - OpenRay  NL-11212
+  - OpenRay  NL-11213
+  - OpenRay  NL-11214
+  - OpenRay  NL-11215
+  - OpenRay  NL-11216
   - OpenRay  DE-5207
   - OpenRay  DE-7333
   - OpenRay  DE-7696
@@ -17494,6 +18894,59 @@ proxy-groups:
   - OpenRay  DE-52970
   - OpenRay  DE-52971
   - OpenRay  DE-52972
+  - OpenRay  DE-52973
+  - OpenRay  DE-52974
+  - OpenRay  DE-52975
+  - OpenRay  DE-52976
+  - OpenRay  DE-52977
+  - OpenRay  DE-52978
+  - OpenRay  DE-52979
+  - OpenRay  DE-52980
+  - OpenRay  DE-52981
+  - OpenRay  DE-52982
+  - OpenRay  DE-52983
+  - OpenRay  DE-52984
+  - OpenRay  DE-52985
+  - OpenRay  DE-52986
+  - OpenRay  DE-52987
+  - OpenRay  DE-52988
+  - OpenRay  DE-52989
+  - OpenRay  DE-52990
+  - OpenRay  DE-52991
+  - OpenRay  DE-52992
+  - OpenRay  DE-52993
+  - OpenRay  DE-52994
+  - OpenRay  DE-52995
+  - OpenRay  DE-52996
+  - OpenRay  DE-52997
+  - OpenRay  DE-52998
+  - OpenRay  DE-52999
+  - OpenRay  DE-53000
+  - OpenRay  DE-53001
+  - OpenRay  DE-53002
+  - OpenRay  DE-53003
+  - OpenRay  DE-53004
+  - OpenRay  DE-53005
+  - OpenRay  DE-53006
+  - OpenRay  DE-53007
+  - OpenRay  DE-53008
+  - OpenRay  DE-53009
+  - OpenRay  DE-53010
+  - OpenRay  DE-53011
+  - OpenRay  DE-53012
+  - OpenRay  DE-53013
+  - OpenRay  DE-53014
+  - OpenRay  DE-53015
+  - OpenRay  DE-53016
+  - OpenRay  DE-53017
+  - OpenRay  DE-53018
+  - OpenRay  DE-53019
+  - OpenRay  DE-53020
+  - OpenRay  DE-53021
+  - OpenRay  DE-53022
+  - OpenRay  DE-53023
+  - OpenRay  DE-53024
+  - OpenRay  DE-53025
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -17516,6 +18969,7 @@ proxy-groups:
   - OpenRay  RU-6479
   - OpenRay  RU-6481
   - OpenRay  RU-6482
+  - OpenRay  RU-6483
   - OpenRay  SG-2063
   - OpenRay  SG-2068
   - OpenRay  SG-2070
@@ -17553,11 +19007,15 @@ proxy-groups:
   - OpenRay  PL-3837
   - OpenRay  PL-3838
   - OpenRay  PL-3839
+  - OpenRay  PL-3840
+  - OpenRay  PL-3841
+  - OpenRay  PL-3842
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
   - OpenRay  CH-951
   - OpenRay  CH-952
+  - OpenRay  CH-953
   - OpenRay  JP-237
   - OpenRay  JP-239
   - OpenRay  JP-1053
@@ -17571,6 +19029,8 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2673
   - OpenRay  JP-2678
+  - OpenRay  JP-2679
+  - OpenRay  JP-2680
   - OpenRay  FI-3280
   - OpenRay  FI-3307
   - OpenRay  FI-3328
@@ -17597,6 +19057,16 @@ proxy-groups:
   - OpenRay  FI-3404
   - OpenRay  FI-3405
   - OpenRay  FI-3406
+  - OpenRay  FI-3407
+  - OpenRay  FI-3408
+  - OpenRay  FI-3409
+  - OpenRay  FI-3410
+  - OpenRay  FI-3411
+  - OpenRay  FI-3412
+  - OpenRay  FI-3413
+  - OpenRay  FI-3414
+  - OpenRay  FI-3415
+  - OpenRay  FI-3416
   - OpenRay  SE-1344
   - OpenRay  SE-1365
   - OpenRay  SE-1366
@@ -17609,11 +19079,8 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
-<<<<<<< Updated upstream
   - OpenRay  KR-607
   - OpenRay  KR-608
-=======
->>>>>>> Stashed changes
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -17641,6 +19108,7 @@ proxy-groups:
   - OpenRay  ES-229
   - OpenRay  ES-231
   - OpenRay  ES-232
+  - OpenRay  ES-233
   - OpenRay  MY-8
   - OpenRay  MY-10
   - OpenRay  MY-14
@@ -17693,6 +19161,7 @@ proxy-groups:
   - OpenRay  MY-114
   - OpenRay  HK-102
   - OpenRay  HK-108
+  - OpenRay  HK-109
   - OpenRay  TR-372
   - OpenRay  TR-374
   - OpenRay  TR-501
@@ -17714,11 +19183,8 @@ proxy-groups:
   - OpenRay  TR-540
   - OpenRay  TR-542
   - OpenRay  TR-543
-<<<<<<< Updated upstream
   - OpenRay  TR-545
   - OpenRay  TR-546
-=======
->>>>>>> Stashed changes
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
@@ -17739,6 +19205,7 @@ proxy-groups:
   - OpenRay  AT-5
   - OpenRay  AT-6
   - OpenRay  EE-1
+  - OpenRay  CZ-1
 - name: PROXY
   type: select
   proxies:
@@ -18146,11 +19613,10 @@ proxy-groups:
   - OpenRay Dynamic-94220
   - 'OpenRay Dynamic-138899 #2'
   - OpenRay Dynamic-138900
-<<<<<<< Updated upstream
   - OpenRay Dynamic-94226
   - OpenRay Dynamic-94228
-=======
->>>>>>> Stashed changes
+  - OpenRay Dynamic-138903
+  - OpenRay Dynamic-138904
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -18307,6 +19773,8 @@ proxy-groups:
   - OpenRay  GB-13648
   - OpenRay  GB-13650
   - OpenRay  GB-13651
+  - OpenRay  GB-13652
+  - OpenRay  GB-13653
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -18466,6 +19934,14 @@ proxy-groups:
   - OpenRay  US-94222
   - OpenRay  US-94227
   - OpenRay  US-94230
+  - OpenRay  US-94231
+  - OpenRay  US-94232
+  - OpenRay  US-94233
+  - OpenRay  US-94234
+  - OpenRay  US-94235
+  - OpenRay  US-94236
+  - OpenRay  US-94237
+  - OpenRay  US-94238
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -18871,6 +20347,31 @@ proxy-groups:
   - OpenRay  FR-39001
   - OpenRay  FR-39002
   - OpenRay  FR-39003
+  - OpenRay  FR-39004
+  - OpenRay  FR-39005
+  - OpenRay  FR-39006
+  - OpenRay  FR-39007
+  - OpenRay  FR-39008
+  - OpenRay  FR-39009
+  - OpenRay  FR-39010
+  - OpenRay  FR-39011
+  - OpenRay  FR-39012
+  - OpenRay  FR-39013
+  - OpenRay  FR-39014
+  - OpenRay  FR-39015
+  - OpenRay  FR-39016
+  - OpenRay  FR-39017
+  - OpenRay  FR-39018
+  - OpenRay  FR-39019
+  - OpenRay  FR-39020
+  - OpenRay  FR-39021
+  - OpenRay  FR-39022
+  - OpenRay  FR-39023
+  - OpenRay  FR-39024
+  - OpenRay  FR-39025
+  - OpenRay  FR-39026
+  - OpenRay  FR-39027
+  - OpenRay  FR-39028
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -18941,6 +20442,12 @@ proxy-groups:
   - OpenRay  NL-11207
   - OpenRay  NL-11209
   - OpenRay  NL-11210
+  - OpenRay  NL-11211
+  - OpenRay  NL-11212
+  - OpenRay  NL-11213
+  - OpenRay  NL-11214
+  - OpenRay  NL-11215
+  - OpenRay  NL-11216
   - OpenRay  DE-5207
   - OpenRay  DE-7333
   - OpenRay  DE-7696
@@ -19162,6 +20669,59 @@ proxy-groups:
   - OpenRay  DE-52970
   - OpenRay  DE-52971
   - OpenRay  DE-52972
+  - OpenRay  DE-52973
+  - OpenRay  DE-52974
+  - OpenRay  DE-52975
+  - OpenRay  DE-52976
+  - OpenRay  DE-52977
+  - OpenRay  DE-52978
+  - OpenRay  DE-52979
+  - OpenRay  DE-52980
+  - OpenRay  DE-52981
+  - OpenRay  DE-52982
+  - OpenRay  DE-52983
+  - OpenRay  DE-52984
+  - OpenRay  DE-52985
+  - OpenRay  DE-52986
+  - OpenRay  DE-52987
+  - OpenRay  DE-52988
+  - OpenRay  DE-52989
+  - OpenRay  DE-52990
+  - OpenRay  DE-52991
+  - OpenRay  DE-52992
+  - OpenRay  DE-52993
+  - OpenRay  DE-52994
+  - OpenRay  DE-52995
+  - OpenRay  DE-52996
+  - OpenRay  DE-52997
+  - OpenRay  DE-52998
+  - OpenRay  DE-52999
+  - OpenRay  DE-53000
+  - OpenRay  DE-53001
+  - OpenRay  DE-53002
+  - OpenRay  DE-53003
+  - OpenRay  DE-53004
+  - OpenRay  DE-53005
+  - OpenRay  DE-53006
+  - OpenRay  DE-53007
+  - OpenRay  DE-53008
+  - OpenRay  DE-53009
+  - OpenRay  DE-53010
+  - OpenRay  DE-53011
+  - OpenRay  DE-53012
+  - OpenRay  DE-53013
+  - OpenRay  DE-53014
+  - OpenRay  DE-53015
+  - OpenRay  DE-53016
+  - OpenRay  DE-53017
+  - OpenRay  DE-53018
+  - OpenRay  DE-53019
+  - OpenRay  DE-53020
+  - OpenRay  DE-53021
+  - OpenRay  DE-53022
+  - OpenRay  DE-53023
+  - OpenRay  DE-53024
+  - OpenRay  DE-53025
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -19184,6 +20744,7 @@ proxy-groups:
   - OpenRay  RU-6479
   - OpenRay  RU-6481
   - OpenRay  RU-6482
+  - OpenRay  RU-6483
   - OpenRay  SG-2063
   - OpenRay  SG-2068
   - OpenRay  SG-2070
@@ -19221,11 +20782,15 @@ proxy-groups:
   - OpenRay  PL-3837
   - OpenRay  PL-3838
   - OpenRay  PL-3839
+  - OpenRay  PL-3840
+  - OpenRay  PL-3841
+  - OpenRay  PL-3842
   - OpenRay  CH-43
   - OpenRay  CH-277
   - OpenRay  CH-950
   - OpenRay  CH-951
   - OpenRay  CH-952
+  - OpenRay  CH-953
   - OpenRay  JP-237
   - OpenRay  JP-239
   - OpenRay  JP-1053
@@ -19239,6 +20804,8 @@ proxy-groups:
   - OpenRay  JP-2670
   - OpenRay  JP-2673
   - OpenRay  JP-2678
+  - OpenRay  JP-2679
+  - OpenRay  JP-2680
   - OpenRay  FI-3280
   - OpenRay  FI-3307
   - OpenRay  FI-3328
@@ -19265,6 +20832,16 @@ proxy-groups:
   - OpenRay  FI-3404
   - OpenRay  FI-3405
   - OpenRay  FI-3406
+  - OpenRay  FI-3407
+  - OpenRay  FI-3408
+  - OpenRay  FI-3409
+  - OpenRay  FI-3410
+  - OpenRay  FI-3411
+  - OpenRay  FI-3412
+  - OpenRay  FI-3413
+  - OpenRay  FI-3414
+  - OpenRay  FI-3415
+  - OpenRay  FI-3416
   - OpenRay  SE-1344
   - OpenRay  SE-1365
   - OpenRay  SE-1366
@@ -19277,11 +20854,8 @@ proxy-groups:
   - OpenRay  KR-604
   - OpenRay  KR-605
   - OpenRay  KR-606
-<<<<<<< Updated upstream
   - OpenRay  KR-607
   - OpenRay  KR-608
-=======
->>>>>>> Stashed changes
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -19309,6 +20883,7 @@ proxy-groups:
   - OpenRay  ES-229
   - OpenRay  ES-231
   - OpenRay  ES-232
+  - OpenRay  ES-233
   - OpenRay  MY-8
   - OpenRay  MY-10
   - OpenRay  MY-14
@@ -19361,6 +20936,7 @@ proxy-groups:
   - OpenRay  MY-114
   - OpenRay  HK-102
   - OpenRay  HK-108
+  - OpenRay  HK-109
   - OpenRay  TR-372
   - OpenRay  TR-374
   - OpenRay  TR-501
@@ -19382,11 +20958,8 @@ proxy-groups:
   - OpenRay  TR-540
   - OpenRay  TR-542
   - OpenRay  TR-543
-<<<<<<< Updated upstream
   - OpenRay  TR-545
   - OpenRay  TR-546
-=======
->>>>>>> Stashed changes
   - OpenRay  DK-1
   - OpenRay  DK-2
   - OpenRay  DK-3
@@ -19407,6 +20980,7 @@ proxy-groups:
   - OpenRay  AT-5
   - OpenRay  AT-6
   - OpenRay  EE-1
+  - OpenRay  CZ-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
