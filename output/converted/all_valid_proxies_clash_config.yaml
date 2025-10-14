@@ -801,6 +801,17 @@ proxies:
     path: /Tel-@V2ray_Alpha
     headers:
       Host: ARC-448.Pages.DEV
+- name: OpenRay  CA-138930
+  type: vless
+  server: 172.67.146.171
+  port: 2095
+  uuid: 519%65%65767-%6149c-45c1-b86c-d98f6dd6744%65
+  network: ws
+  ws-opts:
+    path: 
+      /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+    headers:
+      Host: test3.amin8263.ir
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -4266,6 +4277,26 @@ proxies:
     path: /Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN?ed
     headers:
       Host: gur.gov.ua
+- name: 'OpenRay Dynamic-94315 #2'
+  type: vless
+  server: cdnjs.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: freedom.pusytroller.cf
+- name: OpenRay Dynamic-94316
+  type: vless
+  server: www.udemy.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: freedom.pusytroller.cf
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -5210,6 +5241,12 @@ proxies:
     public-key: Dee9YE139lZpb4V3QytB8DvHY3nTCnEXzk2IjvMLHi8
     short-id: b3
   client-fingerprint: chrome
+- name: OpenRay  GB-13661
+  type: vless
+  server: 638952778316595617.hamedan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  US-10530
   type: vless
   server: pq-unitedstates3.09vpn.com
@@ -8418,6 +8455,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39056
+  type: vless
+  server: 185.234.64.149
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -10268,6 +10311,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  SG-2130
+  type: vmess
+  server: 3.0.148.73
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  PL-3806
   type: vmess
   server: 146.59.85.226
@@ -11875,6 +11930,16 @@ proxies:
     public-key: Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU
     short-id: 828348fc6d8e49cf
   client-fingerprint: firefox
+- name: OpenRay  CN-1
+  type: vless
+  server: 176.124.223.96
+  port: 80
+  uuid: 2ad87f95-7a0b-4018-8497-5ecaac2f0ddf
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: handsome-device.oneeat.co
 
 proxy-groups:
 - name: AUTO
@@ -11940,6 +12005,7 @@ proxy-groups:
   - OpenRay  CA-138918
   - OpenRay  CA-138925
   - OpenRay  CA-138929
+  - OpenRay  CA-138930
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -12224,6 +12290,8 @@ proxy-groups:
   - OpenRay Dynamic-138931
   - OpenRay Dynamic-138932
   - OpenRay Dynamic-94315
+  - 'OpenRay Dynamic-94315 #2'
+  - OpenRay Dynamic-94316
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -12361,6 +12429,7 @@ proxy-groups:
   - OpenRay  GB-13657
   - OpenRay  GB-13658
   - OpenRay  GB-13659
+  - OpenRay  GB-13661
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -12790,6 +12859,7 @@ proxy-groups:
   - OpenRay  FR-39053
   - OpenRay  FR-39054
   - OpenRay  FR-39055
+  - OpenRay  FR-39056
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -12977,6 +13047,7 @@ proxy-groups:
   - OpenRay  SG-2127
   - OpenRay  SG-2128
   - OpenRay  SG-2129
+  - OpenRay  SG-2130
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3810
@@ -13152,6 +13223,7 @@ proxy-groups:
   - OpenRay  AE-3
   - OpenRay  CZ-1
   - OpenRay  IT-1
+  - OpenRay  CN-1
 - name: PROXY
   type: select
   proxies:
@@ -13213,6 +13285,7 @@ proxy-groups:
   - OpenRay  CA-138918
   - OpenRay  CA-138925
   - OpenRay  CA-138929
+  - OpenRay  CA-138930
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -13497,6 +13570,8 @@ proxy-groups:
   - OpenRay Dynamic-138931
   - OpenRay Dynamic-138932
   - OpenRay Dynamic-94315
+  - 'OpenRay Dynamic-94315 #2'
+  - OpenRay Dynamic-94316
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -13634,6 +13709,7 @@ proxy-groups:
   - OpenRay  GB-13657
   - OpenRay  GB-13658
   - OpenRay  GB-13659
+  - OpenRay  GB-13661
   - OpenRay  US-10530
   - OpenRay  US-13815
   - OpenRay  US-13817
@@ -14063,6 +14139,7 @@ proxy-groups:
   - OpenRay  FR-39053
   - OpenRay  FR-39054
   - OpenRay  FR-39055
+  - OpenRay  FR-39056
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-8828
@@ -14250,6 +14327,7 @@ proxy-groups:
   - OpenRay  SG-2127
   - OpenRay  SG-2128
   - OpenRay  SG-2129
+  - OpenRay  SG-2130
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3810
@@ -14425,6 +14503,7 @@ proxy-groups:
   - OpenRay  AE-3
   - OpenRay  CZ-1
   - OpenRay  IT-1
+  - OpenRay  CN-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
