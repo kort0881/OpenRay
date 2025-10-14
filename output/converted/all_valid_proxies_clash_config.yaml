@@ -777,6 +777,19 @@ proxies:
     path: /?ed=2560
     headers:
       Host: fei.634676.xyz
+- name: OpenRay  CA-138914
+  type: vless
+  server: 188.114.97.202
+  port: 8443
+  uuid: c2e177d4-e610-4abd-85cd-1a869d158751
+  network: ws
+  tls: true
+  servername: teslakit1.pages.dev
+  ws-opts:
+    path: 
+      //v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0---v2rayng_free0-
+    headers:
+      Host: teslakit1.pages.dev
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -4103,6 +4116,39 @@ proxies:
     path: /azumase.ren
     headers:
       Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+- name: OpenRay Dynamic-6489
+  type: vless
+  server: wa.sfasti.ru
+  port: 443
+  uuid: d4e4c02a-d969-47a6-ba0f-3d433fdac206
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: wa.sfasti.ru
+  reality-opts:
+    public-key: J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8
+    short-id: 16895459a2c7768d
+  client-fingerprint: firefox
+- name: OpenRay Dynamic-138915
+  type: vless
+  server: www.wto.org
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: freedom.pusytroller.cf
+- name: OpenRay Dynamic-94272
+  type: vless
+  server: openai.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: freedom.pusytroller.cf
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -10935,6 +10981,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-53058
+  type: vmess
+  server: radhan.configraybot.sbs
+  port: 11559
+  uuid: f149b3b4-341d-4f8e-8775-552b86d7dc52
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -11246,6 +11300,18 @@ proxies:
 - name: OpenRay  SG-2125
   type: vmess
   server: 3.0.98.237
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  SG-2126
+  type: vmess
+  server: 18.142.183.65
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -13271,6 +13337,7 @@ proxy-groups:
   - OpenRay  CA-138910
   - OpenRay  CA-138912
   - OpenRay  CA-138913
+  - OpenRay  CA-138914
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -13544,6 +13611,9 @@ proxy-groups:
   - OpenRay Dynamic-94266
   - OpenRay Dynamic-39037
   - 'OpenRay Dynamic-94265 #2'
+  - OpenRay Dynamic-6489
+  - OpenRay Dynamic-138915
+  - OpenRay Dynamic-94272
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -14371,6 +14441,7 @@ proxy-groups:
   - OpenRay  DE-53054
   - OpenRay  DE-53056
   - OpenRay  DE-53057
+  - OpenRay  DE-53058
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -14404,6 +14475,7 @@ proxy-groups:
   - OpenRay  SG-2123
   - OpenRay  SG-2124
   - OpenRay  SG-2125
+  - OpenRay  SG-2126
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3810
@@ -14673,6 +14745,7 @@ proxy-groups:
   - OpenRay  CA-138910
   - OpenRay  CA-138912
   - OpenRay  CA-138913
+  - OpenRay  CA-138914
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -14946,6 +15019,9 @@ proxy-groups:
   - OpenRay Dynamic-94266
   - OpenRay Dynamic-39037
   - 'OpenRay Dynamic-94265 #2'
+  - OpenRay Dynamic-6489
+  - OpenRay Dynamic-138915
+  - OpenRay Dynamic-94272
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -15773,6 +15849,7 @@ proxy-groups:
   - OpenRay  DE-53054
   - OpenRay  DE-53056
   - OpenRay  DE-53057
+  - OpenRay  DE-53058
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -15806,6 +15883,7 @@ proxy-groups:
   - OpenRay  SG-2123
   - OpenRay  SG-2124
   - OpenRay  SG-2125
+  - OpenRay  SG-2126
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3810
