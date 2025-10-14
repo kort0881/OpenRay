@@ -4951,6 +4951,28 @@ proxies:
     path: linkvws
     headers:
       Host: putihb.org
+- name: 'OpenRay Dynamic-138903 #2'
+  type: vless
+  server: mstr.fastly80.hosting-ip.com
+  port: 80
+  uuid: 3956e45d-e9fa-4f2a-a831-b7e8e5904692
+  network: ws
+  ws-opts:
+    path: /admin
+    headers:
+      Host: Gn8656.io
+- name: OpenRay Dynamic-94239
+  type: vmess
+  server: s1.db-link03.top
+  port: 8880
+  uuid: 25fbcec6-e45a-3a86-977a-12c40bf649ba
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /dabai.in?=4e43bd24150af811e255fc226bef0a46
+    headers:
+      Host: 4e43bd24150af811e255fc226bef0a46.s1.db-link03.top
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -14965,6 +14987,34 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-53026
+  type: vmess
+  server: 57.129.28.64
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: serkat.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: serkat.org
+- name: OpenRay  DE-53027
+  type: vmess
+  server: 57.129.28.66
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -16238,6 +16288,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  FI-3417
+  type: vmess
+  server: 65.109.8.76
+  port: 38000
+  uuid: 105b7158-2977-4b5c-93ea-1fcf33c72c56
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  SE-1344
   type: vless
   server: 172.234.96.64
@@ -17842,6 +17900,8 @@ proxy-groups:
   - OpenRay Dynamic-94228
   - OpenRay Dynamic-138903
   - OpenRay Dynamic-138904
+  - 'OpenRay Dynamic-138903 #2'
+  - OpenRay Dynamic-94239
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -18947,6 +19007,8 @@ proxy-groups:
   - OpenRay  DE-53023
   - OpenRay  DE-53024
   - OpenRay  DE-53025
+  - OpenRay  DE-53026
+  - OpenRay  DE-53027
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -19067,6 +19129,7 @@ proxy-groups:
   - OpenRay  FI-3414
   - OpenRay  FI-3415
   - OpenRay  FI-3416
+  - OpenRay  FI-3417
   - OpenRay  SE-1344
   - OpenRay  SE-1365
   - OpenRay  SE-1366
@@ -19617,6 +19680,8 @@ proxy-groups:
   - OpenRay Dynamic-94228
   - OpenRay Dynamic-138903
   - OpenRay Dynamic-138904
+  - 'OpenRay Dynamic-138903 #2'
+  - OpenRay Dynamic-94239
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -20722,6 +20787,8 @@ proxy-groups:
   - OpenRay  DE-53023
   - OpenRay  DE-53024
   - OpenRay  DE-53025
+  - OpenRay  DE-53026
+  - OpenRay  DE-53027
   - OpenRay  LT-839
   - OpenRay  LT-1066
   - OpenRay  LT-1077
@@ -20842,6 +20909,7 @@ proxy-groups:
   - OpenRay  FI-3414
   - OpenRay  FI-3415
   - OpenRay  FI-3416
+  - OpenRay  FI-3417
   - OpenRay  SE-1344
   - OpenRay  SE-1365
   - OpenRay  SE-1366
