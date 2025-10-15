@@ -955,6 +955,20 @@ proxies:
     path: linkvws
     headers:
       Host: seribus.org
+- name: OpenRay  CA-138996
+  type: vmess
+  server: 15.235.13.69
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  XX-829
   type: vless
   server: 5.182.36.251
@@ -3743,6 +3757,28 @@ proxies:
     path: /?ed=2560
     headers:
       Host: azadnet3-9do.pages.dev
+- name: OpenRay Dynamic-94463
+  type: vmess
+  server: support.zoom.us
+  port: 8080
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
+- name: OpenRay Dynamic-94464
+  type: vless
+  server: www.fbi.gov
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: freedom.pusytroller.cf
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -9698,6 +9734,30 @@ proxies:
     path: /vless/
     headers:
       Host: google.com
+- name: OpenRay  DE-53162
+  type: vmess
+  server: 155.254.35.160
+  port: 29912
+  uuid: 572b097f-e5b6-4050-8f70-2ad6979c093b
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  DE-53163
+  type: vless
+  server: 91.99.150.59
+  port: 10000
+  uuid: c9fdc84b-74c9-48c6-b5cc-1c4f6ea8fedb
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.99.150.59
+- name: OpenRay  DE-53164
+  type: vless
+  server: 91.99.150.59
+  port: 20000
+  uuid: 9ce86b02-bb50-4e42-8fce-bdfd76b4bb7c
+  network: tcp
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -10004,6 +10064,48 @@ proxies:
     path: /FREE By Tharuwa (0767597317)
     headers:
       Host: zoom.us
+- name: OpenRay  SG-2130
+  type: vmess
+  server: node4.rtxconfigz.com
+  port: 443
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: aka.ms
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
+- name: OpenRay  SG-2131
+  type: vmess
+  server: node4.rtxconfigz.com
+  port: 443
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: cdn.sharepointonline.com
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
+- name: OpenRay  SG-2132
+  type: vmess
+  server: node4.rtxconfigz.com
+  port: 443
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: video-weaver.mrs022.hls.ttvnw.net
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
 - name: OpenRay  PL-3806
   type: vmess
   server: 146.59.85.226
@@ -11872,6 +11974,7 @@ proxy-groups:
   - OpenRay  CA-138992
   - OpenRay  CA-138993
   - OpenRay  CA-138994
+  - OpenRay  CA-138996
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -12096,6 +12199,8 @@ proxy-groups:
   - OpenRay Dynamic-94457
   - OpenRay Dynamic-94460
   - OpenRay Dynamic-94461
+  - OpenRay Dynamic-94463
+  - OpenRay Dynamic-94464
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -12834,6 +12939,9 @@ proxy-groups:
   - OpenRay  DE-53159
   - OpenRay  DE-53160
   - OpenRay  DE-53161
+  - OpenRay  DE-53162
+  - OpenRay  DE-53163
+  - OpenRay  DE-53164
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -12863,6 +12971,9 @@ proxy-groups:
   - OpenRay  SG-2127
   - OpenRay  SG-2128
   - OpenRay  SG-2129
+  - OpenRay  SG-2130
+  - OpenRay  SG-2131
+  - OpenRay  SG-2132
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3819
@@ -13140,6 +13251,7 @@ proxy-groups:
   - OpenRay  CA-138992
   - OpenRay  CA-138993
   - OpenRay  CA-138994
+  - OpenRay  CA-138996
   - OpenRay  XX-829
   - OpenRay  XX-1297
   - OpenRay  XX-1843
@@ -13364,6 +13476,8 @@ proxy-groups:
   - OpenRay Dynamic-94457
   - OpenRay Dynamic-94460
   - OpenRay Dynamic-94461
+  - OpenRay Dynamic-94463
+  - OpenRay Dynamic-94464
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -14102,6 +14216,9 @@ proxy-groups:
   - OpenRay  DE-53159
   - OpenRay  DE-53160
   - OpenRay  DE-53161
+  - OpenRay  DE-53162
+  - OpenRay  DE-53163
+  - OpenRay  DE-53164
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -14131,6 +14248,9 @@ proxy-groups:
   - OpenRay  SG-2127
   - OpenRay  SG-2128
   - OpenRay  SG-2129
+  - OpenRay  SG-2130
+  - OpenRay  SG-2131
+  - OpenRay  SG-2132
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3819
