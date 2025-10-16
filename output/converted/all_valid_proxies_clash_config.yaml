@@ -9789,6 +9789,30 @@ proxies:
     path: /
     headers:
       Host: 91.99.150.59
+- name: OpenRay  DE-53213
+  type: vmess
+  server: 91.99.150.59
+  port: 30000
+  uuid: 17642b7a-28cb-4a68-86c9-e3f5987fe3d3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.99.150.59
+- name: OpenRay  DE-53214
+  type: vmess
+  server: 91.99.150.59
+  port: 30000
+  uuid: 17642b7a-28cb-4a68-86c9-e3f5987fe3d3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 91.99.150.59
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -11101,6 +11125,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  KR-612
+  type: vmess
+  server: 43.201.6.209
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  TW-1955
   type: vmess
   server: 165.154.195.38
@@ -11842,6 +11878,18 @@ proxies:
     path: /
     headers:
       Host: 47.83.15.118
+- name: OpenRay  HK-6
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+    headers:
+      Host: 47.244.120.197
 - name: OpenRay  BZ-1
   type: vless
   server: 45.131.5.111
@@ -12917,6 +12965,8 @@ proxy-groups:
   - OpenRay  DE-53210
   - OpenRay  DE-53211
   - OpenRay  DE-53212
+  - OpenRay  DE-53213
+  - OpenRay  DE-53214
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -13046,6 +13096,7 @@ proxy-groups:
   - OpenRay  KR-609
   - OpenRay  KR-610
   - OpenRay  KR-611
+  - OpenRay  KR-612
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -13143,6 +13194,7 @@ proxy-groups:
   - OpenRay  HK-3
   - OpenRay  HK-4
   - OpenRay  HK-5
+  - OpenRay  HK-6
   - OpenRay  BZ-1
   - OpenRay  TH-1
   - OpenRay  KZ-1
@@ -14183,6 +14235,8 @@ proxy-groups:
   - OpenRay  DE-53210
   - OpenRay  DE-53211
   - OpenRay  DE-53212
+  - OpenRay  DE-53213
+  - OpenRay  DE-53214
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -14312,6 +14366,7 @@ proxy-groups:
   - OpenRay  KR-609
   - OpenRay  KR-610
   - OpenRay  KR-611
+  - OpenRay  KR-612
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -14409,6 +14464,7 @@ proxy-groups:
   - OpenRay  HK-3
   - OpenRay  HK-4
   - OpenRay  HK-5
+  - OpenRay  HK-6
   - OpenRay  BZ-1
   - OpenRay  TH-1
   - OpenRay  KZ-1
