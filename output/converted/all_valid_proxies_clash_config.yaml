@@ -3818,6 +3818,18 @@ proxies:
     path: /
     headers:
       Host: sweet-combination.seotoolsforyou.co.uk
+- name: OpenRay Dynamic-139027
+  type: vless
+  server: economist.com
+  port: 443
+  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
+  network: ws
+  tls: true
+  servername: revcloud.migacpi.org
+  ws-opts:
+    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
+    headers:
+      Host: revcloud.migacpi.org
 - name: OpenRay  GB-9668
   type: vmess
   server: 51.75.160.237
@@ -6180,6 +6192,16 @@ proxies:
     path: /
     headers:
       Host: google.com
+- name: OpenRay  US-94503
+  type: vless
+  server: 104.167.199.95
+  port: 80
+  uuid: 558393ec-d70d-4a05-b412-e59f2436cc14
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: '---@External_Net---@External_Net---@External_Net---@External_Net---@External_Net'
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -9633,6 +9655,30 @@ proxies:
     path: linkvws#TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)
     headers:
       Host: kampong.org
+- name: OpenRay  DE-53216
+  type: vless
+  server: realdom-sub.panelfreedom.com
+  port: 20809
+  uuid: ce2ab1e8-0a77-4316-90fc-7911b1609b26
+  network: tcp
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+    short-id: ''
+  client-fingerprint: firefox
+- name: OpenRay  DE-53217
+  type: vless
+  server: 91.98.87.4
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: tcp
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: zW8LR-lHS_PXDyY8Q8bE_zvKdhY5MAmnsd8miBulx2U
+    short-id: ''
+  client-fingerprint: chrome
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -10536,6 +10582,18 @@ proxies:
 - name: OpenRay  KR-613
   type: vmess
   server: 3.34.139.171
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-614
+  type: vmess
+  server: 3.36.108.113
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -11601,6 +11659,7 @@ proxy-groups:
   - 'OpenRay Dynamic-94488 #2'
   - OpenRay Dynamic-94501
   - OpenRay Dynamic-139024
+  - OpenRay Dynamic-139027
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -11890,6 +11949,7 @@ proxy-groups:
   - OpenRay  US-94496
   - OpenRay  US-94499
   - OpenRay  US-94500
+  - OpenRay  US-94503
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -12315,6 +12375,8 @@ proxy-groups:
   - OpenRay  DE-53213
   - OpenRay  DE-53214
   - OpenRay  DE-53215
+  - OpenRay  DE-53216
+  - OpenRay  DE-53217
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -12395,6 +12457,7 @@ proxy-groups:
   - OpenRay  KR-609
   - OpenRay  KR-612
   - OpenRay  KR-613
+  - OpenRay  KR-614
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
@@ -12799,6 +12862,7 @@ proxy-groups:
   - 'OpenRay Dynamic-94488 #2'
   - OpenRay Dynamic-94501
   - OpenRay Dynamic-139024
+  - OpenRay Dynamic-139027
   - OpenRay  GB-9668
   - OpenRay  GB-10627
   - OpenRay  GB-10628
@@ -13088,6 +13152,7 @@ proxy-groups:
   - OpenRay  US-94496
   - OpenRay  US-94499
   - OpenRay  US-94500
+  - OpenRay  US-94503
   - OpenRay  FR-3265
   - OpenRay  FR-4264
   - OpenRay  FR-6006
@@ -13513,6 +13578,8 @@ proxy-groups:
   - OpenRay  DE-53213
   - OpenRay  DE-53214
   - OpenRay  DE-53215
+  - OpenRay  DE-53216
+  - OpenRay  DE-53217
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1145
@@ -13593,6 +13660,7 @@ proxy-groups:
   - OpenRay  KR-609
   - OpenRay  KR-612
   - OpenRay  KR-613
+  - OpenRay  KR-614
   - OpenRay  TW-1955
   - OpenRay  TW-1958
   - OpenRay  LV-254
