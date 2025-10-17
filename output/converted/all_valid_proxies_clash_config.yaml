@@ -9066,6 +9066,14 @@ proxies:
     path: linkvws
     headers:
       Host: pelang.org
+- name: OpenRay  DE-53375
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: 703a1b6c-a01e-45f8-9040-c29cbb0235e1
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  LT-839
   type: vless
   server: 638930287805772573.helsinki-drc-dcrabj.info
@@ -9261,6 +9269,19 @@ proxies:
   port: 8081
   uuid: f8be92b6-b31f-4d8b-ba7d-20781595fa0e
   network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: nID_kfSoZPfWS1XZUT1dZnR2mwaoRtUROtBpmqCWEiQ
+    short-id: d0a3f84aabd21574
+  client-fingerprint: chrome
+- name: OpenRay  RU-6510
+  type: vless
+  server: 194.87.80.9
+  port: 8081
+  uuid: f8be92b6-b31f-4d8b-ba7d-20781595fa0e
+  network: raw
   flow: xtls-rprx-vision
   tls: true
   servername: yahoo.com
@@ -10698,6 +10719,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2770
+  type: vmess
+  server: 18.181.198.20
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3307
   type: vless
   server: 178.20.215.10
@@ -11246,6 +11279,18 @@ proxies:
 - name: OpenRay  KR-651
   type: vmess
   server: 13.124.57.34
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-652
+  type: vmess
+  server: 3.34.146.206
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -12227,6 +12272,18 @@ proxies:
     path: X@节点狂魔/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
+- name: OpenRay  HK-51
+  type: vmess
+  server: aflzzul.meiquankongjian.com
+  port: 52513
+  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /564dfa20/
+    headers:
+      Host: aflzzul.meiquankongjian.com
 - name: OpenRay  KZ-1
   type: vless
   server: 109.248.170.119
@@ -13322,6 +13379,7 @@ proxy-groups:
   - OpenRay  DE-53372
   - OpenRay  DE-53373
   - OpenRay  DE-53374
+  - OpenRay  DE-53375
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1161
@@ -13343,6 +13401,7 @@ proxy-groups:
   - OpenRay  RU-6507
   - OpenRay  RU-6508
   - OpenRay  RU-6509
+  - OpenRay  RU-6510
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2140
@@ -13464,6 +13523,7 @@ proxy-groups:
   - OpenRay  JP-2763
   - OpenRay  JP-2768
   - OpenRay  JP-2769
+  - OpenRay  JP-2770
   - OpenRay  FI-3307
   - OpenRay  FI-3328
   - OpenRay  FI-3390
@@ -13510,6 +13570,7 @@ proxy-groups:
   - OpenRay  KR-645
   - OpenRay  KR-650
   - OpenRay  KR-651
+  - OpenRay  KR-652
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13622,6 +13683,7 @@ proxy-groups:
   - OpenRay  HK-47
   - OpenRay  HK-49
   - OpenRay  HK-50
+  - OpenRay  HK-51
   - OpenRay  KZ-1
   - OpenRay  KZ-2
   - OpenRay  UY-2
@@ -14635,6 +14697,7 @@ proxy-groups:
   - OpenRay  DE-53372
   - OpenRay  DE-53373
   - OpenRay  DE-53374
+  - OpenRay  DE-53375
   - OpenRay  LT-839
   - OpenRay  LT-1144
   - OpenRay  LT-1161
@@ -14656,6 +14719,7 @@ proxy-groups:
   - OpenRay  RU-6507
   - OpenRay  RU-6508
   - OpenRay  RU-6509
+  - OpenRay  RU-6510
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2140
@@ -14777,6 +14841,7 @@ proxy-groups:
   - OpenRay  JP-2763
   - OpenRay  JP-2768
   - OpenRay  JP-2769
+  - OpenRay  JP-2770
   - OpenRay  FI-3307
   - OpenRay  FI-3328
   - OpenRay  FI-3390
@@ -14823,6 +14888,7 @@ proxy-groups:
   - OpenRay  KR-645
   - OpenRay  KR-650
   - OpenRay  KR-651
+  - OpenRay  KR-652
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -14935,6 +15001,7 @@ proxy-groups:
   - OpenRay  HK-47
   - OpenRay  HK-49
   - OpenRay  HK-50
+  - OpenRay  HK-51
   - OpenRay  KZ-1
   - OpenRay  KZ-2
   - OpenRay  UY-2
