@@ -8136,6 +8136,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39293
+  type: vless
+  server: 638937381606723301.brussels-drc-tusacaf.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -10002,6 +10008,19 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
+- name: OpenRay  RU-6509
+  type: vless
+  server: 194.87.80.9
+  port: 8081
+  uuid: f8be92b6-b31f-4d8b-ba7d-20781595fa0e
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: nID_kfSoZPfWS1XZUT1dZnR2mwaoRtUROtBpmqCWEiQ
+    short-id: d0a3f84aabd21574
+  client-fingerprint: chrome
 - name: OpenRay  SG-2129
   type: vless
   server: 178.128.17.93
@@ -10541,6 +10560,18 @@ proxies:
   servername: gaosir.unfeeling.sbs
   ws-opts:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
+- name: OpenRay  SG-2197
+  type: vless
+  server: 31.192.238.71
+  port: 2053
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
 - name: OpenRay  PL-3806
@@ -11610,6 +11641,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2770
+  type: vmess
+  server: 18.179.8.124
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3307
   type: vless
   server: 178.20.215.10
@@ -12195,6 +12238,30 @@ proxies:
 - name: OpenRay  KR-649
   type: vmess
   server: 3.35.219.232
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-650
+  type: vless
+  server: 152.67.194.140
+  port: 443
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: X@节点狂魔/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
+- name: OpenRay  KR-651
+  type: vmess
+  server: 13.124.57.34
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -13200,6 +13267,18 @@ proxies:
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
+- name: OpenRay  HK-50
+  type: vless
+  server: 141.11.78.77
+  port: 8080
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: X@节点狂魔/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
 - name: OpenRay  KZ-1
   type: vless
   server: 109.248.170.119
@@ -14191,6 +14270,7 @@ proxy-groups:
   - OpenRay  FR-39290
   - OpenRay  FR-39291
   - OpenRay  FR-39292
+  - OpenRay  FR-39293
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -14388,6 +14468,7 @@ proxy-groups:
   - OpenRay  RU-6506
   - OpenRay  RU-6507
   - OpenRay  RU-6508
+  - OpenRay  RU-6509
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2139
@@ -14434,6 +14515,7 @@ proxy-groups:
   - OpenRay  SG-2194
   - OpenRay  SG-2195
   - OpenRay  SG-2196
+  - OpenRay  SG-2197
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3819
@@ -14524,6 +14606,7 @@ proxy-groups:
   - OpenRay  JP-2767
   - OpenRay  JP-2768
   - OpenRay  JP-2769
+  - OpenRay  JP-2770
   - OpenRay  FI-3307
   - OpenRay  FI-3328
   - OpenRay  FI-3390
@@ -14573,6 +14656,8 @@ proxy-groups:
   - OpenRay  KR-647
   - OpenRay  KR-648
   - OpenRay  KR-649
+  - OpenRay  KR-650
+  - OpenRay  KR-651
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -14688,6 +14773,7 @@ proxy-groups:
   - OpenRay  HK-47
   - OpenRay  HK-48
   - OpenRay  HK-49
+  - OpenRay  HK-50
   - OpenRay  KZ-1
   - OpenRay  KZ-2
   - OpenRay  UY-2
@@ -15610,6 +15696,7 @@ proxy-groups:
   - OpenRay  FR-39290
   - OpenRay  FR-39291
   - OpenRay  FR-39292
+  - OpenRay  FR-39293
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -15807,6 +15894,7 @@ proxy-groups:
   - OpenRay  RU-6506
   - OpenRay  RU-6507
   - OpenRay  RU-6508
+  - OpenRay  RU-6509
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2139
@@ -15853,6 +15941,7 @@ proxy-groups:
   - OpenRay  SG-2194
   - OpenRay  SG-2195
   - OpenRay  SG-2196
+  - OpenRay  SG-2197
   - OpenRay  PL-3806
   - OpenRay  PL-3807
   - OpenRay  PL-3819
@@ -15943,6 +16032,7 @@ proxy-groups:
   - OpenRay  JP-2767
   - OpenRay  JP-2768
   - OpenRay  JP-2769
+  - OpenRay  JP-2770
   - OpenRay  FI-3307
   - OpenRay  FI-3328
   - OpenRay  FI-3390
@@ -15992,6 +16082,8 @@ proxy-groups:
   - OpenRay  KR-647
   - OpenRay  KR-648
   - OpenRay  KR-649
+  - OpenRay  KR-650
+  - OpenRay  KR-651
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -16107,6 +16199,7 @@ proxy-groups:
   - OpenRay  HK-47
   - OpenRay  HK-48
   - OpenRay  HK-49
+  - OpenRay  HK-50
   - OpenRay  KZ-1
   - OpenRay  KZ-2
   - OpenRay  UY-2
