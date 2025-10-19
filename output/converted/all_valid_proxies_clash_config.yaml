@@ -825,6 +825,17 @@ proxies:
     path: linkvws
     headers:
       Host: putihb.org
+- name: OpenRay  CA-139170
+  type: vless
+  server: 172.67.146.171
+  port: 2095
+  uuid: f67a6f87-5817-4033-cbae-b7dca5e0e4c1
+  network: ws
+  ws-opts:
+    path: 
+      /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+    headers:
+      Host: test3.amin8263.ir
 - name: OpenRay  XX-1843
   type: vmess
   server: 45.8.146.129
@@ -7938,6 +7949,16 @@ proxies:
     path: linkvws
     headers:
       Host: pulau.org
+- name: OpenRay  DE-53541
+  type: vless
+  server: de.vpnbase.net
+  port: 80
+  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+  network: ws
+  ws-opts:
+    path: /http
+    headers:
+      Host: de.vpnbase.net
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -9544,6 +9565,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2819
+  type: vmess
+  server: 57.180.44.176
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10204,6 +10237,18 @@ proxies:
 - name: OpenRay  KR-669
   type: vmess
   server: 43.201.149.111
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-670
+  type: vmess
+  server: 43.201.6.41
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -10972,6 +11017,20 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  PL-14
+  type: vmess
+  server: 57.128.192.62
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  MY-2
   type: vless
   server: 45.128.54.6
@@ -11097,6 +11156,7 @@ proxy-groups:
   - OpenRay  CA-139167
   - OpenRay  CA-139168
   - OpenRay  CA-139169
+  - OpenRay  CA-139170
   - OpenRay  XX-1843
   - OpenRay  XX-1845
   - OpenRay Dynamic-5221
@@ -11932,6 +11992,7 @@ proxy-groups:
   - OpenRay  DE-53538
   - OpenRay  DE-53539
   - OpenRay  DE-53540
+  - OpenRay  DE-53541
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -12070,6 +12131,7 @@ proxy-groups:
   - OpenRay  JP-2816
   - OpenRay  JP-2817
   - OpenRay  JP-2818
+  - OpenRay  JP-2819
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -12126,6 +12188,7 @@ proxy-groups:
   - OpenRay  KR-667
   - OpenRay  KR-668
   - OpenRay  KR-669
+  - OpenRay  KR-670
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -12206,6 +12269,7 @@ proxy-groups:
   - OpenRay  PL-7
   - OpenRay  PL-12
   - OpenRay  PL-13
+  - OpenRay  PL-14
   - OpenRay  MY-2
   - OpenRay  MY-3
   - OpenRay  MY-4
@@ -12278,6 +12342,7 @@ proxy-groups:
   - OpenRay  CA-139167
   - OpenRay  CA-139168
   - OpenRay  CA-139169
+  - OpenRay  CA-139170
   - OpenRay  XX-1843
   - OpenRay  XX-1845
   - OpenRay Dynamic-5221
@@ -13113,6 +13178,7 @@ proxy-groups:
   - OpenRay  DE-53538
   - OpenRay  DE-53539
   - OpenRay  DE-53540
+  - OpenRay  DE-53541
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -13251,6 +13317,7 @@ proxy-groups:
   - OpenRay  JP-2816
   - OpenRay  JP-2817
   - OpenRay  JP-2818
+  - OpenRay  JP-2819
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -13307,6 +13374,7 @@ proxy-groups:
   - OpenRay  KR-667
   - OpenRay  KR-668
   - OpenRay  KR-669
+  - OpenRay  KR-670
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13387,6 +13455,7 @@ proxy-groups:
   - OpenRay  PL-7
   - OpenRay  PL-12
   - OpenRay  PL-13
+  - OpenRay  PL-14
   - OpenRay  MY-2
   - OpenRay  MY-3
   - OpenRay  MY-4
