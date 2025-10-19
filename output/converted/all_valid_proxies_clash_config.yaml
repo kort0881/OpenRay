@@ -8148,6 +8148,19 @@ proxies:
   port: 25670
   uuid: 08cb0591-5193-4a0c-9105-ceb09fba67fe
   network: tcp
+- name: OpenRay  DE-53494
+  type: vless
+  server: socialup.live
+  port: 443
+  uuid: 078534af-d6e0-453a-80e0-c61de7e98b81
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: st.ozone.ru
+  reality-opts:
+    public-key: JxP4rmXkxYRzWvGW6cBI1FbMBdCk1D8183Hvzn-63mo
+    short-id: 99a88f5b
+  client-fingerprint: chrome
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -8374,6 +8387,19 @@ proxies:
 - name: OpenRay  RU-6519
   type: vless
   server: 185.234.59.59
+  port: 443
+  uuid: 46788ea0-fdf1-4694-90a0-dec94fc471c3
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 175d
+  client-fingerprint: chrome
+- name: OpenRay  RU-6520
+  type: vless
+  server: 185.234.59.51
   port: 443
   uuid: 46788ea0-fdf1-4694-90a0-dec94fc471c3
   network: tcp
@@ -10010,6 +10036,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2819
+  type: vmess
+  server: 18.183.221.208
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10534,6 +10572,18 @@ proxies:
 - name: OpenRay  KR-655
   type: vmess
   server: 13.124.34.154
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-656
+  type: vmess
+  server: 13.125.80.33
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -12345,6 +12395,7 @@ proxy-groups:
   - OpenRay  DE-53491
   - OpenRay  DE-53492
   - OpenRay  DE-53493
+  - OpenRay  DE-53494
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1162
@@ -12367,6 +12418,7 @@ proxy-groups:
   - OpenRay  RU-6517
   - OpenRay  RU-6518
   - OpenRay  RU-6519
+  - OpenRay  RU-6520
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2140
@@ -12504,6 +12556,7 @@ proxy-groups:
   - OpenRay  JP-2816
   - OpenRay  JP-2817
   - OpenRay  JP-2818
+  - OpenRay  JP-2819
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -12549,6 +12602,7 @@ proxy-groups:
   - OpenRay  KR-653
   - OpenRay  KR-654
   - OpenRay  KR-655
+  - OpenRay  KR-656
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13549,6 +13603,7 @@ proxy-groups:
   - OpenRay  DE-53491
   - OpenRay  DE-53492
   - OpenRay  DE-53493
+  - OpenRay  DE-53494
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1162
@@ -13571,6 +13626,7 @@ proxy-groups:
   - OpenRay  RU-6517
   - OpenRay  RU-6518
   - OpenRay  RU-6519
+  - OpenRay  RU-6520
   - OpenRay  SG-2129
   - OpenRay  SG-2133
   - OpenRay  SG-2140
@@ -13708,6 +13764,7 @@ proxy-groups:
   - OpenRay  JP-2816
   - OpenRay  JP-2817
   - OpenRay  JP-2818
+  - OpenRay  JP-2819
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -13753,6 +13810,7 @@ proxy-groups:
   - OpenRay  KR-653
   - OpenRay  KR-654
   - OpenRay  KR-655
+  - OpenRay  KR-656
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
