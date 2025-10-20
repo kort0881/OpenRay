@@ -3161,6 +3161,32 @@ proxies:
     path: /azumase.ren
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+- name: 'OpenRay Dynamic-53596 #2'
+  type: vmess
+  server: jamekk.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: jamekk.org
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: jamekk.org
+- name: OpenRay Dynamic-2219
+  type: vmess
+  server: waifu.kurumi.biz.id
+  port: 80
+  uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: discord.com
 - name: OpenRay  GB-13277
   type: vless
   server: 638948510129812987.dezful-drc-tusaas.info
@@ -5396,6 +5422,18 @@ proxies:
       /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
     headers:
       Host: test3.amin8263.ir
+- name: OpenRay  US-94890
+  type: vmess
+  server: 192.3.233.216
+  port: 16556
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.3.233.216
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -8548,6 +8586,26 @@ proxies:
     path: linkvws
     headers:
       Host: jamekk.org
+- name: OpenRay  DE-53597
+  type: vmess
+  server: 155.254.35.214
+  port: 51409
+  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
+  alterId: 0
+  cipher: auto
+  network: tcp
+- name: OpenRay  DE-53598
+  type: vless
+  server: 91.99.190.183
+  port: 443
+  uuid: 0c0b6d4a-0811-460f-d4b0-dd982a911240
+  network: raw
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: zW8LR-lHS_PXDyY8Q8bE_zvKdhY5MAmnsd8miBulx2U
+    short-id: ''
+  client-fingerprint: chrome
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -10195,6 +10253,30 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2831
+  type: vmess
+  server: 18.181.167.53
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  JP-2832
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -11918,6 +12000,8 @@ proxy-groups:
   - 'OpenRay Dynamic-94890 #2'
   - OpenRay Dynamic-139192
   - 'OpenRay Dynamic-94891 #2'
+  - 'OpenRay Dynamic-53596 #2'
+  - OpenRay Dynamic-2219
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -12195,6 +12279,7 @@ proxy-groups:
   - OpenRay  US-94887
   - OpenRay  US-94888
   - OpenRay  US-94889
+  - OpenRay  US-94890
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -12600,6 +12685,8 @@ proxy-groups:
   - OpenRay  DE-53593
   - OpenRay  DE-53594
   - OpenRay  DE-53595
+  - OpenRay  DE-53597
+  - OpenRay  DE-53598
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -12741,6 +12828,8 @@ proxy-groups:
   - OpenRay  JP-2815
   - OpenRay  JP-2829
   - OpenRay  JP-2830
+  - OpenRay  JP-2831
+  - OpenRay  JP-2832
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -13144,6 +13233,8 @@ proxy-groups:
   - 'OpenRay Dynamic-94890 #2'
   - OpenRay Dynamic-139192
   - 'OpenRay Dynamic-94891 #2'
+  - 'OpenRay Dynamic-53596 #2'
+  - OpenRay Dynamic-2219
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -13421,6 +13512,7 @@ proxy-groups:
   - OpenRay  US-94887
   - OpenRay  US-94888
   - OpenRay  US-94889
+  - OpenRay  US-94890
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -13826,6 +13918,8 @@ proxy-groups:
   - OpenRay  DE-53593
   - OpenRay  DE-53594
   - OpenRay  DE-53595
+  - OpenRay  DE-53597
+  - OpenRay  DE-53598
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -13967,6 +14061,8 @@ proxy-groups:
   - OpenRay  JP-2815
   - OpenRay  JP-2829
   - OpenRay  JP-2830
+  - OpenRay  JP-2831
+  - OpenRay  JP-2832
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
