@@ -4929,6 +4929,42 @@ proxies:
     path: /
     headers:
       Host: google.com
+- name: OpenRay  US-94902
+  type: vmess
+  server: 156.229.162.206
+  port: 8881
+  uuid: dc39ed85-1ec2-4889-b0cd-691f075f1198
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /wada12122
+    headers:
+      Host: tms.dingtalk.com
+- name: OpenRay  US-94903
+  type: vmess
+  server: 156.229.162.206
+  port: 8881
+  uuid: 86d9d023-e3fb-475d-8332-44e7c07a2b40
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /wada12122
+    headers:
+      Host: tms.dingtalk.com
+- name: OpenRay  US-94904
+  type: vmess
+  server: 192.3.233.216
+  port: 16556
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 192.3.233.216
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -6521,6 +6557,20 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39402
+  type: vmess
+  server: 141.94.155.228
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: linkvws#TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)
+    headers:
+      Host: kampong.org
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -7842,6 +7892,74 @@ proxies:
     path: linkvws
     headers:
       Host: jamekk.org
+- name: OpenRay  DE-53610
+  type: vless
+  server: sub.turboo-server.com.co
+  port: 80
+  uuid: turboo-server
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.turboo-server.com.co
+- name: OpenRay  DE-53611
+  type: vless
+  server: sub.turboo-server.com.co
+  port: 80
+  uuid: turboo-server
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.turboo-server.com.co
+- name: OpenRay  DE-53612
+  type: vless
+  server: sub.turboo-server.com.co
+  port: 80
+  uuid: turboo-server
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: speedtest.net
+- name: OpenRay  DE-53613
+  type: vmess
+  server: 176.9.178.52
+  port: 2052
+  uuid: 94452e78-daad-490f-f14e-5a143e752bf8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 176.9.178.52
+- name: OpenRay  DE-53614
+  type: vmess
+  server: 57.129.59.195
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: linkvws#TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)
+    headers:
+      Host: kampong.org
+- name: OpenRay  DE-53615
+  type: vmess
+  server: 176.9.178.52
+  port: 2052
+  uuid: 94452e78-daad-490f-f14e-5a143e752bf8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 176.9.178.52
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -9303,6 +9421,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2831
+  type: vmess
+  server: 13.231.195.119
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10618,6 +10748,12 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  PL-21
+  type: vless
+  server: www.rexo.online
+  port: 8880
+  uuid: 2b434c56-8390-4f84-add3-eebd18743f8d
+  network: grpc
 - name: OpenRay  MY-3
   type: vless
   server: 638931014659011834.arak-drc-tusabu.info
@@ -11187,6 +11323,9 @@ proxy-groups:
   - OpenRay  US-94895
   - OpenRay  US-94896
   - OpenRay  US-94901
+  - OpenRay  US-94902
+  - OpenRay  US-94903
+  - OpenRay  US-94904
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -11440,6 +11579,7 @@ proxy-groups:
   - OpenRay  FR-39397
   - OpenRay  FR-39399
   - OpenRay  FR-39401
+  - OpenRay  FR-39402
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -11562,6 +11702,12 @@ proxy-groups:
   - OpenRay  DE-53607
   - OpenRay  DE-53608
   - OpenRay  DE-53609
+  - OpenRay  DE-53610
+  - OpenRay  DE-53611
+  - OpenRay  DE-53612
+  - OpenRay  DE-53613
+  - OpenRay  DE-53614
+  - OpenRay  DE-53615
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -11689,6 +11835,7 @@ proxy-groups:
   - OpenRay  JP-2815
   - OpenRay  JP-2829
   - OpenRay  JP-2830
+  - OpenRay  JP-2831
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
@@ -11816,6 +11963,7 @@ proxy-groups:
   - OpenRay  PL-15
   - OpenRay  PL-19
   - OpenRay  PL-20
+  - OpenRay  PL-21
   - OpenRay  MY-3
   - OpenRay  MY-4
   - OpenRay  MY-5
@@ -12327,6 +12475,9 @@ proxy-groups:
   - OpenRay  US-94895
   - OpenRay  US-94896
   - OpenRay  US-94901
+  - OpenRay  US-94902
+  - OpenRay  US-94903
+  - OpenRay  US-94904
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -12580,6 +12731,7 @@ proxy-groups:
   - OpenRay  FR-39397
   - OpenRay  FR-39399
   - OpenRay  FR-39401
+  - OpenRay  FR-39402
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -12702,6 +12854,12 @@ proxy-groups:
   - OpenRay  DE-53607
   - OpenRay  DE-53608
   - OpenRay  DE-53609
+  - OpenRay  DE-53610
+  - OpenRay  DE-53611
+  - OpenRay  DE-53612
+  - OpenRay  DE-53613
+  - OpenRay  DE-53614
+  - OpenRay  DE-53615
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -12829,6 +12987,7 @@ proxy-groups:
   - OpenRay  JP-2815
   - OpenRay  JP-2829
   - OpenRay  JP-2830
+  - OpenRay  JP-2831
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
@@ -12956,6 +13115,7 @@ proxy-groups:
   - OpenRay  PL-15
   - OpenRay  PL-19
   - OpenRay  PL-20
+  - OpenRay  PL-21
   - OpenRay  MY-3
   - OpenRay  MY-4
   - OpenRay  MY-5
