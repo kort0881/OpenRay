@@ -2915,6 +2915,30 @@ proxies:
     path: /
     headers:
       Host: c7.620720.xyz
+- name: OpenRay Dynamic-94845
+  type: vless
+  server: buf1-free.56idc.pp.ua
+  port: 443
+  uuid: 1f845c21-2b5e-4a03-bdf1-0f33578d81d5
+  network: ws
+  tls: true
+  servername: buf1-free.56idc.pp.ua
+  ws-opts:
+    path: /
+    headers:
+      Host: buf1-free.56idc.pp.ua
+- name: OpenRay Dynamic-139171
+  type: vless
+  server: hl2-free.56idc.pp.ua
+  port: 443
+  uuid: 1f845c21-2b5e-4a03-bdf1-0f33578d81d5
+  network: ws
+  tls: true
+  servername: hl2-free.56idc.pp.ua
+  ws-opts:
+    path: /
+    headers:
+      Host: hl2-free.56idc.pp.ua
 - name: OpenRay  GB-13277
   type: vless
   server: 638948510129812987.dezful-drc-tusaas.info
@@ -3627,6 +3651,20 @@ proxies:
     public-key: KrybS-rh1L3Edjk3MqOxN23oSzCrcOSG75QTM41YURY
     short-id: 7650f522feeb047d
   client-fingerprint: firefox
+- name: OpenRay  GB-13804
+  type: vmess
+  server: 57.128.189.241
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  US-13815
   type: vmess
   server: 45.8.146.129
@@ -5016,6 +5054,49 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
+- name: OpenRay  US-94846
+  type: vless
+  server: 45.207.200.90
+  port: 18000
+  uuid: e31a3192-7215-4130-9035-eadc9f347ae8
+  network: tcp
+- name: OpenRay  US-94847
+  type: vmess
+  server: 15.204.64.215
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
+- name: OpenRay  US-94848
+  type: vless
+  server: 104.17.147.22
+  port: 8880
+  uuid: Parsashonam-Bot-32
+  network: ws
+  ws-opts:
+    path: 
+      /Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam-Parsashonam?ed=2056
+    headers:
+      Host: Fi.Parsashonam.CfD.
+- name: OpenRay  US-94850
+  type: vless
+  server: 104.238.214.30
+  port: 14333
+  uuid: 19c25ef3-9233-4191-acdc-ec278a54185f
+  network: raw
+  tls: true
+  servername: amazon.com
+  reality-opts:
+    public-key: 6m6kUON0alvajtw1VbVxsSmENGy2muRDFxpRmizXEFk
+    short-id: feea69900702
+  client-fingerprint: firefox
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -7959,6 +8040,20 @@ proxies:
     path: /http
     headers:
       Host: de.vpnbase.net
+- name: OpenRay  DE-53542
+  type: vmess
+  server: 57.129.25.20
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: pulau.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pulau.org
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -9577,6 +9672,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2820
+  type: vless
+  server: 153.121.45.101
+  port: 443
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -11031,6 +11138,16 @@ proxies:
     path: linkvws
     headers:
       Host: putihb.org
+- name: OpenRay  PL-15
+  type: vless
+  server: 57.128.198.226
+  port: 80
+  uuid: 5402dc3b-206e-4ae8-a58d-4fd27a59e142
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: viber.com
 - name: OpenRay  MY-2
   type: vless
   server: 45.128.54.6
@@ -11336,6 +11453,8 @@ proxy-groups:
   - OpenRay Dynamic-94838
   - 'OpenRay Dynamic-2218 #2'
   - OpenRay Dynamic-139169
+  - OpenRay Dynamic-94845
+  - OpenRay Dynamic-139171
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -11439,6 +11558,7 @@ proxy-groups:
   - OpenRay  GB-13801
   - OpenRay  GB-13802
   - OpenRay  GB-13803
+  - OpenRay  GB-13804
   - OpenRay  US-13815
   - OpenRay  US-13817
   - OpenRay  US-38347
@@ -11599,6 +11719,10 @@ proxy-groups:
   - OpenRay  US-94841
   - OpenRay  US-94842
   - OpenRay  US-94844
+  - OpenRay  US-94846
+  - OpenRay  US-94847
+  - OpenRay  US-94848
+  - OpenRay  US-94850
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -11993,6 +12117,7 @@ proxy-groups:
   - OpenRay  DE-53539
   - OpenRay  DE-53540
   - OpenRay  DE-53541
+  - OpenRay  DE-53542
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -12132,6 +12257,7 @@ proxy-groups:
   - OpenRay  JP-2817
   - OpenRay  JP-2818
   - OpenRay  JP-2819
+  - OpenRay  JP-2820
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -12270,6 +12396,7 @@ proxy-groups:
   - OpenRay  PL-12
   - OpenRay  PL-13
   - OpenRay  PL-14
+  - OpenRay  PL-15
   - OpenRay  MY-2
   - OpenRay  MY-3
   - OpenRay  MY-4
@@ -12522,6 +12649,8 @@ proxy-groups:
   - OpenRay Dynamic-94838
   - 'OpenRay Dynamic-2218 #2'
   - OpenRay Dynamic-139169
+  - OpenRay Dynamic-94845
+  - OpenRay Dynamic-139171
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -12625,6 +12754,7 @@ proxy-groups:
   - OpenRay  GB-13801
   - OpenRay  GB-13802
   - OpenRay  GB-13803
+  - OpenRay  GB-13804
   - OpenRay  US-13815
   - OpenRay  US-13817
   - OpenRay  US-38347
@@ -12785,6 +12915,10 @@ proxy-groups:
   - OpenRay  US-94841
   - OpenRay  US-94842
   - OpenRay  US-94844
+  - OpenRay  US-94846
+  - OpenRay  US-94847
+  - OpenRay  US-94848
+  - OpenRay  US-94850
   - OpenRay  FR-3265
   - OpenRay  FR-6006
   - OpenRay  FR-7281
@@ -13179,6 +13313,7 @@ proxy-groups:
   - OpenRay  DE-53539
   - OpenRay  DE-53540
   - OpenRay  DE-53541
+  - OpenRay  DE-53542
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -13318,6 +13453,7 @@ proxy-groups:
   - OpenRay  JP-2817
   - OpenRay  JP-2818
   - OpenRay  JP-2819
+  - OpenRay  JP-2820
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -13456,6 +13592,7 @@ proxy-groups:
   - OpenRay  PL-12
   - OpenRay  PL-13
   - OpenRay  PL-14
+  - OpenRay  PL-15
   - OpenRay  MY-2
   - OpenRay  MY-3
   - OpenRay  MY-4
