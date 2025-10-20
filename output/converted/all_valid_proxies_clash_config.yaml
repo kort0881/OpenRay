@@ -3213,6 +3213,42 @@ proxies:
     path: linkvws
     headers:
       Host: serkat.org
+- name: OpenRay Dynamic-94889
+  type: vless
+  server: hl2-free.56idc.pp.ua
+  port: 443
+  uuid: 725ca6d6-cfc2-48d4-a0f1-fc4ad95eb58c
+  network: ws
+  tls: true
+  servername: hl2-free.56idc.pp.ua
+  ws-opts:
+    path: /
+    headers:
+      Host: hl2-free.56idc.pp.ua
+- name: OpenRay Dynamic-94890
+  type: vless
+  server: hl2-free.56idc.pp.ua
+  port: 443
+  uuid: 6e224db2-d3d7-452a-bce6-a230842da001
+  network: ws
+  tls: true
+  servername: hl2-free.56idc.pp.ua
+  ws-opts:
+    path: /
+    headers:
+      Host: hl2-free.56idc.pp.ua
+- name: OpenRay Dynamic-94891
+  type: vless
+  server: www.visa.com.sg
+  port: 8443
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  tls: true
+  servername: azadnet-2f7.pages.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: azadnet-2f7.pages.dev
 - name: OpenRay  GB-13277
   type: vless
   server: 638948510129812987.dezful-drc-tusaas.info
@@ -8834,6 +8870,19 @@ proxies:
     public-key: y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I
     short-id: 89dbda1a1c9369
   client-fingerprint: chrome
+- name: OpenRay  DE-53594
+  type: vless
+  server: deu-0001-xr.packet-drop-society.net
+  port: 443
+  uuid: 701c0432-aecc-4aa6-b461-20d3db19bdf3
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
+    short-id: d3b13f31
+  client-fingerprint: chrome
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -10517,6 +10566,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2832
+  type: vmess
+  server: 43.207.214.124
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -11106,6 +11167,18 @@ proxies:
 - name: OpenRay  KR-660
   type: vmess
   server: 54.180.247.197
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-661
+  type: vmess
+  server: 43.201.31.200
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -12370,6 +12443,9 @@ proxy-groups:
   - OpenRay Dynamic-94884
   - 'OpenRay Dynamic-94883 #2'
   - OpenRay Dynamic-139184
+  - OpenRay Dynamic-94889
+  - OpenRay Dynamic-94890
+  - OpenRay Dynamic-94891
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -13074,6 +13150,7 @@ proxy-groups:
   - OpenRay  DE-53591
   - OpenRay  DE-53592
   - OpenRay  DE-53593
+  - OpenRay  DE-53594
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -13218,6 +13295,7 @@ proxy-groups:
   - OpenRay  JP-2829
   - OpenRay  JP-2830
   - OpenRay  JP-2831
+  - OpenRay  JP-2832
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -13268,6 +13346,7 @@ proxy-groups:
   - OpenRay  KR-654
   - OpenRay  KR-659
   - OpenRay  KR-660
+  - OpenRay  KR-661
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13638,6 +13717,9 @@ proxy-groups:
   - OpenRay Dynamic-94884
   - 'OpenRay Dynamic-94883 #2'
   - OpenRay Dynamic-139184
+  - OpenRay Dynamic-94889
+  - OpenRay Dynamic-94890
+  - OpenRay Dynamic-94891
   - OpenRay  GB-13277
   - OpenRay  GB-13318
   - OpenRay  GB-13326
@@ -14342,6 +14424,7 @@ proxy-groups:
   - OpenRay  DE-53591
   - OpenRay  DE-53592
   - OpenRay  DE-53593
+  - OpenRay  DE-53594
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -14486,6 +14569,7 @@ proxy-groups:
   - OpenRay  JP-2829
   - OpenRay  JP-2830
   - OpenRay  JP-2831
+  - OpenRay  JP-2832
   - OpenRay  FI-3328
   - OpenRay  FI-3448
   - OpenRay  FI-3449
@@ -14536,6 +14620,7 @@ proxy-groups:
   - OpenRay  KR-654
   - OpenRay  KR-659
   - OpenRay  KR-660
+  - OpenRay  KR-661
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
