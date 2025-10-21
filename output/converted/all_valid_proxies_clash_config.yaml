@@ -8105,6 +8105,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-53686
+  type: vmess
+  server: radhan.configraybot.sbs
+  port: 11559
+  uuid: 5b70e21e-ae7f-45d4-b25b-70eb5246c65c
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -9594,6 +9602,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2835
+  type: vmess
+  server: 43.207.199.209
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10187,6 +10207,18 @@ proxies:
 - name: OpenRay  KR-668
   type: vmess
   server: 13.125.220.110
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-669
+  type: vmess
+  server: 13.124.33.219
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -11172,6 +11204,12 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
 - name: OpenRay  MY-11
+  type: vless
+  server: 638966471315850594.lahijan-blkaft-aaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  MY-12
   type: vless
   server: 638966471315850594.lahijan-blkaft-aaas.info
   port: 8880
@@ -12169,6 +12207,7 @@ proxy-groups:
   - OpenRay  DE-53682
   - OpenRay  DE-53683
   - OpenRay  DE-53685
+  - OpenRay  DE-53686
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -12301,6 +12340,7 @@ proxy-groups:
   - OpenRay  JP-2832
   - OpenRay  JP-2833
   - OpenRay  JP-2834
+  - OpenRay  JP-2835
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
@@ -12350,6 +12390,7 @@ proxy-groups:
   - OpenRay  KR-666
   - OpenRay  KR-667
   - OpenRay  KR-668
+  - OpenRay  KR-669
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -12460,6 +12501,7 @@ proxy-groups:
   - OpenRay  MY-9
   - OpenRay  MY-10
   - OpenRay  MY-11
+  - OpenRay  MY-12
   - OpenRay  IL-1
   - OpenRay  TW-1
   - OpenRay  TW-2
@@ -13393,6 +13435,7 @@ proxy-groups:
   - OpenRay  DE-53682
   - OpenRay  DE-53683
   - OpenRay  DE-53685
+  - OpenRay  DE-53686
   - OpenRay  LT-1144
   - OpenRay  LT-1161
   - OpenRay  LT-1169
@@ -13525,6 +13568,7 @@ proxy-groups:
   - OpenRay  JP-2832
   - OpenRay  JP-2833
   - OpenRay  JP-2834
+  - OpenRay  JP-2835
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
@@ -13574,6 +13618,7 @@ proxy-groups:
   - OpenRay  KR-666
   - OpenRay  KR-667
   - OpenRay  KR-668
+  - OpenRay  KR-669
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13684,6 +13729,7 @@ proxy-groups:
   - OpenRay  MY-9
   - OpenRay  MY-10
   - OpenRay  MY-11
+  - OpenRay  MY-12
   - OpenRay  IL-1
   - OpenRay  TW-1
   - OpenRay  TW-2
