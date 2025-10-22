@@ -929,6 +929,40 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: google.com
+- name: OpenRay  CA-139255
+  type: vmess
+  server: 15.235.85.156
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: kampong.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: kampong.org
+- name: OpenRay  CA-139256
+  type: vless
+  server: 172.66.47.179
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.cf
+- name: OpenRay  CA-139257
+  type: vless
+  server: 172.66.166.61
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.cf
 - name: OpenRay  XX-1843
   type: vmess
   server: 45.8.146.129
@@ -6025,6 +6059,30 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
+- name: OpenRay  US-95108
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 17e9f875-ded1-4d30-946d-f17a8b98c8a3
+  network: ws
+  tls: true
+  servername: q.dioxv002.workers.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 104.17.147.22
+- name: OpenRay  US-95109
+  type: vmess
+  server: 192.3.233.216
+  port: 16556
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
 - name: OpenRay  FR-3265
   type: vless
   server: 185.231.205.234
@@ -7832,6 +7890,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39500
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 5.196.29.123
 - name: OpenRay  NL-1765
   type: vless
   server: 51.77.91.192
@@ -10556,6 +10626,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2840
+  type: vmess
+  server: 13.231.152.251
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -12311,6 +12393,9 @@ proxy-groups:
   - OpenRay  CA-139248
   - OpenRay  CA-139253
   - OpenRay  CA-139254
+  - OpenRay  CA-139255
+  - OpenRay  CA-139256
+  - OpenRay  CA-139257
   - OpenRay  XX-1843
   - OpenRay  XX-1845
   - OpenRay Dynamic-5221
@@ -12851,6 +12936,8 @@ proxy-groups:
   - OpenRay  US-95105
   - OpenRay  US-95106
   - OpenRay  US-95107
+  - OpenRay  US-95108
+  - OpenRay  US-95109
   - OpenRay  FR-3265
   - OpenRay  FR-7281
   - OpenRay  FR-9022
@@ -13144,6 +13231,7 @@ proxy-groups:
   - OpenRay  FR-39497
   - OpenRay  FR-39498
   - OpenRay  FR-39499
+  - OpenRay  FR-39500
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -13389,6 +13477,7 @@ proxy-groups:
   - OpenRay  JP-2837
   - OpenRay  JP-2838
   - OpenRay  JP-2839
+  - OpenRay  JP-2840
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
@@ -13631,6 +13720,9 @@ proxy-groups:
   - OpenRay  CA-139248
   - OpenRay  CA-139253
   - OpenRay  CA-139254
+  - OpenRay  CA-139255
+  - OpenRay  CA-139256
+  - OpenRay  CA-139257
   - OpenRay  XX-1843
   - OpenRay  XX-1845
   - OpenRay Dynamic-5221
@@ -14171,6 +14263,8 @@ proxy-groups:
   - OpenRay  US-95105
   - OpenRay  US-95106
   - OpenRay  US-95107
+  - OpenRay  US-95108
+  - OpenRay  US-95109
   - OpenRay  FR-3265
   - OpenRay  FR-7281
   - OpenRay  FR-9022
@@ -14464,6 +14558,7 @@ proxy-groups:
   - OpenRay  FR-39497
   - OpenRay  FR-39498
   - OpenRay  FR-39499
+  - OpenRay  FR-39500
   - OpenRay  NL-1765
   - OpenRay  NL-8827
   - OpenRay  NL-9920
@@ -14709,6 +14804,7 @@ proxy-groups:
   - OpenRay  JP-2837
   - OpenRay  JP-2838
   - OpenRay  JP-2839
+  - OpenRay  JP-2840
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3450
