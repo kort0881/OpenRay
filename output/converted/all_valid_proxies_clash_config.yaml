@@ -4229,6 +4229,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  GB-13875
+  type: vless
+  server: 193.32.176.111
+  port: 443
+  uuid: RAKETA_391838127
+  network: tcp
+  tls: true
+  servername: whatsapp.com
+  reality-opts:
+    public-key: jGQLqHWHFu5B8KRmkgfnhXXecxeeDcTzliBhgqr6EzE
+    short-id: ffffffffff
+  client-fingerprint: chrome
 - name: OpenRay  US-91022
   type: vless
   server: 638943444955043938.birjand-drc-tusacaf.info
@@ -8832,6 +8844,16 @@ proxies:
   port: 8880
   uuid: 1fc319c6-fbfb-4054-9f58-806170f02a2a
   network: raw
+- name: OpenRay  DE-53792
+  type: vless
+  server: sub.turboo-server.com.co
+  port: 80
+  uuid: turboo-server
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sub.turboo-server.com.co
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -10299,6 +10321,18 @@ proxies:
       /vless/?ed=2048@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn
     headers:
       Host: 45.12.134.217
+- name: OpenRay  JP-2836
+  type: vmess
+  server: 52.199.229.107
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10894,6 +10928,18 @@ proxies:
 - name: OpenRay  KR-662
   type: vmess
   server: 3.34.252.250
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-663
+  type: vmess
+  server: 3.36.87.75
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -11916,6 +11962,19 @@ proxies:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
     short-id: 55e6af1a35e64a98
   client-fingerprint: chrome
+- name: OpenRay  IL-2
+  type: vless
+  server: 20.217.85.100
+  port: 443
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: i2pd.website
+  reality-opts:
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  client-fingerprint: chrome
 - name: OpenRay  TW-1
   type: vmess
   server: 165.154.195.38
@@ -12356,6 +12415,7 @@ proxy-groups:
   - OpenRay  GB-13872
   - OpenRay  GB-13873
   - OpenRay  GB-13874
+  - OpenRay  GB-13875
   - OpenRay  US-91022
   - OpenRay  US-91025
   - OpenRay  US-93456
@@ -12917,6 +12977,7 @@ proxy-groups:
   - OpenRay  DE-53788
   - OpenRay  DE-53789
   - OpenRay  DE-53791
+  - OpenRay  DE-53792
   - OpenRay  LT-1144
   - OpenRay  LT-1169
   - OpenRay  LT-1183
@@ -13046,6 +13107,7 @@ proxy-groups:
   - OpenRay  JP-2833
   - OpenRay  JP-2834
   - OpenRay  JP-2835
+  - OpenRay  JP-2836
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3456
@@ -13097,6 +13159,7 @@ proxy-groups:
   - OpenRay  KR-660
   - OpenRay  KR-661
   - OpenRay  KR-662
+  - OpenRay  KR-663
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -13207,6 +13270,7 @@ proxy-groups:
   - OpenRay  MY-11
   - OpenRay  MY-12
   - OpenRay  IL-1
+  - OpenRay  IL-2
   - OpenRay  TW-1
   - OpenRay  TW-2
   - OpenRay  AZ-1
@@ -13614,6 +13678,7 @@ proxy-groups:
   - OpenRay  GB-13872
   - OpenRay  GB-13873
   - OpenRay  GB-13874
+  - OpenRay  GB-13875
   - OpenRay  US-91022
   - OpenRay  US-91025
   - OpenRay  US-93456
@@ -14175,6 +14240,7 @@ proxy-groups:
   - OpenRay  DE-53788
   - OpenRay  DE-53789
   - OpenRay  DE-53791
+  - OpenRay  DE-53792
   - OpenRay  LT-1144
   - OpenRay  LT-1169
   - OpenRay  LT-1183
@@ -14304,6 +14370,7 @@ proxy-groups:
   - OpenRay  JP-2833
   - OpenRay  JP-2834
   - OpenRay  JP-2835
+  - OpenRay  JP-2836
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3456
@@ -14355,6 +14422,7 @@ proxy-groups:
   - OpenRay  KR-660
   - OpenRay  KR-661
   - OpenRay  KR-662
+  - OpenRay  KR-663
   - OpenRay  LV-254
   - OpenRay  LV-407
   - OpenRay  LV-408
@@ -14465,6 +14533,7 @@ proxy-groups:
   - OpenRay  MY-11
   - OpenRay  MY-12
   - OpenRay  IL-1
+  - OpenRay  IL-2
   - OpenRay  TW-1
   - OpenRay  TW-2
   - OpenRay  AZ-1
