@@ -81,12 +81,6 @@ dns:
   - 1.1.1.1
 
 proxies:
-- name: OpenRay  US-1166
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
 - name: OpenRay  US-1425
   type: vless
   server: 103.35.189.137
@@ -171,18 +165,6 @@ proxies:
   port: 80
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
   network: grpc
-- name: OpenRay  US-1562
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
-- name: OpenRay  US-1563
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
 - name: OpenRay  US-1572
   type: vmess
   server: 43.162.114.137
@@ -213,12 +195,6 @@ proxies:
   server: 185.236.232.118
   port: 80
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
-  network: grpc
-- name: OpenRay  FR-515
-  type: vless
-  server: 185.234.64.228
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
 - name: OpenRay  FR-535
   type: vless
@@ -490,12 +466,6 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  NL-48
-  type: vless
-  server: 45.12.142.96
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
 - name: OpenRay  NL-89
   type: vless
   server: 45.120.178.93
@@ -509,20 +479,6 @@ proxies:
   uuid: b1053a67-88b9-4550-b5fb-826735adc045
   alterId: 0
   cipher: auto
-  network: tcp
-- name: OpenRay  DE-93
-  type: vmess
-  server: 155.254.35.214
-  port: 51409
-  uuid: 703a1b6c-a01e-45f8-9040-c29cbb0235e1
-  alterId: 0
-  cipher: auto
-  network: raw
-- name: OpenRay  DE-94
-  type: vless
-  server: 213.165.56.19
-  port: 666
-  uuid: 13e824c8-46a7-458a-b9d5-24ab4058acae
   network: tcp
 - name: OpenRay  DE-97
   type: vless
@@ -613,7 +569,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - OpenRay  US-1166
   - OpenRay  US-1425
   - OpenRay  US-1436
   - OpenRay  US-1442
@@ -627,13 +582,10 @@ proxy-groups:
   - OpenRay  US-1544
   - OpenRay  US-1546
   - OpenRay  US-1547
-  - OpenRay  US-1562
-  - OpenRay  US-1563
   - OpenRay  US-1572
   - OpenRay  US-1573
   - OpenRay  US-1574
   - OpenRay  US-1575
-  - OpenRay  FR-515
   - OpenRay  FR-535
   - OpenRay  FR-544
   - OpenRay  FR-571
@@ -679,11 +631,8 @@ proxy-groups:
   - OpenRay  FR-857
   - OpenRay  FR-859
   - OpenRay  FR-860
-  - OpenRay  NL-48
   - OpenRay  NL-89
   - OpenRay  DE-91
-  - OpenRay  DE-93
-  - OpenRay  DE-94
   - OpenRay  DE-97
   - OpenRay  ES-46
   - OpenRay  MY-28
@@ -700,7 +649,6 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - OpenRay  US-1166
   - OpenRay  US-1425
   - OpenRay  US-1436
   - OpenRay  US-1442
@@ -714,13 +662,10 @@ proxy-groups:
   - OpenRay  US-1544
   - OpenRay  US-1546
   - OpenRay  US-1547
-  - OpenRay  US-1562
-  - OpenRay  US-1563
   - OpenRay  US-1572
   - OpenRay  US-1573
   - OpenRay  US-1574
   - OpenRay  US-1575
-  - OpenRay  FR-515
   - OpenRay  FR-535
   - OpenRay  FR-544
   - OpenRay  FR-571
@@ -766,11 +711,8 @@ proxy-groups:
   - OpenRay  FR-857
   - OpenRay  FR-859
   - OpenRay  FR-860
-  - OpenRay  NL-48
   - OpenRay  NL-89
   - OpenRay  DE-91
-  - OpenRay  DE-93
-  - OpenRay  DE-94
   - OpenRay  DE-97
   - OpenRay  ES-46
   - OpenRay  MY-28

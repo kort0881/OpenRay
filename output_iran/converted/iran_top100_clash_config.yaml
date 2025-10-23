@@ -81,18 +81,6 @@ dns:
   - 1.1.1.1
 
 proxies:
-- name: OpenRay  US-1166
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
-- name: OpenRay  FR-515
-  type: vless
-  server: 185.234.64.228
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
 - name: OpenRay  FR-535
   type: vless
   server: 95.164.6.156
@@ -210,12 +198,6 @@ proxies:
 - name: OpenRay  FR-696
   type: vless
   server: 185.242.87.72
-  port: 8880
-  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
-  network: grpc
-- name: OpenRay  NL-48
-  type: vless
-  server: 45.12.142.96
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -471,18 +453,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: none
-- name: OpenRay  US-1562
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
-- name: OpenRay  US-1563
-  type: vless
-  server: 185.68.244.86
-  port: 42545
-  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
-  network: tcp
 - name: OpenRay  US-1572
   type: vmess
   server: 43.162.114.137
@@ -550,20 +520,6 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  DE-93
-  type: vmess
-  server: 155.254.35.214
-  port: 51409
-  uuid: 703a1b6c-a01e-45f8-9040-c29cbb0235e1
-  alterId: 0
-  cipher: auto
-  network: raw
-- name: OpenRay  DE-94
-  type: vless
-  server: 213.165.56.19
-  port: 666
-  uuid: 13e824c8-46a7-458a-b9d5-24ab4058acae
-  network: tcp
 - name: OpenRay  DE-97
   type: vless
   server: 45.13.226.22
@@ -613,8 +569,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - OpenRay  US-1166
-  - OpenRay  FR-515
   - OpenRay  FR-535
   - OpenRay  FR-544
   - OpenRay  US-1425
@@ -635,7 +589,6 @@ proxy-groups:
   - OpenRay  FR-688
   - OpenRay  FR-692
   - OpenRay  FR-696
-  - OpenRay  NL-48
   - OpenRay  MY-28
   - OpenRay  GB-83
   - OpenRay  US-1453
@@ -676,8 +629,6 @@ proxy-groups:
   - OpenRay  DE-91
   - OpenRay  PL-12
   - OpenRay  PL-21
-  - OpenRay  US-1562
-  - OpenRay  US-1563
   - OpenRay  US-1572
   - OpenRay  US-1573
   - OpenRay  US-1574
@@ -688,8 +639,6 @@ proxy-groups:
   - OpenRay  FR-857
   - OpenRay  FR-859
   - OpenRay  FR-860
-  - OpenRay  DE-93
-  - OpenRay  DE-94
   - OpenRay  DE-97
   - OpenRay  GB-113
   - OpenRay  GB-115
@@ -700,8 +649,6 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - OpenRay  US-1166
-  - OpenRay  FR-515
   - OpenRay  FR-535
   - OpenRay  FR-544
   - OpenRay  US-1425
@@ -722,7 +669,6 @@ proxy-groups:
   - OpenRay  FR-688
   - OpenRay  FR-692
   - OpenRay  FR-696
-  - OpenRay  NL-48
   - OpenRay  MY-28
   - OpenRay  GB-83
   - OpenRay  US-1453
@@ -763,8 +709,6 @@ proxy-groups:
   - OpenRay  DE-91
   - OpenRay  PL-12
   - OpenRay  PL-21
-  - OpenRay  US-1562
-  - OpenRay  US-1563
   - OpenRay  US-1572
   - OpenRay  US-1573
   - OpenRay  US-1574
@@ -775,8 +719,6 @@ proxy-groups:
   - OpenRay  FR-857
   - OpenRay  FR-859
   - OpenRay  FR-860
-  - OpenRay  DE-93
-  - OpenRay  DE-94
   - OpenRay  DE-97
   - OpenRay  GB-113
   - OpenRay  GB-115
