@@ -9036,6 +9036,20 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-39870
+  type: vmess
+  server: 91.134.8.88
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: pulau.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: pulau.org
 - name: OpenRay  NL-10284
   type: vmess
   server: 89.169.13.60
@@ -14060,6 +14074,19 @@ proxies:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
     short-id: 55e6af1a35e64a98
   client-fingerprint: chrome
+- name: OpenRay  IL-4
+  type: vless
+  server: 20.217.80.145
+  port: 443
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: i2pd.website
+  reality-opts:
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  client-fingerprint: chrome
 - name: OpenRay  TW-2
   type: vmess
   server: 165.154.195.38
@@ -14094,6 +14121,19 @@ proxies:
   port: 2080
   uuid: 1ddc8396-ec1e-4650-8d32-15e379fbcced
   network: raw
+- name: OpenRay  UA-1
+  type: vless
+  server: ukraine.marzxo.biz
+  port: 8090
+  uuid: 113d5d7f-14ef-2a2e-6a3b-b52bc4f82432
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU
+    short-id: 828348fc6d8e49cf
+  client-fingerprint: firefox
 
 proxy-groups:
 - name: AUTO
@@ -15206,6 +15246,7 @@ proxy-groups:
   - OpenRay  FR-39867
   - OpenRay  FR-39868
   - OpenRay  FR-39869
+  - OpenRay  FR-39870
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -15743,11 +15784,13 @@ proxy-groups:
   - OpenRay  MY-50
   - OpenRay  IL-1
   - OpenRay  IL-3
+  - OpenRay  IL-4
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  AZ-1
   - OpenRay  AE-2
   - OpenRay  AE-3
+  - OpenRay  UA-1
 - name: PROXY
   type: select
   proxies:
@@ -16856,6 +16899,7 @@ proxy-groups:
   - OpenRay  FR-39867
   - OpenRay  FR-39868
   - OpenRay  FR-39869
+  - OpenRay  FR-39870
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -17393,11 +17437,13 @@ proxy-groups:
   - OpenRay  MY-50
   - OpenRay  IL-1
   - OpenRay  IL-3
+  - OpenRay  IL-4
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  AZ-1
   - OpenRay  AE-2
   - OpenRay  AE-3
+  - OpenRay  UA-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
