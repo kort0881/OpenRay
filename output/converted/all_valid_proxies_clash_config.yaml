@@ -947,6 +947,26 @@ proxies:
     path: linkvws
     headers:
       Host: pulau.org
+- name: OpenRay  CA-139304
+  type: vless
+  server: 173.245.59.100
+  port: 80
+  uuid: e4db7e72-621d-4485-9e03-48380344f23d
+  network: ws
+  ws-opts:
+    path: /?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
+    headers:
+      Host: dlvds127.pwteam.ir
+- name: OpenRay  CA-139305
+  type: vless
+  server: 173.245.58.100
+  port: 80
+  uuid: e4db7e72-621d-4485-9e03-48380344f23d
+  network: ws
+  ws-opts:
+    path: /?Join----JKVPN---Join----JKVPN----Join----JKVPN----Join----JKVPN
+    headers:
+      Host: dlvds127.pwteam.ir
 - name: OpenRay Dynamic-5221
   type: vmess
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -9059,6 +9079,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  LT-1202
+  type: vless
+  server: 638967604447250504.tabriz-blkaft-aaag.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  LT-1203
+  type: vless
+  server: 638967604447250504.tabriz-blkaft-aaag.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  RU-6506
   type: vless
   server: 5.42.220.253
@@ -9491,6 +9523,19 @@ proxies:
     path: /vless
     headers:
       Host: discord.com
+- name: OpenRay  SG-2221
+  type: vless
+  server: 47.129.109.57
+  port: 443
+  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+    short-id: f5
+  client-fingerprint: chrome
 - name: OpenRay  CH-950
   type: vless
   server: 5.182.36.251
@@ -10346,6 +10391,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2838
+  type: vmess
+  server: 3.112.71.153
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10529,6 +10586,19 @@ proxies:
   port: 40617
   uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
   network: tcp
+- name: OpenRay  SE-1389
+  type: vless
+  server: 16.171.0.215
+  port: 443
+  uuid: 4c26ebc3-7784-46d8-b52a-7b0ccae6f4b4
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: TGlPtfVzGIVpMauPRMGJj2Uu6GUiCpu5ZizIIjw-wx4
+    short-id: f5
+  client-fingerprint: chrome
 - name: OpenRay  KR-170
   type: vmess
   server: seoul.lonxin.net
@@ -12006,6 +12076,8 @@ proxy-groups:
   - OpenRay  CA-139300
   - OpenRay  CA-139302
   - OpenRay  CA-139303
+  - OpenRay  CA-139304
+  - OpenRay  CA-139305
   - OpenRay Dynamic-5221
   - OpenRay Dynamic-5916
   - OpenRay Dynamic-7480
@@ -12940,6 +13012,8 @@ proxy-groups:
   - OpenRay  LT-1199
   - OpenRay  LT-1200
   - OpenRay  LT-1201
+  - OpenRay  LT-1202
+  - OpenRay  LT-1203
   - OpenRay  RU-6506
   - OpenRay  RU-6507
   - OpenRay  SG-2129
@@ -12977,6 +13051,7 @@ proxy-groups:
   - OpenRay  SG-2214
   - OpenRay  SG-2216
   - OpenRay  SG-2220
+  - OpenRay  SG-2221
   - OpenRay  CH-950
   - OpenRay  CH-960
   - OpenRay  CH-961
@@ -13049,6 +13124,7 @@ proxy-groups:
   - OpenRay  JP-2835
   - OpenRay  JP-2836
   - OpenRay  JP-2837
+  - OpenRay  JP-2838
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3457
@@ -13066,6 +13142,7 @@ proxy-groups:
   - OpenRay  SE-1381
   - OpenRay  SE-1384
   - OpenRay  SE-1388
+  - OpenRay  SE-1389
   - OpenRay  KR-170
   - OpenRay  KR-319
   - OpenRay  KR-445
@@ -13288,6 +13365,8 @@ proxy-groups:
   - OpenRay  CA-139300
   - OpenRay  CA-139302
   - OpenRay  CA-139303
+  - OpenRay  CA-139304
+  - OpenRay  CA-139305
   - OpenRay Dynamic-5221
   - OpenRay Dynamic-5916
   - OpenRay Dynamic-7480
@@ -14222,6 +14301,8 @@ proxy-groups:
   - OpenRay  LT-1199
   - OpenRay  LT-1200
   - OpenRay  LT-1201
+  - OpenRay  LT-1202
+  - OpenRay  LT-1203
   - OpenRay  RU-6506
   - OpenRay  RU-6507
   - OpenRay  SG-2129
@@ -14259,6 +14340,7 @@ proxy-groups:
   - OpenRay  SG-2214
   - OpenRay  SG-2216
   - OpenRay  SG-2220
+  - OpenRay  SG-2221
   - OpenRay  CH-950
   - OpenRay  CH-960
   - OpenRay  CH-961
@@ -14331,6 +14413,7 @@ proxy-groups:
   - OpenRay  JP-2835
   - OpenRay  JP-2836
   - OpenRay  JP-2837
+  - OpenRay  JP-2838
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3457
@@ -14348,6 +14431,7 @@ proxy-groups:
   - OpenRay  SE-1381
   - OpenRay  SE-1384
   - OpenRay  SE-1388
+  - OpenRay  SE-1389
   - OpenRay  KR-170
   - OpenRay  KR-319
   - OpenRay  KR-445
