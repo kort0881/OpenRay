@@ -3513,6 +3513,40 @@ proxies:
     path: /
     headers:
       Host: Jerboa.zulair.siTE.
+- name: OpenRay Dynamic-95380
+  type: vless
+  server: freemobitel.theekshana.site
+  port: 8443
+  uuid: 206bfe76-912c-4e1a-801e-526d7e8f226c
+  network: ws
+  tls: true
+  servername: free.theekshana.site
+  ws-opts:
+    path: /
+    headers:
+      Host: free.theekshana.site
+- name: OpenRay Dynamic-139351
+  type: vless
+  server: 019.electrocellco-cf-019.workers.dev
+  port: 80
+  uuid: 94671f42-fdd3-4503-a3e6-bda4a2527560
+  network: ws
+  ws-opts:
+    path: 
+      /eyJqdW5rIjoibUVFb0RQcHJZZSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjM0LjI1My4yMzQuNjIiXX0=?ed=2560
+    headers:
+      Host: 019.electrocellco-cf-019.workers.dev
+- name: OpenRay Dynamic-139352
+  type: vless
+  server: 020.electrocellco-cf-020.workers.dev
+  port: 80
+  uuid: c8495c2c-9e10-4f24-90d8-c8c4a3e8bf9f
+  network: ws
+  ws-opts:
+    path: 
+      /eyJqdW5rIjoiakM1c3dxS1NuSFc1dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: 020.electrocellco-cf-020.workers.dev
 - name: OpenRay  GB-13366
   type: vless
   server: 638950280342844263.esfahan-drc-tusaas.info
@@ -5844,6 +5878,52 @@ proxies:
     path: /?ed=2560
     headers:
       Host: q.dioxv004.workers.dev
+- name: OpenRay  US-95379
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 79d53c0e-9aee-433a-bcb9-bf9c9f75ba1c
+  network: ws
+  tls: true
+  servername: q.qdio007.workers.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: q.qdio007.workers.dev
+- name: OpenRay  US-95381
+  type: vless
+  server: 104.21.65.149
+  port: 2095
+  uuid: 9b648b19-8572-4b3c-bef8-231e98c8f90d
+  network: ws
+  ws-opts:
+    path: 
+      /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
+    headers:
+      Host: test3.amin8263.ir
+- name: OpenRay  US-95382
+  type: vless
+  server: 104.19.96.214
+  port: 80
+  uuid: 8973c3c2-803f-41db-9efa-fbef67d47567
+  network: ws
+  ws-opts:
+    path: 
+      /eyJqdW5rIjoiUG43S1ZuZGxVOWo5IiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: 018.electrocellco-cf-018.workers.dev
+- name: OpenRay  US-95385
+  type: vmess
+  server: 192.3.233.216
+  port: 16556
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
 - name: OpenRay  FR-9022
   type: vless
   server: 185.231.205.248
@@ -8993,6 +9073,14 @@ proxies:
   port: 29383
   uuid: 432e870f-c4b2-4d3d-e27d-eedd5739c823
   network: tcp
+- name: OpenRay  NL-11451
+  type: vless
+  server: 193.233.19.241
+  port: 9090
+  uuid: 54c06c38-a570-4ba0-9ae2-405eb24e8627
+  network: tcp
+  tls: true
+  servername: shop.smnsoft.com
 - name: OpenRay  DE-7333
   type: vmess
   server: 91.99.185.216
@@ -10666,6 +10754,20 @@ proxies:
     path: /FREE By Tharuwa (0767597317)
     headers:
       Host: zoom.us
+- name: OpenRay  SG-2224
+  type: vless
+  server: free.theekshana.site
+  port: 443
+  uuid: 5463817d-30ea-4bef-805e-ae714070fb30
+  network: tcp
+  tls: true
+- name: OpenRay  SG-2225
+  type: vless
+  server: free.theekshana.site
+  port: 443
+  uuid: 5463817d-30ea-4bef-805e-ae714070fb30
+  network: tcp
+  tls: true
 - name: OpenRay  CH-961
   type: vless
   server: 5.182.36.251
@@ -11883,7 +11985,6 @@ proxies:
     path: /telegram@freecodes/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-<<<<<<< Updated upstream
 - name: OpenRay  KR-665
   type: vmess
   server: 3.35.149.74
@@ -11920,8 +12021,6 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
-=======
->>>>>>> Stashed changes
 - name: OpenRay  LV-409
   type: vless
   server: 45.130.215.125
@@ -12373,6 +12472,36 @@ proxies:
 - name: OpenRay  TR-611
   type: vless
   server: 185.234.66.106
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-612
+  type: vless
+  server: 185.234.66.86
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-613
+  type: vless
+  server: 185.234.66.96
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-614
+  type: vless
+  server: 185.234.66.104
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-615
+  type: vless
+  server: 185.234.66.99
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  TR-616
+  type: vless
+  server: 185.234.66.80
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
@@ -13140,7 +13269,6 @@ proxies:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
     short-id: 55e6af1a35e64a98
   client-fingerprint: chrome
-<<<<<<< Updated upstream
 - name: OpenRay  IL-5
   type: vless
   server: 20.217.82.7
@@ -13167,8 +13295,6 @@ proxies:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
     short-id: 55e6af1a35e64a98
   client-fingerprint: chrome
-=======
->>>>>>> Stashed changes
 - name: OpenRay  TW-2
   type: vmess
   server: 165.154.195.38
@@ -13505,6 +13631,9 @@ proxy-groups:
   - OpenRay Dynamic-53845
   - OpenRay Dynamic-139349
   - OpenRay Dynamic-95377
+  - OpenRay Dynamic-95380
+  - OpenRay Dynamic-139351
+  - OpenRay Dynamic-139352
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -13806,6 +13935,10 @@ proxy-groups:
   - OpenRay  US-95375
   - OpenRay  US-95376
   - OpenRay  US-95378
+  - OpenRay  US-95379
+  - OpenRay  US-95381
+  - OpenRay  US-95382
+  - OpenRay  US-95385
   - OpenRay  FR-9022
   - OpenRay  FR-10786
   - OpenRay  FR-12778
@@ -14303,6 +14436,7 @@ proxy-groups:
   - OpenRay  NL-11445
   - OpenRay  NL-11447
   - OpenRay  NL-11450
+  - OpenRay  NL-11451
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -14462,6 +14596,8 @@ proxy-groups:
   - OpenRay  SG-2216
   - OpenRay  SG-2220
   - OpenRay  SG-2223
+  - OpenRay  SG-2224
+  - OpenRay  SG-2225
   - OpenRay  CH-961
   - OpenRay  JP-2158
   - OpenRay  JP-2438
@@ -14567,12 +14703,9 @@ proxy-groups:
   - OpenRay  KR-662
   - OpenRay  KR-663
   - OpenRay  KR-664
-<<<<<<< Updated upstream
   - OpenRay  KR-665
   - OpenRay  KR-666
   - OpenRay  KR-667
-=======
->>>>>>> Stashed changes
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  IS-177
@@ -14646,6 +14779,11 @@ proxy-groups:
   - OpenRay  TR-609
   - OpenRay  TR-610
   - OpenRay  TR-611
+  - OpenRay  TR-612
+  - OpenRay  TR-613
+  - OpenRay  TR-614
+  - OpenRay  TR-615
+  - OpenRay  TR-616
   - OpenRay  DK-3
   - OpenRay  BR-66
   - OpenRay  BR-67
@@ -14732,11 +14870,8 @@ proxy-groups:
   - OpenRay  MY-52
   - OpenRay  MY-53
   - OpenRay  IL-1
-<<<<<<< Updated upstream
   - OpenRay  IL-5
   - OpenRay  IL-6
-=======
->>>>>>> Stashed changes
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  TW-4
@@ -15031,6 +15166,9 @@ proxy-groups:
   - OpenRay Dynamic-53845
   - OpenRay Dynamic-139349
   - OpenRay Dynamic-95377
+  - OpenRay Dynamic-95380
+  - OpenRay Dynamic-139351
+  - OpenRay Dynamic-139352
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -15332,6 +15470,10 @@ proxy-groups:
   - OpenRay  US-95375
   - OpenRay  US-95376
   - OpenRay  US-95378
+  - OpenRay  US-95379
+  - OpenRay  US-95381
+  - OpenRay  US-95382
+  - OpenRay  US-95385
   - OpenRay  FR-9022
   - OpenRay  FR-10786
   - OpenRay  FR-12778
@@ -15829,6 +15971,7 @@ proxy-groups:
   - OpenRay  NL-11445
   - OpenRay  NL-11447
   - OpenRay  NL-11450
+  - OpenRay  NL-11451
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -15988,6 +16131,8 @@ proxy-groups:
   - OpenRay  SG-2216
   - OpenRay  SG-2220
   - OpenRay  SG-2223
+  - OpenRay  SG-2224
+  - OpenRay  SG-2225
   - OpenRay  CH-961
   - OpenRay  JP-2158
   - OpenRay  JP-2438
@@ -16093,12 +16238,9 @@ proxy-groups:
   - OpenRay  KR-662
   - OpenRay  KR-663
   - OpenRay  KR-664
-<<<<<<< Updated upstream
   - OpenRay  KR-665
   - OpenRay  KR-666
   - OpenRay  KR-667
-=======
->>>>>>> Stashed changes
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  IS-177
@@ -16172,6 +16314,11 @@ proxy-groups:
   - OpenRay  TR-609
   - OpenRay  TR-610
   - OpenRay  TR-611
+  - OpenRay  TR-612
+  - OpenRay  TR-613
+  - OpenRay  TR-614
+  - OpenRay  TR-615
+  - OpenRay  TR-616
   - OpenRay  DK-3
   - OpenRay  BR-66
   - OpenRay  BR-67
@@ -16258,11 +16405,8 @@ proxy-groups:
   - OpenRay  MY-52
   - OpenRay  MY-53
   - OpenRay  IL-1
-<<<<<<< Updated upstream
   - OpenRay  IL-5
   - OpenRay  IL-6
-=======
->>>>>>> Stashed changes
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  TW-4
