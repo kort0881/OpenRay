@@ -3547,6 +3547,16 @@ proxies:
       /eyJqdW5rIjoiakM1c3dxS1NuSFc1dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
       Host: 020.electrocellco-cf-020.workers.dev
+- name: OpenRay Dynamic-95386
+  type: vless
+  server: partner.zoom.us
+  port: 80
+  uuid: aad8ecd0-4fef-45ee-8cd6-b66e0dd06129
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.theekshana.site
 - name: OpenRay  GB-13366
   type: vless
   server: 638950280342844263.esfahan-drc-tusaas.info
@@ -11560,6 +11570,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2847
+  type: vmess
+  server: 13.114.141.167
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -12012,6 +12034,18 @@ proxies:
 - name: OpenRay  KR-667
   type: vmess
   server: 3.35.220.38
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  KR-668
+  type: vmess
+  server: 3.36.85.200
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -13634,6 +13668,7 @@ proxy-groups:
   - OpenRay Dynamic-95380
   - OpenRay Dynamic-139351
   - OpenRay Dynamic-139352
+  - OpenRay Dynamic-95386
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -14665,6 +14700,7 @@ proxy-groups:
   - OpenRay  JP-2843
   - OpenRay  JP-2845
   - OpenRay  JP-2846
+  - OpenRay  JP-2847
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3457
@@ -14706,6 +14742,7 @@ proxy-groups:
   - OpenRay  KR-665
   - OpenRay  KR-666
   - OpenRay  KR-667
+  - OpenRay  KR-668
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  IS-177
@@ -15169,6 +15206,7 @@ proxy-groups:
   - OpenRay Dynamic-95380
   - OpenRay Dynamic-139351
   - OpenRay Dynamic-139352
+  - OpenRay Dynamic-95386
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -16200,6 +16238,7 @@ proxy-groups:
   - OpenRay  JP-2843
   - OpenRay  JP-2845
   - OpenRay  JP-2846
+  - OpenRay  JP-2847
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3457
@@ -16241,6 +16280,7 @@ proxy-groups:
   - OpenRay  KR-665
   - OpenRay  KR-666
   - OpenRay  KR-667
+  - OpenRay  KR-668
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  IS-177
