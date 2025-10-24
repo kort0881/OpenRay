@@ -3062,6 +3062,18 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
+- name: 'OpenRay Dynamic-95488 #2'
+  type: vless
+  server: ipw.gfdv54cvghhgfhgj-njhgj64.info
+  port: 2096
+  uuid: fa93e643-ed01-40c4-b82b-f38e9c2a841c
+  network: ws
+  tls: true
+  servername: BAt.zuLAir.siTe.
+  ws-opts:
+    path: /
+    headers:
+      Host: BAt.zuLAir.siTe.
 - name: OpenRay  GB-13366
   type: vless
   server: 638950280342844263.esfahan-drc-tusaas.info
@@ -9474,6 +9486,18 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-40177
+  type: vless
+  server: 638967640653056895.qazvin-blkaft-aaap.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  FR-40178
+  type: vless
+  server: 185.231.205.193
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-10284
   type: vmess
   server: 89.169.13.60
@@ -9840,6 +9864,18 @@ proxies:
   reality-opts:
     public-key: SfaN19bzY1LdAGU1cIOAW8YU2XaInYxMgonHlC_mTgg
     short-id: ''
+  client-fingerprint: chrome
+- name: OpenRay  NL-11488
+  type: vless
+  server: 62.60.247.164
+  port: 17226
+  uuid: 62f33f4f-c02f-4c76-9726-6f92f800692d
+  network: grpc
+  tls: true
+  servername: tgju.org
+  reality-opts:
+    public-key: uWfe2A9RpUjC9VzEsRr2I-i5Z-mAWSZlDQ107NbJA0g
+    short-id: fad1783730
   client-fingerprint: chrome
 - name: OpenRay  DE-7333
   type: vmess
@@ -12045,7 +12081,6 @@ proxies:
     public-key: brMfFpfxMeNeqGqG0ZmWdwlnvZBfBTY92Jjyfz8Qyz4
     short-id: 0274c94d298e
   client-fingerprint: ios
-<<<<<<< Updated upstream
 - name: OpenRay  FI-3475
   type: vless
   server: 45.159.249.242
@@ -12072,8 +12107,19 @@ proxies:
     public-key: rEHTPGOMI9UKT-W__dvCkITykQFNAh0SY2za-pa241Q
     short-id: cf38b7bf1ab08fa4
   client-fingerprint: firefox
-=======
->>>>>>> Stashed changes
+- name: OpenRay  FI-3477
+  type: vless
+  server: hield.ru
+  port: 3389
+  uuid: 1c3723e6-5054-472a-a0b0-b787712d16de
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: brMfFpfxMeNeqGqG0ZmWdwlnvZBfBTY92Jjyfz8Qyz4
+    short-id: 0274c94d298e
+  client-fingerprint: ios
 - name: OpenRay  SE-1365
   type: vmess
   server: 185.146.173.25
@@ -12584,6 +12630,19 @@ proxies:
   server: tunnyl.ru
   port: 443
   uuid: 84cf48ab-1d6e-4c20-b5e7-029e272fff9c
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: llUN5iiAQwwKwiAp7zCwfU8wNz7F4lg__e9Qdv_gkWs
+    short-id: 0f1d6a
+  client-fingerprint: random
+- name: OpenRay  ES-284
+  type: vless
+  server: tunnyl.ru
+  port: 443
+  uuid: 38bf355b-bc38-4028-8523-092a20484044
   network: tcp
   flow: xtls-rprx-vision
   tls: true
@@ -13852,6 +13911,7 @@ proxy-groups:
   - OpenRay Dynamic-139364
   - OpenRay Dynamic-11488
   - OpenRay Dynamic-95488
+  - 'OpenRay Dynamic-95488 #2'
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -14835,6 +14895,8 @@ proxy-groups:
   - OpenRay  FR-40174
   - OpenRay  FR-40175
   - OpenRay  FR-40176
+  - OpenRay  FR-40177
+  - OpenRay  FR-40178
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -14883,6 +14945,7 @@ proxy-groups:
   - OpenRay  NL-11484
   - OpenRay  NL-11485
   - OpenRay  NL-11487
+  - OpenRay  NL-11488
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -15097,11 +15160,9 @@ proxy-groups:
   - OpenRay  FI-3472
   - OpenRay  FI-3473
   - OpenRay  FI-3474
-<<<<<<< Updated upstream
   - OpenRay  FI-3475
   - OpenRay  FI-3476
-=======
->>>>>>> Stashed changes
+  - OpenRay  FI-3477
   - OpenRay  SE-1365
   - OpenRay  SE-1367
   - OpenRay  SE-1381
@@ -15155,6 +15216,7 @@ proxy-groups:
   - OpenRay  ES-281
   - OpenRay  ES-282
   - OpenRay  ES-283
+  - OpenRay  ES-284
   - OpenRay  TR-374
   - OpenRay  TR-505
   - OpenRay  TR-556
@@ -15539,6 +15601,7 @@ proxy-groups:
   - OpenRay Dynamic-139364
   - OpenRay Dynamic-11488
   - OpenRay Dynamic-95488
+  - 'OpenRay Dynamic-95488 #2'
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -16522,6 +16585,8 @@ proxy-groups:
   - OpenRay  FR-40174
   - OpenRay  FR-40175
   - OpenRay  FR-40176
+  - OpenRay  FR-40177
+  - OpenRay  FR-40178
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -16570,6 +16635,7 @@ proxy-groups:
   - OpenRay  NL-11484
   - OpenRay  NL-11485
   - OpenRay  NL-11487
+  - OpenRay  NL-11488
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -16784,11 +16850,9 @@ proxy-groups:
   - OpenRay  FI-3472
   - OpenRay  FI-3473
   - OpenRay  FI-3474
-<<<<<<< Updated upstream
   - OpenRay  FI-3475
   - OpenRay  FI-3476
-=======
->>>>>>> Stashed changes
+  - OpenRay  FI-3477
   - OpenRay  SE-1365
   - OpenRay  SE-1367
   - OpenRay  SE-1381
@@ -16842,6 +16906,7 @@ proxy-groups:
   - OpenRay  ES-281
   - OpenRay  ES-282
   - OpenRay  ES-283
+  - OpenRay  ES-284
   - OpenRay  TR-374
   - OpenRay  TR-505
   - OpenRay  TR-556
