@@ -12576,6 +12576,18 @@ proxies:
     public-key: ZoqSn1Q8q0F8oMw7BTMzCWXZP1gUzMZaEv-W8TihGgk
     short-id: 02ea00bf94b5d20f
   client-fingerprint: chrome
+- name: OpenRay  JP-2855
+  type: vmess
+  server: 52.196.17.41
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -13216,6 +13228,30 @@ proxies:
     public-key: _rUCpgbk3Xkve93T67d8fxd46fKnQtb00pNWiOdebSw
     short-id: 36453d37
   client-fingerprint: firefox
+- name: OpenRay  KR-679
+  type: vless
+  server: 119.65.139.101
+  port: 60001
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: /telegram@freecodes/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
+- name: OpenRay  KR-680
+  type: vmess
+  server: 43.200.2.111
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  LV-409
   type: vless
   server: 45.130.215.125
@@ -14226,6 +14262,18 @@ proxies:
     path: /564dfa20/
     headers:
       Host: aflzzul.meiquankongjian.com
+- name: OpenRay  HK-92
+  type: vless
+  server: 36.50.90.241
+  port: 47790
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: /telegram@节点狂魔/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
 - name: OpenRay  KZ-2
   type: vless
   server: 109.248.170.119
@@ -14747,6 +14795,19 @@ proxies:
 - name: OpenRay  IL-2
   type: vless
   server: 20.217.81.196
+  port: 443
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: i2pd.website
+  reality-opts:
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  client-fingerprint: chrome
+- name: OpenRay  IL-3
+  type: vless
+  server: 20.217.81.178
   port: 443
   uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
   network: tcp
@@ -16368,6 +16429,7 @@ proxy-groups:
   - OpenRay  JP-2852
   - OpenRay  JP-2853
   - OpenRay  JP-2854
+  - OpenRay  JP-2855
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
@@ -16426,6 +16488,8 @@ proxy-groups:
   - OpenRay  KR-676
   - OpenRay  KR-677
   - OpenRay  KR-678
+  - OpenRay  KR-679
+  - OpenRay  KR-680
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  LV-411
@@ -16553,6 +16617,7 @@ proxy-groups:
   - OpenRay  HK-89
   - OpenRay  HK-90
   - OpenRay  HK-91
+  - OpenRay  HK-92
   - OpenRay  KZ-2
   - OpenRay  PL-35
   - OpenRay  MY-3
@@ -16637,6 +16702,7 @@ proxy-groups:
   - OpenRay  MY-91
   - OpenRay  IL-1
   - OpenRay  IL-2
+  - OpenRay  IL-3
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  TW-4
@@ -18211,6 +18277,7 @@ proxy-groups:
   - OpenRay  JP-2852
   - OpenRay  JP-2853
   - OpenRay  JP-2854
+  - OpenRay  JP-2855
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
@@ -18269,6 +18336,8 @@ proxy-groups:
   - OpenRay  KR-676
   - OpenRay  KR-677
   - OpenRay  KR-678
+  - OpenRay  KR-679
+  - OpenRay  KR-680
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  LV-411
@@ -18396,6 +18465,7 @@ proxy-groups:
   - OpenRay  HK-89
   - OpenRay  HK-90
   - OpenRay  HK-91
+  - OpenRay  HK-92
   - OpenRay  KZ-2
   - OpenRay  PL-35
   - OpenRay  MY-3
@@ -18480,6 +18550,7 @@ proxy-groups:
   - OpenRay  MY-91
   - OpenRay  IL-1
   - OpenRay  IL-2
+  - OpenRay  IL-3
   - OpenRay  TW-2
   - OpenRay  TW-3
   - OpenRay  TW-4
