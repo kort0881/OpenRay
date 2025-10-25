@@ -3166,6 +3166,18 @@ proxies:
     path: /cbde4058-6b81-432b-8689-dd7ce10e479c
     headers:
       Host: revcloud.migacpi.org
+- name: 'OpenRay Dynamic-139387 #2'
+  type: vless
+  server: hl1-free.56idc.pp.ua
+  port: 443
+  uuid: 7368d62a-294e-4707-bdf0-90a6a506547a
+  network: ws
+  tls: true
+  servername: hl1-free.56idc.pp.ua
+  ws-opts:
+    path: /
+    headers:
+      Host: hl1-free.56idc.pp.ua
 - name: OpenRay  GB-13366
   type: vless
   server: 638950280342844263.esfahan-drc-tusaas.info
@@ -10034,6 +10046,12 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-40219
+  type: vless
+  server: 195.42.233.71
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-10284
   type: vmess
   server: 89.169.13.60
@@ -11245,6 +11263,20 @@ proxies:
     path: linkvws
     headers:
       Host: pulau.org
+- name: OpenRay  DE-53913
+  type: vmess
+  server: 141.95.84.11
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: putihb.org
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: putihb.org
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -14811,6 +14843,7 @@ proxy-groups:
   - OpenRay Dynamic-95528
   - OpenRay Dynamic-95529
   - OpenRay Dynamic-95534
+  - 'OpenRay Dynamic-139387 #2'
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -15849,6 +15882,7 @@ proxy-groups:
   - OpenRay  FR-40216
   - OpenRay  FR-40217
   - OpenRay  FR-40218
+  - OpenRay  FR-40219
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -15978,6 +16012,7 @@ proxy-groups:
   - OpenRay  DE-53910
   - OpenRay  DE-53911
   - OpenRay  DE-53912
+  - OpenRay  DE-53913
   - OpenRay  LT-1144
   - OpenRay  LT-1201
   - OpenRay  LT-1204
@@ -16605,6 +16640,7 @@ proxy-groups:
   - OpenRay Dynamic-95528
   - OpenRay Dynamic-95529
   - OpenRay Dynamic-95534
+  - 'OpenRay Dynamic-139387 #2'
   - OpenRay  GB-13366
   - OpenRay  GB-13375
   - OpenRay  GB-13392
@@ -17643,6 +17679,7 @@ proxy-groups:
   - OpenRay  FR-40216
   - OpenRay  FR-40217
   - OpenRay  FR-40218
+  - OpenRay  FR-40219
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -17772,6 +17809,7 @@ proxy-groups:
   - OpenRay  DE-53910
   - OpenRay  DE-53911
   - OpenRay  DE-53912
+  - OpenRay  DE-53913
   - OpenRay  LT-1144
   - OpenRay  LT-1201
   - OpenRay  LT-1204
