@@ -9474,6 +9474,24 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-40311
+  type: vless
+  server: 185.231.205.193
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  FR-40312
+  type: vless
+  server: realdom-fr.panelfreedom.com
+  port: 20810
+  uuid: 4faf59bf-f92c-4ec9-bb8a-58a58708b0c6
+  network: tcp
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+    short-id: ''
+  client-fingerprint: firefox
 - name: OpenRay  NL-10284
   type: vmess
   server: 89.169.13.60
@@ -15324,6 +15342,8 @@ proxy-groups:
   - OpenRay  FR-40308
   - OpenRay  FR-40309
   - OpenRay  FR-40310
+  - OpenRay  FR-40311
+  - OpenRay  FR-40312
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -17077,6 +17097,8 @@ proxy-groups:
   - OpenRay  FR-40308
   - OpenRay  FR-40309
   - OpenRay  FR-40310
+  - OpenRay  FR-40311
+  - OpenRay  FR-40312
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
