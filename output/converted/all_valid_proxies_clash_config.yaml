@@ -5911,6 +5911,12 @@ proxies:
     path: /vmess/
     headers:
       Host: 38.107.234.57
+- name: OpenRay  US-95577
+  type: vless
+  server: 185.68.244.86
+  port: 42545
+  uuid: 7c8cf438-8d5a-4ce9-bc1c-88345a545f2f
+  network: tcp
 - name: OpenRay  FR-9022
   type: vless
   server: 185.231.205.248
@@ -10380,6 +10386,18 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  DE-53954
+  type: vless
+  server: 91.98.161.187
+  port: 60000
+  uuid: a0cd86a7-5394-4063-98bc-af11f6ad90cc
+  network: tcp
+- name: OpenRay  DE-53955
+  type: vless
+  server: 91.98.161.187
+  port: 50000
+  uuid: fee9c300-9841-47f3-a61d-082bd4989c36
+  network: tcp
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -13896,6 +13914,18 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  TW-6
+  type: vless
+  server: 114.34.202.224
+  port: 10004
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  network: ws
+  tls: true
+  servername: gaosir.unfeeling.sbs
+  ws-opts:
+    path: X@节点狂魔/?ed=2560
+    headers:
+      Host: gaosir.unfeeling.sbs
 - name: OpenRay  EE-1
   type: vless
   server: 64.188.78.60
@@ -14567,6 +14597,7 @@ proxy-groups:
   - OpenRay  US-95573
   - OpenRay  US-95575
   - OpenRay  US-95576
+  - OpenRay  US-95577
   - OpenRay  FR-9022
   - OpenRay  FR-12778
   - OpenRay  FR-17800
@@ -15238,6 +15269,8 @@ proxy-groups:
   - OpenRay  DE-53951
   - OpenRay  DE-53952
   - OpenRay  DE-53953
+  - OpenRay  DE-53954
+  - OpenRay  DE-53955
   - OpenRay  LT-1144
   - OpenRay  LT-1209
   - OpenRay  LT-1213
@@ -15631,6 +15664,7 @@ proxy-groups:
   - OpenRay  TW-2
   - OpenRay  TW-4
   - OpenRay  TW-5
+  - OpenRay  TW-6
   - OpenRay  EE-1
 - name: PROXY
   type: select
@@ -16286,6 +16320,7 @@ proxy-groups:
   - OpenRay  US-95573
   - OpenRay  US-95575
   - OpenRay  US-95576
+  - OpenRay  US-95577
   - OpenRay  FR-9022
   - OpenRay  FR-12778
   - OpenRay  FR-17800
@@ -16957,6 +16992,8 @@ proxy-groups:
   - OpenRay  DE-53951
   - OpenRay  DE-53952
   - OpenRay  DE-53953
+  - OpenRay  DE-53954
+  - OpenRay  DE-53955
   - OpenRay  LT-1144
   - OpenRay  LT-1209
   - OpenRay  LT-1213
@@ -17350,6 +17387,7 @@ proxy-groups:
   - OpenRay  TW-2
   - OpenRay  TW-4
   - OpenRay  TW-5
+  - OpenRay  TW-6
   - OpenRay  EE-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
