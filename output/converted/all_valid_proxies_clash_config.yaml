@@ -9252,6 +9252,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  JP-2877
+  type: vmess
+  server: 52.195.175.160
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  FI-3328
   type: vless
   server: 171.22.114.248
@@ -10405,6 +10417,18 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
 - name: OpenRay  TR-635
+  type: vless
+  server: fart.pollux.live
+  port: 5001
+  uuid: 4e380d1c-78b2-45aa-80b1-b866dc44226c
+  network: tcp
+- name: OpenRay  TR-636
+  type: vless
+  server: fart.pollux.live
+  port: 5001
+  uuid: 4e380d1c-78b2-45aa-80b1-b866dc44226c
+  network: tcp
+- name: OpenRay  TR-637
   type: vless
   server: fart.pollux.live
   port: 5001
@@ -12210,6 +12234,7 @@ proxy-groups:
   - OpenRay  JP-2874
   - OpenRay  JP-2875
   - OpenRay  JP-2876
+  - OpenRay  JP-2877
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
@@ -12330,6 +12355,8 @@ proxy-groups:
   - OpenRay  TR-633
   - OpenRay  TR-634
   - OpenRay  TR-635
+  - OpenRay  TR-636
+  - OpenRay  TR-637
   - OpenRay  AU-4
   - OpenRay  AU-5
   - OpenRay  AU-6
@@ -13498,6 +13525,7 @@ proxy-groups:
   - OpenRay  JP-2874
   - OpenRay  JP-2875
   - OpenRay  JP-2876
+  - OpenRay  JP-2877
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
@@ -13618,6 +13646,8 @@ proxy-groups:
   - OpenRay  TR-633
   - OpenRay  TR-634
   - OpenRay  TR-635
+  - OpenRay  TR-636
+  - OpenRay  TR-637
   - OpenRay  AU-4
   - OpenRay  AU-5
   - OpenRay  AU-6
