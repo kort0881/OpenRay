@@ -9025,6 +9025,12 @@ proxies:
       /vless#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL
     headers:
       Host: uk.xvless.onlinespeedtest.net
+- name: OpenRay  FR-40429
+  type: vless
+  server: 185.153.183.92
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  NL-10284
   type: vmess
   server: 89.169.13.60
@@ -11766,6 +11772,12 @@ proxies:
     public-key: r3FLw76bxhgit74mzJTglRM-ujPZ9f-HemByQ-uZqms
     short-id: 27e6b66aa77662fb
   client-fingerprint: firefox
+- name: OpenRay  FI-3519
+  type: vless
+  server: 171.22.114.244
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 - name: OpenRay  SE-1367
   type: vmess
   server: 185.146.173.25
@@ -15181,6 +15193,7 @@ proxy-groups:
   - OpenRay  FR-40426
   - OpenRay  FR-40427
   - OpenRay  FR-40428
+  - OpenRay  FR-40429
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -15459,6 +15472,7 @@ proxy-groups:
   - OpenRay  FI-3516
   - OpenRay  FI-3517
   - OpenRay  FI-3518
+  - OpenRay  FI-3519
   - OpenRay  SE-1367
   - OpenRay  SE-1381
   - OpenRay  SE-1390
@@ -16943,6 +16957,7 @@ proxy-groups:
   - OpenRay  FR-40426
   - OpenRay  FR-40427
   - OpenRay  FR-40428
+  - OpenRay  FR-40429
   - OpenRay  NL-10284
   - OpenRay  NL-10761
   - OpenRay  NL-10781
@@ -17221,6 +17236,7 @@ proxy-groups:
   - OpenRay  FI-3516
   - OpenRay  FI-3517
   - OpenRay  FI-3518
+  - OpenRay  FI-3519
   - OpenRay  SE-1367
   - OpenRay  SE-1381
   - OpenRay  SE-1390
