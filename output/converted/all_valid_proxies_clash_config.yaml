@@ -7095,6 +7095,19 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  NL-11563
+  type: vless
+  server: nl.crynasty.ru
+  port: 443
+  uuid: dfb01e06-7538-424b-8e83-b24d9760ef55
+  network: raw
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl.crynasty.ru
+  reality-opts:
+    public-key: ug09ufbbBLb_G-0bSoUhFbH11O00sCp3j9xiVXh6wi4
+    short-id: dc02e7f17f8a
+  client-fingerprint: chrome
 - name: OpenRay  DE-7333
   type: vmess
   server: 91.99.185.216
@@ -9711,6 +9724,18 @@ proxies:
     path: /
     headers:
       Host: end-gfw.com
+- name: OpenRay  KR-675
+  type: vmess
+  server: 43.201.29.246
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  LV-409
   type: vless
   server: 45.130.215.125
@@ -11553,6 +11578,7 @@ proxy-groups:
   - OpenRay  NL-11560
   - OpenRay  NL-11561
   - OpenRay  NL-11562
+  - OpenRay  NL-11563
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -11806,6 +11832,7 @@ proxy-groups:
   - OpenRay  KR-669
   - OpenRay  KR-673
   - OpenRay  KR-674
+  - OpenRay  KR-675
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  LV-411
@@ -12791,6 +12818,7 @@ proxy-groups:
   - OpenRay  NL-11560
   - OpenRay  NL-11561
   - OpenRay  NL-11562
+  - OpenRay  NL-11563
   - OpenRay  DE-7333
   - OpenRay  DE-16990
   - OpenRay  DE-35229
@@ -13044,6 +13072,7 @@ proxy-groups:
   - OpenRay  KR-669
   - OpenRay  KR-673
   - OpenRay  KR-674
+  - OpenRay  KR-675
   - OpenRay  LV-409
   - OpenRay  LV-410
   - OpenRay  LV-411
