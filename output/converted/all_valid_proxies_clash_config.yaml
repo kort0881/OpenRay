@@ -4860,6 +4860,38 @@ proxies:
       /vless/?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*
     headers:
       Host: 104.167.199.95
+- name: OpenRay  US-95759
+  type: vless
+  server: 104.16.53.11
+  port: 2053
+  uuid: 97fc44dd-c88c-4470-8d66-1752089c0183
+  network: ws
+  tls: true
+  servername: frAgeU2.cpI2HIdd.eu.ORG
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: 104.16.53.11
+- name: OpenRay  US-95760
+  type: vless
+  server: 104.167.199.95
+  port: 80
+  uuid: 558393ec-d70d-4a05-b412-e59f2436cc14
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: '---@ShadowProxy66'
+- name: OpenRay  US-95761
+  type: vless
+  server: 154.211.8.113
+  port: 8880
+  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+  network: ws
+  ws-opts:
+    path: /telegram🇨🇳 @wangcai2 /?ed=2560
+    headers:
+      Host: ex.sue.x10.mx
 - name: OpenRay  FR-9022
   type: vless
   server: 185.231.205.248
@@ -7471,6 +7503,12 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  DE-54061
+  type: vless
+  server: 91.107.148.218
+  port: 14352
+  uuid: 918c2342-1bdc-4b60-a268-07271a5e3283
+  network: tcp
 - name: OpenRay  LT-1144
   type: vless
   server: 638950280434431325.neyshabur-drc-tusacaf.info
@@ -8041,6 +8079,19 @@ proxies:
 - name: OpenRay  CH-965
   type: vless
   server: switzerland.marzxo.biz
+  port: 8089
+  uuid: 8e311363-ffa6-ada3-6838-6283d896da4e
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: refersion.com
+  reality-opts:
+    public-key: Ro8OYB3Jq6hTWw95trCnKzQPvWaN2ShcbeLg7dTv8UU
+    short-id: 828348fc6d8e49cf
+  client-fingerprint: firefox
+- name: OpenRay  CH-966
+  type: vless
+  server: 83.228.225.44
   port: 8089
   uuid: 8e311363-ffa6-ada3-6838-6283d896da4e
   network: tcp
@@ -8806,6 +8857,18 @@ proxies:
 - name: OpenRay  JP-2879
   type: vmess
   server: 13.231.188.193
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
+- name: OpenRay  JP-2880
+  type: vmess
+  server: 43.206.212.91
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -11231,6 +11294,9 @@ proxy-groups:
   - OpenRay  US-95756
   - OpenRay  US-95757
   - OpenRay  US-95758
+  - OpenRay  US-95759
+  - OpenRay  US-95760
+  - OpenRay  US-95761
   - OpenRay  FR-9022
   - OpenRay  FR-12778
   - OpenRay  FR-30142
@@ -11611,6 +11677,7 @@ proxy-groups:
   - OpenRay  DE-54057
   - OpenRay  DE-54058
   - OpenRay  DE-54059
+  - OpenRay  DE-54061
   - OpenRay  LT-1144
   - OpenRay  LT-1250
   - OpenRay  LT-1255
@@ -11667,6 +11734,7 @@ proxy-groups:
   - OpenRay  CH-963
   - OpenRay  CH-964
   - OpenRay  CH-965
+  - OpenRay  CH-966
   - OpenRay  JP-2158
   - OpenRay  JP-2438
   - OpenRay  JP-2691
@@ -11731,6 +11799,7 @@ proxy-groups:
   - OpenRay  JP-2877
   - OpenRay  JP-2878
   - OpenRay  JP-2879
+  - OpenRay  JP-2880
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
@@ -12469,6 +12538,9 @@ proxy-groups:
   - OpenRay  US-95756
   - OpenRay  US-95757
   - OpenRay  US-95758
+  - OpenRay  US-95759
+  - OpenRay  US-95760
+  - OpenRay  US-95761
   - OpenRay  FR-9022
   - OpenRay  FR-12778
   - OpenRay  FR-30142
@@ -12849,6 +12921,7 @@ proxy-groups:
   - OpenRay  DE-54057
   - OpenRay  DE-54058
   - OpenRay  DE-54059
+  - OpenRay  DE-54061
   - OpenRay  LT-1144
   - OpenRay  LT-1250
   - OpenRay  LT-1255
@@ -12905,6 +12978,7 @@ proxy-groups:
   - OpenRay  CH-963
   - OpenRay  CH-964
   - OpenRay  CH-965
+  - OpenRay  CH-966
   - OpenRay  JP-2158
   - OpenRay  JP-2438
   - OpenRay  JP-2691
@@ -12969,6 +13043,7 @@ proxy-groups:
   - OpenRay  JP-2877
   - OpenRay  JP-2878
   - OpenRay  JP-2879
+  - OpenRay  JP-2880
   - OpenRay  FI-3328
   - OpenRay  FI-3449
   - OpenRay  FI-3460
