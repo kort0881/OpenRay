@@ -18,6 +18,7 @@ from .constants import (
     ENABLE_STAGE3,
     STAGE3_MAX,
     OUTPUT_DIR,
+    STATE_DIR,
     STAGE3_WORKERS,
     NEW_URIS_LIMIT_ENABLED,
     NEW_URIS_LIMIT,
@@ -68,7 +69,7 @@ def _has_connectivity() -> bool:
 
 
 # Check counts functionality for main.py
-CHECK_COUNTS_FILE = os.path.join(os.path.dirname(AVAILABLE_FILE), '.state', 'check_counts.json')
+CHECK_COUNTS_FILE = os.path.join(STATE_DIR, 'check_counts.json')
 TOP100_FILE = os.path.join(os.path.dirname(AVAILABLE_FILE), 'main_top100_checked.txt')
 
 
