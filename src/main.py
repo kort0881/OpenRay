@@ -5,7 +5,7 @@ import os
 import time
 from typing import Dict, List, Optional, Set, Tuple
 
-from .common import log, progress, sha1_hex, get_proxy_connection_hash, get_v2rayn_connection_key
+from .common import log, progress, sha1_hex, get_proxy_connection_hash, get_v2rayn_connection_key, get_openray_dedup_key
 from .constants import (
     AVAILABLE_FILE,
     CONSECUTIVE_REQUIRED,
@@ -93,11 +93,11 @@ def main() -> int:
         if existing_lines:
             from .parsing import extract_host as _extract_host_for_existing
 
-            # Deduplicate existing proxies using V2RayN-style connection-based uniqueness
+            # Deduplicate existing proxies using custom OpenRay dedup rules
             seen_connection_keys = set()
             deduplicated_existing = []
             for u in existing_lines:
-                conn_key = get_v2rayn_connection_key(u)
+                conn_key = get_openray_dedup_key(u)
                 if conn_key not in seen_connection_keys:
                     seen_connection_keys.add(conn_key)
                     deduplicated_existing.append(u)
@@ -255,8 +255,8 @@ def main() -> int:
         decoded = maybe_decode_subscription(content, hinted_base64=flags.get('base64', False))
         for u in extract_uris(decoded):
             total_extracted += 1  # Count all URIs extracted from all sources
-            # Use V2RayN-style connection key for deduplication
-            conn_key = get_v2rayn_connection_key(u)
+            # Use custom OpenRay dedup key for deduplication
+            conn_key = get_openray_dedup_key(u)
             if conn_key not in seen_connection_keys:
                 seen_connection_keys.add(conn_key)
                 h = get_proxy_connection_hash(u)  # Still use original hash for tested_hashes
@@ -377,11 +377,11 @@ def main() -> int:
             # Merge: replace subset portion with validated ones
             available_to_add = kept_subset + available_to_add[len(subset):]
 
-    # Deduplicate against existing available file and write (V2RayN-style connection-based)
+    # Deduplicate against existing available file and write (custom OpenRay dedup rules)
     new_available_unique: List[str] = []
-    existing_connection_keys = {get_v2rayn_connection_key(u) for u in existing_available}
+    existing_connection_keys = {get_openray_dedup_key(u) for u in existing_available}
     for u in available_to_add:
-        conn_key = get_v2rayn_connection_key(u)
+        conn_key = get_openray_dedup_key(u)
         if conn_key not in existing_connection_keys:
             existing_connection_keys.add(conn_key)
             new_available_unique.append(u)

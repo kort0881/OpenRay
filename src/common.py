@@ -415,6 +415,45 @@ def get_v2rayn_connection_key(uri: str) -> str:
         return uri
 
 
+def get_openray_dedup_key(uri: str) -> str:
+    """
+    Custom deduplication key per requested rules:
+    - For all protocols by default: use exact string (sans remarks) for equality-based dedup.
+    - For vmess: only consider the first 88 characters of the base64 payload after scheme.
+    - For vless: consider only characters before '?', and ignore '/' characters.
+    """
+    if not uri:
+        return ''
+
+    try:
+        # Strip remarks/comments (everything after #)
+        base_uri = uri.split('#', 1)[0].strip()
+        if '://' not in base_uri:
+            return f"raw|{base_uri}"
+
+        parsed = urlparse(base_uri)
+        scheme = (parsed.scheme or '').lower()
+
+        if scheme == 'vmess':
+            # vmess://<base64_json> — payload can be in netloc or path depending on how it was formed
+            payload = parsed.netloc or parsed.path.lstrip('/')
+            key_part = (payload or '')[:88]
+            return f"vmess|{key_part}"
+
+        if scheme == 'vless':
+            # Take substring after scheme up to '?', then remove all '/'
+            after_scheme = base_uri.split('://', 1)[1]
+            before_query = after_scheme.split('?', 1)[0]
+            normalized = before_query.replace('/', '')
+            return f"vless|{normalized}"
+
+        # Default: equality-based on the base URI (without remarks)
+        return f"raw|{base_uri}"
+
+    except Exception:
+        # Fallback to raw string if anything goes wrong
+        return f"raw|{uri.strip()}"
+
 def _get_vmess_v2rayn_key(parsed) -> str:
     """Get V2RayN-style connection key for VMess."""
     try:
