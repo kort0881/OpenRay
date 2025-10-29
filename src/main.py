@@ -238,8 +238,8 @@ def _write_iran_top100_by_checks(active_proxies: List[str]) -> None:
             log(f"📊 Iran check stats: max={max_iran}, avg={avg_iran:.1f}")
             log(f"📊 Main check stats: max={max_main}, avg={avg_main:.1f}")
         
-        write_text_file_atomic(top100_file, top)
-        log(f"🏆 Wrote top {len(top)} most reliable Iran proxies to {top100_file}")
+        write_text_file_atomic(iran_top100_file, top)
+        log(f"🏆 Wrote top {len(top)} most reliable Iran proxies to {iran_top100_file}")
         
         # Show top 5 for verification
         if top:
