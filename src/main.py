@@ -228,15 +228,12 @@ def _write_iran_top100_by_checks(active_proxies: List[str]) -> None:
         # Get top 100
         top = [p for _, _, _, p in scored[:100]]
         
-        # Log some statistics
+        # Log Iran-specific statistics only
         if scored:
             max_iran = scored[0][0] if scored else 0
-            max_main = max(t[1] for t in scored) if scored else 0
             avg_iran = sum(t[0] for t in scored) / len(scored) if scored else 0
-            avg_main = sum(t[1] for t in scored) / len(scored) if scored else 0
             
             log(f"📊 Iran check stats: max={max_iran}, avg={avg_iran:.1f}")
-            log(f"📊 Main check stats: max={max_main}, avg={avg_main:.1f}")
         
         write_text_file_atomic(iran_top100_file, top)
         log(f"🏆 Wrote top {len(top)} most reliable Iran proxies to {iran_top100_file}")
