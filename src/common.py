@@ -419,7 +419,7 @@ def get_openray_dedup_key(uri: str) -> str:
     """
     Custom deduplication key per requested rules:
     - For all protocols by default: use exact string (sans remarks) for equality-based dedup.
-    - For vmess: only consider the first 88 characters of the base64 payload after scheme.
+    - For vmess: only consider the first 84 characters of the base64 payload after scheme.
     - For vless: consider only characters before '?', and ignore '/' characters.
     """
     if not uri:
@@ -437,7 +437,7 @@ def get_openray_dedup_key(uri: str) -> str:
         if scheme == 'vmess':
             # vmess://<base64_json> — payload can be in netloc or path depending on how it was formed
             payload = parsed.netloc or parsed.path.lstrip('/')
-            key_part = (payload or '')[:88]
+            key_part = (payload or '')[:84]
             return f"vmess|{key_part}"
 
         if scheme == 'vless':
@@ -446,6 +446,13 @@ def get_openray_dedup_key(uri: str) -> str:
             before_query = after_scheme.split('?', 1)[0]
             normalized = before_query.replace('/', '')
             return f"vless|{normalized}"
+
+        if scheme == 'trojan':
+            # Take substring after scheme up to '?', then remove all '/'
+            after_scheme = base_uri.split('://', 1)[1]
+            before_query = after_scheme.split('?', 1)[0]
+            normalized = before_query.replace('/', '')
+            return f"trojan|{normalized}"
 
         # Default: equality-based on the base URI (without remarks)
         return f"raw|{base_uri}"
