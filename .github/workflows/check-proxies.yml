@@ -71,6 +71,18 @@ jobs:
         OPENRAY_RECHECK_EXISTING: "1"
       run: python -m src.main
 
+    # Reset state if proxy count is below threshold
+    - name: Reset state when proxy count < 100
+      run: |
+        COUNT=$(wc -l < ./output/all_valid_proxies.txt 2>/dev/null || echo 0)
+        echo "Detected proxy count: $COUNT"
+        if [ "$COUNT" -lt 100 ]; then
+          echo "Proxy count below 100. Removing state files."
+          rm -f .state/streaks.json .state/tested.txt.bin
+        else
+          echo "Proxy count >= 100. Keeping state files."
+        fi
+
     # Run the converter scripts
     - name: Convert proxy lists to Clash and Singbox formats
       run: |
