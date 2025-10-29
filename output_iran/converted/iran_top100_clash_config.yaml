@@ -281,18 +281,6 @@ proxies:
     path: /kuF4zJYa4FBeudGb
     headers:
       Host: mdrN.paGes.Dev
-- name: OpenRay Dynamic-138789
-  type: vless
-  server: aliakb3435.pages.dev
-  port: 443
-  uuid: 97c4550f-8ecc-42fa-ae66-3b550c986cd2
-  network: ws
-  tls: true
-  servername: aliakb3435.pages.dev
-  ws-opts:
-    path: /øªø¹ø¯ø§ø¯
-    headers:
-      Host: aliakb3435.pages.dev
 - name: OpenRay Dynamic-138927
   type: vless
   server: aliakb3435.pages.dev
@@ -327,18 +315,6 @@ proxies:
   servername: aliakb3435.pages.dev
   ws-opts:
     path: "/Ã\x98ÂªÃ\x98Â¹Ã\x98Â¯Ã\x98Â§Ã\x98Â¯"
-    headers:
-      Host: aliakb3435.pages.dev
-- name: OpenRay Dynamic-138970
-  type: vless
-  server: aliakb3435.pages.dev
-  port: 443
-  uuid: 97c4550f-8ecc-42fa-ae66-3b550c986cd2
-  network: ws
-  tls: true
-  servername: aliakb3435.pages.dev
-  ws-opts:
-    path: /PLe847RCOx5eWYOx?ed=2560fp=randomized
     headers:
       Host: aliakb3435.pages.dev
 - name: OpenRay Dynamic-138973
@@ -423,18 +399,6 @@ proxies:
     public-key: pUD3mOlIKBEtDyFWK0LsGkY7j__7vblFPXnEVoY9oVQ
     short-id: 22f040ed1037da8f
   client-fingerprint: chrome
-- name: OpenRay Dynamic-139409
-  type: vless
-  server: cdnjs.com
-  port: 443
-  uuid: a7e3db08-6fb7-4ffd-9415-59d1b5c6eeb6
-  network: ws
-  tls: true
-  servername: rAyAn-cOnFiG-ca-1.pArSa.dPdNs.oRg
-  ws-opts:
-    path: /ws
-    headers:
-      Host: rAyAn-cOnFiG-ca-1.pArSa.dPdNs.oRg
 - name: OpenRay Dynamic-95672
   type: vless
   server: creativecommons.org
@@ -672,20 +636,6 @@ proxies:
     headers:
       Host: hIppOPOTamus.ZulaIr.siTE.
 - name: OpenRay Dynamic-139466
-  type: vmess
-  server: cf.090227.xyz
-  port: 443
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: sgal.dagrate.eu.org
-  ws-opts:
-    path: /
-    headers:
-      Host: sgal.dagrate.eu.org
-- name: 'OpenRay Dynamic-139466 #2'
   type: vless
   server: wwwopensignalcom-goodspeed-8xx.pages.dev.
   port: 443
@@ -807,6 +757,30 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  GB-13895
+  type: vless
+  server: 638953873686413412.lahijan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  GB-13896
+  type: vless
+  server: 185.138.164.4
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  GB-13908
+  type: vless
+  server: 638953873686414274.lahijan-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  GB-13910
+  type: vless
+  server: 638939927968108227.dublin-drc-tusaas.info
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
 
 proxy-groups:
 - name: AUTO
@@ -832,11 +806,9 @@ proxy-groups:
   - OpenRay Dynamic-138405
   - OpenRay Dynamic-138440
   - OpenRay Dynamic-138672
-  - OpenRay Dynamic-138789
   - OpenRay Dynamic-138927
   - OpenRay Dynamic-138930
   - OpenRay Dynamic-138968
-  - OpenRay Dynamic-138970
   - OpenRay Dynamic-138973
   - OpenRay Dynamic-94970
   - OpenRay Dynamic-139267
@@ -844,7 +816,6 @@ proxy-groups:
   - OpenRay Dynamic-139362
   - OpenRay Dynamic-95558
   - OpenRay Dynamic-95604
-  - OpenRay Dynamic-139409
   - OpenRay Dynamic-95672
   - OpenRay Dynamic-95688
   - OpenRay Dynamic-139429
@@ -866,7 +837,6 @@ proxy-groups:
   - OpenRay Dynamic-1
   - OpenRay Dynamic-2
   - OpenRay Dynamic-139466
-  - 'OpenRay Dynamic-139466 #2'
   - OpenRay Dynamic-139467
   - OpenRay  GB-13392
   - OpenRay  GB-13491
@@ -884,6 +854,10 @@ proxy-groups:
   - OpenRay  GB-13839
   - OpenRay  GB-13883
   - OpenRay  GB-13893
+  - OpenRay  GB-13895
+  - OpenRay  GB-13896
+  - OpenRay  GB-13908
+  - OpenRay  GB-13910
 - name: PROXY
   type: select
   proxies:
@@ -905,11 +879,9 @@ proxy-groups:
   - OpenRay Dynamic-138405
   - OpenRay Dynamic-138440
   - OpenRay Dynamic-138672
-  - OpenRay Dynamic-138789
   - OpenRay Dynamic-138927
   - OpenRay Dynamic-138930
   - OpenRay Dynamic-138968
-  - OpenRay Dynamic-138970
   - OpenRay Dynamic-138973
   - OpenRay Dynamic-94970
   - OpenRay Dynamic-139267
@@ -917,7 +889,6 @@ proxy-groups:
   - OpenRay Dynamic-139362
   - OpenRay Dynamic-95558
   - OpenRay Dynamic-95604
-  - OpenRay Dynamic-139409
   - OpenRay Dynamic-95672
   - OpenRay Dynamic-95688
   - OpenRay Dynamic-139429
@@ -939,7 +910,6 @@ proxy-groups:
   - OpenRay Dynamic-1
   - OpenRay Dynamic-2
   - OpenRay Dynamic-139466
-  - 'OpenRay Dynamic-139466 #2'
   - OpenRay Dynamic-139467
   - OpenRay  GB-13392
   - OpenRay  GB-13491
@@ -957,6 +927,10 @@ proxy-groups:
   - OpenRay  GB-13839
   - OpenRay  GB-13883
   - OpenRay  GB-13893
+  - OpenRay  GB-13895
+  - OpenRay  GB-13896
+  - OpenRay  GB-13908
+  - OpenRay  GB-13910
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT

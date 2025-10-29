@@ -490,6 +490,9 @@ def main() -> int:
             log("❌ No proxies to check")
             return 1
 
+        # First, drop stale entries not in current list
+        _cleanup_check_counts(all_proxies)
+
         # Validate directly and count only successes
         successful_proxies = _validate_proxies_directly(all_proxies)
         if not successful_proxies:
