@@ -459,6 +459,10 @@ def read_yaml_file(yaml_path):
 
 
 def write_yaml_file(yaml_obj, yaml_path):
+    # Create directory if it doesn't exist
+    import os
+    os.makedirs(os.path.dirname(yaml_path), exist_ok=True)
+    
     with open(yaml_path, 'w', encoding='utf-8') as f:
         yaml_ = YAML()
         yaml_.default_flow_style = False
@@ -471,6 +475,10 @@ def read_json_file(path):
 
 
 def write_json_file(obj, path):
+    # Create directory if it doesn't exist
+    import os
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
 
