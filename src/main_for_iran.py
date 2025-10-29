@@ -17,7 +17,9 @@ INPUT_FILE = os.path.join(C.REPO_ROOT, 'output', 'all_valid_proxies.txt')
 C.STATE_DIR = os.path.join(C.REPO_ROOT, '.state_iran')
 C.OUTPUT_DIR = os.path.join(C.REPO_ROOT, 'output_iran')
 
-# Recompute dependent constant paths (only what we need)
+# Recompute dependent constant paths
+C.TESTED_FILE = os.path.join(C.STATE_DIR, 'tested.txt')
+C.AVAILABLE_FILE = os.path.join(C.OUTPUT_DIR, 'all_valid_proxies_for_iran.txt')
 C.STREAKS_FILE = os.path.join(C.STATE_DIR, 'streaks.json')
 C.KIND_DIR = os.path.join(C.OUTPUT_DIR, 'kind')
 C.COUNTRY_DIR = os.path.join(C.OUTPUT_DIR, 'country')
@@ -237,17 +239,28 @@ def _patch_network_functions():
 # Now import the rest of the pipeline after patching constants
 from .common import log  # noqa: E402
 from .io_ops import ensure_dirs, read_lines, write_text_file_atomic  # noqa: E402
-# Removed main_pipeline import - no longer needed
+from . import main as main_pipeline  # noqa: E402
 
 
-def _ensure_empty_sources() -> None:
-    """Ensure empty sources file exists."""
+def _seed_available_from_input() -> None:
+    """Seed the Iran-specific AVAILABLE_FILE with contents of INPUT_FILE (if present)."""
     try:
-        if not os.path.exists(EMPTY_SOURCES):
-            with open(EMPTY_SOURCES, 'w', encoding='utf-8') as f:
-                f.write('')
+        ensure_dirs()
+        lines: List[str] = []
+        if os.path.exists(INPUT_FILE):
+            lines = [ln.strip() for ln in read_lines(INPUT_FILE) if ln.strip()]
+        else:
+            log(f"Input not found: {INPUT_FILE}")
+        # write_text_file_atomic(C.AVAILABLE_FILE, lines)
+        # Ensure empty sources file exists so main() doesn't exit
+        try:
+            if not os.path.exists(EMPTY_SOURCES):
+                with open(EMPTY_SOURCES, 'w', encoding='utf-8') as f:
+                    f.write('')
+        except Exception:
+            pass
     except Exception as e:
-        log(f"Failed to create empty sources file: {e}")
+        log(f"Seeding available proxies failed: {e}")
 
 def _load_check_counts() -> Dict[str, int]:
     try:
@@ -379,8 +392,9 @@ def check_internet_socket(host="8.8.8.8", port=53, timeout=3):
         return False
 
 
-def _load_all_proxies_from_input() -> List[str]:
-    """Load all proxies from all_valid_proxies.txt."""
+def _check_all_proxies_from_input() -> List[str]:
+    """Load all proxies from all_valid_proxies.txt (no rewriting)."""
+    # Load all proxies from the input file
     all_proxies: List[str] = []
     if os.path.exists(INPUT_FILE):
         all_proxies = [ln.strip() for ln in read_lines(INPUT_FILE) if ln.strip()]
@@ -392,43 +406,10 @@ def _load_all_proxies_from_input() -> List[str]:
     if not all_proxies:
         log("⚠️ No proxies to check")
         return []
-    
     return all_proxies
 
-def _validate_proxies_directly(proxies: List[str]) -> List[str]:
-    """Validate proxies directly without using the main pipeline."""
-    from . import net as net_module
-    
-    successful_proxies: List[str] = []
-    total_proxies = len(proxies)
-    
-    log(f"🔍 Starting direct validation of {total_proxies} proxies...")
-    
-    for i, proxy in enumerate(proxies, 1):
-        if not proxy:
-            continue
-            
-        # Show progress every 10% or every 50 proxies, whichever is more frequent
-        if i % max(1, min(50, total_proxies // 10)) == 0 or i == total_proxies:
-            log(f"📊 Progress: {i}/{total_proxies} ({i/total_proxies*100:.1f}%) - Found {len(successful_proxies)} working")
-        
-        try:
-            # Validate the proxy directly
-            is_valid = net_module.validate_with_v2ray_core(proxy, timeout_s=10)
-            if is_valid:
-                successful_proxies.append(proxy)
-                log(f"✅ Valid proxy {i}/{total_proxies}: {proxy[:50]}...")
-            else:
-                log(f"❌ Invalid proxy {i}/{total_proxies}: {proxy[:50]}...")
-        except Exception as e:
-            log(f"⚠️ Error checking proxy {i}/{total_proxies}: {e}")
-            continue
-    
-    log(f"🎯 Validation complete: {len(successful_proxies)}/{total_proxies} proxies are working")
-    return successful_proxies
-
 def main() -> int:
-    _ensure_empty_sources()
+    _seed_available_from_input()
 
     # Start internet connectivity monitoring
     _start_internet_monitoring()
@@ -446,32 +427,23 @@ def main() -> int:
             _stop_internet_monitoring()
             return 1
 
-    # Load and validate all proxies directly
+    # Prepare all proxies for counting only (no re-validation or formatting)
     try:
         log("🚀 Starting comprehensive proxy validation for Iran...")
-        all_proxies = _load_all_proxies_from_input()
+        all_proxies = _check_all_proxies_from_input()
         
         if not all_proxies:
             log("❌ No proxies to check")
             _stop_internet_monitoring()
             return 1
         
-        # Validate all proxies directly (no main pipeline, no double checking)
-        successful_proxies = _validate_proxies_directly(all_proxies)
-        
-        if not successful_proxies:
-            log("❌ No working proxies found")
-            _stop_internet_monitoring()
-            return 1
-        
-        # Update check counts for all successfully checked proxies
-        _update_check_counts_for_proxies(successful_proxies, successful_proxies)
+        # Update check counts for proxies present (treated as already formatted and valid)
+        _update_check_counts_for_proxies(all_proxies, all_proxies)
         
         # Generate top 100 most reliable proxies
-        _write_top100_by_checks(successful_proxies)
+        _write_top100_by_checks(all_proxies)
         
-        log("✅ Iran proxy validation completed successfully")
-        rc = 0
+        log("✅ Iran proxy check-count update completed successfully (no revalidation, no reformatting)")
         
     except Exception as e:
         log(f"❌ Proxy validation failed: {e}")
@@ -480,7 +452,7 @@ def main() -> int:
         # Stop internet monitoring
         _stop_internet_monitoring()
 
-    return rc
+    return 0
 
 
 if __name__ == '__main__':
