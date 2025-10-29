@@ -309,7 +309,7 @@ def _cleanup_check_counts(active_proxies: List[str]) -> None:
     # Only save if there are changes
     if len(cleaned_counts) != len(counts):
         removed_count = len(counts) - len(cleaned_counts)
-        log(f"Cleaned up check counts: removed {removed_count} inactive proxies")
+        log(f"Cleaned up check counts: removed {removed_count} stale proxies from state (not in current input list)")
         _save_check_counts(cleaned_counts)
 
 
