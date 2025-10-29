@@ -6,6 +6,7 @@ import time
 from typing import Dict, List, Optional, Set, Tuple
 
 from .common import log, progress, sha1_hex, get_proxy_connection_hash, get_v2rayn_connection_key, get_openray_dedup_key
+import json
 from .constants import (
     AVAILABLE_FILE,
     CONSECUTIVE_REQUIRED,
@@ -33,6 +34,7 @@ from .io_ops import (
     append_tested_hashes_optimized,
     read_lines,
     save_streaks,
+    write_text_file_atomic,
 )
 from .net import _get_country_code_for_host, ping_host, connect_host_port, quick_protocol_probe, validate_with_v2ray_core, fetch_urls_async_batch, get_country_codes_batch, check_one_sync, is_dynamic_host, check_pair
 from .parsing import (
@@ -63,6 +65,136 @@ def _has_connectivity() -> bool:
     except Exception:
         return False
     return False
+
+
+# Check counts functionality for main.py
+CHECK_COUNTS_FILE = os.path.join(os.path.dirname(AVAILABLE_FILE), '.state', 'check_counts.json')
+TOP100_FILE = os.path.join(os.path.dirname(AVAILABLE_FILE), 'main_top100_checked.txt')
+
+
+def _load_check_counts() -> Dict[str, Dict[str, int]]:
+    """Load check counts with dual counter system: {proxy: {"main": count, "iran": count}}"""
+    try:
+        if os.path.exists(CHECK_COUNTS_FILE):
+            with open(CHECK_COUNTS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    # Convert old format to new format if needed
+                    result = {}
+                    for proxy, value in data.items():
+                        if isinstance(value, dict) and "main" in value and "iran" in value:
+                            # New format
+                            result[str(proxy)] = {
+                                "main": int(value.get("main", 0)),
+                                "iran": int(value.get("iran", 0))
+                            }
+                        else:
+                            # Old format - convert to new format
+                            result[str(proxy)] = {
+                                "main": int(value) if isinstance(value, (int, str)) else 0,
+                                "iran": 0
+                            }
+                    return result
+    except Exception as e:
+        log(f"Failed to load check counts: {e}")
+    return {}
+
+
+def _save_check_counts(counts: Dict[str, Dict[str, int]]) -> None:
+    try:
+        ensure_dirs()
+        os.makedirs(os.path.dirname(CHECK_COUNTS_FILE), exist_ok=True)
+        tmp = CHECK_COUNTS_FILE + '.tmp'
+        with open(tmp, 'w', encoding='utf-8', errors='ignore') as f:
+            json.dump(counts, f, ensure_ascii=False, indent=2)
+        os.replace(tmp, CHECK_COUNTS_FILE)
+    except Exception as e:
+        log(f"Failed to save check counts: {e}")
+
+
+def _update_check_counts_for_proxies(proxies: List[str], counter_type: str = "main") -> None:
+    """Update check counts for successfully validated proxies."""
+    if not proxies:
+        return
+    counts = _load_check_counts()
+
+    # Deduplicate proxies using custom OpenRay dedup key
+    seen_keys: set = set()
+    unique_proxies: List[str] = []
+    
+    for p in proxies:
+        if not p:
+            continue
+        
+        # Deduplicate using custom OpenRay dedup key
+        conn_key = get_openray_dedup_key(p)
+        if conn_key not in seen_keys:
+            seen_keys.add(conn_key)
+            unique_proxies.append(p)
+
+    # Update counts for all unique successfully validated proxies
+    updated_count = 0
+    for p in unique_proxies:
+        if p not in counts:
+            counts[p] = {"main": 0, "iran": 0}
+        
+        old_count = counts[p].get(counter_type, 0)
+        counts[p][counter_type] = old_count + 1
+        updated_count += 1
+    
+    if updated_count > 0:
+        _save_check_counts(counts)
+        log(f"📈 Updated {counter_type} check counts for {updated_count} successfully validated proxies")
+
+
+def _write_top100_by_checks(active_proxies: List[str]) -> None:
+    """Write top 100 most frequently checked proxies to main_top100_checked.txt.
+    Prioritizes main scores, then iran scores as tiebreaker."""
+    try:
+        counts = _load_check_counts()
+        
+        if not active_proxies:
+            log("⚠️ No active proxies to rank")
+            return
+            
+        # Score each active proxy by main count first, then iran count as tiebreaker
+        scored = []
+        for idx, p in enumerate(active_proxies):
+            proxy_counts = counts.get(p, {"main": 0, "iran": 0})
+            main_count = proxy_counts.get("main", 0)
+            iran_count = proxy_counts.get("iran", 0)
+            scored.append((main_count, iran_count, idx, p))
+        
+        # Sort by main count desc, then iran count desc, then original order asc (stable tie-break)
+        scored.sort(key=lambda t: (-t[0], -t[1], t[2]))
+        
+        # Get top 100
+        top = [p for _, _, _, p in scored[:100]]
+        
+        # Log some statistics
+        if scored:
+            max_main = scored[0][0] if scored else 0
+            max_iran = max(t[1] for t in scored) if scored else 0
+            avg_main = sum(t[0] for t in scored) / len(scored) if scored else 0
+            avg_iran = sum(t[1] for t in scored) / len(scored) if scored else 0
+            
+            log(f"📊 Main check stats: max={max_main}, avg={avg_main:.1f}")
+            log(f"📊 Iran check stats: max={max_iran}, avg={avg_iran:.1f}")
+        
+        write_text_file_atomic(TOP100_FILE, top)
+        log(f"🏆 Wrote top {len(top)} most reliable proxies to {TOP100_FILE}")
+        
+        # Show top 5 for verification
+        if top:
+            log("🥇 Top 5 most reliable proxies:")
+            for i, proxy in enumerate(top[:5], 1):
+                proxy_counts = counts.get(proxy, {"main": 0, "iran": 0})
+                main_count = proxy_counts.get("main", 0)
+                iran_count = proxy_counts.get("iran", 0)
+                log(f"  {i}. [Main:{main_count}, Iran:{iran_count}] {proxy[:60]}...")
+                
+    except Exception as e:
+        log(f"❌ Failed to write top100 checked proxies: {e}")
 
 
 def main() -> int:
@@ -475,6 +607,16 @@ def main() -> int:
             save_streaks(streaks)
     except Exception as e:
         log(f"Streaks update failed: {e}")
+
+    # Update check counts for successfully validated proxies
+    try:
+        # Load current available proxies to update counts
+        current_available = load_existing_available()
+        if current_available:
+            _update_check_counts_for_proxies(current_available, "main")
+            _write_top100_by_checks(current_available)
+    except Exception as e:
+        log(f"Check counts update failed: {e}")
 
     # Generate grouped outputs by kind and country
     try:
