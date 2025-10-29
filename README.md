@@ -44,11 +44,7 @@ curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/outp
 ```
 
 **🇮🇷 Iran Users (Optimized):**
-```bash
-# Download Iran-optimized proxy list  
-curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/all_valid_proxies_for_iran.txt
-
-# Or get just the top 100 most reliable
+# get just the top 100 most reliable
 curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/iran_top100_checked.txt
 ```
 
@@ -190,8 +186,6 @@ curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/outp
 #### 🏆 Top 100 Most Reliable
 [![Top 100](https://img.shields.io/badge/Top_100-Most_Reliable-ff6b6b?style=for-the-badge&logo=star&logoColor=white)](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/iran_top100_checked.txt)
 
-#### 📦 Complete Iran Collection  
-[![Download All Iran](https://img.shields.io/badge/Download-All_Iran_Proxies-2ea043?style=for-the-badge&logo=download&logoColor=white)](https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/all_valid_proxies_for_iran.txt)
 
 #### ⚙️ Ready-to-Use Configs
 <table>
