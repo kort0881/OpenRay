@@ -1,4 +1,4 @@
-name: Check New Proxies
+name: Check Proxies
 
 # Trigger workflow
 on:
@@ -12,11 +12,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: check-new-proxies
-  cancel-in-progress: false   # Queue new runs until the previous one finishes
+  group: check-proxies
+  cancel-in-progress: false
 
 jobs:
-  check-new-proxies:
+  check-proxies:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -65,8 +65,8 @@ jobs:
         # Verify installation
         xray version
 
-    # Run proxy checker script for new proxies only
-    - name: Run new proxies checker
+    # Run proxy checker script for proxies
+    - name: Run proxies checker
       env:
         OPENRAY_RECHECK_EXISTING: "1"
       run: python -m src.main
@@ -95,7 +95,7 @@ jobs:
 
         # Add and commit updated files
         git add .state/ output/
-        git commit -m "Update new proxy lists [skip ci]" || echo "No changes to commit"
+        git commit -m "Update proxy lists [skip ci]" || echo "No changes to commit"
 
         # Push changes
         git push https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}.git main
