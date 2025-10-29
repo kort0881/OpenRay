@@ -6,6 +6,11 @@ from typing import List, Dict, Callable, Any, Optional
 import socket
 import json
 import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
+try:
+    from tqdm import tqdm  # progress bar
+except Exception:
+    tqdm = None
 
 # Patch constants BEFORE importing modules that read them
 from . import constants as C
@@ -383,6 +388,66 @@ def _write_top100_by_checks(active_proxies: List[str]) -> None:
         log(f"❌ Failed to write top100 checked proxies: {e}")
 
 
+def _validate_proxies_directly(proxies: List[str]) -> List[str]:
+    """Validate proxies directly (no pipeline, no rewriting). Returns successes."""
+    try:
+        from . import net as net_module
+    except Exception as e:
+        log(f"❌ Failed to import net module: {e}")
+        return []
+
+    successful_proxies: List[str] = []
+    total_proxies = len(proxies)
+
+    log(f"🔍 Starting direct validation of {total_proxies} proxies...")
+
+    # Concurrency level (tunable via env var)
+    # Align concurrency with main pipeline's Stage 3 default
+    try:
+        from . import constants as C
+        default_workers = int(getattr(C, 'STAGE3_WORKERS', 32))
+    except Exception:
+        default_workers = 32
+    try:
+        max_workers = max(1, int(os.environ.get('OPENRAY_IRAN_CONCURRENCY', str(default_workers))))
+    except Exception:
+        max_workers = default_workers
+
+    if total_proxies == 0:
+        return successful_proxies
+
+    progress = tqdm(total=total_proxies, desc="Checking", unit="proxy") if tqdm else None
+
+    def _update_progress(n: int = 1):
+        if progress is not None:
+            try:
+                progress.update(n)
+            except Exception:
+                pass
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_proxy = {executor.submit(net_module.validate_with_v2ray_core, proxy, 12): proxy for proxy in proxies if proxy}
+        for future in as_completed(future_to_proxy):
+            proxy = future_to_proxy[future]
+            ok = False
+            try:
+                ok = bool(future.result())
+            except Exception:
+                ok = False
+            if ok:
+                successful_proxies.append(proxy)
+            _update_progress(1)
+
+    if progress is not None:
+        try:
+            progress.close()
+        except Exception:
+            pass
+
+    log(f"🎯 Direct validation complete: {len(successful_proxies)}/{total_proxies} proxies are working")
+    return successful_proxies
+
+
 def check_internet_socket(host="8.8.8.8", port=53, timeout=3):
     try:
         socket.setdefaulttimeout(timeout)
@@ -411,48 +476,37 @@ def _check_all_proxies_from_input() -> List[str]:
 def main() -> int:
     _seed_available_from_input()
 
-    # Start internet connectivity monitoring
-    _start_internet_monitoring()
+    # Simple connectivity pre-check (no patching, no monitoring to avoid scope issues)
+    if not _robust_internet_check():
+        log("❌ No internet connection available")
+        return 1
 
-    # Patch network functions for connectivity monitoring
-    _patch_network_functions()
-
-    # Initial connectivity check
-    global INTERNET_STATUS
-    INTERNET_STATUS = _robust_internet_check()
-    if not INTERNET_STATUS:
-        log("⚠️ No initial internet connection - waiting for connection...")
-        if not _wait_for_internet_with_retry(5):
-            log("❌ Could not establish internet connection")
-            _stop_internet_monitoring()
-            return 1
-
-    # Prepare all proxies for counting only (no re-validation or formatting)
     try:
-        log("🚀 Starting comprehensive proxy validation for Iran...")
+        log("🚀 Starting Iran proxy validation (direct, no rewriting)...")
+
+        # Load proxies from main list without rewriting
         all_proxies = _check_all_proxies_from_input()
-        
         if not all_proxies:
             log("❌ No proxies to check")
-            _stop_internet_monitoring()
             return 1
-        
-        # Update check counts for proxies present (treated as already formatted and valid)
-        _update_check_counts_for_proxies(all_proxies, all_proxies)
-        
-        # Generate top 100 most reliable proxies
+
+        # Validate directly and count only successes
+        successful_proxies = _validate_proxies_directly(all_proxies)
+        if not successful_proxies:
+            log("⚠️ No working proxies found this run")
+
+        # Update counts only for successful proxies
+        _update_check_counts_for_proxies(successful_proxies, all_proxies)
+
+        # Generate top 100 ranking among existing proxies
         _write_top100_by_checks(all_proxies)
-        
-        log("✅ Iran proxy check-count update completed successfully (no revalidation, no reformatting)")
-        
+
+        log("✅ Completed: counts updated and top100 generated (no file rewrites)")
+        return 0
+
     except Exception as e:
         log(f"❌ Proxy validation failed: {e}")
-        rc = 1
-    finally:
-        # Stop internet monitoring
-        _stop_internet_monitoring()
-
-    return 0
+        return 1
 
 
 if __name__ == '__main__':
