@@ -201,8 +201,8 @@ def _write_iran_top100_by_checks(active_proxies: List[str]) -> None:
     """Write top 100 most frequently checked proxies for Iran.
     Prioritizes iran scores, then main scores as tiebreaker."""
     try:
-        # Iran-specific output directory
-        iran_output_dir = os.path.join(os.path.dirname(AVAILABLE_FILE), 'output_iran')
+        # Iran-specific output directory (same level as output directory)
+        iran_output_dir = os.path.join(os.path.dirname(OUTPUT_DIR), 'output_iran')
         iran_top100_file = os.path.join(iran_output_dir, 'iran_top100_checked.txt')
         
         # Ensure directory exists
