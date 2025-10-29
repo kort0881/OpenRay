@@ -1,10 +1,10 @@
-name: Check Previous Proxies
+name: Check New Proxies
 
 # Trigger workflow
 on:
-  # schedule:
-  #   # Run at minute 0 of every 3rd hour
-  #   - cron: '0 */3 * * *'
+  schedule:
+    # Run at minute 0 of every hour
+    - cron: '0 * * * *'
   workflow_dispatch:  # Allow manual trigger
 
 # Permissions (top-level fallback)
@@ -12,11 +12,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: check-previous-proxies
+  group: check-new-proxies
   cancel-in-progress: false   # Queue new runs until the previous one finishes
 
 jobs:
-  check-previous-proxies:
+  check-new-proxies:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -65,9 +65,11 @@ jobs:
         # Verify installation
         xray version
 
-    # Run proxy checker script for previous proxies only
-    - name: Run previous proxies checker
-      run: python -m src.main_existing_only
+    # Run proxy checker script for new proxies only
+    - name: Run new proxies checker
+      env:
+        OPENRAY_RECHECK_EXISTING: "1"
+      run: python -m src.main
 
     # Run the converter scripts
     - name: Convert proxy lists to Clash and Singbox formats
@@ -93,7 +95,7 @@ jobs:
 
         # Add and commit updated files
         git add .state/ output/
-        git commit -m "Update previous proxy lists [skip ci]" || echo "No changes to commit"
+        git commit -m "Update new proxy lists [skip ci]" || echo "No changes to commit"
 
         # Push changes
         git push https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}.git main
