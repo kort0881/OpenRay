@@ -197,6 +197,63 @@ def _write_top100_by_checks(active_proxies: List[str]) -> None:
         log(f"❌ Failed to write top100 checked proxies: {e}")
 
 
+def _write_iran_top100_by_checks(active_proxies: List[str]) -> None:
+    """Write top 100 most frequently checked proxies for Iran.
+    Prioritizes iran scores, then main scores as tiebreaker."""
+    try:
+        # Iran-specific output directory
+        iran_output_dir = os.path.join(os.path.dirname(AVAILABLE_FILE), 'output_iran')
+        iran_top100_file = os.path.join(iran_output_dir, 'iran_top100_checked.txt')
+        
+        # Ensure directory exists
+        os.makedirs(iran_output_dir, exist_ok=True)
+        
+        counts = _load_check_counts()
+        
+        if not active_proxies:
+            log("⚠️ No active proxies to rank for Iran")
+            return
+            
+        # Score each active proxy by iran count first, then main count as tiebreaker
+        scored = []
+        for idx, p in enumerate(active_proxies):
+            proxy_counts = counts.get(p, {"main": 0, "iran": 0})
+            iran_count = proxy_counts.get("iran", 0)
+            main_count = proxy_counts.get("main", 0)
+            scored.append((iran_count, main_count, idx, p))
+        
+        # Sort by iran count desc, then main count desc, then original order asc (stable tie-break)
+        scored.sort(key=lambda t: (-t[0], -t[1], t[2]))
+        
+        # Get top 100
+        top = [p for _, _, _, p in scored[:100]]
+        
+        # Log some statistics
+        if scored:
+            max_iran = scored[0][0] if scored else 0
+            max_main = max(t[1] for t in scored) if scored else 0
+            avg_iran = sum(t[0] for t in scored) / len(scored) if scored else 0
+            avg_main = sum(t[1] for t in scored) / len(scored) if scored else 0
+            
+            log(f"📊 Iran check stats: max={max_iran}, avg={avg_iran:.1f}")
+            log(f"📊 Main check stats: max={max_main}, avg={avg_main:.1f}")
+        
+        write_text_file_atomic(top100_file, top)
+        log(f"🏆 Wrote top {len(top)} most reliable Iran proxies to {top100_file}")
+        
+        # Show top 5 for verification
+        if top:
+            log("🥇 Top 5 most reliable Iran proxies:")
+            for i, proxy in enumerate(top[:5], 1):
+                proxy_counts = counts.get(proxy, {"main": 0, "iran": 0})
+                iran_count = proxy_counts.get("iran", 0)
+                main_count = proxy_counts.get("main", 0)
+                log(f"  {i}. [Iran:{iran_count}, Main:{main_count}] {proxy[:60]}...")
+                
+    except Exception as e:
+        log(f"❌ Failed to write Iran top100 checked proxies: {e}")
+
+
 def main() -> int:
     ensure_dirs()
     if not os.path.exists(SOURCES_FILE):
@@ -615,6 +672,9 @@ def main() -> int:
         if current_available:
             _update_check_counts_for_proxies(current_available, "main")
             _write_top100_by_checks(current_available)
+            
+            # Generate Iran top100 ranking (without updating iran counter)
+            _write_iran_top100_by_checks(current_available)
     except Exception as e:
         log(f"Check counts update failed: {e}")
 
