@@ -44,6 +44,7 @@ curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/outp
 ```
 
 **🇮🇷 Iran Users (Optimized):**
+```bash
 # get just the top 100 most reliable
 curl -s https://raw.githubusercontent.com/sakha1370/OpenRay/refs/heads/main/output_iran/iran_top100_checked.txt
 ```
