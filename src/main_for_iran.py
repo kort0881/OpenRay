@@ -394,9 +394,6 @@ def check_internet_socket(host="8.8.8.8", port=53, timeout=3):
 
 def _check_all_proxies_from_input() -> List[str]:
     """Check all proxies from all_valid_proxies.txt and return successful ones."""
-    from . import net as net_module
-    from .common import get_proxy_connection_hash
-    
     # Load all proxies from the input file
     all_proxies: List[str] = []
     if os.path.exists(INPUT_FILE):
@@ -410,34 +407,11 @@ def _check_all_proxies_from_input() -> List[str]:
         log("⚠️ No proxies to check")
         return []
     
-    # Check all proxies
-    successful_proxies: List[str] = []
-    total_proxies = len(all_proxies)
+    # Save all proxies to the available file so the main pipeline will check them
+    write_text_file_atomic(C.AVAILABLE_FILE, all_proxies)
+    log(f"💾 Prepared {len(all_proxies)} proxies for validation")
     
-    log(f"🔍 Starting validation of {total_proxies} proxies...")
-    
-    for i, proxy in enumerate(all_proxies, 1):
-        if not proxy:
-            continue
-            
-        # Show progress every 10% or every 50 proxies, whichever is more frequent
-        if i % max(1, min(50, total_proxies // 10)) == 0 or i == total_proxies:
-            log(f"📊 Progress: {i}/{total_proxies} ({i/total_proxies*100:.1f}%) - Found {len(successful_proxies)} working")
-        
-        try:
-            # Validate the proxy
-            is_valid = net_module.validate_with_v2ray_core(proxy, timeout_s=10)
-            if is_valid:
-                successful_proxies.append(proxy)
-                log(f"✅ Valid proxy {i}/{total_proxies}: {proxy[:50]}...")
-            else:
-                log(f"❌ Invalid proxy {i}/{total_proxies}: {proxy[:50]}...")
-        except Exception as e:
-            log(f"⚠️ Error checking proxy {i}/{total_proxies}: {e}")
-            continue
-    
-    log(f"🎯 Validation complete: {len(successful_proxies)}/{total_proxies} proxies are working")
-    return successful_proxies
+    return all_proxies
 
 def main() -> int:
     _seed_available_from_input()
@@ -458,28 +432,47 @@ def main() -> int:
             _stop_internet_monitoring()
             return 1
 
-    # Check ALL proxies from all_valid_proxies.txt
+    # Prepare all proxies for checking
     try:
         log("🚀 Starting comprehensive proxy validation for Iran...")
-        successful_proxies = _check_all_proxies_from_input()
+        all_proxies = _check_all_proxies_from_input()
         
-        if not successful_proxies:
-            log("❌ No working proxies found")
+        if not all_proxies:
+            log("❌ No proxies to check")
             _stop_internet_monitoring()
             return 1
         
-        # Save successful proxies to Iran-specific output file
-        write_text_file_atomic(C.AVAILABLE_FILE, successful_proxies)
-        log(f"💾 Saved {len(successful_proxies)} working proxies to {C.AVAILABLE_FILE}")
+        # Clear tested file to force checking all proxies
+        if os.path.exists(C.TESTED_FILE):
+            os.remove(C.TESTED_FILE)
+            log("🗑️ Cleared tested file to force checking all proxies")
         
-        # Update check counts for all successfully checked proxies
-        _update_check_counts_for_proxies(successful_proxies, successful_proxies)
+        # Clear tested.bin file if it exists
+        tested_bin_file = C.TESTED_FILE + '.bin'
+        if os.path.exists(tested_bin_file):
+            os.remove(tested_bin_file)
+            log("🗑️ Cleared tested.bin file to force checking all proxies")
         
-        # Generate top 100 most reliable proxies
-        _write_top100_by_checks(successful_proxies)
+        # Execute main pipeline with connectivity monitoring
+        log("🔍 Running main pipeline to validate all proxies...")
+        rc = main_pipeline.main()
         
-        log("✅ Iran proxy validation completed successfully")
-        rc = 0
+        if rc == 0:
+            # Load the results from the main pipeline
+            successful_proxies: List[str] = []
+            if os.path.exists(C.AVAILABLE_FILE):
+                successful_proxies = [ln.strip() for ln in read_lines(C.AVAILABLE_FILE) if ln.strip()]
+                log(f"✅ Found {len(successful_proxies)} working proxies")
+            
+            # Update check counts for all successfully checked proxies
+            _update_check_counts_for_proxies(successful_proxies, successful_proxies)
+            
+            # Generate top 100 most reliable proxies
+            _write_top100_by_checks(successful_proxies)
+            
+            log("✅ Iran proxy validation completed successfully")
+        else:
+            log(f"⚠️ Main pipeline failed with return code {rc}")
         
     except Exception as e:
         log(f"❌ Proxy validation failed: {e}")
