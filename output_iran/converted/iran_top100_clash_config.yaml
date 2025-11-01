@@ -198,19 +198,6 @@ proxies:
   network: tcp
   tls: true
   servername: walt.usrsrc.com
-- name: OpenRay  DE-354
-  type: vless
-  server: 94.131.110.103
-  port: 443
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: vk.cc
-  reality-opts:
-    public-key: R28dqunnt1Mp55Lo0RKyXah8IV1saJd91_6O5VTGKWM
-    short-id: af1fcb77
-  client-fingerprint: chrome
 - name: OpenRay  DE-358
   type: vless
   server: gm.bargainoxy.com
@@ -529,19 +516,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
-- name: OpenRay  US-1324
-  type: vless
-  server: 103.35.191.221
-  port: 443
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: vk.cc
-  reality-opts:
-    public-key: xZ0pVv73Je0cD-3zCB5ABlRROIbWqTLt5YSE3FlA7GI
-    short-id: efe06ff4
-  client-fingerprint: chrome
 - name: OpenRay  US-1356
   type: vmess
   server: w9.luoli.de
@@ -773,6 +747,25 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  FR-302
+  type: vless
+  server: 95.164.45.119
+  port: 8880
+  uuid: df0680ca-e43c-498d-ed86-8e196eedd012
+  network: grpc
+- name: OpenRay  FR-305
+  type: vless
+  server: france18.clearorbitllc.com
+  port: 443
+  uuid: f6ab4c87-990f-49a2-9a86-ddd8b012cb1c
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: france18.clearorbitllc.com
+  reality-opts:
+    public-key: oV1AkWgsWXKrDF1KLj1-qdzn87iamZq754qI_CoDrgs
+    short-id: 6724d5c47a
+  client-fingerprint: chrome
 
 proxy-groups:
 - name: AUTO
@@ -792,7 +785,6 @@ proxy-groups:
   - OpenRay Dynamic-1260
   - OpenRay  DE-64
   - OpenRay  DE-340
-  - OpenRay  DE-354
   - OpenRay  DE-358
   - OpenRay  DE-359
   - OpenRay  DE-361
@@ -833,7 +825,6 @@ proxy-groups:
   - OpenRay  US-1247
   - OpenRay  US-1311
   - OpenRay  US-1313
-  - OpenRay  US-1324
   - OpenRay  US-1356
   - OpenRay  US-1399
   - OpenRay  US-1401
@@ -868,6 +859,8 @@ proxy-groups:
   - OpenRay  FR-292
   - OpenRay  FR-293
   - OpenRay  FR-299
+  - OpenRay  FR-302
+  - OpenRay  FR-305
 - name: PROXY
   type: select
   proxies:
@@ -883,7 +876,6 @@ proxy-groups:
   - OpenRay Dynamic-1260
   - OpenRay  DE-64
   - OpenRay  DE-340
-  - OpenRay  DE-354
   - OpenRay  DE-358
   - OpenRay  DE-359
   - OpenRay  DE-361
@@ -924,7 +916,6 @@ proxy-groups:
   - OpenRay  US-1247
   - OpenRay  US-1311
   - OpenRay  US-1313
-  - OpenRay  US-1324
   - OpenRay  US-1356
   - OpenRay  US-1399
   - OpenRay  US-1401
@@ -959,6 +950,8 @@ proxy-groups:
   - OpenRay  FR-292
   - OpenRay  FR-293
   - OpenRay  FR-299
+  - OpenRay  FR-302
+  - OpenRay  FR-305
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
