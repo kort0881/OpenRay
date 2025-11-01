@@ -13,6 +13,10 @@ if ! git pull origin main; then
     git pull --no-edit origin main --no-rebase
 fi
 
+# Clean git conflict markers and duplicates from data files immediately after git operations
+echo "Cleaning data files from git conflicts and duplicates..."
+python3 clean_data.py
+
 # Run your Python script
 python3 -m src.main_for_iran
 
@@ -32,6 +36,9 @@ if [ -n "$(git status --porcelain)" ]; then
             echo "git pull failed, trying merge strategy..."
             git pull --no-edit origin main --no-rebase
         fi
+        # Clean conflict markers again after merge/pull
+        echo "Cleaning data files from conflicts after merge..."
+        python3 clean_data.py
         # Try push again after pulling
         git push origin main
     fi
