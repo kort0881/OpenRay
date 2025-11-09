@@ -936,20 +936,6 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: 51.79.102.253
-- name: OpenRay  CA-2290
-  type: vmess
-  server: 188.114.96.1
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
 - name: OpenRay  CA-2293
   type: vmess
   server: 51.79.102.253
@@ -1218,7 +1204,43 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
     headers:
       Host: 51.79.102.253
+- name: OpenRay  CA-2392
+  type: vless
+  server: 40.233.78.152
+  port: 40106
+  uuid: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: gqmHb9i4USmQ78auzhAFJMQIrUpnq8QaykJgnjHDTBg
+    short-id: f44fd3dd
+  client-fingerprint: chrome
+- name: OpenRay  CA-2393
+  type: vless
+  server: 151.101.64.155
+  port: 80
+  uuid: 1f9286e3-8ca7-4a13-879e-ed9fad9b9ec3
+  network: ws
+  ws-opts:
+    path: 
+      /CANALTELEGRAM--@jet_config--CANALTELEGRAM--@jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+    headers:
+      Host: missaki.global.ssl.fastly.net
 - name: OpenRay  CA-2394
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: 51.79.102.253
+- name: OpenRay  CA-2400
   type: vmess
   server: 51.79.102.253
   port: 80
@@ -1915,62 +1937,6 @@ proxies:
     path: /
     headers:
       Host: v34.emoyes.top
-- name: OpenRay Dynamic-2297
-  type: vmess
-  server: azerb.net
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-2298
-  type: vmess
-  server: azerb.net
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-2299
-  type: vmess
-  server: azerb.net
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-2304
-  type: vmess
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
 - name: OpenRay Dynamic-2305
   type: vmess
   server: ssssssssssssfffffffgh.2032.pp.ua
@@ -1999,18 +1965,6 @@ proxies:
     path: /6We3U9Df1WGxgFnoFPw1
     headers:
       Host: sssssssxxxx.2032.pp.ua
-- name: 'OpenRay Dynamic-2292 #2'
-  type: vless
-  server: kifpool.me
-  port: 443
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  network: ws
-  tls: true
-  servername: nkang2replace.airlineshoma.com
-  ws-opts:
-    path: /
-    headers:
-      Host: nkang2replace.airlineshoma.com
 - name: OpenRay Dynamic-3072
   type: vless
   server: ipw.all-loc.org
@@ -2023,20 +1977,6 @@ proxies:
     path: /
     headers:
       Host: ipw.all-loc.org
-- name: OpenRay Dynamic-2306
-  type: vmess
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
 - name: OpenRay Dynamic-2317
   type: vmess
   server: v34.emoyes.top
@@ -2076,44 +2016,6 @@ proxies:
       /eyJqdW5rIjoibUVFb0RQcHJZZSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjM0LjI1My4yMzQuNjIiXX0=?ed=2560
     headers:
       Host: 019.electrocellco-cf-019.workers.dev
-- name: OpenRay Dynamic-2333
-  type: vmess
-  server: azerb.net
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren#TM (@AZARBAYJAB1) /TM (@AZARBAYJAB1)/?ed=2560
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-2349
-  type: vmess
-  server: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
-- name: OpenRay Dynamic-2352
-  type: vless
-  server: openai.com
-  port: 443
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  network: ws
-  tls: true
-  servername: nkang2replace.airlineshoma.com
-  ws-opts:
-    path: /
-    headers:
-      Host: nkang2replace.airlineshoma.com
 - name: OpenRay Dynamic-3102
   type: vless
   server: 025.electrocellco-cf-025.workers.dev
@@ -2140,48 +2042,6 @@ proxies:
       /eyJqdW5rIjoieUVOZzhGTTh2OWdLcVYzRCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
     headers:
       Host: 026.electrocellco-cf-026.workers.dev
-- name: OpenRay Dynamic-3107
-  type: vmess
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-2365
-  type: vmess
-  server: azerb.net
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-- name: OpenRay Dynamic-3110
-  type: vmess
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
 - name: OpenRay Dynamic-2368
   type: vmess
   server: sssssssxxxx.2032.pp.ua
@@ -2238,170 +2098,6 @@ proxies:
     path: /azumase.ren
     headers:
       Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-- name: 'OpenRay Dynamic-3123 #2'
-  type: vmess
-  server: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: 2316e60d-2696-1730-3566-36bc54b14e75.999161.xyz
-- name: 'OpenRay Dynamic-3124 #2'
-  type: vmess
-  server: 765bcf12-7d35-b90d-2383-17ec5be67cd7.999161.xyz
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: 765bcf12-7d35-b90d-2383-17ec5be67cd7.999161.xyz
-- name: OpenRay Dynamic-2392
-  type: vmess
-  server: 7cac7e2e-12c8-7a4f-6c77-b8acc2792294.999161.xyz
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: 7cac7e2e-12c8-7a4f-6c77-b8acc2792294.999161.xyz
-- name: OpenRay Dynamic-2393
-  type: vmess
-  server: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: a4932bbe-005c-1509-7b27-51aa7b17a6fb.999161.xyz
-- name: OpenRay Dynamic-2395
-  type: vmess
-  server: cf.090227.xyz
-  port: 443
-  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: sgal.dagrate.eu.org
-  ws-opts:
-    path: /
-    headers:
-      Host: sgal.dagrate.eu.org
-- name: OpenRay Dynamic-2396
-  type: vmess
-  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  port: 443
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-  ws-opts:
-    path: /azumase.ren
-    headers:
-      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
-- name: OpenRay Dynamic-3128
-  type: vmess
-  server: bBbbbbbBb.222769.XYZ
-  port: 80
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /f6taOMcOSZb9TPR
-    headers:
-      Host: bbbbbbbbb.222769.xyz
-- name: OpenRay Dynamic-3129
-  type: vmess
-  server: bbbbbbbbb.222769.xyz
-  port: 80
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /f6taOMcOSZb9TPR
-    headers:
-      Host: bbbbbbbbb.222769.xyz
-- name: OpenRay Dynamic-3130
-  type: vmess
-  server: gggggggggggggg.222769.xyz
-  port: 80
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /f6taOMcOSZb9TPR
-    headers:
-      Host: gggggggggggggg.222769.xyz
-- name: OpenRay Dynamic-3131
-  type: vmess
-  server: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
-  port: 80
-  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e7JS5ETJeA85VyjPCYXwETL
-    headers:
-      Host: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
-- name: OpenRay Dynamic-2397
-  type: vmess
-  server: nnnnnnnnnnnnnn.222769.xyz
-  port: 80
-  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /f6taOMcOSZb9TPR
-    headers:
-      Host: nnnnnnnnnnnnnn.222769.xyz
-- name: OpenRay Dynamic-2398
-  type: vmess
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  port: 443
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: ssssssssssssfffffffgh.2032.pp.ua
-  ws-opts:
-    path: /6We3U9Df1WGxgFnoFPw1
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
-- name: OpenRay Dynamic-3132
-  type: vmess
-  server: sssssssxxxx.2032.pp.ua
-  port: 443
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: sssssssxxxx.2032.pp.ua
-  ws-opts:
-    path: /6We3U9Df1WGxgFnoFPw1
-    headers:
-      Host: sssssssxxxx.2032.pp.ua
 - name: OpenRay Dynamic-2399
   type: vmess
   server: v34.emoyes.top
@@ -2416,6 +2112,160 @@ proxies:
     path: /
     headers:
       Host: v34.emoyes.top
+- name: OpenRay Dynamic-2395
+  type: vmess
+  server: GgGgGGgGggggGg.222769.XYZ
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: gggggggggggggg.222769.xyz
+- name: OpenRay Dynamic-3142
+  type: vmess
+  server: NnnNNNnNnNNNNN.222769.xYZ
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: nnnnnnnnnnnnnn.222769.xyz
+- name: OpenRay Dynamic-2396
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: sgal.dagrate.eu.org
+  ws-opts:
+    path: /
+    headers:
+      Host: sgal.dagrate.eu.org
+- name: OpenRay Dynamic-3143
+  type: vmess
+  server: azerb.net
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  ws-opts:
+    path: /azumase.ren#TM(@AZARBAYJAB1)/TM(@AZARBAYJAB1)/?ed=2560
+    headers:
+      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+- name: OpenRay Dynamic-2397
+  type: vmess
+  server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  port: 443
+  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+  ws-opts:
+    path: /azumase.ren
+    headers:
+      Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-ava.top
+- name: OpenRay Dynamic-2398
+  type: vmess
+  server: bBbbbbbBb.222769.XYZ
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: bbbbbbbbb.222769.xyz
+- name: 'OpenRay Dynamic-2399 #2'
+  type: vmess
+  server: bbbbbbbbb.222769.xyz
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: bbbbbbbbb.222769.xyz
+- name: OpenRay Dynamic-3144
+  type: vmess
+  server: gggggggggggggg.222769.xyz
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: gggggggggggggg.222769.xyz
+- name: OpenRay Dynamic-3145
+  type: vmess
+  server: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+  port: 80
+  uuid: 34a7da0c-a43a-49b8-a8d0-64b43100090e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /e7JS5ETJeA85VyjPCYXwETL
+    headers:
+      Host: ea596492-e849-fedb-4940-add11fdfa131.freevpnatm.dpdns.org
+- name: OpenRay Dynamic-3146
+  type: vmess
+  server: nnnnnnnnnnnnnn.222769.xyz
+  port: 80
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
+    headers:
+      Host: nnnnnnnnnnnnnn.222769.xyz
+- name: OpenRay Dynamic-3147
+  type: vmess
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  port: 443
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: ssssssssssssfffffffgh.2032.pp.ua
+  ws-opts:
+    path: /6We3U9Df1WGxgFnoFPw1
+    headers:
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+- name: OpenRay Dynamic-3148
+  type: vmess
+  server: sssssssxxxx.2032.pp.ua
+  port: 443
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: sssssssxxxx.2032.pp.ua
+  ws-opts:
+    path: /6We3U9Df1WGxgFnoFPw1
+    headers:
+      Host: sssssssxxxx.2032.pp.ua
 - name: OpenRay  DE-793
   type: vmess
   server: ov-germany7.09vpn.com
@@ -2654,16 +2504,6 @@ proxies:
   network: tcp
   tls: true
   servername: de-v2ray.freevmess.com
-- name: OpenRay  DE-897
-  type: vless
-  server: 178.17.51.4
-  port: 4220
-  uuid: fdedb768-b4ad-4984-b2a1-3c69c7b9a24a
-  network: ws
-  ws-opts:
-    path: /admin?ed=1024
-    headers:
-      Host: language-plh.dlshop39.shop.
 - name: OpenRay  DE-900
   type: vmess
   server: 85.195.101.122
@@ -2708,40 +2548,6 @@ proxies:
     path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  DE-904
-  type: vmess
-  server: 51.68.191.233
-  port: 80
-  uuid: f0eda072-9ae8-494c-a495-215fa5729467
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 51.68.191.233
-- name: OpenRay  DE-905
-  type: vmess
-  server: de-v2ray.freevmess.com
-  port: 2083
-  uuid: c6994077-957f-4749-b0e0-b3800004f691
-  alterId: 0
-  cipher: auto
-  network: tcp
-  tls: true
-  servername: de-v2ray.freevmess.com
-- name: OpenRay  DE-906
-  type: vmess
-  server: ov-germany7.09vpn.com
-  port: 80
-  uuid: 8b7ec98d-c291-4034-9719-e6d62051636a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: ov-germany7.09vpn.com
 - name: OpenRay  DE-907
   type: vless
   server: 194.124.40.189
@@ -2750,17 +2556,6 @@ proxies:
   network: ws
   ws-opts:
     path: /admin?ed=1024
-    headers:
-      Host: language-plh.dlshop39.shop.
-- name: OpenRay  DE-908
-  type: vless
-  server: 178.17.52.202
-  port: 4220
-  uuid: fdedb768-b4ad-4984-b2a1-3c69c7b9a24a
-  network: ws
-  ws-opts:
-    path: 
-      /admin?ed=1024----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----
     headers:
       Host: language-plh.dlshop39.shop.
 - name: OpenRay  DE-909
@@ -2774,17 +2569,6 @@ proxies:
       /admin?ed=1024----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----
     headers:
       Host: language-deh.dlshop39.shop.
-- name: OpenRay  DE-910
-  type: vless
-  server: 213.165.56.47
-  port: 4220
-  uuid: fdedb768-b4ad-4984-b2a1-3c69c7b9a24a
-  network: ws
-  ws-opts:
-    path: 
-      /admin?ed=1024----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----
-    headers:
-      Host: language-plh.dlshop39.shop.
 - name: OpenRay  DE-911
   type: vless
   server: 193.233.254.4
@@ -2807,6 +2591,40 @@ proxies:
       /admin?ed=1024----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----telegram----Skypro_vpn----
     headers:
       Host: language-trh.dlshop39.shop.
+- name: OpenRay  DE-913
+  type: vmess
+  server: 51.68.191.233
+  port: 80
+  uuid: f0eda072-9ae8-494c-a495-215fa5729467
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 51.68.191.233
+- name: OpenRay  DE-914
+  type: vmess
+  server: de-v2ray.freevmess.com
+  port: 2083
+  uuid: c6994077-957f-4749-b0e0-b3800004f691
+  alterId: 0
+  cipher: auto
+  network: tcp
+  tls: true
+  servername: de-v2ray.freevmess.com
+- name: OpenRay  DE-915
+  type: vmess
+  server: ov-germany7.09vpn.com
+  port: 80
+  uuid: 8b7ec98d-c291-4034-9719-e6d62051636a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: ov-germany7.09vpn.com
 - name: OpenRay  JP-11
   type: vless
   server: 155.248.181.189
@@ -4133,32 +3951,6 @@ proxies:
     path: /vmess/
     headers:
       Host: google.com
-- name: OpenRay  US-3052
-  type: vmess
-  server: 104.18.240.238
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  US-3055
-  type: vmess
-  server: 104.18.240.238
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  US-3066
   type: vmess
   server: 209.126.84.189
@@ -4269,57 +4061,6 @@ proxies:
     path: /vmessws
     headers:
       Host: v2ray.codefyinc.com
-- name: OpenRay  US-3125
-  type: vmess
-  server: 104.18.240.238
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  US-3126
-  type: vmess
-  server: 104.18.240.238
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  US-3127
-  type: vmess
-  server: 104.18.240.238
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  US-3133
-  type: vmess
-  server: v2ray.codefyinc.com
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmessws
-    headers:
-      Host: v2ray.codefyinc.com
 - name: OpenRay  US-3134
   type: vless
   server: 104.18.29.7
@@ -4362,6 +4103,69 @@ proxies:
   port: 80
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
   network: grpc
+- name: OpenRay  US-3139
+  type: vmess
+  server: 104.18.240.238
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 
+      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  US-3140
+  type: vmess
+  server: 104.18.240.238
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  US-3141
+  type: vmess
+  server: 104.18.240.238
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  US-3149
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+- name: OpenRay  US-3150
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
 - name: OpenRay  FR-83
   type: vless
   server: 638970953252602111.dublin-blkaft-aaax.info
@@ -5007,19 +4811,6 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  FR-936
-  type: vless
-  server: 46.226.166.59
-  port: 443
-  uuid: 8e79bde5-4df6-482a-bdc0-fb688c45e5d9
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: web.max.ru
-  reality-opts:
-    public-key: NgEiD_D62tGsAi3uX_NBLKwNIv0x1bbxK88dBtYtTDw
-    short-id: 29b6dab465bf9c24
-  client-fingerprint: chrome
 - name: OpenRay  FR-940
   type: vmess
   server: 141.101.121.120
@@ -5194,30 +4985,6 @@ proxies:
     public-key: jVZNjr5dXzki9VxDHWg_zsiUjSrplC0mnZrG8tuP_2c
     short-id: 149adb1c3cb9ed11
   client-fingerprint: chrome
-- name: OpenRay  FR-971
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.com
-- name: OpenRay  FR-972
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.196.29.123
 - name: OpenRay  FR-973
   type: vless
   server: 638964097652658866.lisbon-blkaft-aaap.info
@@ -5258,20 +5025,20 @@ proxies:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  FR-982
   type: vmess
-  server: 141.101.121.120
+  server: 141.101.121.250
   port: 80
   uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  FR-983
   type: vmess
-  server: 141.101.121.250
+  server: 141.101.121.120
   port: 80
   uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
   alterId: 0
@@ -5291,8 +5058,8 @@ proxies:
   cipher: auto
   network: ws
   ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    path: 
+      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  FR-985
@@ -5309,6 +5076,19 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  FR-986
+  type: vmess
+  server: 141.101.121.250
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  FR-987
   type: vmess
   server: 141.101.121.26
   port: 80
@@ -5722,18 +5502,6 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  GB-568
-  type: vmess
-  server: 57.129.132.223
-  port: 80
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
 - name: OpenRay  GB-569
   type: vmess
   server: 141.101.123.11
@@ -5747,6 +5515,18 @@ proxies:
       /?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  GB-570
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
 - name: OpenRay  IS-1
   type: vless
   server: 45.83.21.107
@@ -6285,17 +6065,17 @@ proxies:
   network: tcp
   tls: true
   servername: sg-v2ray.freevmess.com
-- name: OpenRay  SG-7
+- name: OpenRay  SG-8
   type: vmess
   server: sg-v2ray.freevmess.com
   port: 2083
   uuid: 820ceab0-de1d-4d3b-9d5f-7e83664c3f0c
   alterId: 0
   cipher: auto
-  network: raw
+  network: tcp
   tls: true
   servername: sg-v2ray.freevmess.com
-- name: OpenRay  SG-8
+- name: OpenRay  SG-9
   type: vmess
   server: sg-v2ray.freevmess.com
   port: 2083
@@ -6517,30 +6297,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
-- name: OpenRay  TW-82
-  type: vmess
-  server: 83.147.13.228
-  port: 8080
-  uuid: 26d77d7a-d4ea-40cd-8da5-54a9c84e7362
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ec-McAuth/index
-    headers:
-      Host: 83.147.13.228
-- name: OpenRay  TW-83
-  type: vmess
-  server: 83.147.13.228
-  port: 8080
-  uuid: 26d77d7a-d4ea-40cd-8da5-54a9c84e7362
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ec-McAuth/index
-    headers:
-      Host: 83.147.13.228
 - name: OpenRay  SE-890
   type: vmess
   server: 185.146.173.16
@@ -6938,45 +6694,6 @@ proxies:
       /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1052
-  type: vmess
-  server: 185.146.173.117
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1053
-  type: vmess
-  server: 185.146.173.117
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1054
-  type: vmess
-  server: 185.146.173.117
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  SE-1055
   type: vmess
   server: 185.146.173.126
@@ -6988,84 +6705,6 @@ proxies:
   ws-opts:
     path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
       (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1056
-  type: vmess
-  server: 185.146.173.16
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1057
-  type: vmess
-  server: 185.146.173.16
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1058
-  type: vmess
-  server: 185.146.173.24
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1059
-  type: vmess
-  server: 185.146.173.24
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1060
-  type: vmess
-  server: 185.146.173.24
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
-      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  SE-1061
-  type: vmess
-  server: 185.146.173.82
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
 - name: OpenRay  SE-1062
@@ -7081,6 +6720,148 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.
 - name: OpenRay  SE-1063
+  type: vmess
+  server: 185.146.173.25
+  port: 80
+  uuid: ed1b5743-389b-48a2-8d60-3790eded7ca6
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.
+- name: OpenRay  SE-1064
+  type: vmess
+  server: 185.146.173.117
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 
+      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1065
+  type: vmess
+  server: 185.146.173.117
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1066
+  type: vmess
+  server: 185.146.173.117
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1067
+  type: vmess
+  server: 185.146.173.126
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1068
+  type: vmess
+  server: 185.146.173.16
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1069
+  type: vmess
+  server: 185.146.173.16
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1070
+  type: vmess
+  server: 185.146.173.24
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 
+      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1071
+  type: vmess
+  server: 185.146.173.24
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1072
+  type: vmess
+  server: 185.146.173.24
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM 
+      (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1073
+  type: vmess
+  server: 185.146.173.82
+  port: 80
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 
+      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+- name: OpenRay  SE-1074
   type: vmess
   server: 185.146.173.25
   port: 80
@@ -7191,19 +6972,6 @@ proxies:
       /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
     headers:
       Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
-- name: OpenRay  CY-332
-  type: vmess
-  server: 77.37.33.67
-  port: 80
-  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 
-      /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
-    headers:
-      Host: 77.37.33.67
 - name: OpenRay  CY-345
   type: vmess
   server: 77.37.33.67
@@ -7561,6 +7329,18 @@ proxies:
     public-key: MfWJz9HY0BvpTeAAOUBgfZov9T39GvVXV_-RmFIrLko
     short-id: 4ae930dc
   client-fingerprint: chrome
+- name: OpenRay  LV-7
+  type: vless
+  server: 188.253.21.154
+  port: 40721
+  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
+  network: tcp
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
+    short-id: df8611c07d
+  client-fingerprint: chrome
 - name: OpenRay  KZ-1
   type: vless
   server: 109.248.170.119
@@ -7573,7 +7353,7 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
     short-id: '83'
   client-fingerprint: chrome
-- name: OpenRay  BR-8
+- name: OpenRay  BR-6
   type: vmess
   server: 95.164.4.88
   port: 80
@@ -7585,54 +7365,6 @@ proxies:
     path: /vmess/
     headers:
       Host: 95.164.4.88
-- name: OpenRay  BR-14
-  type: vmess
-  server: 95.164.4.88
-  port: 80
-  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 95.164.4.88
-- name: OpenRay  BR-15
-  type: vmess
-  server: pq-brazil1.09vpn.com
-  port: 80
-  uuid: 24b6bbfb-9b27-4f17-bd32-67523bf487d9
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: pq-brazil1.09vpn.com
-- name: OpenRay  BR-16
-  type: vmess
-  server: pq-brazil1.09vpn.com
-  port: 80
-  uuid: 24b6bbfb-9b27-4f17-bd32-67523bf487d9
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: pq-brazil1.09vpn.com
-- name: OpenRay  BR-17
-  type: vmess
-  server: pq-brazil1.09vpn.com
-  port: 80
-  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: pq-brazil1.09vpn.com
 - name: OpenRay  FI-1
   type: vless
   server: fl-3-direct.djarbnet.ru
@@ -7658,19 +7390,29 @@ proxies:
     public-key: brMfFpfxMeNeqGqG0ZmWdwlnvZBfBTY92Jjyfz8Qyz4
     short-id: 0274c94d298e
   client-fingerprint: ios
-- name: OpenRay  IL-1
+- name: OpenRay  FI-3
   type: vless
-  server: 20.217.82.35
+  server: ftp2.tehran-park.com
   port: 443
-  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
-  network: tcp
-  flow: xtls-rprx-vision
+  uuid: 1f9286e3-8ca7-4a13-879e-ed9fad9b9ec3
+  network: ws
   tls: true
-  servername: i2pd.website
-  reality-opts:
-    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
-    short-id: 55e6af1a35e64a98
-  client-fingerprint: chrome
+  servername: Sup.tEhran-Park.inFo.
+  ws-opts:
+    path: 
+      /CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_configCANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+    headers:
+      Host: Sup.tEhran-Park.inFo.
+- name: OpenRay  FI-4
+  type: vless
+  server: 31.56.227.69
+  port: 4220
+  uuid: fdedb768-b4ad-4984-b2a1-3c69c7b9a24a
+  network: ws
+  ws-opts:
+    path: /admin?ed=1024
+    headers:
+      Host: language-plh.dlshop39.shop.
 
 proxy-groups:
 - name: AUTO
@@ -7750,7 +7492,6 @@ proxy-groups:
   - OpenRay  CA-2276
   - OpenRay  CA-2288
   - OpenRay  CA-2289
-  - OpenRay  CA-2290
   - OpenRay  CA-2293
   - OpenRay  CA-2303
   - OpenRay  CA-2304
@@ -7773,7 +7514,10 @@ proxy-groups:
   - OpenRay  CA-2389
   - OpenRay  CA-2390
   - OpenRay  CA-2391
+  - OpenRay  CA-2392
+  - OpenRay  CA-2393
   - OpenRay  CA-2394
+  - OpenRay  CA-2400
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-41
@@ -7831,44 +7575,31 @@ proxy-groups:
   - OpenRay Dynamic-2275
   - OpenRay Dynamic-3059
   - OpenRay Dynamic-2292
-  - OpenRay Dynamic-2297
-  - OpenRay Dynamic-2298
-  - OpenRay Dynamic-2299
-  - OpenRay Dynamic-2304
   - OpenRay Dynamic-2305
   - OpenRay Dynamic-3066
-  - 'OpenRay Dynamic-2292 #2'
   - OpenRay Dynamic-3072
-  - OpenRay Dynamic-2306
   - OpenRay Dynamic-2317
   - OpenRay Dynamic-3086
   - OpenRay Dynamic-2330
-  - OpenRay Dynamic-2333
-  - OpenRay Dynamic-2349
-  - OpenRay Dynamic-2352
   - OpenRay Dynamic-3102
   - OpenRay Dynamic-2361
-  - OpenRay Dynamic-3107
-  - OpenRay Dynamic-2365
-  - OpenRay Dynamic-3110
   - OpenRay Dynamic-2368
   - OpenRay Dynamic-2369
   - OpenRay Dynamic-3123
   - OpenRay Dynamic-3124
-  - 'OpenRay Dynamic-3123 #2'
-  - 'OpenRay Dynamic-3124 #2'
-  - OpenRay Dynamic-2392
-  - OpenRay Dynamic-2393
+  - OpenRay Dynamic-2399
   - OpenRay Dynamic-2395
+  - OpenRay Dynamic-3142
   - OpenRay Dynamic-2396
-  - OpenRay Dynamic-3128
-  - OpenRay Dynamic-3129
-  - OpenRay Dynamic-3130
-  - OpenRay Dynamic-3131
+  - OpenRay Dynamic-3143
   - OpenRay Dynamic-2397
   - OpenRay Dynamic-2398
-  - OpenRay Dynamic-3132
-  - OpenRay Dynamic-2399
+  - 'OpenRay Dynamic-2399 #2'
+  - OpenRay Dynamic-3144
+  - OpenRay Dynamic-3145
+  - OpenRay Dynamic-3146
+  - OpenRay Dynamic-3147
+  - OpenRay Dynamic-3148
   - OpenRay  DE-793
   - OpenRay  DE-794
   - OpenRay  DE-795
@@ -7890,20 +7621,17 @@ proxy-groups:
   - OpenRay  DE-884
   - OpenRay  DE-888
   - OpenRay  DE-893
-  - OpenRay  DE-897
   - OpenRay  DE-900
   - OpenRay  DE-901
   - OpenRay  DE-902
   - OpenRay  DE-903
-  - OpenRay  DE-904
-  - OpenRay  DE-905
-  - OpenRay  DE-906
   - OpenRay  DE-907
-  - OpenRay  DE-908
   - OpenRay  DE-909
-  - OpenRay  DE-910
   - OpenRay  DE-911
   - OpenRay  DE-912
+  - OpenRay  DE-913
+  - OpenRay  DE-914
+  - OpenRay  DE-915
   - OpenRay  JP-11
   - OpenRay  JP-23
   - OpenRay  JP-24
@@ -8050,8 +7778,6 @@ proxy-groups:
   - OpenRay  US-2991
   - OpenRay  US-3007
   - OpenRay  US-3043
-  - OpenRay  US-3052
-  - OpenRay  US-3055
   - OpenRay  US-3066
   - OpenRay  US-3075
   - OpenRay  US-3084
@@ -8062,15 +7788,16 @@ proxy-groups:
   - OpenRay  US-3113
   - OpenRay  US-3121
   - OpenRay  US-3122
-  - OpenRay  US-3125
-  - OpenRay  US-3126
-  - OpenRay  US-3127
-  - OpenRay  US-3133
   - OpenRay  US-3134
   - OpenRay  US-3135
   - OpenRay  US-3136
   - OpenRay  US-3137
   - OpenRay  US-3138
+  - OpenRay  US-3139
+  - OpenRay  US-3140
+  - OpenRay  US-3141
+  - OpenRay  US-3149
+  - OpenRay  US-3150
   - OpenRay  FR-83
   - OpenRay  FR-88
   - OpenRay  FR-118
@@ -8175,7 +7902,6 @@ proxy-groups:
   - OpenRay  FR-922
   - OpenRay  FR-924
   - OpenRay  FR-929
-  - OpenRay  FR-936
   - OpenRay  FR-940
   - OpenRay  FR-944
   - OpenRay  FR-948
@@ -8191,8 +7917,6 @@ proxy-groups:
   - OpenRay  FR-968
   - OpenRay  FR-969
   - OpenRay  FR-970
-  - OpenRay  FR-971
-  - OpenRay  FR-972
   - OpenRay  FR-973
   - OpenRay  FR-979
   - OpenRay  FR-980
@@ -8202,6 +7926,7 @@ proxy-groups:
   - OpenRay  FR-984
   - OpenRay  FR-985
   - OpenRay  FR-986
+  - OpenRay  FR-987
   - OpenRay  CH-2
   - OpenRay  GB-167
   - OpenRay  GB-187
@@ -8259,8 +7984,8 @@ proxy-groups:
   - OpenRay  GB-564
   - OpenRay  GB-566
   - OpenRay  GB-567
-  - OpenRay  GB-568
   - OpenRay  GB-569
+  - OpenRay  GB-570
   - OpenRay  IS-1
   - OpenRay  KR-3
   - OpenRay  KR-5
@@ -8301,8 +8026,8 @@ proxy-groups:
   - OpenRay  SG-4
   - OpenRay  SG-5
   - OpenRay  SG-6
-  - OpenRay  SG-7
   - OpenRay  SG-8
+  - OpenRay  SG-9
   - OpenRay  TW-9
   - OpenRay  TW-11
   - OpenRay  TW-12
@@ -8327,8 +8052,6 @@ proxy-groups:
   - OpenRay  TW-76
   - OpenRay  TW-77
   - OpenRay  TW-81
-  - OpenRay  TW-82
-  - OpenRay  TW-83
   - OpenRay  SE-890
   - OpenRay  SE-931
   - OpenRay  SE-932
@@ -8360,18 +8083,20 @@ proxy-groups:
   - OpenRay  SE-1043
   - OpenRay  SE-1048
   - OpenRay  SE-1051
-  - OpenRay  SE-1052
-  - OpenRay  SE-1053
-  - OpenRay  SE-1054
   - OpenRay  SE-1055
-  - OpenRay  SE-1056
-  - OpenRay  SE-1057
-  - OpenRay  SE-1058
-  - OpenRay  SE-1059
-  - OpenRay  SE-1060
-  - OpenRay  SE-1061
   - OpenRay  SE-1062
   - OpenRay  SE-1063
+  - OpenRay  SE-1064
+  - OpenRay  SE-1065
+  - OpenRay  SE-1066
+  - OpenRay  SE-1067
+  - OpenRay  SE-1068
+  - OpenRay  SE-1069
+  - OpenRay  SE-1070
+  - OpenRay  SE-1071
+  - OpenRay  SE-1072
+  - OpenRay  SE-1073
+  - OpenRay  SE-1074
   - OpenRay  LT-1
   - OpenRay  LT-2
   - OpenRay  LT-5
@@ -8385,7 +8110,6 @@ proxy-groups:
   - OpenRay  ES-18
   - OpenRay  ES-19
   - OpenRay  CY-326
-  - OpenRay  CY-332
   - OpenRay  CY-345
   - OpenRay  CY-368
   - OpenRay  CY-372
@@ -8428,15 +8152,13 @@ proxy-groups:
   - OpenRay  HK-32
   - OpenRay  LV-5
   - OpenRay  LV-6
+  - OpenRay  LV-7
   - OpenRay  KZ-1
-  - OpenRay  BR-8
-  - OpenRay  BR-14
-  - OpenRay  BR-15
-  - OpenRay  BR-16
-  - OpenRay  BR-17
+  - OpenRay  BR-6
   - OpenRay  FI-1
   - OpenRay  FI-2
-  - OpenRay  IL-1
+  - OpenRay  FI-3
+  - OpenRay  FI-4
 - name: PROXY
   type: select
   proxies:
@@ -8512,7 +8234,6 @@ proxy-groups:
   - OpenRay  CA-2276
   - OpenRay  CA-2288
   - OpenRay  CA-2289
-  - OpenRay  CA-2290
   - OpenRay  CA-2293
   - OpenRay  CA-2303
   - OpenRay  CA-2304
@@ -8535,7 +8256,10 @@ proxy-groups:
   - OpenRay  CA-2389
   - OpenRay  CA-2390
   - OpenRay  CA-2391
+  - OpenRay  CA-2392
+  - OpenRay  CA-2393
   - OpenRay  CA-2394
+  - OpenRay  CA-2400
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-41
@@ -8593,44 +8317,31 @@ proxy-groups:
   - OpenRay Dynamic-2275
   - OpenRay Dynamic-3059
   - OpenRay Dynamic-2292
-  - OpenRay Dynamic-2297
-  - OpenRay Dynamic-2298
-  - OpenRay Dynamic-2299
-  - OpenRay Dynamic-2304
   - OpenRay Dynamic-2305
   - OpenRay Dynamic-3066
-  - 'OpenRay Dynamic-2292 #2'
   - OpenRay Dynamic-3072
-  - OpenRay Dynamic-2306
   - OpenRay Dynamic-2317
   - OpenRay Dynamic-3086
   - OpenRay Dynamic-2330
-  - OpenRay Dynamic-2333
-  - OpenRay Dynamic-2349
-  - OpenRay Dynamic-2352
   - OpenRay Dynamic-3102
   - OpenRay Dynamic-2361
-  - OpenRay Dynamic-3107
-  - OpenRay Dynamic-2365
-  - OpenRay Dynamic-3110
   - OpenRay Dynamic-2368
   - OpenRay Dynamic-2369
   - OpenRay Dynamic-3123
   - OpenRay Dynamic-3124
-  - 'OpenRay Dynamic-3123 #2'
-  - 'OpenRay Dynamic-3124 #2'
-  - OpenRay Dynamic-2392
-  - OpenRay Dynamic-2393
+  - OpenRay Dynamic-2399
   - OpenRay Dynamic-2395
+  - OpenRay Dynamic-3142
   - OpenRay Dynamic-2396
-  - OpenRay Dynamic-3128
-  - OpenRay Dynamic-3129
-  - OpenRay Dynamic-3130
-  - OpenRay Dynamic-3131
+  - OpenRay Dynamic-3143
   - OpenRay Dynamic-2397
   - OpenRay Dynamic-2398
-  - OpenRay Dynamic-3132
-  - OpenRay Dynamic-2399
+  - 'OpenRay Dynamic-2399 #2'
+  - OpenRay Dynamic-3144
+  - OpenRay Dynamic-3145
+  - OpenRay Dynamic-3146
+  - OpenRay Dynamic-3147
+  - OpenRay Dynamic-3148
   - OpenRay  DE-793
   - OpenRay  DE-794
   - OpenRay  DE-795
@@ -8652,20 +8363,17 @@ proxy-groups:
   - OpenRay  DE-884
   - OpenRay  DE-888
   - OpenRay  DE-893
-  - OpenRay  DE-897
   - OpenRay  DE-900
   - OpenRay  DE-901
   - OpenRay  DE-902
   - OpenRay  DE-903
-  - OpenRay  DE-904
-  - OpenRay  DE-905
-  - OpenRay  DE-906
   - OpenRay  DE-907
-  - OpenRay  DE-908
   - OpenRay  DE-909
-  - OpenRay  DE-910
   - OpenRay  DE-911
   - OpenRay  DE-912
+  - OpenRay  DE-913
+  - OpenRay  DE-914
+  - OpenRay  DE-915
   - OpenRay  JP-11
   - OpenRay  JP-23
   - OpenRay  JP-24
@@ -8812,8 +8520,6 @@ proxy-groups:
   - OpenRay  US-2991
   - OpenRay  US-3007
   - OpenRay  US-3043
-  - OpenRay  US-3052
-  - OpenRay  US-3055
   - OpenRay  US-3066
   - OpenRay  US-3075
   - OpenRay  US-3084
@@ -8824,15 +8530,16 @@ proxy-groups:
   - OpenRay  US-3113
   - OpenRay  US-3121
   - OpenRay  US-3122
-  - OpenRay  US-3125
-  - OpenRay  US-3126
-  - OpenRay  US-3127
-  - OpenRay  US-3133
   - OpenRay  US-3134
   - OpenRay  US-3135
   - OpenRay  US-3136
   - OpenRay  US-3137
   - OpenRay  US-3138
+  - OpenRay  US-3139
+  - OpenRay  US-3140
+  - OpenRay  US-3141
+  - OpenRay  US-3149
+  - OpenRay  US-3150
   - OpenRay  FR-83
   - OpenRay  FR-88
   - OpenRay  FR-118
@@ -8937,7 +8644,6 @@ proxy-groups:
   - OpenRay  FR-922
   - OpenRay  FR-924
   - OpenRay  FR-929
-  - OpenRay  FR-936
   - OpenRay  FR-940
   - OpenRay  FR-944
   - OpenRay  FR-948
@@ -8953,8 +8659,6 @@ proxy-groups:
   - OpenRay  FR-968
   - OpenRay  FR-969
   - OpenRay  FR-970
-  - OpenRay  FR-971
-  - OpenRay  FR-972
   - OpenRay  FR-973
   - OpenRay  FR-979
   - OpenRay  FR-980
@@ -8964,6 +8668,7 @@ proxy-groups:
   - OpenRay  FR-984
   - OpenRay  FR-985
   - OpenRay  FR-986
+  - OpenRay  FR-987
   - OpenRay  CH-2
   - OpenRay  GB-167
   - OpenRay  GB-187
@@ -9021,8 +8726,8 @@ proxy-groups:
   - OpenRay  GB-564
   - OpenRay  GB-566
   - OpenRay  GB-567
-  - OpenRay  GB-568
   - OpenRay  GB-569
+  - OpenRay  GB-570
   - OpenRay  IS-1
   - OpenRay  KR-3
   - OpenRay  KR-5
@@ -9063,8 +8768,8 @@ proxy-groups:
   - OpenRay  SG-4
   - OpenRay  SG-5
   - OpenRay  SG-6
-  - OpenRay  SG-7
   - OpenRay  SG-8
+  - OpenRay  SG-9
   - OpenRay  TW-9
   - OpenRay  TW-11
   - OpenRay  TW-12
@@ -9089,8 +8794,6 @@ proxy-groups:
   - OpenRay  TW-76
   - OpenRay  TW-77
   - OpenRay  TW-81
-  - OpenRay  TW-82
-  - OpenRay  TW-83
   - OpenRay  SE-890
   - OpenRay  SE-931
   - OpenRay  SE-932
@@ -9122,18 +8825,20 @@ proxy-groups:
   - OpenRay  SE-1043
   - OpenRay  SE-1048
   - OpenRay  SE-1051
-  - OpenRay  SE-1052
-  - OpenRay  SE-1053
-  - OpenRay  SE-1054
   - OpenRay  SE-1055
-  - OpenRay  SE-1056
-  - OpenRay  SE-1057
-  - OpenRay  SE-1058
-  - OpenRay  SE-1059
-  - OpenRay  SE-1060
-  - OpenRay  SE-1061
   - OpenRay  SE-1062
   - OpenRay  SE-1063
+  - OpenRay  SE-1064
+  - OpenRay  SE-1065
+  - OpenRay  SE-1066
+  - OpenRay  SE-1067
+  - OpenRay  SE-1068
+  - OpenRay  SE-1069
+  - OpenRay  SE-1070
+  - OpenRay  SE-1071
+  - OpenRay  SE-1072
+  - OpenRay  SE-1073
+  - OpenRay  SE-1074
   - OpenRay  LT-1
   - OpenRay  LT-2
   - OpenRay  LT-5
@@ -9147,7 +8852,6 @@ proxy-groups:
   - OpenRay  ES-18
   - OpenRay  ES-19
   - OpenRay  CY-326
-  - OpenRay  CY-332
   - OpenRay  CY-345
   - OpenRay  CY-368
   - OpenRay  CY-372
@@ -9190,15 +8894,13 @@ proxy-groups:
   - OpenRay  HK-32
   - OpenRay  LV-5
   - OpenRay  LV-6
+  - OpenRay  LV-7
   - OpenRay  KZ-1
-  - OpenRay  BR-8
-  - OpenRay  BR-14
-  - OpenRay  BR-15
-  - OpenRay  BR-16
-  - OpenRay  BR-17
+  - OpenRay  BR-6
   - OpenRay  FI-1
   - OpenRay  FI-2
-  - OpenRay  IL-1
+  - OpenRay  FI-3
+  - OpenRay  FI-4
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
