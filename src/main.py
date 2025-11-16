@@ -148,6 +148,56 @@ def _update_check_counts_for_proxies(proxies: List[str], counter_type: str = "ma
         log(f"📈 Updated {counter_type} check counts for {updated_count} successfully validated proxies")
 
 
+def _sync_check_counts_with_available_file() -> None:
+    """Sync check_counts.json with all_valid_proxies.txt: remove entries for proxies no longer in file, add entries for new proxies."""
+    try:
+        if not os.path.exists(AVAILABLE_FILE):
+            return
+        
+        # Read all proxies from all_valid_proxies.txt
+        current_proxies = set()
+        for line in read_lines(AVAILABLE_FILE):
+            proxy = line.strip()
+            if proxy:
+                current_proxies.add(proxy)
+        
+        if not current_proxies:
+            return
+        
+        # Load current check counts
+        counts = _load_check_counts()
+        
+        # Track changes
+        removed_count = 0
+        added_count = 0
+        
+        # Remove entries for proxies no longer in the file
+        proxies_to_remove = []
+        for proxy in counts.keys():
+            if proxy not in current_proxies:
+                proxies_to_remove.append(proxy)
+                removed_count += 1
+        
+        for proxy in proxies_to_remove:
+            del counts[proxy]
+        
+        # Add entries for new proxies (with 0 counts)
+        for proxy in current_proxies:
+            if proxy not in counts:
+                counts[proxy] = {"main": 0, "iran": 0}
+                added_count += 1
+        
+        # Save if there were changes
+        if removed_count > 0 or added_count > 0:
+            _save_check_counts(counts)
+            if removed_count > 0:
+                log(f"🧹 Removed {removed_count} stale proxy entries from check_counts.json")
+            if added_count > 0:
+                log(f"➕ Added {added_count} new proxy entries to check_counts.json")
+    except Exception as e:
+        log(f"⚠️ Failed to sync check_counts.json with all_valid_proxies.txt: {e}")
+
+
 def _write_top100_by_checks(active_proxies: List[str]) -> None:
     """Write top 100 most frequently checked proxies to main_top100_checked.txt.
     Prioritizes main scores, then iran scores as tiebreaker."""
@@ -614,6 +664,7 @@ def main() -> int:
             formatted_to_append.append(new_u)
         append_lines(AVAILABLE_FILE, formatted_to_append)
         log(f"Appended {len(formatted_to_append)} new available proxies to {AVAILABLE_FILE} with formatted remarks")
+        _sync_check_counts_with_available_file()
     else:
         log("No new available proxies to append (all duplicates)")
 

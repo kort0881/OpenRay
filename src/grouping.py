@@ -8,6 +8,16 @@ from .common import log
 from .io_ops import read_lines, write_text_file_atomic
 from .parsing import _extract_our_cc_and_num_from_uri
 
+def _sync_check_counts_with_available_file() -> None:
+    """Lazy import and call sync function from main.py to avoid circular imports."""
+    try:
+        # Lazy import to avoid circular dependency
+        from .main import _sync_check_counts_with_available_file as sync_func
+        sync_func()
+    except (ImportError, AttributeError):
+        # Silently fail if import is not available (e.g., during circular import)
+        pass
+
 
 def write_grouped_outputs() -> None:
     """Generate per-kind and per-country files from AVAILABLE_FILE.
@@ -108,5 +118,6 @@ def regroup_available_by_country() -> None:
                     f.write('\n')
         os.replace(tmp_path, AVAILABLE_FILE)
         log(f"Regrouped available proxies by country into {len(order)} groups")
+        _sync_check_counts_with_available_file()
     except Exception as e:
         log(f"Regroup failed: {e}")

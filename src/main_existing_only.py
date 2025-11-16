@@ -27,6 +27,16 @@ from .parsing import (
     extract_port,
 )
 
+def _sync_check_counts_with_available_file() -> None:
+    """Lazy import and call sync function from main.py to avoid circular imports."""
+    try:
+        # Lazy import to avoid circular dependency
+        from .main import _sync_check_counts_with_available_file as sync_func
+        sync_func()
+    except (ImportError, AttributeError):
+        # Silently fail if import is not available (e.g., during circular import)
+        pass
+
 
 def _has_connectivity() -> bool:
     """Best-effort Internet connectivity check using IP-only probes to avoid DNS dependency."""
@@ -168,6 +178,7 @@ def main() -> int:
                             f.write('\n')
                     os.replace(tmp_path, AVAILABLE_FILE)
                     log(f"Revalidated existing available proxies: kept {len(deduplicated_alive)} of {len(existing_lines)} (deduplicated from {len(alive)})")
+                    _sync_check_counts_with_available_file()
             else:
                 log("Revalidated existing available proxies: all still reachable")
     else:
