@@ -81,9 +81,9 @@ dns:
   - 1.1.1.1
 
 proxies:
-- name: OpenRay  US-207
+- name: OpenRay  US-208
   type: vless
-  server: 104.18.185.26
+  server: 104.16.250.22
   port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -93,9 +93,9 @@ proxies:
     path: /Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: OpenRay  US-208
+- name: OpenRay  US-207
   type: vless
-  server: 104.16.250.22
+  server: 104.18.185.26
   port: 2096
   uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
   network: ws
@@ -327,18 +327,6 @@ proxies:
   port: 80
   uuid: 401374e6-df77-41fb-f638-dad8184f175b
   network: grpc
-- name: OpenRay  US-3354
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
-  network: ws
-  tls: true
-  servername: gb-8981.shenzogmbh.com
-  ws-opts:
-    path: /api/v1
-    headers:
-      Host: gb-8981.shenzogmbh.com
 - name: OpenRay Dynamic-3351
   type: vless
   server: us6.candyfans.win
@@ -351,6 +339,18 @@ proxies:
     path: /nmzuws
     headers:
       Host: us6.candyfans.win
+- name: OpenRay  US-3354
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
+  network: ws
+  tls: true
+  servername: gb-8981.shenzogmbh.com
+  ws-opts:
+    path: /api/v1
+    headers:
+      Host: gb-8981.shenzogmbh.com
 - name: OpenRay  ES-20
   type: vless
   server: 45.12.150.144
@@ -387,9 +387,9 @@ proxies:
     path: Telegram🇨🇳@WangCai2/?ed=2560
     headers:
       Host: gaosir.unfeeling.sbs
-- name: OpenRay Dynamic-184
+- name: OpenRay Dynamic-358
   type: vless
-  server: openai.com
+  server: www.udemy.com
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -397,16 +397,16 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
-- name: OpenRay Dynamic-374
+- name: OpenRay Dynamic-133
   type: vless
-  server: www.shopify.com
+  server: namemc.com
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: snippets.pusytroller.cf
+      Host: fangbinxingnmsl.pusytroller.cf
 - name: OpenRay Dynamic-73
   type: vless
   server: cf.090227.xyz
@@ -417,18 +417,36 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: 'OpenRay Dynamic-337 #2'
+- name: OpenRay Dynamic-374
   type: vless
-  server: us8.candyfans.win
-  port: 443
-  uuid: 852650c3-8ae5-4b75-8613-02a197a89309
+  server: www.shopify.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
-  tls: true
-  servername: us8.candyfans.win
   ws-opts:
-    path: /zonnws
+    path: /
     headers:
-      Host: us8.candyfans.win
+      Host: snippets.pusytroller.cf
+- name: OpenRay Dynamic-95
+  type: vless
+  server: www.udemy.com
+  port: 2095
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: freenodes.pusytroller.cf
+- name: OpenRay Dynamic-184
+  type: vless
+  server: openai.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fangbinxingnmsl.pusytroller.cf
 - name: OpenRay  IS-1
   type: vless
   server: 45.83.21.107
@@ -451,29 +469,21 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
-- name: OpenRay Dynamic-358
+- name: 'OpenRay Dynamic-337 #2'
   type: vless
-  server: www.udemy.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  server: us8.candyfans.win
+  port: 443
+  uuid: 852650c3-8ae5-4b75-8613-02a197a89309
   network: ws
+  tls: true
+  servername: us8.candyfans.win
   ws-opts:
-    path: /
+    path: /zonnws
     headers:
-      Host: fangbinxingnmsl.pusytroller.cf
-- name: OpenRay Dynamic-95
+      Host: us8.candyfans.win
+- name: OpenRay Dynamic-359
   type: vless
-  server: www.udemy.com
-  port: 2095
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: freenodes.pusytroller.cf
-- name: OpenRay Dynamic-40
-  type: vless
-  server: www.wto.org
+  server: www.fbi.gov
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -481,19 +491,9 @@ proxies:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: OpenRay Dynamic-133
+- name: OpenRay Dynamic-40
   type: vless
-  server: namemc.com
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fangbinxingnmsl.pusytroller.cf
-- name: OpenRay Dynamic-359
-  type: vless
-  server: www.fbi.gov
+  server: www.wto.org
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -667,18 +667,6 @@ proxies:
     path: /
     headers:
       Host: 89.169.13.60
-- name: OpenRay  NL-139
-  type: vmess
-  server: 89.169.13.60
-  port: 28838
-  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 89.169.13.60
 - name: OpenRay  NL-140
   type: vmess
   server: 89.169.13.60
@@ -699,6 +687,18 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  NL-139
+  type: vmess
+  server: 89.169.13.60
+  port: 28838
+  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 89.169.13.60
 - name: OpenRay  NL-142
   type: vmess
   server: 89.169.13.60
@@ -739,6 +739,14 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
+- name: OpenRay  TW-33
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  NL-150
   type: vmess
   server: 89.169.13.60
@@ -751,14 +759,6 @@ proxies:
     path: /
     headers:
       Host: 89.169.13.60
-- name: OpenRay  TW-33
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  network: tcp
 - name: OpenRay  NL-154
   type: vmess
   server: 89.169.13.60
@@ -839,18 +839,6 @@ proxies:
     path: /
     headers:
       Host: 89.169.13.60
-- name: OpenRay  NL-166
-  type: vmess
-  server: 89.169.13.60
-  port: 28838
-  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.com
 - name: OpenRay  TW-56
   type: vmess
   server: 165.154.195.38
@@ -865,9 +853,21 @@ proxies:
   port: 8880
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
-- name: OpenRay  US-2737
+- name: OpenRay  NL-166
+  type: vmess
+  server: 89.169.13.60
+  port: 28838
+  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
+- name: OpenRay  US-2744
   type: vless
-  server: 104.20.16.234
+  server: 104.18.33.45
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -875,9 +875,9 @@ proxies:
     path: /
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
-- name: OpenRay  US-2744
+- name: OpenRay  US-2737
   type: vless
-  server: 104.18.33.45
+  server: 104.20.16.234
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -896,18 +896,6 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
 - name: OpenRay  NL-169
-  type: vmess
-  server: 89.169.13.60
-  port: 28838
-  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.com
-- name: OpenRay  NL-171
   type: vmess
   server: 89.169.13.60
   port: 28838
@@ -939,6 +927,18 @@ proxies:
     path: /
     headers:
       Host: 89.169.13.60
+- name: OpenRay  NL-171
+  type: vmess
+  server: 89.169.13.60
+  port: 28838
+  uuid: b9d3c414-89cc-455d-b717-10c7ca1665a1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
 - name: OpenRay  NL-176
   type: vmess
   server: 89.169.13.60
@@ -993,14 +993,6 @@ proxies:
     path: /
     headers:
       Host: google.com
-- name: OpenRay  TW-81
-  type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-  network: tcp
 - name: OpenRay  US-3111
   type: vless
   server: 104.18.28.7
@@ -1011,6 +1003,14 @@ proxies:
     path: /
     headers:
       Host: freedom.pusytroller.cf
+- name: OpenRay  TW-81
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  network: tcp
 
 proxy-groups:
 - name: AUTO
@@ -1019,8 +1019,8 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - OpenRay  US-207
   - OpenRay  US-208
+  - OpenRay  US-207
   - OpenRay Dynamic-61
   - OpenRay  CH-2
   - OpenRay  JP-23
@@ -1047,23 +1047,23 @@ proxy-groups:
   - OpenRay  CA-31
   - OpenRay  ES-13
   - OpenRay  US-2659
-  - OpenRay  US-3354
   - OpenRay Dynamic-3351
+  - OpenRay  US-3354
   - OpenRay  ES-20
   - OpenRay  US-4481
   - OpenRay  US-4718
   - OpenRay  JP-54
-  - OpenRay Dynamic-184
-  - OpenRay Dynamic-374
+  - OpenRay Dynamic-358
+  - OpenRay Dynamic-133
   - OpenRay Dynamic-73
-  - 'OpenRay Dynamic-337 #2'
+  - OpenRay Dynamic-374
+  - OpenRay Dynamic-95
+  - OpenRay Dynamic-184
   - OpenRay  IS-1
   - OpenRay Dynamic-118
-  - OpenRay Dynamic-358
-  - OpenRay Dynamic-95
-  - OpenRay Dynamic-40
-  - OpenRay Dynamic-133
+  - 'OpenRay Dynamic-337 #2'
   - OpenRay Dynamic-359
+  - OpenRay Dynamic-40
   - OpenRay  TW-12
   - OpenRay  NL-98
   - OpenRay  NL-99
@@ -1080,15 +1080,15 @@ proxy-groups:
   - OpenRay  NL-130
   - OpenRay  FR-528
   - OpenRay  NL-133
-  - OpenRay  NL-139
   - OpenRay  NL-140
   - OpenRay  TW-26
+  - OpenRay  NL-139
   - OpenRay  NL-142
   - OpenRay  NL-141
   - OpenRay  US-2325
   - OpenRay  FR-615
-  - OpenRay  NL-150
   - OpenRay  TW-33
+  - OpenRay  NL-150
   - OpenRay  NL-154
   - OpenRay  TW-40
   - OpenRay  NL-157
@@ -1096,29 +1096,29 @@ proxy-groups:
   - OpenRay  NL-161
   - OpenRay  NL-162
   - OpenRay  NL-164
-  - OpenRay  NL-166
   - OpenRay  TW-56
   - OpenRay  FR-793
-  - OpenRay  US-2737
+  - OpenRay  NL-166
   - OpenRay  US-2744
+  - OpenRay  US-2737
   - OpenRay  CA-2097
   - OpenRay  NL-169
-  - OpenRay  NL-171
   - OpenRay  TW-61
   - OpenRay  NL-172
+  - OpenRay  NL-171
   - OpenRay  NL-176
   - OpenRay  NL-178
   - OpenRay  US-2990
   - OpenRay  NL-179
   - OpenRay  NL-185
-  - OpenRay  TW-81
   - OpenRay  US-3111
+  - OpenRay  TW-81
 - name: PROXY
   type: select
   proxies:
   - AUTO
-  - OpenRay  US-207
   - OpenRay  US-208
+  - OpenRay  US-207
   - OpenRay Dynamic-61
   - OpenRay  CH-2
   - OpenRay  JP-23
@@ -1145,23 +1145,23 @@ proxy-groups:
   - OpenRay  CA-31
   - OpenRay  ES-13
   - OpenRay  US-2659
-  - OpenRay  US-3354
   - OpenRay Dynamic-3351
+  - OpenRay  US-3354
   - OpenRay  ES-20
   - OpenRay  US-4481
   - OpenRay  US-4718
   - OpenRay  JP-54
-  - OpenRay Dynamic-184
-  - OpenRay Dynamic-374
+  - OpenRay Dynamic-358
+  - OpenRay Dynamic-133
   - OpenRay Dynamic-73
-  - 'OpenRay Dynamic-337 #2'
+  - OpenRay Dynamic-374
+  - OpenRay Dynamic-95
+  - OpenRay Dynamic-184
   - OpenRay  IS-1
   - OpenRay Dynamic-118
-  - OpenRay Dynamic-358
-  - OpenRay Dynamic-95
-  - OpenRay Dynamic-40
-  - OpenRay Dynamic-133
+  - 'OpenRay Dynamic-337 #2'
   - OpenRay Dynamic-359
+  - OpenRay Dynamic-40
   - OpenRay  TW-12
   - OpenRay  NL-98
   - OpenRay  NL-99
@@ -1178,15 +1178,15 @@ proxy-groups:
   - OpenRay  NL-130
   - OpenRay  FR-528
   - OpenRay  NL-133
-  - OpenRay  NL-139
   - OpenRay  NL-140
   - OpenRay  TW-26
+  - OpenRay  NL-139
   - OpenRay  NL-142
   - OpenRay  NL-141
   - OpenRay  US-2325
   - OpenRay  FR-615
-  - OpenRay  NL-150
   - OpenRay  TW-33
+  - OpenRay  NL-150
   - OpenRay  NL-154
   - OpenRay  TW-40
   - OpenRay  NL-157
@@ -1194,23 +1194,23 @@ proxy-groups:
   - OpenRay  NL-161
   - OpenRay  NL-162
   - OpenRay  NL-164
-  - OpenRay  NL-166
   - OpenRay  TW-56
   - OpenRay  FR-793
-  - OpenRay  US-2737
+  - OpenRay  NL-166
   - OpenRay  US-2744
+  - OpenRay  US-2737
   - OpenRay  CA-2097
   - OpenRay  NL-169
-  - OpenRay  NL-171
   - OpenRay  TW-61
   - OpenRay  NL-172
+  - OpenRay  NL-171
   - OpenRay  NL-176
   - OpenRay  NL-178
   - OpenRay  US-2990
   - OpenRay  NL-179
   - OpenRay  NL-185
-  - OpenRay  TW-81
   - OpenRay  US-3111
+  - OpenRay  TW-81
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
