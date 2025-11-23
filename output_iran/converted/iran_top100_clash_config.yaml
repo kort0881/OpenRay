@@ -482,12 +482,6 @@ proxies:
   port: 8880
   uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
   network: grpc
-- name: OpenRay  US-6077
-  type: vless
-  server: 638975337676095689.lisbon-blkaft-aabc.info
-  port: 8880
-  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
-  network: grpc
 - name: OpenRay Dynamic-6047
   type: vless
   server: dabaius2.sylu.net
@@ -500,18 +494,36 @@ proxies:
     path: /db10240eb751d6ab
     headers:
       Host: dabaius2.sylu.net
-- name: OpenRay Dynamic-4402
+- name: OpenRay  US-6077
   type: vless
-  server: saas.sin.fan
-  port: 2096
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  server: 638975337676095689.lisbon-blkaft-aabc.info
+  port: 8880
+  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
+  network: grpc
+- name: OpenRay  US-6080
+  type: vless
+  server: 8.35.211.82
+  port: 443
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
   network: ws
   tls: true
-  servername: ak.hexo.cloudns.ch
+  servername: bp.hexo.cloudns.ch
   ws-opts:
-    path: /proxyip=sjc.o00o.ooo
+    path: /proxyip=proxyip.sg.cmliussss.net
     headers:
-      Host: ak.hexo.cloudns.ch
+      Host: bp.hexo.cloudns.ch
+- name: OpenRay  CZ-1
+  type: vless
+  server: 2.56.176.136
+  port: 443
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  tls: true
+  servername: bp.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: bp.hexo.cloudns.ch
 - name: OpenRay  LV-3
   type: vless
   server: 188.253.23.98
@@ -524,9 +536,21 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  BE-2
+- name: OpenRay  LV-4
   type: vless
-  server: 38.180.86.63
+  server: 188.253.22.58
+  port: 8443
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  DE-1778
+  type: vless
+  server: 185.58.159.206
   port: 443
   uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
   network: ws
@@ -536,10 +560,10 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  US-6084
+- name: OpenRay  LV-2
   type: vless
-  server: 154.17.226.83
-  port: 8080
+  server: 188.253.22.219
+  port: 8443
   uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
   network: ws
   tls: true
@@ -572,6 +596,18 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
+- name: OpenRay  RU-43
+  type: vless
+  server: 85.193.91.193
+  port: 2053
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
 - name: OpenRay  SE-2608
   type: vless
   server: 172.234.96.64
@@ -584,54 +620,6 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  LV-4
-  type: vless
-  server: 188.253.22.58
-  port: 8443
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
-- name: OpenRay  ES-1
-  type: vless
-  server: 94.131.117.4
-  port: 2053
-  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
-  network: ws
-  tls: true
-  servername: bp.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: bp.hexo.cloudns.ch
-- name: OpenRay  US-5806
-  type: vmess
-  server: 45.8.146.129
-  port: 80
-  uuid: 0704016f-5435-4655-be6a-771a5aba52c3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: OpenRay  US-6080
-  type: vless
-  server: 8.35.211.82
-  port: 443
-  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
-  network: ws
-  tls: true
-  servername: bp.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: bp.hexo.cloudns.ch
 - name: OpenRay  AU-2
   type: vless
   server: 172.105.191.21
@@ -644,69 +632,9 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  CZ-1
+- name: OpenRay  DE-1776
   type: vless
-  server: 2.56.176.136
-  port: 443
-  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
-  network: ws
-  tls: true
-  servername: bp.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: bp.hexo.cloudns.ch
-- name: OpenRay  US-6083
-  type: vless
-  server: 104.234.50.138
-  port: 2053
-  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
-  network: ws
-  tls: true
-  servername: bp.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=proxyip.sg.cmliussss.net
-    headers:
-      Host: bp.hexo.cloudns.ch
-- name: OpenRay  DE-1778
-  type: vless
-  server: 185.58.159.206
-  port: 443
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
-- name: OpenRay  NL-439
-  type: vless
-  server: 194.87.35.190
-  port: 2053
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
-- name: OpenRay  LV-2
-  type: vless
-  server: 188.253.22.219
-  port: 8443
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
-- name: OpenRay  DE-1779
-  type: vless
-  server: 138.124.61.25
+  server: 192.46.237.165
   port: 443
   uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
   network: ws
@@ -728,30 +656,6 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  RU-45
-  type: vless
-  server: 80.90.187.190
-  port: 2053
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
-- name: OpenRay  RU-43
-  type: vless
-  server: 85.193.91.193
-  port: 2053
-  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
-  network: ws
-  tls: true
-  servername: ak.hexo.cloudns.ch
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: ak.hexo.cloudns.ch
 - name: OpenRay  NL-441
   type: vless
   server: 195.133.38.30
@@ -764,9 +668,57 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: ak.hexo.cloudns.ch
-- name: OpenRay  DE-1776
+- name: OpenRay  US-6083
   type: vless
-  server: 192.46.237.165
+  server: 104.234.50.138
+  port: 2053
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  tls: true
+  servername: bp.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: bp.hexo.cloudns.ch
+- name: OpenRay  US-6084
+  type: vless
+  server: 154.17.226.83
+  port: 8080
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  NL-439
+  type: vless
+  server: 194.87.35.190
+  port: 2053
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  ES-1
+  type: vless
+  server: 94.131.117.4
+  port: 2053
+  uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
+  network: ws
+  tls: true
+  servername: bp.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=proxyip.sg.cmliussss.net
+    headers:
+      Host: bp.hexo.cloudns.ch
+- name: OpenRay  DE-1779
+  type: vless
+  server: 138.124.61.25
   port: 443
   uuid: 54fdfb91-1d27-4c5a-8fb3-61e1b08b2a58
   network: ws
@@ -776,6 +728,54 @@ proxies:
     path: /proxyip=proxyip.sg.cmliussss.net
     headers:
       Host: bp.hexo.cloudns.ch
+- name: OpenRay Dynamic-4402
+  type: vless
+  server: saas.sin.fan
+  port: 2096
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  BE-2
+  type: vless
+  server: 38.180.86.63
+  port: 443
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  RU-45
+  type: vless
+  server: 80.90.187.190
+  port: 2053
+  uuid: 78fc9ba9-9c68-4b49-891f-ea9e38bd3b56
+  network: ws
+  tls: true
+  servername: ak.hexo.cloudns.ch
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: ak.hexo.cloudns.ch
+- name: OpenRay  US-5806
+  type: vmess
+  server: 45.8.146.129
+  port: 80
+  uuid: 0704016f-5435-4655-be6a-771a5aba52c3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
 - name: OpenRay  FR-1911
   type: vless
   server: 185.231.205.152
@@ -828,16 +828,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
-- name: OpenRay  GB-932
-  type: vless
-  server: 51.68.198.51
-  port: 8080
-  uuid: 349335ea-d1af-4316-88f1-cb07469049a6
-  network: ws
-  ws-opts:
-    path: /YUYETrenyklxeoyemeWFCrneerV
-    headers:
-      Host: 51.68.198.51
 - name: OpenRay  US-6156
   type: vless
   server: 147.135.77.76
@@ -848,12 +838,16 @@ proxies:
     path: /?ed
     headers:
       Host: 147.135.77.76
-- name: OpenRay  LT-5
+- name: OpenRay Dynamic-6181
   type: vless
-  server: 638978016693355897.oslo-blkaft-aabc.info
-  port: 8880
-  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
-  network: grpc
+  server: support.zoom.us
+  port: 8080
+  uuid: 8e2b79fb-e184-4fb7-965f-39a095a6a151
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zorox-net.senu-zer.online
 - name: OpenRay  US-6176
   type: vless
   server: 104.16.53.11
@@ -867,6 +861,12 @@ proxies:
       /?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN
     headers:
       Host: hetzner-9.cfuk.name.ng
+- name: OpenRay  LT-5
+  type: vless
+  server: 638978016693355897.oslo-blkaft-aabc.info
+  port: 8880
+  uuid: 15d114ee-c814-47c7-bd12-fab0c7a0128e
+  network: grpc
 
 proxy-groups:
 - name: AUTO
@@ -916,40 +916,40 @@ proxy-groups:
   - OpenRay  LT-3
   - OpenRay  US-5847
   - OpenRay  LT-4
-  - OpenRay  US-6077
   - OpenRay Dynamic-6047
-  - OpenRay Dynamic-4402
+  - OpenRay  US-6077
+  - OpenRay  US-6080
+  - OpenRay  CZ-1
   - OpenRay  LV-3
-  - OpenRay  BE-2
-  - OpenRay  US-6084
+  - OpenRay  LV-4
+  - OpenRay  DE-1778
+  - OpenRay  LV-2
   - OpenRay  PL-3
   - OpenRay  RU-44
-  - OpenRay  SE-2608
-  - OpenRay  LV-4
-  - OpenRay  ES-1
-  - OpenRay  US-5806
-  - OpenRay  US-6080
-  - OpenRay  AU-2
-  - OpenRay  CZ-1
-  - OpenRay  US-6083
-  - OpenRay  DE-1778
-  - OpenRay  NL-439
-  - OpenRay  LV-2
-  - OpenRay  DE-1779
-  - OpenRay  DE-1777
-  - OpenRay  RU-45
   - OpenRay  RU-43
-  - OpenRay  NL-441
+  - OpenRay  SE-2608
+  - OpenRay  AU-2
   - OpenRay  DE-1776
+  - OpenRay  DE-1777
+  - OpenRay  NL-441
+  - OpenRay  US-6083
+  - OpenRay  US-6084
+  - OpenRay  NL-439
+  - OpenRay  ES-1
+  - OpenRay  DE-1779
+  - OpenRay Dynamic-4402
+  - OpenRay  BE-2
+  - OpenRay  RU-45
+  - OpenRay  US-5806
   - OpenRay  FR-1911
   - OpenRay  US-6105
   - OpenRay  US-6102
   - OpenRay Dynamic-4190
   - OpenRay  DE-1808
-  - OpenRay  GB-932
   - OpenRay  US-6156
-  - OpenRay  LT-5
+  - OpenRay Dynamic-6181
   - OpenRay  US-6176
+  - OpenRay  LT-5
 - name: PROXY
   type: select
   proxies:
@@ -995,40 +995,40 @@ proxy-groups:
   - OpenRay  LT-3
   - OpenRay  US-5847
   - OpenRay  LT-4
-  - OpenRay  US-6077
   - OpenRay Dynamic-6047
-  - OpenRay Dynamic-4402
+  - OpenRay  US-6077
+  - OpenRay  US-6080
+  - OpenRay  CZ-1
   - OpenRay  LV-3
-  - OpenRay  BE-2
-  - OpenRay  US-6084
+  - OpenRay  LV-4
+  - OpenRay  DE-1778
+  - OpenRay  LV-2
   - OpenRay  PL-3
   - OpenRay  RU-44
-  - OpenRay  SE-2608
-  - OpenRay  LV-4
-  - OpenRay  ES-1
-  - OpenRay  US-5806
-  - OpenRay  US-6080
-  - OpenRay  AU-2
-  - OpenRay  CZ-1
-  - OpenRay  US-6083
-  - OpenRay  DE-1778
-  - OpenRay  NL-439
-  - OpenRay  LV-2
-  - OpenRay  DE-1779
-  - OpenRay  DE-1777
-  - OpenRay  RU-45
   - OpenRay  RU-43
-  - OpenRay  NL-441
+  - OpenRay  SE-2608
+  - OpenRay  AU-2
   - OpenRay  DE-1776
+  - OpenRay  DE-1777
+  - OpenRay  NL-441
+  - OpenRay  US-6083
+  - OpenRay  US-6084
+  - OpenRay  NL-439
+  - OpenRay  ES-1
+  - OpenRay  DE-1779
+  - OpenRay Dynamic-4402
+  - OpenRay  BE-2
+  - OpenRay  RU-45
+  - OpenRay  US-5806
   - OpenRay  FR-1911
   - OpenRay  US-6105
   - OpenRay  US-6102
   - OpenRay Dynamic-4190
   - OpenRay  DE-1808
-  - OpenRay  GB-932
   - OpenRay  US-6156
-  - OpenRay  LT-5
+  - OpenRay Dynamic-6181
   - OpenRay  US-6176
+  - OpenRay  LT-5
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
 - DOMAIN-SUFFIX,aparat.com,DIRECT
