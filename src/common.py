@@ -142,7 +142,15 @@ def _normalize_vmess(uri: str, parsed) -> str:
         type_val = normalize_value(obj.get('type')) or 'none'
         host = normalize_value(obj.get('host'))
         path = normalize_value(obj.get('path'))
-        tls = normalize_value(obj.get('tls'))
+        def canonicalize_tls(value: str | None) -> str | None:
+            if not value:
+                return None
+            low = value.lower()
+            if low in ('none', 'disable', 'disabled', 'off', 'false', '0'):
+                return None
+            return low
+
+        tls = canonicalize_tls(normalize_value(obj.get('tls')))
         sni = normalize_value(obj.get('sni'))
         alpn = normalize_value(obj.get('alpn'))
         fp = normalize_value(obj.get('fp'))
@@ -154,10 +162,13 @@ def _normalize_vmess(uri: str, parsed) -> str:
             'port': port,
             'id': id_val,
             'aid': aid,
-            'scy': scy,
             'net': net,
             'type': type_val,
         }
+
+        # Include scy only when it departs from the protocol default
+        if scy not in (None, '', 'auto', 'aes-128-gcm'):
+            normalized['scy'] = scy
 
         # Add optional fields only if they have non-empty values
         if host:
