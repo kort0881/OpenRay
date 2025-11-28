@@ -2098,20 +2098,6 @@ proxies:
     path: /video/1jcyq.m3u8
     headers:
       Host: d7t3ny.keeoomboom.de
-- name: OpenRay Dynamic-6893
-  type: vmess
-  server: gxogs2.teeoomboom.de
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: gxogs2.teeoomboom.de
-  ws-opts:
-    path: /video/j6oq4w0t.m3u8
-    headers:
-      Host: gxogs2.teeoomboom.de
 - name: OpenRay Dynamic-6894
   type: vmess
   server: jl2klj.teeoomboom.de
@@ -2564,20 +2550,6 @@ proxies:
     path: /
     headers:
       Host: sgal.dagrate.eu.org
-- name: OpenRay Dynamic-6978
-  type: vmess
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  port: 443
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  alterId: 0
-  cipher: auto
-  network: ws
-  tls: true
-  servername: ssssssssssssfffffffgh.2032.pp.ua
-  ws-opts:
-    path: /6We3U9Df1WGxgFnoFPw1
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
 - name: OpenRay Dynamic-1991
   type: vless
   server: yofree.top
@@ -2591,6 +2563,18 @@ proxies:
     public-key: AWyicEDYi7KB3qzo8OEvEd1HK0gZhCHAENBd_buyhQk
     short-id: fa2f
   client-fingerprint: chrome
+- name: OpenRay Dynamic-6974
+  type: vless
+  server: 479b-b511-7d5b7828dbeb.457.pp.ua
+  port: 443
+  uuid: a1d2e3cd-297e-4753-8e7a-6d9fb0f4aac1
+  network: ws
+  tls: true
+  servername: 479b-B511-7D5b7828DBeb.457.PP.uA
+  ws-opts:
+    path: /dgK6j67SvsqROzSPoHrBo
+    headers:
+      Host: 479B-B511-7D5B7828Dbeb.457.PP.uA
 - name: OpenRay  DE-1293
   type: vless
   server: 152.53.227.159
@@ -2722,6 +2706,18 @@ proxies:
     public-key: vUjqwVqb_8n22kndy1Hx7sgGK8rk4pFIwe5sYWfKn3w
     short-id: fe91ea4400b478d2
   client-fingerprint: firefox
+- name: OpenRay  DE-2180
+  type: vless
+  server: 144.31.74.41
+  port: 8443
+  uuid: dda4fe76-532d-4c63-83a9-e91f011b2634
+  network: grpc
+  tls: true
+  servername: sun6-21.userapi.com
+  reality-opts:
+    public-key: lOrTpAr9z82wz-ZLBnPAsaJE0pHMDKr9quNLgov4C08
+    short-id: '2916'
+  client-fingerprint: chrome
 - name: OpenRay  JP-24
   type: vless
   server: 172.105.209.25
@@ -2833,7 +2829,7 @@ proxies:
       Host: 172.111.146.64
 - name: OpenRay  JP-316
   type: vmess
-  server: 18.183.146.170
+  server: 13.231.129.41
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -3386,6 +3382,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: raw
+- name: OpenRay  US-9358
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  network: tcp
 - name: OpenRay  FR-355
   type: vless
   server: 638975337676353108.lisbon-blkaft-aabc.info
@@ -4066,7 +4070,6 @@ proxy-groups:
   - OpenRay Dynamic-9313
   - OpenRay Dynamic-9316
   - OpenRay Dynamic-6892
-  - OpenRay Dynamic-6893
   - OpenRay Dynamic-6894
   - OpenRay Dynamic-6895
   - OpenRay Dynamic-6896
@@ -4100,8 +4103,8 @@ proxy-groups:
   - OpenRay Dynamic-6965
   - OpenRay Dynamic-6976
   - OpenRay Dynamic-6977
-  - OpenRay Dynamic-6978
   - OpenRay Dynamic-1991
+  - OpenRay Dynamic-6974
   - OpenRay  DE-1293
   - OpenRay  DE-1341
   - OpenRay  DE-1776
@@ -4113,6 +4116,7 @@ proxy-groups:
   - OpenRay  DE-2173
   - OpenRay  DE-2178
   - OpenRay  DE-2179
+  - OpenRay  DE-2180
   - OpenRay  JP-24
   - OpenRay  JP-54
   - OpenRay  JP-55
@@ -4179,6 +4183,7 @@ proxy-groups:
   - OpenRay  US-8819
   - OpenRay  US-9356
   - OpenRay  US-9357
+  - OpenRay  US-9358
   - OpenRay  FR-355
   - OpenRay  FR-1501
   - OpenRay  FR-1923
@@ -4387,7 +4392,6 @@ proxy-groups:
   - OpenRay Dynamic-9313
   - OpenRay Dynamic-9316
   - OpenRay Dynamic-6892
-  - OpenRay Dynamic-6893
   - OpenRay Dynamic-6894
   - OpenRay Dynamic-6895
   - OpenRay Dynamic-6896
@@ -4421,8 +4425,8 @@ proxy-groups:
   - OpenRay Dynamic-6965
   - OpenRay Dynamic-6976
   - OpenRay Dynamic-6977
-  - OpenRay Dynamic-6978
   - OpenRay Dynamic-1991
+  - OpenRay Dynamic-6974
   - OpenRay  DE-1293
   - OpenRay  DE-1341
   - OpenRay  DE-1776
@@ -4434,6 +4438,7 @@ proxy-groups:
   - OpenRay  DE-2173
   - OpenRay  DE-2178
   - OpenRay  DE-2179
+  - OpenRay  DE-2180
   - OpenRay  JP-24
   - OpenRay  JP-54
   - OpenRay  JP-55
@@ -4500,6 +4505,7 @@ proxy-groups:
   - OpenRay  US-8819
   - OpenRay  US-9356
   - OpenRay  US-9357
+  - OpenRay  US-9358
   - OpenRay  FR-355
   - OpenRay  FR-1501
   - OpenRay  FR-1923
