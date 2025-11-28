@@ -107,7 +107,8 @@ def _normalize_vmess(uri: str, parsed) -> str:
     """Normalize VMess proxy URI."""
     try:
         # Extract and decode the base64 payload
-        payload_b64 = parsed.path.lstrip('/')
+        # VMess format: vmess://base64_json - payload is in netloc, not path
+        payload_b64 = parsed.netloc or parsed.path.lstrip('/')
         if not payload_b64:
             return uri
 
@@ -118,37 +119,59 @@ def _normalize_vmess(uri: str, parsed) -> str:
         import json
         obj = json.loads(b.decode('utf-8', errors='ignore') or '{}')
 
-        # Extract connection-defining parameters only
+        # Normalize empty strings to None for optional fields
+        def normalize_value(v):
+            if v == '' or v is None:
+                return None
+            return str(v).strip()
+
+        # Extract connection-defining parameters with consistent defaults
+        # Treat empty strings same as missing for optional fields
+        add = normalize_value(obj.get('add') or obj.get('address'))
+        port = normalize_value(obj.get('port') or obj.get('portNumber'))
+        id_val = normalize_value(obj.get('id'))
+        
+        # Required fields
+        if not add or not port or not id_val:
+            return uri
+
+        # Optional fields with defaults - normalize empty strings
+        aid = normalize_value(obj.get('aid')) or '0'
+        scy = normalize_value(obj.get('scy')) or 'auto'
+        net = normalize_value(obj.get('net')) or 'tcp'
+        type_val = normalize_value(obj.get('type')) or 'none'
+        host = normalize_value(obj.get('host'))
+        path = normalize_value(obj.get('path'))
+        tls = normalize_value(obj.get('tls'))
+        sni = normalize_value(obj.get('sni'))
+        alpn = normalize_value(obj.get('alpn'))
+        fp = normalize_value(obj.get('fp'))
+
+        # Build normalized dict - only include non-empty optional fields
         normalized = {
-            'v': obj.get('v', '2'),
-            'ps': '',  # Remove remarks
-            'add': obj.get('add', obj.get('address', '')),
-            'port': obj.get('port', obj.get('portNumber', '')),
-            'id': obj.get('id', ''),
-            'aid': obj.get('aid', '0'),
-            'scy': obj.get('scy', 'auto'),
-            'net': obj.get('net', 'tcp'),
-            'type': obj.get('type', 'none'),
-            'host': obj.get('host', ''),
-            'path': obj.get('path', ''),
-            'tls': obj.get('tls', ''),
-            'sni': obj.get('sni', ''),
-            'alpn': obj.get('alpn', ''),
-            'fp': obj.get('fp', ''),
+            'v': '2',
+            'add': add,
+            'port': port,
+            'id': id_val,
+            'aid': aid,
+            'scy': scy,
+            'net': net,
+            'type': type_val,
         }
 
-        # Remove empty values and normalize
-        normalized = {k: v for k, v in normalized.items() if v}
-
-        # Normalize defaults
-        if normalized.get('aid') == '0':
-            normalized['aid'] = '0'
-        if normalized.get('scy') == 'auto':
-            normalized['scy'] = 'auto'
-        if normalized.get('net') == 'tcp':
-            normalized['net'] = 'tcp'
-        if normalized.get('type') == 'none':
-            normalized['type'] = 'none'
+        # Add optional fields only if they have non-empty values
+        if host:
+            normalized['host'] = host
+        if path:
+            normalized['path'] = path
+        if tls:
+            normalized['tls'] = tls
+        if sni:
+            normalized['sni'] = sni
+        if alpn:
+            normalized['alpn'] = alpn
+        if fp:
+            normalized['fp'] = fp
 
         # Reconstruct VMess JSON
         json_str = json.dumps(normalized, separators=(',', ':'), ensure_ascii=False, sort_keys=True)
@@ -437,7 +460,7 @@ def get_openray_dedup_key(uri: str) -> str:
         if scheme == 'vmess':
             # vmess://<base64_json> — payload can be in netloc or path depending on how it was formed
             payload = parsed.netloc or parsed.path.lstrip('/')
-            key_part = (payload or '')[:84]
+            key_part = (payload or '')[:53]
             return f"vmess|{key_part}"
 
         if scheme == 'vless':
