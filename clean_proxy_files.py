@@ -5,7 +5,17 @@ Script to clean proxy files by removing Git merge conflicts and duplicates
 
 import os
 import re
+import sys
 from collections import Counter
+
+# Add src directory to path so we can import our functions
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
+
+try:
+    from common import get_proxy_connection_hash
+except ImportError as e:
+    print(f"❌ Failed to import proxy functions: {e}")
+    sys.exit(1)
 
 def clean_file(file_path, output_path=None):
     """Clean a proxy file by removing Git conflicts and duplicates"""
@@ -48,13 +58,15 @@ def clean_file(file_path, output_path=None):
         cleaned_lines = [line.strip() for line in cleaned_lines if line.strip()]
         print(f"After removing empty lines: {len(cleaned_lines)}")
 
-        # Step 3: Remove duplicates while preserving order
-        seen = set()
+        # Step 3: Remove duplicates while preserving order (connection-based)
+        # This detects duplicates even when ps (remark) field differs
+        seen_hashes = set()
         unique_lines = []
 
         for line in cleaned_lines:
-            if line not in seen:
-                seen.add(line)
+            conn_hash = get_proxy_connection_hash(line)
+            if conn_hash not in seen_hashes:
+                seen_hashes.add(conn_hash)
                 unique_lines.append(line)
 
         print(f"After removing duplicates: {len(unique_lines)}")
@@ -93,7 +105,7 @@ def clean_file(file_path, output_path=None):
         return False
 
 def analyze_duplicates(file_path):
-    """Analyze duplicates in a cleaned file"""
+    """Analyze duplicates in a cleaned file (connection-based)"""
     if not os.path.exists(file_path):
         return 0, 0, 0
 
@@ -103,11 +115,21 @@ def analyze_duplicates(file_path):
 
         proxies = [line.strip() for line in lines if line.strip()]
 
-        # Count occurrences
-        counts = Counter(proxies)
-        duplicates = {proxy: count for proxy, count in counts.items() if count > 1}
+        # Count occurrences using connection-based hashing
+        seen_hashes = {}
+        duplicate_groups = {}
 
-        return len(proxies), len(counts), len(duplicates)
+        for proxy in proxies:
+            conn_hash = get_proxy_connection_hash(proxy)
+            if conn_hash in seen_hashes:
+                if conn_hash not in duplicate_groups:
+                    duplicate_groups[conn_hash] = [seen_hashes[conn_hash], proxy]
+                else:
+                    duplicate_groups[conn_hash].append(proxy)
+            else:
+                seen_hashes[conn_hash] = proxy
+
+        return len(proxies), len(seen_hashes), len(duplicate_groups)
 
     except Exception as e:
         print(f"❌ Error analyzing {file_path}: {e}")
@@ -117,9 +139,12 @@ def main():
     """Main function to clean both proxy files"""
     print("🧹 Cleaning proxy files...")
 
+    # Get repository root
+    repo_root = os.path.dirname(os.path.abspath(__file__))
+    
     # File paths
-    main_file = "/mnt/d/projects/OpenRay/output/all_valid_proxies.txt"
-    iran_file = "/mnt/d/projects/OpenRay/output_iran/all_valid_proxies_for_iran.txt"
+    main_file = os.path.join(repo_root, "output", "all_valid_proxies.txt")
+    iran_file = os.path.join(repo_root, "output_iran", "all_valid_proxies_for_iran.txt")
 
     # Backup original files
     print("\n📦 Creating backups...")
