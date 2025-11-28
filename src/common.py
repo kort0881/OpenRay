@@ -442,7 +442,7 @@ def get_openray_dedup_key(uri: str) -> str:
     """
     Custom deduplication key per requested rules:
     - For all protocols by default: use exact string (sans remarks) for equality-based dedup.
-    - For vmess: only consider the first 84 characters of the base64 payload after scheme.
+    - For vmess: use normalized connection hash (removes ps/remarks, normalizes parameters).
     - For vless: consider only characters before '?', and ignore '/' characters.
     """
     if not uri:
@@ -458,10 +458,10 @@ def get_openray_dedup_key(uri: str) -> str:
         scheme = (parsed.scheme or '').lower()
 
         if scheme == 'vmess':
-            # vmess://<base64_json> — payload can be in netloc or path depending on how it was formed
-            payload = parsed.netloc or parsed.path.lstrip('/')
-            key_part = (payload or '')[:53]
-            return f"vmess|{key_part}"
+            # Use normalized connection hash for vmess to properly detect duplicates
+            # This removes ps field and normalizes all connection parameters
+            normalized = normalize_proxy_uri(uri)
+            return f"vmess|{normalized}"
 
         if scheme == 'vless':
             # Take substring after scheme up to '?', then remove all '/'
