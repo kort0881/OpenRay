@@ -261,28 +261,28 @@ def _normalize_vless(uri: str, parsed) -> str:
 def _normalize_trojan(uri: str, parsed) -> str:
     """Normalize Trojan proxy URI."""
     try:
+        from urllib.parse import parse_qs, unquote, quote
+
         # Trojan format: trojan://password@host:port?params
-        path_parts = parsed.path.lstrip('/').split('@', 1)
-        if len(path_parts) != 2:
+        netloc = parsed.netloc or parsed.path.lstrip('/')
+        if '@' not in netloc:
             return uri
 
-        password = path_parts[0]
-        host_port = path_parts[1]
+        password_raw, host_port = netloc.split('@', 1)
+        password = unquote(password_raw)
+        if not password:
+            return uri
 
         # Parse query parameters
-        from urllib.parse import parse_qs
         query_params = parse_qs(parsed.query)
 
         # Extract connection-defining parameters
-        normalized_params = {}
+        conn_params = {}
 
         # Required parameters
-        if password:
-            normalized_params['password'] = password
-        if ':' in host_port:
-            host, port = host_port.rsplit(':', 1)
-            normalized_params['host'] = host
-            normalized_params['port'] = port
+        if ':' not in host_port:
+            return uri
+        server_host, server_port = host_port.rsplit(':', 1)
 
         # Connection-defining query parameters
         connection_params = [
@@ -293,16 +293,20 @@ def _normalize_trojan(uri: str, parsed) -> str:
             if param in query_params and query_params[param]:
                 value = query_params[param][0]
                 if value:  # Only include non-empty values
-                    normalized_params[param] = value
+                    conn_params[param] = value
 
         # Normalize defaults
-        if normalized_params.get('security') == 'tls':
-            normalized_params['security'] = 'tls'
+        if conn_params.get('security') == 'tls':
+            conn_params['security'] = 'tls'
 
         # Reconstruct URI
-        query_string = '&'.join(f'{k}={v}' for k, v in sorted(normalized_params.items()) if k not in ['host', 'port', 'password'])
-        host_port_part = f"{normalized_params.get('host', '')}:{normalized_params.get('port', '')}"
-        password_part = normalized_params.get('password', '')
+        query_items = []
+        for k in sorted(conn_params):
+            query_items.append(f"{k}={conn_params[k]}")
+
+        query_string = '&'.join(query_items)
+        password_part = quote(password, safe='')
+        host_port_part = f"{server_host}:{server_port}"
 
         result = f'trojan://{password_part}@{host_port_part}'
         if query_string:
@@ -482,10 +486,7 @@ def get_openray_dedup_key(uri: str) -> str:
             return f"vless|{normalized}"
 
         if scheme == 'trojan':
-            # Take substring after scheme up to '?', then remove all '/'
-            after_scheme = base_uri.split('://', 1)[1]
-            before_query = after_scheme.split('?', 1)[0]
-            normalized = before_query.replace('/', '')
+            normalized = normalize_proxy_uri(uri)
             return f"trojan|{normalized}"
 
         # Default: equality-based on the base URI (without remarks)
