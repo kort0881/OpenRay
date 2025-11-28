@@ -2601,19 +2601,6 @@ proxies:
     path: /19aebb35-b458-4d0c-b767-2adb39e6bb02-vm
     headers:
       Host: deji.186507.xyz
-- name: OpenRay Dynamic-2164
-  type: vless
-  server: de2.ultima.foundation
-  port: 8443
-  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
-    short-id: a9725715bf4c62ff
-  client-fingerprint: chrome
 - name: OpenRay Dynamic-6930
   type: vmess
   server: pq90rz.keeoomboom.de
@@ -3836,55 +3823,6 @@ proxies:
     short-id: 96973faa2f0bf0
   client-fingerprint: chrome
 - name: OpenRay  FR-1983
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: None
-- name: OpenRay  FR-1984
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 
-        wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: OpenRay  FR-1978
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.com
-- name: OpenRay  FR-1982
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.196.29.123
-- name: 'OpenRay  FR-1983 #2'
   type: vless
   server: 62.60.248.14
   port: 28485
@@ -3896,7 +3834,7 @@ proxies:
     public-key: kP5lEpXBe5wbaSLOR6A9azX6kwMkfEk06bMkEpZxdSE
     short-id: dc
   client-fingerprint: chrome
-- name: 'OpenRay  FR-1984 #2'
+- name: OpenRay  FR-1984
   type: vless
   server: 51.38.232.101
   port: 80
@@ -3906,30 +3844,6 @@ proxies:
     path: /vless/
     headers:
       Host: m.vk.com
-- name: OpenRay  FR-1985
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.196.29.123
-- name: OpenRay  FR-1979
-  type: vmess
-  server: 5.196.29.123
-  port: 2082
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 5.196.29.123
 - name: OpenRay  GB-971
   type: vless
   server: 5.144.182.111
@@ -4916,7 +4830,6 @@ proxy-groups:
   - OpenRay Dynamic-6913
   - OpenRay Dynamic-6914
   - OpenRay Dynamic-6927
-  - OpenRay Dynamic-2164
   - OpenRay Dynamic-6930
   - OpenRay Dynamic-6932
   - OpenRay Dynamic-9356
@@ -5034,12 +4947,6 @@ proxy-groups:
   - OpenRay  FR-1970
   - OpenRay  FR-1983
   - OpenRay  FR-1984
-  - OpenRay  FR-1978
-  - OpenRay  FR-1982
-  - 'OpenRay  FR-1983 #2'
-  - 'OpenRay  FR-1984 #2'
-  - OpenRay  FR-1985
-  - OpenRay  FR-1979
   - OpenRay  GB-971
   - OpenRay  GB-972
   - OpenRay  GB-975
@@ -5305,7 +5212,6 @@ proxy-groups:
   - OpenRay Dynamic-6913
   - OpenRay Dynamic-6914
   - OpenRay Dynamic-6927
-  - OpenRay Dynamic-2164
   - OpenRay Dynamic-6930
   - OpenRay Dynamic-6932
   - OpenRay Dynamic-9356
@@ -5423,12 +5329,6 @@ proxy-groups:
   - OpenRay  FR-1970
   - OpenRay  FR-1983
   - OpenRay  FR-1984
-  - OpenRay  FR-1978
-  - OpenRay  FR-1982
-  - 'OpenRay  FR-1983 #2'
-  - 'OpenRay  FR-1984 #2'
-  - OpenRay  FR-1985
-  - OpenRay  FR-1979
   - OpenRay  GB-971
   - OpenRay  GB-972
   - OpenRay  GB-975
