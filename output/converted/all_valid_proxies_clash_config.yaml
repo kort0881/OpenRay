@@ -293,6 +293,30 @@ proxies:
     path: /?ed=2560
     headers:
       Host: shomal-g74f3znf-v2.shomal-321.workers.dev
+- name: OpenRay  CA-7073
+  type: vless
+  server: 172.66.132.196
+  port: 443
+  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
+  network: ws
+  tls: true
+  servername: a.azadnet003.ddns-ip.net
+  ws-opts:
+    path: /telegram-@v2ray_alpha=
+    headers:
+      Host: a.azadnet003.ddns-ip.net
+- name: OpenRay  CA-7074
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 86825b06-ee56-4dc9-9128-b3abda5c31e8
+  network: ws
+  tls: true
+  servername: spl01.hatlikarious.org
+  ws-opts:
+    path: /
+    headers:
+      Host: spl01.hatlikarious.org
 - name: OpenRay Dynamic-95
   type: vless
   server: www.udemy.com
@@ -2519,6 +2543,18 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
+- name: OpenRay  JP-91
+  type: vmess
+  server: 52.195.214.44
+  port: 8686
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: end-gfw.com
 - name: OpenRay  NL-439
   type: vless
   server: 194.87.35.190
@@ -2674,18 +2710,19 @@ proxies:
     short-id: 0f704e
   client-fingerprint: chrome
 - name: OpenRay  NL-581
-  type: vless
-  server: 91.84.115.20
+  type: vmess
+  server: cg1c13.waimaojd.com
   port: 443
-  uuid: 4b0735b5-672b-468f-af98-d6901d620e50
-  network: tcp
-  flow: xtls-rprx-vision
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  network: ws
   tls: true
-  servername: cdnjs.com
-  reality-opts:
-    public-key: MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw
-    short-id: 4c02bbbfa833b3b6
-  client-fingerprint: chrome
+  servername: cg1c13.waimaojd.com
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c13.waimaojd.com
 - name: OpenRay  US-207
   type: vless
   server: 104.18.185.26
@@ -3628,19 +3665,6 @@ proxies:
     public-key: a_LbD81zTm6S8JtU98gY00xqsPOEucV4k0OEx0LOwgQ
     short-id: ffffffffff
   client-fingerprint: chrome
-- name: OpenRay  RU-239
-  type: vless
-  server: 212.111.87.23
-  port: 8443
-  uuid: 669be00c-67b4-4b87-b08f-311c45abced2
-  network: tcp
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.rutube.ru
-  reality-opts:
-    public-key: a_LbD81zTm6S8JtU98gY00xqsPOEucV4k0OEx0LOwgQ
-    short-id: ffffffffff
-  client-fingerprint: chrome
 - name: OpenRay  RU-240
   type: vless
   server: 212.233.73.23
@@ -3811,6 +3835,33 @@ proxies:
 - name: OpenRay  RU-265
   type: vless
   server: 212.92.101.9
+  port: 22231
+  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ru.ultima.foundation
+  reality-opts:
+    public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
+    short-id: ''
+  client-fingerprint: edge
+- name: OpenRay  RU-266
+  type: vmess
+  server: cg1c08.waimaojd.com
+  port: 443
+  uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: cg1c08.waimaojd.com
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c08.waimaojd.com
+- name: OpenRay  RU-267
+  type: vless
+  server: 5.178.87.67
   port: 22231
   uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
   network: tcp
@@ -4434,6 +4485,8 @@ proxy-groups:
   - OpenRay  CA-7069
   - OpenRay  CA-7071
   - OpenRay  CA-7072
+  - OpenRay  CA-7073
+  - OpenRay  CA-7074
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-118
@@ -4611,6 +4664,7 @@ proxy-groups:
   - OpenRay  JP-54
   - OpenRay  JP-87
   - OpenRay  JP-89
+  - OpenRay  JP-91
   - OpenRay  NL-439
   - OpenRay  NL-557
   - OpenRay  NL-558
@@ -4711,7 +4765,6 @@ proxy-groups:
   - OpenRay  RU-206
   - OpenRay  RU-235
   - OpenRay  RU-238
-  - OpenRay  RU-239
   - OpenRay  RU-240
   - OpenRay  RU-241
   - OpenRay  RU-242
@@ -4726,6 +4779,8 @@ proxy-groups:
   - OpenRay  RU-263
   - OpenRay  RU-264
   - OpenRay  RU-265
+  - OpenRay  RU-266
+  - OpenRay  RU-267
   - OpenRay  FI-64
   - OpenRay  FI-78
   - OpenRay  FI-81
@@ -4795,6 +4850,8 @@ proxy-groups:
   - OpenRay  CA-7069
   - OpenRay  CA-7071
   - OpenRay  CA-7072
+  - OpenRay  CA-7073
+  - OpenRay  CA-7074
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-118
@@ -4972,6 +5029,7 @@ proxy-groups:
   - OpenRay  JP-54
   - OpenRay  JP-87
   - OpenRay  JP-89
+  - OpenRay  JP-91
   - OpenRay  NL-439
   - OpenRay  NL-557
   - OpenRay  NL-558
@@ -5072,7 +5130,6 @@ proxy-groups:
   - OpenRay  RU-206
   - OpenRay  RU-235
   - OpenRay  RU-238
-  - OpenRay  RU-239
   - OpenRay  RU-240
   - OpenRay  RU-241
   - OpenRay  RU-242
@@ -5087,6 +5144,8 @@ proxy-groups:
   - OpenRay  RU-263
   - OpenRay  RU-264
   - OpenRay  RU-265
+  - OpenRay  RU-266
+  - OpenRay  RU-267
   - OpenRay  FI-64
   - OpenRay  FI-78
   - OpenRay  FI-81
