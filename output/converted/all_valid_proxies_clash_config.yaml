@@ -332,18 +332,6 @@ proxies:
       /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048@XpnTeam?ed=2048@XpnTeam?ed=2048
     headers:
       Host: test3.amin8263.ir
-- name: OpenRay  CA-7126
-  type: vless
-  server: 104.16.223.254
-  port: 443
-  uuid: d0298536-d670-4045-bbb1-ddd5ea68683e
-  network: ws
-  tls: true
-  servername: a.azadnet003.ddns-ip.net
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: a.azadnet003.ddns-ip.net
 - name: OpenRay  CA-7127
   type: vless
   server: 172.67.65.217
@@ -356,6 +344,43 @@ proxies:
     path: /proxyip=ProxyIP.SG.CMLiussss.net
     headers:
       Host: bp.suoni.nyc.mn
+- name: OpenRay  CA-7132
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: 
+        wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: OpenRay  CA-7133
+  type: vmess
+  server: 15.235.41.200
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: google.com
+- name: OpenRay  CA-7134
+  type: vmess
+  server: 51.79.103.76
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
+    headers:
+      Host: google.com
 - name: OpenRay Dynamic-95
   type: vless
   server: www.udemy.com
@@ -1795,6 +1820,34 @@ proxies:
     path: /news
     headers:
       Host: cdn.ir
+- name: OpenRay Dynamic-7135
+  type: vmess
+  server: t1.620720.xyz
+  port: 8443
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: t1.620720.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: t1.620720.xyz
+- name: OpenRay Dynamic-7136
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: sgal.dagrate.eu.org
+  ws-opts:
+    path: /
+    headers:
+      Host: sgal.dagrate.eu.org
 - name: OpenRay  DE-1293
   type: vless
   server: 152.53.227.159
@@ -2517,6 +2570,32 @@ proxies:
     public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
     short-id: ''
   client-fingerprint: qq
+- name: OpenRay  DE-2309
+  type: vless
+  server: 94.141.123.93
+  port: 22231
+  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nl.ultima.foundation
+  reality-opts:
+    public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
+    short-id: ''
+  client-fingerprint: qq
+- name: OpenRay  DE-2310
+  type: vless
+  server: 152.53.155.52
+  port: 22230
+  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  reality-opts:
+    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
+    short-id: a9725715bf4c62ff
+  client-fingerprint: qq
 - name: OpenRay  JP-24
   type: vless
   server: 172.105.209.25
@@ -2555,7 +2634,7 @@ proxies:
       Host: gaosir.unfeeling.sbs
 - name: OpenRay  JP-88
   type: vmess
-  server: 18.183.135.17
+  server: 54.95.29.103
   port: 8686
   uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
   alterId: 0
@@ -2761,6 +2840,19 @@ proxies:
 - name: OpenRay  NL-594
   type: vless
   server: 152.53.107.106
+  port: 22230
+  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: deepl.com
+  reality-opts:
+    public-key: FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI
+    short-id: ''
+  client-fingerprint: qq
+- name: OpenRay  NL-595
+  type: vless
+  server: 152.53.107.25
   port: 22230
   uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
   network: tcp
@@ -3190,14 +3282,6 @@ proxies:
   alterId: 0
   cipher: auto
   network: none
-- name: OpenRay  US-9517
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  network: tcp
 - name: OpenRay  US-9518
   type: vmess
   server: 38.14.99.179
@@ -3208,12 +3292,96 @@ proxies:
   network: tcp
 - name: OpenRay  US-9519
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.14.99.163
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   cipher: auto
-  network: tcp
+  network: raw
+- name: OpenRay  US-9520
+  type: vmess
+  server: 38.14.99.163
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9521
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9522
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9523
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9524
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9525
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9526
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9527
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9528
+  type: vmess
+  server: 38.14.99.179
+  port: 59807
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  network: raw
+- name: OpenRay  US-9529
+  type: vmess
+  server: 209.126.84.189
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: 209.126.84.189
 - name: OpenRay  FR-1945
   type: vless
   server: 185.193.17.80
@@ -3245,6 +3413,18 @@ proxies:
   uuid: df0680ca-e43c-498d-ed86-8e196eedd012
   network: grpc
 - name: OpenRay  FR-2021
+  type: vmess
+  server: 5.196.29.123
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.com
+- name: OpenRay  FR-2022
   type: vmess
   server: 5.196.29.123
   port: 2082
@@ -3290,6 +3470,18 @@ proxies:
     path: /YUYETrenyklxeoyemeWFCrneerV
     headers:
       Host: 51.68.198.51
+- name: OpenRay  GB-979
+  type: vmess
+  server: 57.129.132.223
+  port: 80
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
 - name: OpenRay  IS-1
   type: vless
   server: 45.83.21.107
@@ -3408,6 +3600,14 @@ proxies:
   alterId: 0
   cipher: auto
   network: tcp
+- name: OpenRay  TR-36
+  type: vmess
+  server: 45.89.52.207
+  port: 39651
+  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
+  alterId: 0
+  cipher: auto
+  network: raw
 - name: OpenRay  PL-3
   type: vless
   server: 31.133.0.55
@@ -4032,6 +4232,19 @@ proxies:
     public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
     short-id: ''
   client-fingerprint: qq
+- name: OpenRay  LV-11
+  type: vless
+  server: 185.145.245.118
+  port: 22231
+  uuid: 2dfa740c-8069-4993-8b96-c3e5dc540593
+  network: tcp
+  flow: xtls-rprx-vision
+  tls: true
+  servername: lv2.ultima.foundation
+  reality-opts:
+    public-key: gtur4bFCYQzGf7M6B40RpdBHl6g1epPNhJCMqKPoVng
+    short-id: ''
+  client-fingerprint: qq
 - name: OpenRay  CZ-1
   type: vless
   server: 2.56.176.136
@@ -4072,6 +4285,34 @@ proxies:
     headers:
       Host: node4.rtxconfigz.com
 - name: OpenRay  IN-32
+  type: vmess
+  server: node4.rtxconfigz.com
+  port: 443
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: node4.rtxconfigz.com
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
+- name: OpenRay  IN-33
+  type: vmess
+  server: node4.rtxconfigz.com
+  port: 443
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  network: ws
+  tls: true
+  servername: node4.rtxconfigz.com
+  ws-opts:
+    path: /@Malinda6104
+    headers:
+      Host: node4.rtxconfigz.com
+- name: OpenRay  IN-34
   type: vmess
   server: node4.rtxconfigz.com
   port: 443
@@ -4298,6 +4539,18 @@ proxies:
     path: /824dc1b1-e35b-4121-ad73-9acaf13d6410
     headers:
       Host: n1761184282.74qxv.top
+- name: OpenRay  HK-2
+  type: vmess
+  server: 8.218.199.111
+  port: 8080
+  uuid: f55db42d-ee52-4a47-880b-6f7b123ab222
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8.218.199.111
 - name: OpenRay  LT-1
   type: vless
   server: 188.214.135.156
@@ -4340,8 +4593,10 @@ proxy-groups:
   - OpenRay  CA-7123
   - OpenRay  CA-7124
   - OpenRay  CA-7125
-  - OpenRay  CA-7126
   - OpenRay  CA-7127
+  - OpenRay  CA-7132
+  - OpenRay  CA-7133
+  - OpenRay  CA-7134
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-118
@@ -4455,6 +4710,8 @@ proxy-groups:
   - OpenRay Dynamic-8
   - OpenRay Dynamic-7132
   - OpenRay Dynamic-2306
+  - OpenRay Dynamic-7135
+  - OpenRay Dynamic-7136
   - OpenRay  DE-1293
   - OpenRay  DE-1341
   - OpenRay  DE-1776
@@ -4513,6 +4770,8 @@ proxy-groups:
   - OpenRay  DE-2304
   - OpenRay  DE-2307
   - OpenRay  DE-2308
+  - OpenRay  DE-2309
+  - OpenRay  DE-2310
   - OpenRay  JP-24
   - OpenRay  JP-54
   - OpenRay  JP-87
@@ -4533,6 +4792,7 @@ proxy-groups:
   - OpenRay  NL-592
   - OpenRay  NL-593
   - OpenRay  NL-594
+  - OpenRay  NL-595
   - OpenRay  US-207
   - OpenRay  US-208
   - OpenRay  US-2325
@@ -4575,17 +4835,28 @@ proxy-groups:
   - OpenRay  US-9504
   - OpenRay  US-9515
   - OpenRay  US-9516
-  - OpenRay  US-9517
   - OpenRay  US-9518
   - OpenRay  US-9519
+  - OpenRay  US-9520
+  - OpenRay  US-9521
+  - OpenRay  US-9522
+  - OpenRay  US-9523
+  - OpenRay  US-9524
+  - OpenRay  US-9525
+  - OpenRay  US-9526
+  - OpenRay  US-9527
+  - OpenRay  US-9528
+  - OpenRay  US-9529
   - OpenRay  FR-1945
   - OpenRay  FR-1990
   - OpenRay  FR-2017
   - OpenRay  FR-2020
   - OpenRay  FR-2021
+  - OpenRay  FR-2022
   - OpenRay  GB-975
   - OpenRay  GB-976
   - OpenRay  GB-977
+  - OpenRay  GB-979
   - OpenRay  IS-1
   - OpenRay  SG-25
   - OpenRay  SG-28
@@ -4598,6 +4869,7 @@ proxy-groups:
   - OpenRay  TR-33
   - OpenRay  TR-34
   - OpenRay  TR-35
+  - OpenRay  TR-36
   - OpenRay  PL-3
   - OpenRay  PL-15
   - OpenRay  PL-17
@@ -4648,10 +4920,13 @@ proxy-groups:
   - OpenRay  LV-7
   - OpenRay  LV-9
   - OpenRay  LV-10
+  - OpenRay  LV-11
   - OpenRay  CZ-1
   - OpenRay  CZ-4
   - OpenRay  IN-31
   - OpenRay  IN-32
+  - OpenRay  IN-33
+  - OpenRay  IN-34
   - OpenRay  AT-2
   - OpenRay  AT-3
   - OpenRay  AT-4
@@ -4669,6 +4944,7 @@ proxy-groups:
   - OpenRay  IL-1
   - OpenRay  BG-1
   - OpenRay  HK-1
+  - OpenRay  HK-2
   - OpenRay  LT-1
 - name: PROXY
   type: select
@@ -4695,8 +4971,10 @@ proxy-groups:
   - OpenRay  CA-7123
   - OpenRay  CA-7124
   - OpenRay  CA-7125
-  - OpenRay  CA-7126
   - OpenRay  CA-7127
+  - OpenRay  CA-7132
+  - OpenRay  CA-7133
+  - OpenRay  CA-7134
   - OpenRay Dynamic-95
   - OpenRay Dynamic-40
   - OpenRay Dynamic-118
@@ -4810,6 +5088,8 @@ proxy-groups:
   - OpenRay Dynamic-8
   - OpenRay Dynamic-7132
   - OpenRay Dynamic-2306
+  - OpenRay Dynamic-7135
+  - OpenRay Dynamic-7136
   - OpenRay  DE-1293
   - OpenRay  DE-1341
   - OpenRay  DE-1776
@@ -4868,6 +5148,8 @@ proxy-groups:
   - OpenRay  DE-2304
   - OpenRay  DE-2307
   - OpenRay  DE-2308
+  - OpenRay  DE-2309
+  - OpenRay  DE-2310
   - OpenRay  JP-24
   - OpenRay  JP-54
   - OpenRay  JP-87
@@ -4888,6 +5170,7 @@ proxy-groups:
   - OpenRay  NL-592
   - OpenRay  NL-593
   - OpenRay  NL-594
+  - OpenRay  NL-595
   - OpenRay  US-207
   - OpenRay  US-208
   - OpenRay  US-2325
@@ -4930,17 +5213,28 @@ proxy-groups:
   - OpenRay  US-9504
   - OpenRay  US-9515
   - OpenRay  US-9516
-  - OpenRay  US-9517
   - OpenRay  US-9518
   - OpenRay  US-9519
+  - OpenRay  US-9520
+  - OpenRay  US-9521
+  - OpenRay  US-9522
+  - OpenRay  US-9523
+  - OpenRay  US-9524
+  - OpenRay  US-9525
+  - OpenRay  US-9526
+  - OpenRay  US-9527
+  - OpenRay  US-9528
+  - OpenRay  US-9529
   - OpenRay  FR-1945
   - OpenRay  FR-1990
   - OpenRay  FR-2017
   - OpenRay  FR-2020
   - OpenRay  FR-2021
+  - OpenRay  FR-2022
   - OpenRay  GB-975
   - OpenRay  GB-976
   - OpenRay  GB-977
+  - OpenRay  GB-979
   - OpenRay  IS-1
   - OpenRay  SG-25
   - OpenRay  SG-28
@@ -4953,6 +5247,7 @@ proxy-groups:
   - OpenRay  TR-33
   - OpenRay  TR-34
   - OpenRay  TR-35
+  - OpenRay  TR-36
   - OpenRay  PL-3
   - OpenRay  PL-15
   - OpenRay  PL-17
@@ -5003,10 +5298,13 @@ proxy-groups:
   - OpenRay  LV-7
   - OpenRay  LV-9
   - OpenRay  LV-10
+  - OpenRay  LV-11
   - OpenRay  CZ-1
   - OpenRay  CZ-4
   - OpenRay  IN-31
   - OpenRay  IN-32
+  - OpenRay  IN-33
+  - OpenRay  IN-34
   - OpenRay  AT-2
   - OpenRay  AT-3
   - OpenRay  AT-4
@@ -5024,6 +5322,7 @@ proxy-groups:
   - OpenRay  IL-1
   - OpenRay  BG-1
   - OpenRay  HK-1
+  - OpenRay  HK-2
   - OpenRay  LT-1
 rules:
 - DOMAIN-SUFFIX,ir,DIRECT
