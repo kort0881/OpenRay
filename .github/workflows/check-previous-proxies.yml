@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 1
-        persist-credentials: false
+        token: ${{ secrets.PERSONAL_TOKEN }}
 
     - name: Configure Git user
       run: |
@@ -79,21 +79,10 @@ jobs:
           ./output/converted/all_valid_proxies_clash_config.yaml \
           ./output/converted/all_valid_proxies_singbox_config.json
 
-    # Commit and push changes directly to the main
-    - name: Commit and push changes (force)
+    # Commit and push changes
+    - name: Commit and push changes
       run: |
-        # Ensure no local changes block pull
-        git stash --include-untracked
-
-        # Pull latest changes from main without rebase
-        git pull origin main --no-rebase
-
-        # Apply local changes back
-        git stash pop || true
-
-        # Add and commit updated files
         git add .state/ output/
         git commit -m "Update previous proxy lists [skip ci]" || echo "No changes to commit"
+        git push origin main
 
-        # Push changes
-        git push https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}.git main
