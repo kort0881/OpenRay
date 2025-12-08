@@ -2,9 +2,9 @@ name: Check New Proxies
 
 # Trigger workflow
 on:
-  # schedule:
-  #   # Run at minute 0 of every hour
-  #   - cron: '0 * * * *'
+  schedule:
+    # Run at minute 0 of every 12 hours (00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
   workflow_dispatch:  # Allow manual trigger
 
 # Permissions (top-level fallback)
@@ -87,4 +87,5 @@ jobs:
         git add .state/ output/
         git commit -m "Update new proxy lists [skip ci]" || echo "No changes to commit"
         git push origin main
+
 
